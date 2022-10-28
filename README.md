@@ -9,30 +9,30 @@
 
  
 
-**Format**
-Images formats: JPG/JPEG or PNG
-Audio: MP3 only please
+**Format**<br>
+Images formats: JPG/JPEG or PNG<br>
+Audio: MP3 only please<br>
 
 
-**Folders**
-    - Images
-    - Audio
-    - Assests / GUI
-    - Project
+**Folders**<br>
+    - Images<br>
+    - Audio<br>
+    - Assests / GUI <br>
+    - Project<br>
     
 
 
-**How to Build**
-Install/Run Ren'py
-Store in root folder ( Where renpy.exe is located)
-Refresh in the program screen (top right)
+**How to Build**<br>
+Install/Run Ren'py<br>
+Store in root folder ( Where renpy.exe is located)<br>
+Refresh in the program screen (top right)<br>
 
-*How to upload Files:*
-- Video Link 
+*How to upload Files:*<br>
+- Video Link <br>
 
 
-*How to use Github:*
-- https://www.youtube.com/watch?v=nhNq2kIvi9s
+*How to use Github:*<br>
+- https://www.youtube.com/watch?v=nhNq2kIvi9s<br>
 
 
 
