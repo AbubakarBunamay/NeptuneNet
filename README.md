@@ -1,7 +1,7 @@
 #3F02-Game 
 
 **Naming Conventions**
-1.Files names to not have Special Symbols(!,?.,#,@) & spaces eg. *pic 1.jpeg*
+1.Files names to not have Special Symbols(!,?.,#,@) & spaces eg. *pic 1.jpeg*__
 
 2.Use simple and clear names when naming files. eg. bulletsound.mp3
 
