@@ -335,6 +335,71 @@ label start:
     #Michael Mcquaid
     mm "Well, it wasn’t me. I was here the entire time? You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
 
+    #Susan Murphy
+    sm "Oh, come on, that’s ridiculous."
+
+    #Michael Mcquaid
+    mm "As far as we know, you could have killed him."
+
+    #Ezekiel Jones
+    ej "Hmm, he has a good point. We know nothing for sure. While you do seem like a lovely person Susan, you were out there alone."
+
+    #Susan Murphy
+    sm "You can’t be serious. You all saw me leave here a few seconds ago."
+
+    #Patricia WHite
+    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered."
+
+    #Deborah White
+    dw "Calm down, Patti. Nothing is gonna happen to you."
+
+    #Patricia White
+    pw "You don’t know that! I’m gonna die to a murderer onboard."
+
+    #David Dalton
+    dd "I don’t know if I want to work here if someone is murdering people. Someone tell the captain to turn thi - …"
+
+    #Narrator
+    "Indiscriminate chatter happens amongst the guests"
+    
+    #Michael Mcquaid
+    mm "ALRIGHT, EVERYONE! Settle down. Let’s not lose our heads. Susan, you are a private eye, yeah? I think you have the qualifications to solve this."
+
+    #Susan Murphy 
+    sm "What? You don’t suspect me anymore?"
+
+    #Michael McQuaid
+    mm "I do. That’s why someone should be with you every second."
+
+    #Ezekiel Jones
+    ej "I'll Keep an eye on her."
+
+    #Susan Murphy
+    sm "Oh, please."
+
+    #Michael Mcquiad
+    mm "Perfect, the doctor and the eye. What a confidential relationship."
+
+    #Patricia White
+    pw "I wanna go look for Rachel! She could be in danger!"
+
+    #Deborah White
+    dw "Aren't you afraid of getting murdered?"
+
+    #Patricia White
+    pw "Yes, but she was nice to me. Oh, please come with me, Debbie."
+
+    #Deborah White
+    dw "auughhh, fine. Let’s go look for her. Hey Michael! You heard?"
+
+    #Michael Mcquiad
+    mm "Loud and clear. The rest of us will stay here. Don’t want anyone else turning up dead now."
+
+    #Narrator
+    "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."
+
+
+
 
 
 
