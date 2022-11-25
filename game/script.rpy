@@ -31,6 +31,7 @@ label start:
 
     #scene BG
     scene apartment 
+    play music "audio/music/apartment background music.mp3"
     #Susan's Apartment from door with mail slot (background)
     # Narrator voice
     voice "audio/narrator/n01.mp3"
@@ -63,10 +64,12 @@ label start:
     # Susan thought voice 
 
     sm "McQuaid, McQuaid, where have I heard that name before? Oh right, I did a case for him. Well, I could use a vacation after today…Sure, why the heck not!"
+    stop music fadeout 3.0
 
     # Scene 4 - Yatch
     #Scene Bg - an image of the yacht on the water
     scene yatchonwater
+    play music "audio/music/boat and cabin background music sample.mp3" fadeout 1.0 fadein 1.0
 
     #Narrator Voice
 
@@ -79,13 +82,14 @@ label start:
     #Narrator voice
 
     "As Susan sorts through her luggage, there is a knock at the door."
-
+    show dd neutral
     #dalton Voice
 
-    dd "There will be a dinner for all the guests in the dining hall in 30 minutes."
+    dd "There will be a dinner for all the guests in the dining hall in 30 minutes." 
 
     #play sound susan cabin - Susan Voice
     sm "Okay, thanks for the information."
+    hide dd neutral
 
     #play sound susan cabin thought
     #thoughts screen maybe ( displaying that susan is thinking)
@@ -107,6 +111,10 @@ label start:
     #Scene 6 
 
     #scene dining room 
+    stop music fadeout 3.0
+
+    play music "audio/music/party background music.mp3" fadeout 1.0 fadein 1.0
+    
 
     #Narrator Voice
 
@@ -114,6 +122,7 @@ label start:
     
     #play sound/music with fade in here not voice
     #Michael speaking as the player enters the room
+    show mm angry
 
     mm "Ah, and here’s our final guest arriving! Welcome, Susan. Please, take a seat. Now that we’re all here, the party can start!"
 
@@ -128,7 +137,7 @@ label start:
     mm"Of course, the brilliant Susan Murphy, one of the great detectives of our time."
     
     mm "And finally, our talented captain, Lloyd Lewis! He’ll be navigating the boat for the next five days, so don’t expect to see much of him away from the helm"
-
+    hide mm angry
     
     #Narrator voice of LLoyd Lewis
     ll "That’s my cue. Back to the helm, I go. Have a good meal, folks"
@@ -165,11 +174,13 @@ label start:
     #Susan Murphy Thoughts
     sm "ell, Richard seems to be a very happy camper. I wonder if he’s always like this… Does the same go for his wife?"
 
+    show mm angry
     #Michael McQuaid Voice
     mm "William! Go wait in the kitchen. We’ll talk about this later!"
 
     #Narrator Voice Here
     "The waitstaff member leaves, looking abashed."
+    hide mm
 
     #Ezekiel Jones
     ej "Don’t be too harsh on him, McQuaid. It was an honest mistake. The poor boy just tripped."
@@ -233,15 +244,19 @@ label start:
 
     #Narrator Voice
     "A ringing sound is heard, and Michael taps his glass with a spoon like he is making a toast."
+    stop music fadeout 3.0
 
     #Michael McQUiad
     mm "Everyone! I hope you've enjoyed your evening, but now it's time to get to business"
+    
 
     #Narrator Voice
     "A hush settles over the room."
-
+    
+    play music "audio/music/pulse build intense background music.mp3" fadeout 1.0 fadein 3.0
     #Michael Mcquaid Voice
     mm "You see, I may have told a little white lie on your invitations. The real reason you’re here is that each one of you has a secret. Something hidden that would ruin you if it were to get out."
+   
 
     #Michael McQuaid Voice
     mm "I brought you all here so we could come to a little… arrangement. Over the next few days, I am sure you’ll find this to be in your best interest."
@@ -309,7 +324,8 @@ label start:
 
     #Scene 10
     #scene reedscabin
-
+     
+    play music "audio/music/horror background music.mp3"
     #narrator Voice
     "As Susan opens the door, she is met with a horrific sight. Richard Reed, former CEO of Reed Industries, has been beaten bloody, and unmoving."
 
@@ -404,3 +420,8 @@ label start:
 
 
     return
+
+
+
+
+    
