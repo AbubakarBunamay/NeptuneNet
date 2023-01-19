@@ -74,7 +74,7 @@ label start:
 
     # Scene 5 - Susan Cabin
     #scene bg - Inside Susan Cabin
-    #scene susan cabin
+    scene susancabin
 
     #Narrator voice
 
@@ -95,18 +95,18 @@ label start:
     #choice scene
     #The player is given the ability to navigate the boat and makes their way to the dining room.
 
-    #Scene Navigation 
+    scene Navigation 
 
 
 
-
+    "Navigation to Dining Room"
 
     #Scene Bg - Navigation Option screen
 
 
     #Scene 6 
 
-    #scene dining room 
+    scene dining room 
 
     #Narrator Voice
 
@@ -207,7 +207,7 @@ label start:
     #Narrator Voice
     "Susan gets up and wanders the dining room. She comes to a table with three elegantly dressed women where Richard had been sitting"
 
-    #Scene switch tables
+    scene switchtables
 
     #Patricia White Voice
     pw "Susan gets up and wanders the dining room. She comes to a table with three elegantly dressed women where Richard had been sitting."
@@ -286,7 +286,7 @@ label start:
     sm "Building a list? Why would he possibly be building a list on me? *Sigh* I can’t ever get a vacation. I should probably check on Rachel. I wonder where she ran off too."
 
     #Scene 8 
-    #scene hallway
+    scene hallway
 
     #narrator voice
     "Susan leaves the room in search of Rachel. She is now in the Hallway."    
@@ -297,7 +297,11 @@ label start:
     #Scene 9
     #Navigating to the washroom
 
-    #scene navigatingtowashroom
+    scene navigatingtowashroom
+
+    "Nagiating to washroom"
+
+    scene washroom
 
     #Narator Voice
     "Susan enters the washroom but finds no one."
@@ -305,10 +309,14 @@ label start:
     #Susan Murphy Voice
     sm "Drat, she’s not here. Where else would she be… their cabin!"
 
+    scene navigatetocabin
+
+    "navigation to the cabin"
+
     #The player navigates to the Reed’s cabin, the door is slightly ajar
 
     #Scene 10
-    #scene reedscabin
+    scene reedscabin
 
     #narrator Voice
     "As Susan opens the door, she is met with a horrific sight. Richard Reed, former CEO of Reed Industries, has been beaten bloody, and unmoving."
@@ -318,7 +326,7 @@ label start:
 
     #Goes back to the dining room
 
-    #scene diningroom
+    scene diningroom
 
     #Narrator
     "Susan sprints back to the dining room, bursting through the door, panting."
@@ -334,6 +342,281 @@ label start:
 
     #Michael Mcquaid
     mm "Well, it wasn’t me. I was here the entire time? You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
+
+    #Susan Murphy
+    sm "Oh, come on, that’s ridiculous."
+
+    #Michael Mcquaid
+    mm "As far as we know, you could have killed him." 
+
+    #Ezekiel Jones
+    ej "Hmm, he has a good point. We know nothing for sure. While you do seem like a lovely person Susan, you were out there alone."
+
+    #Susan Murphy
+    sm "You can’t be serious. You all saw me leave here a few seconds ago." 
+
+    #Patricia White
+    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered."
+
+    #Deborah White
+    dw "Calm down, Patti. Nothing is gonna happen to you."
+
+    #Patricia White
+    pw "You don’t know that! I’m gonna die to a murderer onboard."
+
+    #David Dalton
+    dd "I don’t know if I want to work here if someone is murdering people. Someone tell the captain to turn thi - …"
+
+    #Narrator
+    "Indiscriminate chatter happens amongst the guests."
+
+    #Michael Mcquaid
+    mm "ALRIGHT, EVERYONE! Settle down. Let’s not lose our heads. Susan, you are a private eye, yeah? I think you have the qualifications to solve this."
+
+    #Susan Murphy
+    sm "What? You don’t suspect me anymore?"
+
+    #Michael Mcquaid
+    mm "I do. That’s why someone should be with you every second".
+
+    #Ezekiel Jones
+    ej "I’ll keep an eye on her".
+
+    #Susan Murphy
+    sm "Oh, please."
+
+    #Michael Mcquaid
+    mm "Perfect, the doctor and the eye. What a confidential relationship."
+
+    #Patrica white
+    pw "I wanna go look for Rachel! She could be in danger!"
+
+    #Deborah White
+    dw "Aren’t you afraid of getting murdered?"
+
+    #Patrica White
+    pw "Yes, but she was nice to me. Oh, please come with me, Debbie."
+
+    #Deborah White
+    dw "auughhh, fine. Let’s go look for her. Hey Michael! You heard?"
+
+    #Michael Mcquaid
+    mm "Loud and clear. The rest of us will stay here. Don’t want anyone else turning up dead now."
+
+    #Narrator
+    "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."
+
+    #Scene 13 - Investigating Richard's Murder Scene
+    #Some BG from art team
+
+    scene murderscene
+
+    #Narrator
+    "While looking at a crime scene, click on points of interest around the area to find clues."
+
+    #Narrator
+    "Clues will be added to your detective board for easy viewing."
+
+    #Clues are in slide 43 & 44
+    #Code Mechanics Will be updated here
+
+
+    #Susan Murphy
+    sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
+
+    #Ezekiel Jones 
+    ej "I'm afraid everyone's probably going to be asleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
+
+    #Susan Murphy
+    sm "As much as I hate to leave a case like this… you're right. Reconvene in the dining room tomorrow?"
+
+    #Ezekiel Jones
+    ej "Of course."
+
+    #Narrator
+    "Susan and Ezekiel leave the crime scene and go to their separate rooms."
+
+    #Day 2 
+    #Scene 14
+
+    #NAVIGATION HERE
+    #The player Navigates to the bathroom
+
+    scene hallway
+
+    #Narrator
+    "Susan is walking through the halls and hears some commotion coming from a bathroom. Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
+
+    scene insidebathroom
+
+    #Patrcia Sound Effect
+    #Retches
+
+    #Deborah
+    dw "That's it, it's okay. Let it out."
+
+    #Susan Murphy
+    sm "Hello? Patricia, Deborah. You gals doing okay?"
+
+    #Deborah White
+    dw "Hey Susan, yea Patty's still a little shaken up. I thought it would be good to catch some sun and get some fresh air, but her stomach is still in knots." 
+
+    #Patricia White
+    pw "Ughh, yea… at least this bathroom has a porthole. Though I'm not too fond of the sea smell."
+
+    #Deborah White
+    dw "I'm just glad it seems to be helping calm you down. Back home, all she had to do was go outside for her worries to disappear naturally. Anyway, how are you doing, Susan?" 
+
+    #Susan Murphy
+    sm "About the same as everyone else, I guess. Can't I ever get a vacation?"
+
+    #Deborah Murphy
+    dw  "I hear you'. A working girl's work is never done."
+
+    #Susan Murphy 
+    sm "Yea, speaking of, did you two find Rachel last night?"
+
+    #Patricia White
+    pw "Yes, we did, *Hrph*"
+
+    #Deborah White
+    dw  "Yea, we found her. Thank goodness she was okay. Physically."
+
+    #Susan Murphy
+    sm "Where was she?"
+
+    #Deborah White
+    dw "On the deck, trying to catch herself. She left because she was feeling dizzy. I guess she was trying to catch some air herself."
+
+    #Susan Murphy
+    sm "Did you tell her?"
+
+    #Deborah White
+    dw "What choice did we have? Poor thing, she immediately broke down over that man. Seems to me like she really loved him. Even if he was a piece of work."
+
+    #Susan Murphy
+    sm "Hmm, okay. Well, I'll try to go and find her."
+
+    #Deborah White
+    dw "I think she's in the Dining Hall. When I saw her last, she was still distressed, and McQuaid was with her."
+
+    #Susan Murphy 
+    sm "Thanks. Will you two be okay?"
+
+    #Patricia White
+    pw "We'll be just peachy, don't you worr– *Heaves*"
+
+    #Deborah White
+    dw "We'll be fine. See you."
+
+    #Narrator 
+    "Susan leaves the White sisters in the bathroom."
+
+    #Susan Thought 
+    sm "Thoughts: They say she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
+
+    #NAVIGATION HERE
+    #The player navigates to the dining room
+
+    scene hallway
+
+    #Narrator 
+    "Susan now enters the Dining Hall. She sees Rachel with her head in her hands, Ezekiel trying to comfort her, and McQuaid is in the corner."
+
+    #Ezekiel Jones
+    ej "Ah, Susan, good morni-"
+
+    #Rachel Reed
+    rar "Susan? SUSAN! You're the private eye. Right? Did you find out who did it? Did you find my husband's killer?"
+
+    #Susan Murphy
+    sm "Not yet. I'm still working on it. I have gathered some clues, but I'm still working it all out."
+
+    #Racheel Reed
+    rar "So you have nothing? It's a Yacht! Someone here is responsible! They must be found and pay for what they've done!"
+
+    #Michael Mcquaid
+    mm "Easy there. I'm sure Ms. Murphy is doing everything she can to solve this case."
+
+    #Susan Murphy 
+    sm "Don't think we've forgotten about you, McQuaid. Unfortunately, there are more pressing matters at hand."
+
+    #Susan Murphy 
+    sm "But yes, I'll figure it out. Don't you worry about that! Rachel, I hope you don't mind, but I need to ask you some questions."
+
+    #Rachel Reed
+    rar "What? Why me?"
+
+    #Susan Murphy
+    sm "Well, to be perfectly honest, you left the room last night and then Mr. Reed…you know."
+
+    #Rachel Reed
+    rar "You... You can't seriously be thinking I did this. He was my husband, for Christ's sake!"
+
+    #Ezekiel Jones
+    ej "She isn't accusing you of anything, dear. She just needs to know where everyone was to paint the picture of what happened last night. Nothing more."
+
+    #Susan Murphy
+    sm "Exactly. Now please, if you may. Where did you go when you left the dining hall last night?"
+
+    #Rachel Reed
+    rar "Well, after the news, I felt nauseous. So I started to head to the bathroom. On my way there, I caught a draft of the ocean breeze and decided to go on the deck instead."
+
+    #Susan Murphy
+    sm "Did the ocean breeze help?"
+
+    #Rachel Reed
+    rar "A little. It did help to calm me down. I did hear something, but I thought it was just the party or something. Oh God, what if it was Richard? I could have done something to save him! He would have been alive if I had just stayed by his side."
+
+    #Susan Murphy
+    sm "Hey, don't do that. There's nothing you could have done to see this coming."
+
+    #Ezekiel Jones
+    ej "Yea, take it from me. It doesn't help anything at all."
+
+    #Susan Murphy
+    sm "Did you find your way back to the party?"
+    
+    #Rachel Reed
+    rar "Yes, eventually the White sisters came to help but- *sobs* all they did was made me feel worse by telling me that I lost my Richard."
+
+    #Susan Murphy
+    sm "A couple more questions, okay? Do you know anyone that could've done this?"
+
+    #Rachel Reed
+    rar "*sniff* Richard always had enemies. Since we were back in school, he'd always been a bit...abrasive. They'd just never understood him. Oh, my Richard. I miss you so much.."
+
+    #Ezekiel Jones
+    ej "Okay, that's enough. You should take some time to rest and grieve your loss."
+
+    #Susan Murphy 
+    sm "Yea, I'm sorry this happened."
+
+    #Rachel reed
+    rar "Me too."
+
+    #Susan Murphy 
+    sm "McQuaid. What happened to the waitstaff member that had a squabble with Reed last night?"
+
+    #Michael Mcquiad
+    mm "I sent him back to the kitchen to do some extra work. He should be there now if you want to talk to him."
+
+    #Susan Murphy
+    sm "Okay. We aren't done here either."
+
+    #Michael Mcquiad
+    mm "Oh, Ms. Murphy, where would I possibly go?"
+
+    #Narrator
+    "Susan looks at Ezekial to confirm that he heard where she was going, and then Susan left."
+
+    
+
+
+
+
+
+
 
 
 
