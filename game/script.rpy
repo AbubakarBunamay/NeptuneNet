@@ -406,12 +406,14 @@ label start:
         "Proceed to see murder"
         "Open the door full":
             scene murderroom
+                #Susan Murphy Voice
+                sm "Oh Shit. Is that Richard? Oh my God, I need to tell everyone about this."
+                ++
         "It's enough":
             "Something here"
         
 
-    #Susan Murphy Voice
-    sm "Oh Shit. Is that Richard? Oh my God, I need to tell everyone about this."
+
 
     #Scene 16 - Goes back to the dining room
 
@@ -514,11 +516,10 @@ label start:
     #Narrator
     "While looking at a crime scene, click on points of interest around the area to find clues."
 
-
-
     #Narrator
     "Clues will be added to your detective board for easy viewing."
 
+    #Scene 19 - Murder Scene Investigation 
     call screen murderscene
     
 
@@ -528,6 +529,11 @@ label start:
     hide screen murderscene
 
 label second:
+
+    #Scene 20- Post Murder Scene Inestigation 
+
+    scene donemurderinvestigation
+
     #Susan Murphy
     sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
 
@@ -544,20 +550,32 @@ label second:
     "Susan and Ezekiel leave the crime scene and go to their separate rooms."
 
     #Day 2 
-    #Scene 14
 
-    #NAVIGATION HERE
-    #The player Navigates to the bathroom
+    #Scene 21 - The player to navigate to the hallway 
 
-    scene hallway
+    #Navigation 
 
+    scene navigatinghall 
+
+    #Scene 22- Hallway 
+
+    scene hallway 
+
+    "Susan is walking through the halls and hears some commotion coming from a bathroom."
+
+    #Scene 23 - The player Navigates to the bathroom 
+
+    #Navigation 
+    scene navigatingtobathroom
+
+    #Scene 24 - Inside the bathroom 
+     
     #Narrator
-    "Susan is walking through the halls and hears some commotion coming from a bathroom. Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
-
+    "Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
     scene insidebathroom
 
     #Patrcia Sound Effect
-    #Retches
+    pw "Retches"
 
     #Deborah
     dw "That's it, it's okay. Let it out."
@@ -611,10 +629,16 @@ label second:
     sm "Thanks. Will you two be okay?"
 
     #Patricia White
-    pw "We'll be just peachy, don't you worr– *Heaves*"
+    pw "We'll be just peachy, don't you worr- *Heaves*"
 
     #Deborah White
     dw "We'll be fine. See you."
+
+    #scene 25 - The player navigating to the hallway 
+    
+    #Navigation 
+    scene navigatinghallway
+ 
 
     #Narrator 
     "Susan leaves the White sisters in the bathroom."
@@ -622,10 +646,15 @@ label second:
     #Susan Thought 
     sm "Thoughts: They say she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
 
-    #NAVIGATION HERE
-    #The player navigates to the dining room
+    #scene 27 - The player navigates to the dining room
+    
+    #NAVIGATION
+    
+    scene navigatingdiningroom
 
-    scene hallway
+    #scene 28 - The Dining Room 
+
+    scene diningroom
 
     #Narrator 
     "Susan now enters the Dining Hall. She sees Rachel with her head in her hands, Ezekiel trying to comfort her, and McQuaid is in the corner."
