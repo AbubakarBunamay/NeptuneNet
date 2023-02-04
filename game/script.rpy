@@ -1,4 +1,4 @@
-# The Neptune script
+﻿# The Neptune script
 
 
 #Characters are:
@@ -381,7 +381,7 @@ label start:
     sm "Drat, she’s not here. Where else would she be… their cabin!"
     scene navigatetocabin
 
-    "navigation to the cabin"
+    "navigation to the cabi"
 
     #The player navigates to the Reed’s cabin, the door is slightly ajar
 
