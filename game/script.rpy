@@ -464,21 +464,17 @@ label mingle:
 
     #Scene 15 - First Murder   
 
-label first_murder:
+
 
     scene reedscabin
 
     #Narrator 
     "As Susan opens the door, she is met with a horrific sight. Richard Reed, former CEO of Reed Industries, has been beaten bloody, and unmoving."
-    
-    show screen reedscene_investigation
 
-    
-    hide screen reedscene_investigation
     #Susan Murphy 
     show susan
     sm "Oh Shit. Is that Richard? Oh my God, I need to tell everyone about this."
-    hide susan
+    hide susan       
 
     #scene 16 
 
@@ -619,20 +615,20 @@ label first_murder:
 
     "Navigating to the murder scene"
 
+    #Narrator
+    "While looking at a crime scene, click on points of interest around the area to find clues."
+
     #Scene 19
 
     #Investigating Richard's Murder Scene
 
-    show reedscene_investigation
+    call screen reedscene_investigation
 
-    #Narrator
-    "While looking at a crime scene, click on points of interest around the area to find clues."
+    ""
 
-    #Narrator
-    "Clues will be added to your detective board for easy viewing."
+    hide screen reedscene_investigation
 
-    #Clues are in slide 43 & 44
-    #Code Mechanics Will be updated here
+label first_murder:   
 
     #scene 20
     scene murderscene
@@ -999,9 +995,6 @@ label first_murder:
                 "Press Further":
                     
                     #Scene 33 - Ezekiel Jones / Footprint (Ezekiel's Room)
-    
-                    #Press further 
-                    "Pressing Further" 
 
                     #Susan murphy
                     sm "From the sound of your reaction, it looks like you are hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
@@ -1009,7 +1002,7 @@ label first_murder:
                     sm "Do you have another pair of shoes that you are hiding?"
 
                     #Narrator
-                    "Ezekiel Jones: had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
+                    "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
 
                     #Susan Murphy Thoughts
                     sm "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
@@ -1036,8 +1029,6 @@ label first_murder:
                     
                     #Scene 34 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
-                    #Calming him down possible choice
-                    "Calming him down"
 
                     #Susan Murphy 
                     sm  "Of course, we are friends, but you must understand that I am a detective. I can't leave any stone unturned."
@@ -1397,16 +1388,8 @@ label william_inv:
             ww "No, no. I have a second pair that I was wearing. Please, it wasn't me!"
 
             menu windchime_footprint:
-
                 "Choose path of investigation"
-
                 "Press further":
-                    #Scene 44 - William Windchime / Footprint (Kitchen)
-
-                    #Pressing Further Possible Choice
-
-                    "Pressing Further"
-
                     #Susan Murphy 
                     sm "Right. Someone stole your spare pair of shoes, committed murder, and then returned them to you."
 
@@ -1437,125 +1420,120 @@ label william_inv:
 
                         "Quit for Day":
                             jump end_of_dayone
+
+                "Interrogate another passenger":
+                    jump investigation_choice
+                
+                "Quit for Day":
+                    jump end_of_dayone
+                       
                         
+                
+        "Asking about wherabouts":
+            #Scene 45 William Windchime / Whereabouts (kitchen)
+            #Susan Murphy 
+            sm "Where were you around 6:30 last night?"
+
+            #William Windchime
+            ww "I was here, in the kitchen. I spilled that soup, and then Mr. McQuaid yelled at me, and I didn't want to cause more trouble, so I came right down."
+
+            #Ezekiel Jones
+            ej "Can anybody corroborate that story?"
+
+            #William Windchime
+            ww "W-well, Dalton was in here around 6:50, and Mr. McQuaid sent me-"
+
+            #Susan Murphy 
+            sm  "So no."
+
+            #William Windchime
+            ww "I… I guess not. But it wasn't me, I swear! I was cleaning up the kitchen, that's all!"
+
+            #Ezkeiel Jones
+            ej "Sure, kid, sure."
+
+            menu windchime_whereabouts:
+
+                "Choose path of investigation"
+
+                "Press Further":
+                    #Scene 46 William Windchime / Whereabouts (kitchen)
+                                
+                    #Susan Murphy 
+                    sm "You're positive that no one could vouch for your whereabouts? No one came down for a snack, and you didn\'t go to the washroom or leave?"
+
+                    #William Windchime
+                    ww "No, ma'am. Mister McQuaid told me to stay down here, so… I did."
+
+                    #Ezkeiel Jones
+                    ej "Well, no one will fault you for loyalty, but you've got to admit how suspicious this sounds."
+
+                    #William Windchime
+                    ww "Well.. yes, but I swear, it wasn't me!"
+
+                    menu windchime_further:
+
+                        "Choose path of investigation"
 
                         "Interrogate another passenger":
                             jump investigation_choice
+
+                        "Quit for day":
+                            jump end_of_dayone
+                                    
+
+                "Investigate Motive":
                         
+                    #Scene 47 William Windchime / Whereabouts (kitchen)
+
+                    #Susan Murphy 
+                    sm "Alright, William, I have another question for you. When you spilled that soup on Richard, he shouted at you, right? That must have made you angry."
+
+                    #William Windchime
+                    ww "Well, yes, but not enough to... to- "
+
+                    #Ezkeiel Jones
+                    ej "To what? To murder someone? Someone who humiliated you in front o- "
+
+                    #William Windchime
+                    ww "Yes! Of course, I was angry! You'd be, too, if some rich asshole screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
+
+                    #Susan Murphy 
+                    sm "Easy, kid, we're just covering our bases. Say, how did you end up here, anyways? You don't strike me as the type to go for a service position."
+
+                    #Narrator
+                    "William grows visibly nervous."
+
+                    #William Windchime
+                    ww "Well- um-"
+
+                    #Narrator
+                    "William sighs."
+
+                    #William Windchime
+                    ww  "You're right. I'm not really cut out for this sort of work. What I really want is to travel, to see the world, but…"
+
+                    ww "Well, it's a little embarrassing, but I'm out of money. I had quite a bit from my parents, but it didn't… last as long as I thought it would."
+
+                    ww "Why am I even telling you this? I have to go. I've got things to do."
+
+                    #Narrator
+                    "William walks off in a huff."
+
+                    #Ezekiel Jones
+                    ej  "Is it just me, or did he sound… resentful? Do you think he could have killed Richard to humiliate his employer?"
+                            
+                    #Susan Murphy 
+                    sm "It's certainly possible but unlikely."
+
+                    menu windchime_motive:
+
+                        "What's your next step?"
+
+                        "Interrogate another passenger":
+                            jump investigation_choice
                         "Quit for the day":
                             jump end_of_dayone
-                
-        "Asking about wherabouts":
-
-                #Scene 45 William Windchime / Whereabouts (kitchen)
-   
-                #Susan Murphy 
-                sm "Where were you around 6:30 last night?"
-
-                #William Windchime
-                ww "I was here, in the kitchen. I spilled that soup, and then Mr. McQuaid yelled at me, and I didn't want to cause more trouble, so I came right down."
-
-                #Ezekiel Jones
-                ej "Can anybody corroborate that story?"
-
-                #William Windchime
-                ww "W-well, Dalton was in here around 6:50, and Mr. McQuaid sent me-"
-
-                #Susan Murphy 
-                sm  "So no."
-
-                #William Windchime
-                ww "I… I guess not. But it wasn't me, I swear! I was cleaning up the kitchen, that's all!"
-
-                #Ezkeiel Jones
-                ej "Sure, kid, sure."
-
-                menu windchime_whereabouts:
-
-                    "Choose path of investigation"
-
-                    "Press Further":
-                        #Scene 46 William Windchime / Whereabouts (kitchen)
-
-                        #Pressing Further Possible Option 
-
-                        "Pressing Further"
-                        
-                        #Susan Murphy 
-                        sm "You're positive that no one could vouch for your whereabouts? No one came down for a snack, and you didn\'t go to the washroom or leave?"
-
-                        #William Windchime
-                        ww "No, ma'am. Mister McQuaid told me to stay down here, so… I did."
-
-                        #Ezkeiel Jones
-                        ej "Well, no one will fault you for loyalty, but you've got to admit how suspicious this sounds."
-
-                        #William Windchime
-                        ww "Well.. yes, but I swear, it wasn't me!"
-
-                        menu windchime_further:
-
-                            "Choose path of investigation"
-
-                            "Interrogate another passenger":
-                                jump investigation_choice
-
-                            "Quit for day":
-                                jump end_of_dayone
-                            
-
-                    "Investigate Motive":
-                        
-                        #Scene 47 William Windchime / Whereabouts (kitchen)
-
-                        #Susan Murphy 
-                        sm "Alright, William, I have another question for you. When you spilled that soup on Richard, he shouted at you, right? That must have made you angry."
-
-                        #William Windchime
-                        ww "Well, yes, but not enough to... to- "
-
-                        #Ezkeiel Jones
-                        ej "To what? To murder someone? Someone who humiliated you in front o- "
-
-                        #William Windchime
-                        ww "Yes! Of course, I was angry! You'd be, too, if some rich asshole screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
-
-                        #Susan Murphy 
-                        sm "Easy, kid, we're just covering our bases. Say, how did you end up here, anyways? You don't strike me as the type to go for a service position."
-
-                        #Narrator
-                        "William grows visibly nervous."
-
-                        #William Windchime
-                        ww "Well- um-"
-
-                        #Narrator
-                        "William sighs."
-
-                        #William Windchime
-                        ww  "You're right. I'm not really cut out for this sort of work. What I really want is to travel, to see the world, but…"
-
-                        ww "Well, it's a little embarrassing, but I'm out of money. I had quite a bit from my parents, but it didn't… last as long as I thought it would."
-
-                        ww "Why am I even telling you this? I have to go. I've got things to do."
-
-                        #Narrator
-                        "William walks off in a huff."
-
-                        #Ezekiel Jones
-                        ej  "Is it just me, or did he sound… resentful? Do you think he could have killed Richard to humiliate his employer?"
-                        
-                        #Susan Murphy 
-                        sm "It's certainly possible but unlikely."
-
-                        menu windchime_motive:
-
-                            "What's your next step?"
-
-                            "Interrogate another passenger":
-                                jump investigation_choice
-                            "Quit for the day":
-                                jump end_of_dayone
                             
                     
 
@@ -1587,8 +1565,6 @@ label michael_inv:
         "The Reeds":
             
             #Scene 49 - Michael McQUaid / The Reeds (Dining Hall)
-
-            #Ask About Reeds possible option
 
             #Susan Murphy
             sm "Did Richard or his wife have any enemies? Particularly among those aboard?"
@@ -1732,6 +1708,8 @@ label end_of_dayone:
 
     #Scene 54 - Kitchen 
 
+    scene kitchen
+
     #Narrator
     "she is met by Michael McQuaid and some wait staff members surrounding a new murder scene."
 
@@ -1768,15 +1746,13 @@ label end_of_dayone:
     #Ezekiel Jones
     ej "Well, time to go to work. Again."
 
-    #Narator
-    "While looking at a crime scene, click on points of interest around the area to find clues."
     
     #Scene 56 - Murder Scene in kitchen
     
-    show screen windchimescene_investigation 
+    call screen windchimescene_investigation 
 
 
-
+    hide screen windchimescene_investigation
 
 label third:
 
@@ -1941,10 +1917,6 @@ label third:
 
     #Scene 62 - Debeorah White / Where is patty 
 
-    #asking where is patty possible choice
-
-    "asking where is patty"
-
     #Susan Murphy 
     sm "It's unusual to see you without your sister. Where is she?"
     voice "scene62_N5_sm_1.mp3"
@@ -1978,10 +1950,6 @@ label third:
     voice "scene62_N12_dw_4.mp3"
 
     #Scene 63 - Debeorah White / Rachel Reaction
-
-    #asking abour rachel reaction possible choice
-
-    "asking abour rachel reaction"
 
     #Susan Murphy 
     sm "You girls went looking for Rachel on the first night, right? When you found her, how was she?"
@@ -2065,10 +2033,6 @@ label third:
 
     #Scene 65 - Rachel Reed / Diamond Cane
 
-    #Asking about Diamond Cane Possible Choice
-
-    "Asking about Cane"
-
     #Susan Murphy 
     sm "You were seen carrying a Diamond Cane. Where did you get it from?"
     voice "scene65_N5_sm_1.mp3"
@@ -2094,10 +2058,6 @@ label third:
     voice "scene65_N5_sm_3.mp3"
 
     #Scene 66 - Rachel Reed / About Richard
-
-    #Asking about Richard
-
-    "Asking about Richard"
 
     #Susan Murphy 
     sm "Is it okay if I ask about Richard?"
@@ -2181,30 +2141,27 @@ label third:
     ej "Okay... What do you need to know?"
     voice "scene67_N9_ej_2.mp3"
 
-    #Scene 68 - Ezekiel Jones / Whereabouts
+    menu deck_inv:
+        "Choose path of investigation"
+        "Ask About Whereabout":
+            #Scene 68 - Ezekiel Jones / Whereabouts
 
-    #Asking About Whereabouts Possible Choice
+            #Narrator
+            "Susan asks Ezekiel about his whereabouts during the time of the murder."
 
-    "Asking About Whereabout"
-
-    #Narrator
-    "Susan asks Ezekiel about his whereabouts during the time of the murder."
-
-    #Ezekiel Jones
-    ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."
+            #Ezekiel Jones
+            ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."
     voice "scene68_N9_ej_1.mp3"
 
-    #Susan Murphy thoughts
-    sm "That is correct. However, there were a few times when we might have separated."
+            #Susan Murphy thoughts
+            sm "That is correct. However, there were a few times when we might have separated."
     voice "scene68_N3_smt_1.mp3"
 
     #Susan Murphy 
     sm "There were a few times we separated. Where did you go during those times?"
-    voice "scene68_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "I just separated to use the bathroom, go to bed, or help give you information if it involved us finding the murderer."
-    voice "scene68_N9_ej_2.mp3"
 
     #Scene 69 - Ezekiel Jones / whereabouts
     
@@ -2214,117 +2171,95 @@ label third:
 
     #Susan Murphy 
     sm "Yes. However, there was one time when we separated. It is suspicious how it was only a few minutes, but it could have been enough time to find information before you kill someone."
-    voice "scene69_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "We have gone over this before. I am not the killer. You can ask a few people on the boat to prove it to you."
-    voice "scene69_N9_ej_1.mp3"
 
     ej "I have been talking to them to gather information. I have nothing to hide."
-    voice "scene69_N9_ej_2.mp3"
 
     #Susan Murphy 
     sm "I understand. Apologies for questioning your trust."
-    voice "scene69_N5_sm_2.mp3"
 
     #Narrator
     "Ezekiel calms himself down."
-    voice "scene69_N1_1.mp3"
 
     #Ezekiel Jones
     ej "Think nothing of it. If at any point you suspect me, I shall answer any questions truthfully."
-    voice "scene69_N9_ej_3.mp3"
 
-    #Scene 70 - Ezekiel Jones / Motive
 
-    #Probe for motive possible choice
-
-    "Probe for motive"
+        "Probe for motive":
+            #block of code to run
+            #Scene 70 - Ezekiel Jones / Motive
 
     #Susan Murphy 
     sm "Did you notice any changes in behaviour from William?"
-    voice "scene70_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "I have not noticed much from him. He seemed normal."
-    voice "scene70_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "In the brief moments when we separated, had you spotted him?"
-    voice "scene70_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "Yes, I had."
-    voice "scene70_N9_ej_2.mp3"
 
-    #Scene 71 - Ezekiel Jones / Motive
-
-    #Pressing further possible choice
-
-    "Pressing Further"
+            menu motive_inv:
+                "Choose path of investigation"
+                "Press Further":
+                    #Scene 71 - Ezekiel Jones / Motive
 
     #Susan Murphy 
     sm "It seems suspicious that you did meet him, and in those brief moments when we weren't together, he turns up dead the next day."
-    voice "scene71_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "It is suspicious. I can confirm that I have an alibi and some important information."
-    voice "scene71_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "Oh, and what might that be?"
-    voice "scene71_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "I can confirm that I was not the last person to see him that day. It was, in fact, (player to insert name here). I have not seen him since"
-    voice "scene71_N9_ej_2.mp3"
 
     #Susan Murphy Thoughts
     sm "That is some important information."
-    voice "scene71_N3_smt_1.mp3"
-
     #Susan Murphy
     sm "Thank you."
-    voice "scene71_N5_sm_3.mp3"
 
     #Ezekiel Jones
     ej "You're Welcome."
-    voice "scene71_N9_ej_3.mp3"
 
-    #Scene 72 - Ezekiel Jones / Motive
-
-    #Calm him down possible choice
-
-    "Calming him down"
+                "Calm him down":
+                    #Scene 72 - Ezekiel Jones / Motive
 
     #Susan Murphy
     sm " It is not my intention to anger you. I just need to know what you have against him."
-    voice "scene72_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "Why I have nothing against him. While I have seen him recently, I have no reason or motive to go against him."
-    voice "scene72_N9_ej_1.mp3"
 
     #Susan Murphy
     sm "Were you the last to see him?"
-    voice "scene72_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "I can confirm that I was not the last person to see him that day. It was, in fact, (the player asked to insert name here). I have not seen him since."
-    voice "scene72_N9_ej_2.mp3"
 
     #Susan Murphy Thoughts
     sm "That is an important piece of information."
-    voice "scene72_N5_sm_3.mp3"
 
     #Susan Murphy
     sm "Thank you, Ezekiel."
-    voice "scene72_N5_sm_4.mp3"
 
     #Ezekiel Jones
     ej "My pleasure."
-    voice "scene72_N9_ej_3.mp3"
 
+            
+
+            
+            
+
+    
+
+    
     #Narrator
     "Susan turns and catches David Dalton’s eye."
     voice "scene72_N1_1.mp3"
@@ -2394,66 +2329,50 @@ label third:
             voice "scene74_N4_dd_3.mp3"
 
             dd "It's not like I was exactly hiding."
-            voice "scene74_N4_dd_4.mp3"
 
             menu daltonchoice_whereabouts:
                 "Choose your path of investigation"
 
-                #Scene 75 - David Dalton - whereabouts - Press further
-                "Press Further":
+            #Scene 75 - David Dalton - whereabouts - Press further
+        
                     
                     #Susan Murphy
                     sm "Especially coupled with yesterday's 20-minute window…"
-                    voice "scene75_N5_sm_1.mp3"
+
                     #Narrator
                     "Annoyance at being questioned quickly turns to a wave of quiet anger on Dalton's face."
 
                     #David Dalton
                     dd "Are you accusing me of murder, detective?"
-                    voice "scene75_N4_dd_1.mp3"
 
                     #Susan Murphy
                     sm "No, no! I'm just trying to eliminate possibilities!"
-                    voice "scene75_N5_sm_2.mp3"
 
                     #David Dalton
                     dd "Are you sure you're a real detective? It sure seems you're trying to pin it on the butler…"
-                    voice "scene75_N4_dd_2.mp3"
 
                     #Susan Murphy Thoughts
                     sm "Wait, could he…? No, that's impossible. Would McQuaid have told him?"
-                    voice "scene75_N3_smt_1.mp3"
 
                     #Susan Murphy
                     sm "I assure you that's not the case. I simply want to be sure that I catch the right person."
-                    voice "scene75_N5_sm_3.mp3"
 
                     #Narrator
                     "Dalton gives Susan a dark look."
-                    voice "scene75_N1_1.mp3"
 
                     #David Dalton
                     dd "Sure, whatever you say, look, my break is about ove-"
-                    voice "scene75_N4_dd_3.mp3"
 
                     #Narrator
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
-                    voice "scene75_N1_2.mp3"
-
+                    
                     #----------------- End of Convo
 
                     #Narrator 
                     "Susan and Ezekiel rocket down the hallway… "
-                    voice "scene75_N1_3.mp3"
 
-                    jump fourth
+            jump fourth
 
-                "probe motive":
-                    #Jump to the Scene 76 - David Dalton / Motive 
-                    jump probemotive
-                
-
-        #Scene 76 - David Dalton / Motive 
 
         "Probe for motive":
             
@@ -2531,7 +2450,7 @@ label probemotive:
 
                 #Scene 78 - David Dalton / Motive - Confortation
 
-                "Press for details":
+                "Press Further":
                     
                     #Susan Murphy
                     sm "Did William mention being suspicious of anyone in particular during this conversation?"
@@ -2640,7 +2559,10 @@ label fourth:
 
     #Scene 80 - 3rd Murder in the bathroom 
 
-    show screen patricia_murderscene
+    call screen patriciascene_investigation
+
+
+label thirdmurder:
 
     #Scene 81 - Murder Scene 
 
