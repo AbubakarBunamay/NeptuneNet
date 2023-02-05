@@ -10,7 +10,7 @@ screen reedscene_investigation():
         hotspot (19, 601, 601, 462) action Jump ("knockedcase")
         hotspot (657, 593, 608, 477) action Jump ("Guadycane")
         hotspot (1306, 599, 598, 464) action Jump ("shoeprint")     
-
+        hotspot (12, 501, 1888, 69) action Jump ("first_murder")
 
 
 label headwound:
@@ -68,7 +68,6 @@ label bloodstains:
 
 label knockedcase:
 
-    jump first_murder
     #Ezekiel Jones
 
     ej "Seems like a struggle happened"
@@ -128,11 +127,12 @@ label shoeprint:
 screen windchimescene_investigation():
 
     imagemap:
-        ground "images/windchime_murderscene.jpg"
-        hotspot (1, 0, 638, 498) action Jump ("bareFeet")
-        hotspot ((646, 0, 623, 489)) action Jump ("knife")
-        hotspot ((1290, 7, 618, 473)) action Jump ("w_bloodstains")
-        hotspot ((15, 597, 591, 455)) action Jump ("shoePrints") 
+        ground "images/windchine_scene.jpg"
+        hotspot (19, 95, 919, 317) action Jump ("bareFeet")
+        hotspot (1120, 157, 612, 234) action Jump ("knife")
+        hotspot (61, 588, 831, 434) action Jump ("w_bloodstains")
+        hotspot (1142, 597, 622, 441) action Jump ("shoePrints")
+        hotspot (91, 462, 1713, 123) action Jump ("third") 
 
    
 
@@ -146,11 +146,16 @@ label bareFeet:
     #Ezekiel Jones
     ej "Seems like it really was someone stealing his shoes."
 
-    jump windchimescene_investigation
+    menu chime_barefeet_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
 label knife:
     
-    scene bodybruise
+    scene knife
 
     #Susan Murphy 
     sm "Enough blood on that thing to feed Dracula for a month."
@@ -158,7 +163,12 @@ label knife:
     #Ezekiel Jones
     ej "And judging by those stab wounds, it's certainly the murder weapon."
 
-    jump windchimescene_investigation
+    menu chime_knife_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
     
 label w_bloodstains:
@@ -171,7 +181,12 @@ label w_bloodstains:
     #Susan Murphy 
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
 
-    jump windchimescene_investigation
+    menu chime_stains_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
 
 label shoePrints:
@@ -184,5 +199,52 @@ label shoePrints:
     #Ezekiel Jones
     ej "Say, didn't he think that McQuaid or Dalton were the only others with access to his shoes?"
     
-    jump windchimescene_investigation
+    menu chime_shoeprint_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
+screen patriciascene_investigation():
+
+    imagemap:
+        ground "images/white_murder_scene.jpg"
+        hotspot (109, 356, 705, 358) action Jump ("handprint")
+        hotspot (1017, 356, 869, 305) action Jump ("bruising")
+        hotspot (928, 0, 41, 1079) action Jump ("thirdmurder")
+   
+
+label handprint:
+
+    scene handprint
+    
+    #Susan Murphy 
+    sm "Looks like his shoes were removed."
+
+    #Ezekiel Jones
+    ej "Seems like it really was someone stealing his shoes."
+
+    menu white_handprint_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen patriciascene_investigation
+        "Done Investigating":
+            jump thirdmurder 
+
+label bruising:
+    
+    scene bruising
+
+    #Susan Murphy 
+    sm "Enough blood on that thing to feed Dracula for a month."
+
+    #Ezekiel Jones
+    ej "And judging by those stab wounds, it's certainly the murder weapon."
+
+    menu white_bruising_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen patriciascene_investigation
+        "Done Investigating":
+            jump thirdmurder 
