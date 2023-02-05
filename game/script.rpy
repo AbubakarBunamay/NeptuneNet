@@ -1812,29 +1812,37 @@ label third:
 
     #Susan Murphy 
     sm "McQuaid."
+    voice"scene58_N5_sm_1.mp3"
 
     #Michael Mcquaid
     mm "Murphy. How goes the investigation? Any luck finding who killed poor William?"
+    voice "scene58_N2_mm_1.mp3"
 
     #Susan Murphy 
     sm "We've got a few leads that we're following."
+    voice "scene58_N5_sm_2.mp3"
 
     #Michael Mcquaid
     mm "That sounds like stalling, detective. Are you sure you know what you're doing?"
+    voice "scene58_N2_mm_2.mp3"
 
     #Susan Murphy Thoughts
     sm "Yeah, yeah. Rub it in, why don't you?"
- 
+    voice "scene58_N5_sm_3.mp3"
+
     #Michael Mcquaid
     mm "Or maybe you're misleading us. Maybe you know exactly who the killer is and are just trying to protect yourself."
+    voice "scene58_N2_mm_3.mp3"
 
     #Ezekiel Jones
     ej "Don't be ridiculous, man! I was with Susan the whole time yesterday. She couldn't have murdered William."
+    voice "scene58_N9_ej_1.mp3"
 
     #Michael Mcquaid
     mm "If you say so, faithful Watson. Now, do you have any questions for me?"
+    voice "scene58_N2_mm_4.mp3"
 
-    #Scene 59 - Michale McQuaid / Ezekiel Jones
+    #Scene 59 - Michael McQuaid / Ezekiel Jones
 
     #Asking About Ezekiel Possible Choice
 
@@ -1842,29 +1850,38 @@ label third:
  
     #Susan Murphy 
     sm "Ezekiel, would you mind leaving for a moment?"
+    voice "scene59_N5_sm_1.mp3"
 
     #Narrator
     "Ezekiel looks at you, mildly confused, but obeys."
+    voice "scene59_N1_1.mp3"
 
     #Ezekiel Jones
     ej "Sure…"
+    voice "scene59_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "Why is he here, McQuaid?"
+    voice "scene59_N5_sm_3.mp3"
 
     #Michael Mcquaid
     mm "What?"
+    voice "scene59_N2_mm_1.mp3"
 
     #Susan Murphy 
     sm "Why is Ezekiel here? Compared to all your other guests, he seems like a saint. What possible secrets could he have?"
+    voice "scene59_N5_sm_3.mp3"
 
     #Narrator
     "Michael laughs in her face."
+    voice "scene59_N1_2.mp3"
 
     #Michael Mcquaid
     mm "Oh, my dear detective, you think the good doctor is a saint? Oh, what a laugh. I won't tell but believe me when I say that man has more than enough secrets for blackmail."
+    voice "scene59_N2_mm_2.mp3"
 
     mm "Now, do you have anything else I can do for you?"
+    voice "scene59_N2_mm_3.mp3"
 
     #Scene 60 - Michael McQuaid / White Sisters
 
@@ -1872,28 +1889,37 @@ label third:
 
     #Susan Murphy 
     sm "What can you tell me about the Whites?"
+    voice "scene60_N5_sm_1.mp3"
 
     #Michael Mcquaid
     mm "Oh, not much. Wealthy socialites who started from the bottom now they're where they are."
+    voice "scene60_N2_mm_1.mp3"
 
     #Susan Murphy 
     sm "Did they have any prior relationship with either of the deceased?"
+    voice "scene60_N5_sm_2.mp3"
 
     #Michael Mcquaid
     mm "Certainly not with William, but they move in the same circles as Rachel. If you're asking if they had the motive or even means to murder either one."
+    voice "scene60_N2_mm_2.mp3"
 
     mm "They may not be entirely honest, but they're certainly not murderers. At least, not ones that would beat a man to death or stab one."
+    voice "scene60_N2_mm_3.mp3"
 
     #Susan Murphy 
     sm "What do you mean by that, McQuaid?"
+    voice "scene60_N5_sm_3.mp3"
 
     #Michael Mcquaid
     mm "Let's just say that they didn't exactly come by all that money, honestly. Though I'm not sure, Patty has the wits to know where their money came from."
+    voice "scene60_N2_mm_4.mp3"
 
     mm "Now, I'm sure you have more important things to do. Catch us a murderer, Ms. Holmes!"
+    voice "scene60_N2_mm_5.mp3"
 
     #Narrator
     "Susan walks out of the dining and sees Deborah White."
+    voice "scene60_N1_1.mp3"
 
     #Scene 61 - Deborah White 
 
@@ -1903,12 +1929,15 @@ label third:
 
     #Susan Murphy 
     sm "Hey Deborah, can I ask you a couple of questions?"
+    voice "scene61_N5_sm_1.mp3"
 
     #Deborah White
     dw "Sure. What would you like to know?"
+    voice "scene61_N12_dw_1.mp3"
 
     #Susan Murphy 
     sm "Do you know where I can find Patty?"
+    voice "scene61_N5_sm_2.mp3"
 
     #Scene 62 - Debeorah White / Where is patty 
 
@@ -1918,27 +1947,35 @@ label third:
 
     #Susan Murphy 
     sm "It's unusual to see you without your sister. Where is she?"
+    voice "scene62_N5_sm_1.mp3"
 
     #Deborah White
     dw "I don't know. I've been worried sick looking for her all morning."
+    voice "scene62_N12_dw_1.mp3"
 
     #Susan Murphy 
     sm "Does she usually go off on her own?"
+    voice "scene62_N5_sm_2.mp3"
 
     #Deborah White
     dw "When we are home, she usually does her own thing, but she always checks in with me." 
+    voice "scene62_N12_dw_2.mp3"
 
     #Susan Murphy 
     sm "Hmm, and she didn't tell you anything this time?"
+    voice "scene62_N5_sm_3.mp3"
 
     #Deborah White
     dw "Nothing, I woke up, and she was already gone. Maybe she got seasick again and went out for some air, but I would have found her by now. I hope she's okay."
+    voice "scene62_N12_dw_3.mp3"
 
     #Susan Murphy 
     sm "Well, I'm walking around a lot today so if I find her, I will let you know."
+    voice "scene62_N5_sm_4.mp3"
 
     #Deborah White
     dw "Thanks, Susan."
+    voice "scene62_N12_dw_4.mp3"
 
     #Scene 63 - Debeorah White / Rachel Reaction
 
@@ -1948,38 +1985,50 @@ label third:
 
     #Susan Murphy 
     sm "You girls went looking for Rachel on the first night, right? When you found her, how was she?"
+    voice "scene63_N5_sm_1.mp3"
 
     #Deborah White
     dw "Yea, Patty and I went to look for her and found her on the deck. She was okay, just catching some air. Don't you remember? I told you this."
+    voice "scene63_N12_dw_1.mp3"
 
     #Susan Murphy 
     sm "Yea, just needed a recap. When you found her and told her, how did she react?"
+    voice "scene63_N5_sm_2.mp3"
 
     #Deborah White
     dw "About the same as anyone would react. She didn't believe me at first, but eventually, she broke down crying. Patty was doing her best to try and console her."
+    voice "scene63_N12_dw_2.mp3"
 
     #Susan Murphy 
     sm "Oh really?"
+    voice "scene63_N5_sm_3.mp3"
 
     #Deborah White
     dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
+    voice "scene63_N12_dw_3.mp3"
 
     dw "After she broke down, she immediately rushed back to the dining hall. We went   along with her as well."
+    voice "scene63_N12_dw_4.mp3"
 
     #Susan Murphy 
     sm "Hmm, okay. Thanks for sharing"
+    voice "scene63_N5_sm_4.mp3"
 
     #Deborah White
     dw "Is that all you had to ask me?"
+    voice "scene63_N12_dw_5.mp3"
 
     #Susan Murphy 
     sm "For now, yes. I'll keep looking around for Patty. Good luck."
+    voice "scene63_N5_sm_5.mp3"
 
     #Deborah White
     dw "Thanks, Susan, you're such a God send!"
+    voice "scene63_N12_dw_6.mp3"
 
     #Narrator
     "Susan goes to the bedrooms to go and check on Rachel."
+    voice "scene_N1_1.mp3"
 
     #navigating to Rachel Cabin
 
@@ -1993,21 +2042,26 @@ label third:
 
     #Narator
     "A very sad looking Rachel opens the cabin door for Susan."
+    voice "scene64_N1_1.mp3"
 
     #Susan Murphy 
     sm "Hey Rachel, just coming to check up on you. How are you?"
+    voice "scene64_N5_sm_1.mp3"
 
     #Rachel Reed
     rar "I lost my husband. I'm miserable."
 
     #Susan Murphy 
     sm "Yea, no one can blame you for that. I just wanted to ask a couple of questions. Is that okay?"
+    voice "scene64_N5_sm_2.mp3"
 
     #Narator
     "Rachel Shrugs"
+    voice "scene64_N1_2.mp3"
 
     #Rachel Reed
     rar "I guess."
+    voice "scene64_N11_rar_1.mp3"
 
     #Scene 65 - Rachel Reed / Diamond Cane
 
@@ -2017,21 +2071,27 @@ label third:
 
     #Susan Murphy 
     sm "You were seen carrying a Diamond Cane. Where did you get it from?"
+    voice "scene65_N5_sm_1.mp3"
 
     #Rachel Reed
     rar "From Richard. He bought it for me as an anniversary present. Sure, it cost a lot of money, but he bought it to apologize for being a little extra mean back then. Business wasn't good, but it got better."
+    voice "scene65_N11_rar_1.mp3"
 
     #Rachel Reed
     rar "The gesture meant more to me than the stupid cane."
+    voice "scene65_N11_rar_2.mp3"
 
     #Susan Murphy 
     sm "Did you misplace it at any time?"
+    voice "scene65_N5_sm_2.mp3"
 
     #Rachel Reed
     rar "No. As soon as we boarded, we went to the room and changed for dinner. I left it there."
+    voice "scene65_N11_rar_3.mp3"
 
     #Susan Murphy 
     sm "Oh, okay."
+    voice "scene65_N5_sm_3.mp3"
 
     #Scene 66 - Rachel Reed / About Richard
 
@@ -2041,40 +2101,53 @@ label third:
 
     #Susan Murphy 
     sm "Is it okay if I ask about Richard?"
+    voice "scene66_N5_sm_1.mp3"
 
     #Rachel Reed
     rar "*Nods* Hmm-hmm."
+    voice "scene66_N11_rar_1.mp3"
 
     #Susan Murphy 
     sm "How long have you known each other?"
+    voice "scene66_N5_sm_2.mp3"
 
     #Rachel Reed
     rar "Since primary school. He's truly the same person, just a bit more refined now… or was anyway..."
+    voice "scene66_N11_rar_2.mp3"
 
     #Susan Murphy 
     sm "Does he have a lot of enemies?"
+    voice "scene66_N5_sm_3.mp3"
 
     #Rachel Reed
     rar "Yes, unfortunately. For better or worse, he acted very loudly and was a very proud man. Which made him an acquired taste."
+    voice "scene66_N11_rar_3.mp3"
 
     #Susan Murphy 
     sm "I'm guessing more people didn't like the taste as opposed to the few that did."
+    voice "scene66_N5_sm_4.mp3"
 
     #Rachel Reed
     rar "That's why you're the detective."
+    voice "scene66_N11_rar_4.mp3"
 
     rar "Are we done yet? I would like to go and lay back down again."
+    voice "scene66_N11_rar_5.mp3"
 
     #Susan Murphy 
     sm "Sure, that's all I wanted to ask."
+    voice "scene66_N5_sm_5.mp3"
 
     #Rachel Reed
     rar "Bye.."
+    voice "scene66_N11_rar_6.mp3"
 
     #Narrator
     "Rachel closes the door on Susan."
+    voice "scene66_N1_1.mp3"
 
     "Susan heads up on deck for a breath of fresh air."
+    voice "scene66_N1_2.mp3"
 
     #navgating to the desk
 
@@ -2090,18 +2163,23 @@ label third:
 
     #Narrator
     "Susan spotted Ezekiel the moment she walks out on the deck."
+    voice "scene67_N1_1.mp3"
 
     #Susan Murphy 
     sm "Good afternoon Mr. Jones."
+    voice "scene67_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "Good afternoon Ms. Murphy."
+    voice "scene67_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "I need to ask you a few questions."
+    voice "scene67_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "Okay... What do you need to know?"
+    voice "scene67_N9_ej_2.mp3"
 
     #Scene 68 - Ezekiel Jones / Whereabouts
 
@@ -2114,15 +2192,19 @@ label third:
 
     #Ezekiel Jones
     ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."
+    voice "scene68_N9_ej_1.mp3"
 
     #Susan Murphy thoughts
     sm "That is correct. However, there were a few times when we might have separated."
+    voice "scene68_N3_smt_1.mp3"
 
     #Susan Murphy 
     sm "There were a few times we separated. Where did you go during those times?"
+    voice "scene68_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "I just separated to use the bathroom, go to bed, or help give you information if it involved us finding the murderer."
+    voice "scene68_N9_ej_2.mp3"
 
     #Scene 69 - Ezekiel Jones / whereabouts
     
@@ -2132,20 +2214,26 @@ label third:
 
     #Susan Murphy 
     sm "Yes. However, there was one time when we separated. It is suspicious how it was only a few minutes, but it could have been enough time to find information before you kill someone."
+    voice "scene69_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "We have gone over this before. I am not the killer. You can ask a few people on the boat to prove it to you."
+    voice "scene69_N9_ej_1.mp3"
 
     ej "I have been talking to them to gather information. I have nothing to hide."
+    voice "scene69_N9_ej_2.mp3"
 
     #Susan Murphy 
     sm "I understand. Apologies for questioning your trust."
+    voice "scene69_N5_sm_2.mp3"
 
     #Narrator
     "Ezekiel calms himself down."
+    voice "scene69_N1_1.mp3"
 
     #Ezekiel Jones
     ej "Think nothing of it. If at any point you suspect me, I shall answer any questions truthfully."
+    voice "scene69_N9_ej_3.mp3"
 
     #Scene 70 - Ezekiel Jones / Motive
 
@@ -2155,15 +2243,19 @@ label third:
 
     #Susan Murphy 
     sm "Did you notice any changes in behaviour from William?"
+    voice "scene70_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "I have not noticed much from him. He seemed normal."
+    voice "scene70_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "In the brief moments when we separated, had you spotted him?"
+    voice "scene70_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "Yes, I had."
+    voice "scene70_N9_ej_2.mp3"
 
     #Scene 71 - Ezekiel Jones / Motive
 
@@ -2173,23 +2265,31 @@ label third:
 
     #Susan Murphy 
     sm "It seems suspicious that you did meet him, and in those brief moments when we weren't together, he turns up dead the next day."
+    voice "scene71_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "It is suspicious. I can confirm that I have an alibi and some important information."
+    voice "scene71_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "Oh, and what might that be?"
+    voice "scene71_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "I can confirm that I was not the last person to see him that day. It was, in fact, (player to insert name here). I have not seen him since"
+    voice "scene71_N9_ej_2.mp3"
 
     #Susan Murphy Thoughts
     sm "That is some important information."
+    voice "scene71_N3_smt_1.mp3"
+
     #Susan Murphy
     sm "Thank you."
+    voice "scene71_N5_sm_3.mp3"
 
     #Ezekiel Jones
     ej "You're Welcome."
+    voice "scene71_N9_ej_3.mp3"
 
     #Scene 72 - Ezekiel Jones / Motive
 
@@ -2199,27 +2299,35 @@ label third:
 
     #Susan Murphy
     sm " It is not my intention to anger you. I just need to know what you have against him."
+    voice "scene72_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "Why I have nothing against him. While I have seen him recently, I have no reason or motive to go against him."
+    voice "scene72_N9_ej_1.mp3"
 
     #Susan Murphy
     sm "Were you the last to see him?"
+    voice "scene72_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "I can confirm that I was not the last person to see him that day. It was, in fact, (the player asked to insert name here). I have not seen him since."
+    voice "scene72_N9_ej_2.mp3"
 
     #Susan Murphy Thoughts
     sm "That is an important piece of information."
+    voice "scene72_N5_sm_3.mp3"
 
     #Susan Murphy
     sm "Thank you, Ezekiel."
+    voice "scene72_N5_sm_4.mp3"
 
     #Ezekiel Jones
     ej "My pleasure."
+    voice "scene72_N9_ej_3.mp3"
 
     #Narrator
     "Susan turns and catches David Dalton’s eye."
+    voice "scene72_N1_1.mp3"
 
     #Scene 73 - David Dalton
 
@@ -2229,15 +2337,19 @@ label third:
 
     #David Dalton
     dd "More questions, Ms. detective? Haven't I proven my innocence to you?"
+    voice "scene73_N4_dd_1.mp3"
 
     #Ezekiel Jones
     ej "Well, William didn't make the footprints that lead away from his own body."
+    voice "scene73_N9_ej_1.mp3"
 
     #Susan Murphy
     sm "We're just covering our bases, Dalton. We have two dead bodies on this boat, and the odds of there being two separate murderers are laughable."
+    voice "scene73_N5_sm_1.mp3"
 
     #Susan Murphy
     sm "Now, we do have a couple more questions."
+    voice "scene73_N5_sm_2.mp3"
 
     menu dalton_pathIvestigation:
         "Choose Path of Investigation"
@@ -2248,31 +2360,41 @@ label third:
             
             #Susan Murphy
             sm "Where were you around the time of William's murder?"
+            voice "scene74_N5_sm_1.mp3"
 
             #David Dalton
             dd "I was here, taking a smoke break. And before you ask, Mr. McQuaid can confirm it. I asked him for permission."
+            voice "scene74_N4_dd_1.mp3"
 
             #Susan Murphy
             sm "Is McQuaid the only one who can verify that?"
+            voice "scene74_N5_sm_2.mp3"
 
             #David Dalton
             dd "I beg your pardon?"
+            voice "scene74_N4_dd_2.mp3"
 
             #Susan Murphy
             sm "Well, it's awfully convenient that the one person on the boat you have a prior relationship with, someone who speaks of you very highly, is the person you point to as your witness."
+            voice "scene74_N5_sm_3.mp3"
 
             sm "Convenient enough that it beggars' belief, some might say."
+            voice "scene74_N5_sm_4.mp3"
 
             #Ezekiel Jones
             ej "What she's trying to say is that it's suspicious that your boss is the only one who saw you."
+            voice "scene74_N9_ej_1.mp3"
 
             #Susan Murphy
             sm "I think he got the point." 
+            voice "scene74_N5_sm_5.mp3"
 
             #David Dalton
             dd "I can't help if people aren't out and about with a murderer on the boat! In any case, ask around. Someone else probably saw me up here."
+            voice "scene74_N4_dd_3.mp3"
 
             dd "It's not like I was exactly hiding."
+            voice "scene74_N4_dd_4.mp3"
 
             menu daltonchoice_whereabouts:
                 "Choose your path of investigation"
@@ -2282,38 +2404,47 @@ label third:
                     
                     #Susan Murphy
                     sm "Especially coupled with yesterday's 20-minute window…"
-
+                    voice "scene75_N5_sm_1.mp3"
                     #Narrator
                     "Annoyance at being questioned quickly turns to a wave of quiet anger on Dalton's face."
 
                     #David Dalton
                     dd "Are you accusing me of murder, detective?"
+                    voice "scene75_N4_dd_1.mp3"
 
                     #Susan Murphy
                     sm "No, no! I'm just trying to eliminate possibilities!"
+                    voice "scene75_N5_sm_2.mp3"
 
                     #David Dalton
                     dd "Are you sure you're a real detective? It sure seems you're trying to pin it on the butler…"
+                    voice "scene75_N4_dd_2.mp3"
 
                     #Susan Murphy Thoughts
                     sm "Wait, could he…? No, that's impossible. Would McQuaid have told him?"
+                    voice "scene75_N3_smt_1.mp3"
 
                     #Susan Murphy
                     sm "I assure you that's not the case. I simply want to be sure that I catch the right person."
+                    voice "scene75_N5_sm_3.mp3"
 
                     #Narrator
                     "Dalton gives Susan a dark look."
+                    voice "scene75_N1_1.mp3"
 
                     #David Dalton
                     dd "Sure, whatever you say, look, my break is about ove-"
+                    voice "scene75_N4_dd_3.mp3"
 
                     #Narrator
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
-                    
+                    voice "scene75_N1_2.mp3"
+
                     #----------------- End of Convo
 
                     #Narrator 
                     "Susan and Ezekiel rocket down the hallway… "
+                    voice "scene75_N1_3.mp3"
 
                     jump fourth
 
@@ -2335,20 +2466,26 @@ label third:
 label probemotive:
     #Susan Murphy
             sm "Before he died, did you notice any changes in behaviour from William?"
-        
+            voice "scene76_N5_sm_1.mp3"
+
             #David Dalton
             dd "What do you mean, Ms. Murphy?"
+            voice "scene76_N4_dd_1.mp3"
 
             #Susan Murphy
             sm "Anything. Did he seem more blue than usual, or perhaps aggressive? Maybe you had some odd conversation with him. Anything, really."
+            voice "scene76_N5_sm_2.mp3"
 
             #David Dalton
             dd "Well… he was asking about our lockers last night. He seemed really bothered about the idea of someone getting into his."
+            voice "scene76_N4_dd_2.mp3"
 
             dd "Do we have to worry about a thief, as well as a murderer, on this boat?"
+            voice "scene76_N4_dd_3.mp3"
 
             #Susan Murphy
             sm "Hopefully not. We've got enough to deal with."
+            voice "scene76_N5_sm_3.mp3"
 
             #Choice during motive
 
@@ -2361,20 +2498,26 @@ label probemotive:
                     
                     #Susan Murphy
                     sm "This conversation, did he… accuse you of anything?"
+                    voice "scene77_N5_sm_1.mp3"
 
                     #Narrator
                     "Dalton's eyes flick between you and Ezekiel, filled with suspicion."
+                    voice "scene77_N1_1.mp3"
 
                     #David Dalton
                     dd "No, he didn't. Did he say something to you? I mean. I wouldn't steal from the kid. If that's what you're asking."
+                    voice "scene77_N4_dd_1.mp3"
 
                     dd "Why? Did he say something?"
+                    voice "scene77_N4_dd_2.mp3"
 
                     #Susan Murphy
                     sm "No, it's just-"
+                    voice "scene77_N5_sm_2.mp3"
 
                     #Narrator
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
+                    voice "scene77_N1_2.mp3"
 
                     #----------- End of convo
 
@@ -2382,6 +2525,7 @@ label probemotive:
 
                     #Narrator
                     "Susan and Ezekiel rocket down the hallway… "
+                    voice "scene77_N1_3.mp3"
 
                     jump fourth
 
@@ -2391,46 +2535,60 @@ label probemotive:
                     
                     #Susan Murphy
                     sm "Did William mention being suspicious of anyone in particular during this conversation?"
+                    voice "scene78_N5_sm_1.mp3"
 
                     #David Dalton
                     dd "Not as such, but he did seem concerned about the lock he was using. Apparently, the boss gave it to him when he asked about the security of the lockers."
-                
+                    voice "scene78_N4_dd_1.mp3"
+
                     #Ezekiel Jones
                     ej "What do you mean \"concerned\" ?"
+                    voice "scene78_N9_ej_1.mp3"
 
                     #David Dalton
                     dd "I don't really know. He seemed to think that Mr. McQuaid might have a copy of the key, but what he'd want in William's locker…"
+                    voice "scene78_N4_dd_2.mp3"
 
                     dd "Wait, weren't the two of you asking about shoes yesterday? Something about a shoeprint? Was William the murderer?"
+                    voice "scene78_N4_dd_3.mp3"
 
                     #Ezekiel Jones
                     ej "Unlikely, since he's kicked the bucket."
+                    voice "scene78_N9_ej_2.mp3"
 
                     #David Dalton
                     dd "Maybe there was only one murder he wanted to commit. Couldn\'t he have?"
+                    voice "scene78_N4_dd_4.mp3"
 
                     #Narrator
                     "You interrupt Dalton."
-                    
+                    voice "scene78_N1_1.mp3"
+
                     #Susan Murphy
                     sm "He wasn't the killer, Dalton. There's too much evidence that conflicts with that."
+                    voice "scene78_N5_sm_2.mp3"
 
                     #David Dalton
                     dd "Alright, but maybe it was Mr. McQuaid? After all, he gave William the lock and invited you all here to blackmail you."
+                    voice "scene78_N4_dd_5.mp3"
 
                     #Ezekiel Jones
                     ej "That's unlikely. He was with everyone else at the time of the first murder."
+                    voice "scene78_N9_ej_3.mp3"
 
                     #Susan Murphy
                     sm "As Ezekiel says, it's unlikely that-"
+                    voice "scene78_N5_sm_3.mp3"
 
                     #Narrator
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
-                    
+                    voice "scene78_N1_2.mp3"
+
                     #----------------- End of Convo
 
                     #Narrator 
                     "Susan and Ezekiel rocket down the hallway… "
+                    voice "scene78_N1_3.mp3"
 
                     jump fourth
 
@@ -2440,33 +2598,43 @@ label fourth:
 
     #Narrator 
     "…letting themselves into the Neptune's finely appointed washroom, they find the hunched form of Deborah White, crying over the newly deceased Patricia White."
+    voice "scene79_N1_1.mp3"
 
     #Ezekiel Jones
     ej "Oh, Patty…"
+    voice "scene79_N9_ej_1.mp3"
 
     #Susan Murphy
     sm "Deborah, what happened here?"
+    voice "scene79_N5_sm_1.mp3"
 
     #Deborah White
     dw "I couldn't find Patty anywhere, and I looked around the boat all day for her."
+    voice "scene79_N12_dw_1.mp3"
 
     #Narrator
     "Deborah's words start to slur together as her panic lends speed to her mouth. By the time she becomes intelligible again, all she says is:"
+    voice "scene79_N1_2.mp3"
 
     #Deborah White
     dw "And now she's dead!"
+    voice "scene79_N12_dw_2.mp3"
 
     #Susan Murphy
     sm "It'll be alright, Deborah. I'll catch the one who did this. Ezekiel, could you…"
+    voice "scene79_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "Of course. Debbie, please, come with me."
+    voice "scene79_N9_ej_2.mp3"
 
     #Narrator
     "Ezekiel leads the weeping White sister out of the bathroom, leaving Susan alone with a finely dressed corpse."
+    voice "scene79_N1_3.mp3"
 
     #Susan Murphy Thoughts
     sm "Well, time to get to work."
+    voice "scene79_N5_sm_3.mp3"
 
     #Entering the 3rd Crime Scene
 
@@ -2478,6 +2646,7 @@ label fourth:
 
     #Susan Murphy 
     sm "Not much to go by. I need some rest, and we can reconvene tomorrow morning."
+    voice "scene81_N5_sm_1.mp3"
 
     #------------------------- End of day 3
 
@@ -2491,26 +2660,36 @@ label fourth:
 
     #Narrator
     "Susan awakes in her room, feeling blissfully well rested for a moment, before remembering the situation she's in."
+    voice "scene82_N1_1.mp3"
 
     #Susan Murphy Thoughts
     sm "God, we need to catch this maniac. There aren't that many of us left."
+    voice "scene82_N3_smt_1.mp3"
 
     sm "Okay, think, what do I know? The killer finds Richard in his suite and beats him, to death, with his wife's cane, apparently wearing William's shoes."
+    voice "scene82_N3_smt_2.mp3"
 
     #Susan Murphy
     sm "So they're smart enough to cover his tracks, to confuse whoever investigates. Clearly, whoever did it wanted us to think it was one of those two."
+    voice "scene82_N5_sm_1.mp3"
 
     sm "Then the next day, William is murdered after we ask about his shoes and cause him to panic. Maybe he asked around and stumbled upon the real killer."
+    voice "scene82_N5_sm_2.mp3"
 
     sm "So he ends up dead… in the kitchen. Who else would have been in the kitchen with William?"
+    voice "scene82_N5_sm_3.mp3"
 
     sm "And the next day, poor Patty ends up dead in the bathroom, strangled by a left-handed man."
+    voice "scene82_N5_sm_4.mp3"
 
     sm "Left-handed man… in the kitchen."
+    voice "scene82_N5_sm_5.mp3"
 
     sm "That's it I have figured out! I know who it is!"
+    voice "scene82_N5_sm_6.mp3"
 
     sm "I need to call everyone to the dining hall!"
+    voice "scene82_N5_sm_7.mp3"
 
     #To the Dining Hall
 
@@ -2522,72 +2701,98 @@ label fourth:
 
     #Narrator
     "After calling everyone to the dining hall Susan starts explaining why everyone is in the room."
+    voice "scene83_N1_1.mp3"
 
     #Susan Murphy
     sm "I have figured out who the Murderer is."
+    voice "scene83_N5_sm_1.mp3"
 
     #Narrator 
     "The entire dining hall became silent soon with whispers and murmurs filling the area."
+    voice "scene83_N1_2.mp3"
 
     #Susan Murphy
     sm "But first, McQuaid, I have a question."
+    voice "scene83_N5_sm_2.mp3"
 
     #Michael McQuaid
     mm "What, another? Surely you have everything you need, Ms. Murphy if you know who the killer is."
+    voice "scene83_N2_mm_1.mp3"
 
     #Susan Murphy
     sm "Indulge me. You brought us here. You owe us that much."
+    voice "scene83_N5_sm_3.mp3"
 
     #Michael McQuaid
     mm "Fine, ask your question."
+    voice "scene83_N2_mm_2.mp3"
 
     #Susan Murphy
     sm "Why?"
+    voice "scene83_N5_sm_4.mp3"
 
     #Michael McQuaid
     mm "Excuse me, detective?"
+    voice "scene83_N2_mm_3.mp3"
 
     #Susan Murphy
     sm "Why invite us here at all? Other than blackmail, I mean. You could have asked us to your home or just sent letters, for God's sake!"
+    voice "scene83_N5_sm_5.mp3"
 
     sm "So why invite us here? Hell, I'm just a detective. Why invite me?"
+    voice "scene83_N5_sm_6.mp3"
 
     #Michael McQuaid
     mm "You want to know why Murphy? The great detective can't figure it out? Fine. I'll tell you why."
+    voice "scene83_N2_mm_4.mp3"
 
     mm "Each of you is here for a different reason. I invited Richard and Rachel simply because that Reed Industries is a direct competitor, and I want it gone."
+    voice "scene83_N2_mm_5.mp3"
 
     mm "The Whites, on the other hand, are a little bit more complicated. They're rich, yes, but they're also well-connected. Deborah knows people, knows how to get what she wants."
+    voice "scene83_N2_mm_6.mp3"
 
     mm "And Patty, well, she had her own connections of a more intimate nature."
+    voice "scene83_N2_mm_7.mp3"
 
     mm  "The good doctor? He's performed certain procedures at my behest that I wouldn't want to be known to the public."
+    voice "scene83_N2_mm_8.mp3"
 
     mm "And then there's you. Tell me, lady Holmes, how did you first meet me?"
+    voice "scene83_N2_mm_9.mp3"
 
     #Susan Murphy
     sm "You hired me. You hired me to find a corporate spy who had stolen some important documents."
+    voice "scene83_N5_sm_7.mp3"
 
     #Michael McQuaid
     mm "I-"
+    voice "scene83_N2_mm_10.mp3"
 
-    #Narator
+    #Narrator
     "McQuaid gives Susan a long, hard look. After a moment, he rests his head in his hands."
-    
+    voice "scene83_N1_3.mp3"
+
     #Michael McQuaid
     mm "You don't know?"
+    voice "scene83_N2_mm_11.mp3"
 
     #Susan Murphy
     sm "What don't I know, McQuaid?"
+    voice "scene83_N5_sm_8.mp3"
 
     #Michael McQuaid
     mm "And here I thought you were one of the great detectives. He wasn't a corporate spy!"
+    voice "scene83_N2_mm_12.mp3"
 
     mm "He was a federal agent. And those documents? Some damning evidence. I thought you knew! I thought that you'd take me down any day now!"
+    voice "scene83_N2_mm_13.mp3"
 
     mm "That's why I invited you along, detective. I thought you were actually good at your job. But, unfortunately, it seems I was mistaken."
+    voice "scene83_N2_mm_14.mp3"
 
     mm "And I went through all the trouble of finding blackmail for you too. Now tell us, little miss detective, who's the killer?"
+    voice "scene83_N2_mm_15.mp3"
 
     menu killer_choice:
 
@@ -2599,47 +2804,63 @@ label fourth:
 
             #Susan Murphy
             sm "David Dalton, of course. David Dalton, who was mysteriously absent for 20 minutes around thetime of Richard's murder."
+            voice "scene84_N5_sm_1.mp3"
 
             sm "David Dalton, who would have been a normal sight in the kitchen for William. David Dalton, who served drinks with his left hand."
+            voice "scene84_N5_sm_2.mp3"
 
             #Narrator
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+            voice "scene84_N5_sm_1.mp3"
 
             #David Dalton 
             dd "Very clever, a regular Sherlock we have in our midsts. It's too bad that all of that deductive power will end up at the bottom of the ocean."
+            voice "scene84_N4_dd_1.mp3"
 
             #Michael McQuaid
             mm "Dalton? What are you saying?"
+            voice "scene84_N2_mm_1.mp3"
 
             #David Dalton 
             dd "I've put a bomb on the boat, 'boss.' If I can't have the satisfaction of killing you all with my bare hands, then this will have to do."
+            voice "scene84_N4_dd_2.mp3"
 
             #Michael McQuaid
             mm "What? That wasn't the deal! You were supposed to get rid of them, not me!"
+            voice "scene84_N2_mm_2.mp3"
 
             #David Dalton 
             dd "Did you really think you were exempt, McQuaid? You. All of you have made my life a living hell!"
+            voice "scene84_N4_dd_3.mp3"
 
             #Ezekeil Jones
             ej "What the hell are you talking about? I've never even met you before!"
+            voice "scene84_N9_ej_1.mp3"
 
             #David Dalton 
             dd "Oh sure, you haven't. Of course, you and your rich friends haven't been laughing behind my back while I suffered!"
+            voice "scene84_N4_dd_4.mp3"
 
             dd "I was supposed to have the life that all of you have! I worked hard, and I earned it! Instead, you all just lied, cheated your way through, and then ensured that I couldn't follow!"
+            voice "scene84_N4_dd_5.mp3"
 
             dd "I waited for this for years! And finally, finally, I have my chance! Did you really think I'd leave you alive, McQuaid? After everything you did to me?"
+            voice "scene84_N4_dd_6.mp3"
 
             dd "And now it's ruined! Ruined by a fake detective!"
+            voice "scene84_N4_dd_7.mp3"
 
             #Susan Murphy Thoughts
             sm "Damn."
+            voice "scene84_N3_smt_1.mp3"
 
             #Narrator
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            voice "scene84_N5_sm_2.mp3"
 
             #David Dalton 
             dd "That's right, the woman you all trusted with your lives didn't earn her position! Just like all of you, she cheated her way to the top!"
+            voice "scene84_N4_dd_8.mp3"
 
             jump finale
 
@@ -2649,29 +2870,38 @@ label fourth:
 
             #Susan Murphy 
             sm "Why, it’s Michael McQuaid, of course!"
+            voice "scene85_N5_sm_1.mp3"
 
             #Narrator
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+            voice "scene85_N1_1.mp3"
 
             #David Dalton 
             dd "Far be it from me to correct the professional, but I'm afraid you're wrong, Murphy. Then again, what else could we expect from a fake detective."
+            voice "scene85_N4_dd_1.mp3"
 
             #Susan Murphy Thoughts
             sm "Damn."
+            voice "scene85_N3_smt_1.mp3"
 
             #Narrator
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            voice "scene85_N1_2.mp3"
 
             #David Dalton 
             dd "That's right, you all put your trust in someone who had to cheat her way into becoming a detective! Of course, it doesn't matter now since soon you'll all be dead!"
+            voice "scene85_N4_dd_2.mp3"
 
             #Michael McQuaid
             mm "Dalton? What's the meaning of this?"
+            voice "scene85_N2_mm_1.mp3"
 
             #David Dalton 
             dd "Could you really be that stupid? Did you think I'd stick to our deal? After all, you put me through, conspiring with the rest?"
+            voice "scene85_N4_dd_3.mp3"
 
             dd "Soon, you'll all be at the bottom of the ocean where you belong, and I will have my revenge!"
+            voice "scene85_N4_dd_4.mp3"
 
             jump finale
 
@@ -2681,29 +2911,38 @@ label fourth:
 
             #Susan Murphy 
             sm "Why, it’s Ezekiel Jones, of course!"
+            voice "scene86_N5_sm_1.mp3"
 
             #Narrator
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+            voice "scene86_N1_1.mp3"
 
             #David Dalton 
             dd "Far be it from me to correct the professional, but I'm afraid you're wrong, Murphy. Then again, what else could we expect from a fake detective."
+            voice "scene86_N4_dd_1.mp3"
 
             #Susan Murphy Thoughts
             sm "Damn."
+            voice "scene86_N3_smt_1.mp3"
 
             #Narrator
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            voice "scene86_N1_2.mp3"
 
             #David Dalton 
             dd "That's right, you all put your trust in someone who had to cheat her way into becoming a detective! Of course, it doesn't matter now since soon you'll all be dead!"
+            voice "scene86_N4_dd_2.mp3"
 
             #Michael McQuaid
             mm "Dalton? What's the meaning of this?"
+            voice "scene86_N2_mm_1.mp3"
 
             #David Dalton 
             dd "Could you really be that stupid? Did you think I'd stick to our deal? After all, you put me through, conspiring with the rest?"
+            voice "scene86_N4_dd_3.mp3"
 
             dd "Soon, you'll all be at the bottom of the ocean where you belong, and I will have my revenge!"
+            voice "scene86_N4_dd_4.mp3"
 
             jump finale
 
@@ -2713,61 +2952,79 @@ label fourth:
             
             #Susan Murphy 
             sm "Why, it’s Deborah White, of course!"
+            voice "scene87_N5_sm_1.mp3"
 
             #Narrator
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+            voice "scene_N1_1.mp3"
 
             #David Dalton 
             dd "Far be it from me to correct the professional, but I'm afraid you're wrong, Murphy. Then again, what else could we expect from a fake detective."
+            voice "scene87_N4_dd_1.mp3"
 
             #Susan Murphy Thoughts
             sm "Damn."
+            voice "scene87_N3_smt_1.mp3"
 
             #Narrator
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            voice "scene_N1_2.mp3"
 
             #David Dalton 
             dd "That's right, you all put your trust in someone who had to cheat her way into becoming a detective! Of course, it doesn't matter now since soon you'll all be dead!"
+            voice "scene87_N4_dd_2.mp3"
 
             #Michael McQuaid
             mm "Dalton? What's the meaning of this?"
+            voice "scene87_N2_mm_1.mp3"
 
             #David Dalton 
             dd "Could you really be that stupid? Did you think I'd stick to our deal? After all, you put me through, conspiring with the rest?"
+            voice "scene87_N4_dd_3.mp3"
 
             dd "Soon, you'll all be at the bottom of the ocean where you belong, and I will have my revenge!"
+            voice "scene87_N4_dd_4.mp3"
 
             jump finale
 
         "Rachel Reed":
             
-            #Scene 87 - Deborah Killer
+            #Scene 88 - Rachel Reed
             
             #Susan Murphy 
             sm "Why, it’s Rachel Reed, of course!"
+            voice "scene88_N5_sm_1.mp3"
 
             #Narrator
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+            voice "scene88_N1_1.mp3"
 
             #David Dalton 
             dd "Far be it from me to correct the professional, but I'm afraid you're wrong, Murphy. Then again, what else could we expect from a fake detective."
+            voice "scene88_N4_dd_1.mp3"
 
             #Susan Murphy Thoughts
             sm "Damn."
+            voice "scene88_N5_sm_2.mp3"
 
             #Narrator
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            voice "scene88_N1_2.mp3"
 
             #David Dalton 
             dd "That's right, you all put your trust in someone who had to cheat her way into becoming a detective! Of course, it doesn't matter now since soon you'll all be dead!"
+            voice "scene88_N4_dd_2.mp3"
 
             #Michael McQuaid
             mm "Dalton? What's the meaning of this?"
+            voice "scene88_N2_mm_1.mp3"
 
             #David Dalton 
             dd "Could you really be that stupid? Did you think I'd stick to our deal? After all, you put me through, conspiring with the rest?"
+            voice "scene88_N4_dd_3.mp3"
 
             dd "Soon, you'll all be at the bottom of the ocean where you belong, and I will have my revenge!"
+            voice "scene88_N4_dd_4.mp3"
 
             jump finale
 
@@ -2780,38 +3037,50 @@ label finale:
 
     #Susan Murphy 
     sm "And there's the question we've all been asking. The motive. Every person on this boat has been laughing at you, Dalton? The first time I met you was three days ago!"
+    voice "scene89_N5_sm_1.mp3"
 
     #David Dalton 
     dd " Liar! You cheated your way to the top, just like them! And now, you'll all find yourselves at the bottom of the ocean!"
+    voice "scene89_N4_dd_1.mp3"
 
     dd "Finally, I will have my revenge!"
+    voice "scene89_N4_dd_2.mp3"
 
     #Narrator
     "With that, the intercom dies."
+    voice "scene89_N1_1.mp3"
 
     #Susan Murphy 
     sm "Ezekiel, Deborah, Rachel, had any of you ever heard of Dalton before this trip?"
+    voice "scene89_N5_sm_2.mp3"
 
     #Ezekiel Jones
     ej "He might have come to my practice once or twice, years ago, but I'm not sure."
+    voice "scene89_N9_ej_1.mp3"
 
     #Deborah White
     dw "Never. I would have remembered him."
+    voice "scene89_N12_dw_1.mp3"
 
     #Rachel Reed
     "Not as far as I can remember. Richard might have known him, though."
+    voice "scene89_N11_rar_1.mp3"
 
     #Susan Murphy 
     sm "Alright, so he's crazy. If you wanted to sink a ship, where would you put a bomb?"
+    voice "scene89_N5_sm_3.mp3"
 
     #Ezekiel Jones
     "Either the hold or the engine room. I doubt we have the time to visit both."
+    voice "scene89_N9_ej_2.mp3"
 
     #Michael McQuaid
     mm "I, er, have an elegant solution to that one. The boat's hold and engine room are the same place. Just take the stairs at the end of the hall."
+    voice "scene89_N2_mm_1.mp3"
 
     #Susan Murphy 
     sm "All right. Ezekiel, follow me."
+    voice "scene89_N5_sm_4.mp3"
 
     #Scene 90 - The Bomb
 
@@ -2819,12 +3088,15 @@ label finale:
 
     #Narrator
     "Susan and Ezekiel sprint down the hall and practically fly down the stairs into the hold, where they discover a bomb strapped to the engine."
+    voice "scene90_N1_1.mp3"
 
     #Susan Murphy 
     sm "There it is!"
+    voice "scene90_N5_sm_1.mp3"
 
     #Narrator
     "Ezekiel examines the bomb closely, flinching as it ticks."
+    voice "scene90_N1_1.mp3"
 
     #Scene 91 - The password
 
@@ -2832,12 +3104,15 @@ label finale:
 
     #Ezekiel Jones
     ej "We must be able to defuse it. See those three lights? It looks like we have three choices."
+    voice "scene91_N9_ej_1.mp3"
 
     #Susan Murphy 
     sm "Come on, think! What would Dalton make the password? How are we supposed to know this?"
+    voice "scene91_N5_sm_1.mp3"
 
     #Ezekiel Jones
     ej "He must have given us a hint in that long winded speech of his."
+    voice "scene91_N9_ej_2.mp3"
 
     #Susan Murphy 
     sm "The password must be his motive… hmm."
@@ -2852,15 +3127,19 @@ label finale:
 
             #Susan Murphy 
             sm "No, wait-"
+            voice "scene92_N5_sm_1.mp3"
 
             #Narrator
             "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
+            voice "scene92_N1_1.mp3"
 
             #Narrator
             "Others are drowned, caught in Neptune's Net."
+            voice "scene92_N1_2.mp3"
 
             #Narrator
             "With them died the knowledge of what happened on this five-day cruise and any evidence that the passengers were anything less than upstanding members of the community."
+            voice "scene92_N1_3.mp3"
 
             scene game_over
 
@@ -2877,9 +3156,11 @@ label finale:
 
             #Susan Murphy 
             sm "That's it! Now, to find Dalton. Ezekiel, you stay here. Grab him if he comes back."
+            voice "scene93_N5_sm_1.mp3"
 
             #Ezekiel Jones
             ej "Right."
+            voice "scene93_N9_ej_1.mp3"
 
             #Scene 94 - The hallway 
 
@@ -2887,12 +3168,15 @@ label finale:
 
             #Narrator
             "Susan dashes off, finding herself in the hallway."
+            voice "scene94_N1_1.mp3"
 
             #Susan Murphy 
             sm "Where would he be? He was on the intercom earlier. What rooms would have a microphone for the intercom."
+            voice "scene94_N5_sm_1.mp3"
 
             #Susan Murphy 
             sm "The helm. He must be at the helm."
+            voice "scene94_N5_sm_2.mp3"
 
             #Scene 95 - the helm
 
@@ -2900,41 +3184,54 @@ label finale:
 
             #Narrator 
             "Susan makes her way to the ship's helm, stepping cautiously inside."
+            voice "scene95_N1_1.mp3"
 
             #David Dalton 
             dd "You're too late, Ms. Holmes. The boat will explode, taking us to the bottom, where you all belong!"
+            voice "scene95_N4_dd_1.mp3"
 
             #Susan Murphy 
             sm "I'm afraid that's incorrect, Dalton. We've already defused the bomb. Come quietly, and this can all be over."
+            voice "scene95_N5_sm_1.mp3"
 
             #David Dalton 
             dd "Why should I? You all laughed at me! Even if I'm not sent to the chair, you all will make sure that I never get another job!"
+            voice "scene95_N4_dd_2.mp3"
 
             dd "You've all conspired against me. Why should I trust your word now?"
+            voice "scene95_N4_dd_3.mp3"
 
             #Susan Murphy 
             sm "There was never a conspiracy, Dalton. McQuaid's used you, pinned your failure on us."
+            voice "scene95_N5_sm_2.mp3"
 
             #David Dalton 
             dd "No! You're lying! Just like you lied about being a detective, I can't trust anything you say! If my bomb doesn't do it, I'll kill you myself. "
+            voice "scene95_N4_dd_4.mp3"
 
             #Narrator
             "Dalton lunges for Susan, but before he can act, Susan has her gun drawn and aimed."
+            voice "scene95_N1_1.mp3"
 
             #Susan Murphy 
             sm "Is this worth your life, Dalton? Now come quietly. Please, I don't want to hurt you. Just come with me."
+            voice "scene95_N5_sm_3.mp3"
 
             #Narrator 
             "Dalton hesitates for a moment."
+            voice "scene95_N1_2.mp3"
 
             #David Dalton 
             dd "You know if you arrest me, I will reveal all your dirty little secrets. Even if I can't kill you, I'll ruin you."
+            voice "scene95_N4_dd_5.mp3"
 
             #Susan Murphy 
             sm "As attempts to make me drop my guard, that one's weak. Now come with me."
+            voice "scene95_N5_sm_4.mp3"
 
             #Narrator 
             "Susan escorts her captive to the dining hall."
+            voice "scene95_N1_3.mp3"
 
             #Scene 96 - Ending | Dining Hall
 
@@ -2942,43 +3239,57 @@ label finale:
 
             #Susan Murphy 
             sm "And here we have him, ladies and gentlemen. Our killer. One of you, go get Ezekiel from the hold."
+            voice "scene96_N5_sm_1.mp3"
 
             #Narrator
             "Deborah nods and leaves to get Ezekiel."
+            voice "scene96_N1_1.mp3"
 
             #Michael McQuaid
             mm "You little traitor! After everything I've done for you, you start killing my guests! Why I should-"
+            voice "scene96_N2_mm_1.mp3"
 
             #Susan Murphy 
             sm "Hold it right there, McQuaid. I seem to remember you mentioning a deal with Dalton here. What might the terms of that deal be?"
+            voice "scene96_N5_sm_2.mp3"
 
             #Narrator 
             "Michael becomes pale."
+            voice "scene96_N1_2.mp3"
 
             #David Dalton 
             dd "I can tell you exactly what that deal was. Blackmail wasn't enough for you, eh McQuaid? No, you wanted them gone."
+            voice "scene96_N4_dd_1.mp3"
 
             dd "So he found me with my vendetta, a perfect patsy! The deal, Murphy, was for me to kill you, and then he would protect me from the authorities."
+            voice "scene96_N4_dd_2.mp3"
 
             dd "Brave enough to order a death, but not enough to do it himself."
+            voice "scene96_N4_dd_3.mp3"
 
             #Narrator
             "Ezekiel walks in with Deborah."
+            voice "scene96_N1_3.mp3"
 
             #Ezekiel Jones
             ej "Ah, I see you've found him. What shall we do with him?"
+            voice "scene96_N9_ej_1.mp3"
 
             #Susan Murphy 
             sm "Is there anywhere on the ship that can be locked from the outside?"
+            voice "scene96_N5_sm_3.mp3"
 
             #Ezekiel Jones
             ej "There were a couple of doors leading out from the hold that seemed to have locks."
+            voice "scene96_N9_ej_2.mp3"
 
             #Susan Murphy 
             sm "Those'll do. Put him in one and our illustrious host in the other. Then when we get back to Honolulu, we can hand them over to the authorities."
+            voice "scene96_N5_sm_4.mp3"
 
             #Ezekiel Jones
             ej "Alright. I'll keep an eye on them, just in case."
+            voice "scene96_N9_ej_3.mp3"
 
             #Scene 97 - THE END
 
@@ -2986,10 +3297,13 @@ label finale:
 
             #Narrator
             "The two culprits were put in their makeshift cells while a course was charted back to the harbour. After a nerve-wracking day, they finally returned."
+            voice "scene97_N1_1.mp3"
 
             "Michael McQuaid and David Dalton were handed over to the authorities. Before the trial, secrets were spilled, and lives ruined."
+            voice "scene97_N1_2.mp3"
 
             "They may have escaped Neptune's Net, but the lives of those on board would never be the same again."
+            voice "scene97_N1_3.mp3"
 
             return 
 
@@ -3000,15 +3314,19 @@ label finale:
 
             #Susan Murphy 
             sm "No, wait-"
+            voice "scene92_N5_sm_1.mp3"
 
             #Narrator
             "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
+            voice "scene92_N1_1.mp3"
 
             #Narrator
             "Others are drowned, caught in Neptune's Net."
+            voice "scene92_N1_2.mp3"
 
             #Narrator
             "With them died the knowledge of what happened on this five-day cruise and any evidence that the passengers were anything less than upstanding members of the community."
+            voice "scene92_N1_3.mp3"
 
             scene game_over
 
