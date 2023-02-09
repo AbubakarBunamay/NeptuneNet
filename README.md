@@ -1,7 +1,7 @@
 #3F02-Game <br>
 
-**Naming Conventions**<br>
-1.Files names to not have Special Symbols(!,?.,#,@) & spaces eg. *pic 1.jpeg*<br>
+**Naming Convention**<br>
+1.Files names to not have Special Symbols(!,?.,#,@) & spaces, use hyphens or underescore instead<br>
 
 2.Use simple and clear names when naming files. eg. bulletsound.mp3<br>
 
@@ -21,18 +21,14 @@ Audio: MP3 only please<br>
     - Project<br>
     
 
-
-**How to Build**<br>
-Install/Run Ren'py<br>
-Store in root folder ( Where renpy.exe is located)<br>
-Refresh in the program screen (top right)<br>
-
-*How to upload Files:*<br>
-- Video Link <br>
+**Three Channels**<br>
+    - Alpha<br>
+        - v1.0 released
+    - Beta<br>
+    - Final<br>
 
 
-*How to use Github:*<br>
-- https://www.youtube.com/watch?v=nhNq2kIvi9s<br>
+
 
 
 

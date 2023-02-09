@@ -243,11 +243,11 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
+        vbox:
             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+            xpos 200
+            ypos 750
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -286,53 +286,109 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
+    if renpy.get_screen("main_menu"):
+        hbox:
+            style_prefix "hnavigation"
 
-    vbox:
-        style_prefix "navigation"
+            #xalign 0.5
+            #yalign 1.0
+            #yoffset -40
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+            spacing gui.navigation_spacing
 
-        spacing gui.navigation_spacing
+            if main_menu:
 
-        if main_menu:
+                #textbutton _("Start") action Start()
+                imagebutton auto "gui/mm_start_%s.png" xpos 1012 ypos 485 focus_mask True action Start() hovered [ Play("sound","audio/click.mp3")]
 
-            textbutton _("Start") action Start()
+            else:
 
-        else:
+                textbutton _("History") action ShowMenu("history")
 
-            textbutton _("History") action ShowMenu("history")
+                textbutton _("Save") action ShowMenu("save")
 
-            textbutton _("Save") action ShowMenu("save")
+            #textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Load") action ShowMenu("load")
+            imagebutton auto "gui/mm_load_%s.png" xpos 850 ypos 578 focus_mask True action ShowMenu("load") hovered [ Play("sound","audio/click.mp3")]
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+            #textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
+            imagebutton auto "gui/mm_pref_%s.png" xpos 612 ypos 652 focus_mask True action ShowMenu("preferences") hovered [ Play("sound","audio/click.mp3")]
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            if _in_replay:
 
-        elif not main_menu:
+                textbutton _("End Replay") action EndReplay(confirm=True)
 
-            textbutton _("Main Menu") action MainMenu()
+            elif not main_menu:
 
-        textbutton _("About") action ShowMenu("about")
+                textbutton _("Main Menu") action MainMenu()
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            #textbutton _("About") action ShowMenu("about")
 
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            imagebutton auto "gui/mm_about_%s.png" xpos 340 ypos 742 focus_mask True action ShowMenu("about") hovered [ Play("sound","audio/click.mp3")]
 
-        if renpy.variant("pc"):
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+                ## Help isn't necessary or relevant to mobile devices.
+                #textbutton _("Help") action ShowMenu("help")
 
+                imagebutton auto "gui/mm_help_%s.png" xpos 170 ypos 836 focus_mask True action ShowMenu("help") hovered [ Play("sound","audio/click.mp3")]
+
+            if renpy.variant("pc"):
+
+                ## The quit button is banned on iOS and unnecessary on Android and
+                ## Web.
+                #textbutton _("Quit") action Quit(confirm=not main_menu)
+                imagebutton auto "gui/mm_quit_%s.png" xpos 40 ypos 920 focus_mask True action Quit(confirm=not main_menu) hovered [ Play("sound","audio/click.mp3")]
+    else:
+        vbox:
+            style_prefix "navigation"
+
+            xpos gui.navigation_xpos
+            yalign 0.5
+            xalign 0.1
+
+            spacing gui.navigation_spacing
+
+            if main_menu:
+
+                textbutton _("Start") action Start()
+
+            else:
+
+                textbutton _("History") action ShowMenu("history")
+
+                textbutton _("Save") action ShowMenu("save")
+
+            textbutton _("Load") action ShowMenu("load")
+
+            textbutton _("Preferences") action ShowMenu("preferences")
+
+            if _in_replay:
+
+                textbutton _("End Replay") action EndReplay(confirm=True)
+
+            elif not main_menu:
+
+                textbutton _("Main Menu") action MainMenu()
+
+            textbutton _("About") action ShowMenu("about")
+
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+                ## Help isn't necessary or relevant to mobile devices.
+                textbutton _("Help") action ShowMenu("help")
+
+            if renpy.variant("pc"):
+
+                ## The quit button is banned on iOS and unnecessary on Android and
+                ## Web.
+                textbutton _("Quit") action Quit(confirm=not main_menu)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
+style hnavigation_button is navigation_button
+style hnavigation_button_text is navigation_button_text
 
 style navigation_button:
     size_group "navigation"
@@ -340,7 +396,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
-
+    
+style hnavigation_button_text:
+    xalign 0.5
 
 ## Main Menu screen ############################################################
 ##
@@ -385,7 +443,6 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -559,7 +616,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Game made for IASC-3F02 course :)")
 
 
 style about_label is gui_label
@@ -720,7 +777,6 @@ screen preferences():
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
-
                     vbox:
                         style_prefix "radio"
                         label _("Display")
