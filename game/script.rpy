@@ -232,11 +232,12 @@ label start:
     show susan at left
     voice "audio/Character Voices/Character Voices/Narrator 5 - Scene 7-2.mp3"
     sm "Yeah,really got his goat. Seems very uptight. I don’t remember him being like this."
-
+    
     #Ezekiel Jones
     show zeke at right
     voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7.mp3"
     ej "Don’t be too harsh on him, McQuaid. It was an honest mistake. The poor boy just tripped."
+    hide susan
 
     #Michael McQuaid 
     show michael at left
@@ -247,10 +248,12 @@ label start:
 
 
     #Ezekiel Jones 
+    show zeke at right
     voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7-3.mp3"
     ej "If you worked for him, that’s why. He’s always nice until he’s not."
 
     #Susan Murphy 
+    show susan at left
     voice "audio/Character Voices/Character Voices/Narrator 5 - scene 7-3.mp3"
     sm "Seems like you know our host quite a bit."
 
