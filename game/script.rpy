@@ -7,6 +7,7 @@
 #Characters will have initials as variable i.e Susan Murphy = sm but rar for the wife of reed
 
 define sm = Character("Susan Murphy")
+define smt = Character("Susan Murphy (Thoughts)")
 define ej = Character("Dr.Ezekial Jones")
 define rr = Character("Richard Reed")
 define rar = Character("Rachel Reed") 
@@ -65,7 +66,7 @@ label start:
     # Susan thought  
     show susan
     voice "audio/Character Voices/Character Voices/Narrator 3 - scene 3.mp3"
-    sm "McQuaid, McQuaid, where have I heard that name before? Oh right, I did a case for him. Well, I could use a vacation after today…Sure, why the heck not!"
+    smt "McQuaid, McQuaid, where have I heard that name before? Oh right, I did a case for him. Well, I could use a vacation after today…Sure, why the heck not!"
 
     # Scene 4 - Yatch
 
@@ -99,10 +100,9 @@ label start:
     hide susan 
     
     #play sound susan cabin thought
-    #thoughts screen maybe ( displaying that susan is thinking)
     show susan
     voice "audio/Character Voices/Character Voices/Narrator 3 - scene 5.mp3"
-    sm " Okay, time for me to get dolled up for dinner. I hope the food is going to be good."
+    smt " Okay, time for me to get dolled up for dinner. I hope the food is going to be good."
     hide susan
 
 
@@ -164,7 +164,7 @@ label start:
     #Susan Thoughts 
     show susan
     voice "audio/Character Voices/Character Voices/Narrator 3 - scene 7-2.mp3"
-    sm "Well, seems like McQuaid is in high spirits tonight. But why invite me? I stand out among these high-society types like a pebble among rhinestones. Hmm."
+    smt "Well, seems like McQuaid is in high spirits tonight. But why invite me? I stand out among these high-society types like a pebble among rhinestones. Hmm."
     hide susan
     
 
@@ -206,7 +206,7 @@ label start:
     #Susan Murphy Thoughts
     show susan
     voice "audio/Character Voices/Character Voices/Narrator 3 - scene 7-3.mp3"
-    sm "Well, Richard seems to be a very happy camper. I wonder if he’s always like this… Does the same go for his wife?"
+    smt "Well, Richard seems to be a very happy camper. I wonder if he’s always like this… Does the same go for his wife?"
     hide susan
 
     #Michael McQuaid 
@@ -218,18 +218,6 @@ label start:
     #Narrator 
     voice "audio/Character Voices/Character Voices/Narrator 1 - scene 7-6.mp3"
     "The waitstaff member leaves, looking abashed."
-
-    #Ezekiel Jones
-    show zeke at right
-    voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7.mp3"
-    ej "Don’t be too harsh on him, McQuaid. It was an honest mistake. The poor boy just tripped."
-
-    #Michael McQuaid 
-    show michael at left
-    voice "audio/Character Voices/Character Voices/Narrator 2 - scene 7-10.mp3"
-    mm "I expect a certain amount of professionalism, Doctor, and I’d thank you not to tell me my business. Now then, everyone, please continue to enjoy the party."
-    hide michael
-    hide zeke 
 
     #Narrator  
     voice "audio/Character Voices/Character Voices/Narrator 1 - scene 7-7.mp3" 
@@ -244,6 +232,19 @@ label start:
     show susan at left
     voice "audio/Character Voices/Character Voices/Narrator 5 - Scene 7-2.mp3"
     sm "Yeah,really got his goat. Seems very uptight. I don’t remember him being like this."
+
+    #Ezekiel Jones
+    show zeke at right
+    voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7.mp3"
+    ej "Don’t be too harsh on him, McQuaid. It was an honest mistake. The poor boy just tripped."
+
+    #Michael McQuaid 
+    show michael at left
+    voice "audio/Character Voices/Character Voices/Narrator 2 - scene 7-10.mp3"
+    mm "I expect a certain amount of professionalism, Doctor, and I’d thank you not to tell me my business. Now then, everyone, please continue to enjoy the party."
+    hide michael
+    hide zeke 
+
 
     #Ezekiel Jones 
     voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7-3.mp3"
@@ -264,19 +265,22 @@ label start:
         "What are you looking to do?"
         "Go Mingle":
 
+            #Susan Murphy 
+            show susan
+            voice "audio/Character Voices/Character Voices/Narrator 5 - scene 7-4.mp3"
+            sm "A pleasure to make your acquaintance. Well, Zeke, I think I’ll go mingle a bit. See you around."
+            hide susan
+
             jump mingle 
 
         "Get to know Ezekiel":
 
-            #Susan Murphy 
-            voice "audio/Character Voices/Character Voices/Narrator 5 - scene 7-4.mp3"
-            sm "A pleasure to make your acquaintance. Well, Zeke, I think I’ll go mingle a bit. See you around."
-
             #Ezekiel Jones
-            
+            show zeke at right          
             ej "Our host said you are an amazing private eye. Do you work for the police as a detective? You must have immensely high intelligence."
 
-            #Susan Murphy 
+            #Susan Murphy
+            show susan at left 
             sm "Nonsense, I am smart. I have always had help. I always make sure to have criminals brought to justice."
 
             #Ezekiel Jones
@@ -306,6 +310,8 @@ label start:
 
             #Ezekiel Jones
             ej "The pleasure is mine, thank you."
+            hide zeke
+            hide susan
 
             jump mingle
 
@@ -417,17 +423,13 @@ label mingle:
     rar "Hrrk! I think I’m going to be sick."
     hide rachel
 
-    #Narrator 
+    #Narrator
+    voice "audio/Character Voices/Narrator1Scene7Step19.mp3" 
     "Heads turn as Rachel runs from the room, sickened by Michael’s words."
 
     #Susan Murphy thoughts
-    show susan
-    voice "audio/Character Voices/Narrator1Scene7Step19.mp3"
-    sm "He couldn’t mean… but how could he… No, that’s impossible."
-
-    #Susan Murphy thoughts
     voice "audio/Character Voices/Narrator3Scene7Step20.mp3"
-    sm "He couldn’t mean… but how could he… No, that’s impossible."
+    smt "He couldn’t mean… but how could he… No, that’s impossible."
 
     #Susan Murphy Thoughts
     voice "audio/Character Voices/Narrator3Scene7Step21.mp3"
@@ -449,8 +451,14 @@ label mingle:
     #Susan Murphy Thoughts
     show susan
     voice "audio/Character Voices/Narrator3Scene7Step24.mp3"
-    sm "Building a list? Why would he possibly be building a list on me? *Sigh* I can’t ever get a vacation. I should probably check on Rachel. I wonder where she ran off too."
+    smt "Building a list? Why would he possibly be building a list on me? *Sigh* I can’t ever get a vacation. I should probably check on Rachel. I wonder where she ran off too."
     hide susan 
+
+    #Scene 9 
+
+    #narrator voice
+    voice"audio/Character Voices/Narrator1Scene8Step1.mp3"
+    "Susan leaves the room in search of Rachel. She is now in the Hallway."
 
     #Scene 8 
     scene hallway
@@ -459,11 +467,7 @@ label mingle:
     
     #Navigate here to hallway
 
-    #Scene 9 
-
-    #narrator voice
-    voice"audio/Character Voices/Narrator1Scene8Step1.mp3"
-    "Susan leaves the room in search of Rachel. She is now in the Hallway."    
+        
 
     #Susan Murphy
     show susan
@@ -610,7 +614,7 @@ label mingle:
     #Patricia White
     hide deborah
     show patricia at right
-    voice"audio/Character Voices/Character Voices/Narrator 10 - Scene12-36.mp3"
+    voice"audio/Character Voices/Character Voices/Narrator 10 - Scene12-37.mp3"
     pw "You don’t know that! I’m gonna die to a murderer onboard."
     voice "scene17_N10_pw_2.mp3"
 
@@ -808,8 +812,8 @@ label first_murder:
     #Narrator
     "Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
 
-    #Patrcia Sound Effect
-    #Retches
+    #Patrcia Sound Effect Retches
+    pw "Retches"
 
     #Deborah
     show deborah
@@ -901,7 +905,7 @@ label first_murder:
 
     #Susan Thought 
     show susan
-    sm "Thoughts: They say she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
+    smt "They say she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
 
     #Scene 27 
 
@@ -1054,6 +1058,8 @@ label first_murder:
 
     #Navigating the hallway
     scene hallway
+    show susan at left
+    show zeke at right
 
     "Navigating hallway together"
 
@@ -1063,6 +1069,8 @@ label first_murder:
             
     #Ezekiel Jones
     ej "I understand. I want this killer brought to justice, and I want to help you. I will answer any questions to the best of my ability."
+    hide zeke
+    hide susan
 
     menu ezekiel_inv:
         "Choose path of investigation"
@@ -1165,10 +1173,6 @@ label first_murder:
         "Ask about training":
             
             #Scene 35 - Ezekiel Jones / Training (Ezekiel's Room)
-
-            #asking about training possible choice
-
-            "Asking about Training"
 
             #Susan Murphy 
             sm "I just have a few more questions for you, Ezekiel."

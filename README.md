@@ -22,17 +22,9 @@ Audio: MP3 only please<br>
     
 
 
-**How to Build**<br>
-Install/Run Ren'py<br>
-Store in root folder ( Where renpy.exe is located)<br>
-Refresh in the program screen (top right)<br>
-
-*How to upload Files:*<br>
-- Video Link <br>
 
 
-*How to use Github:*<br>
-- https://www.youtube.com/watch?v=nhNq2kIvi9s<br>
+
 
 
 
