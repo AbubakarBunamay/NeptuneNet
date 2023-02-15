@@ -197,7 +197,7 @@ label shoePrints:
     sm "At a glance, those are a match for William's. Poor kid, murdered for his footwear."
     
     #Ezekiel Jones
-    ej "Say, didn't he think that McQuaid or Dalton were the only others with access to his shoes?"
+    ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
     
     menu chime_shoeprint_inv:
         "What's your next step"

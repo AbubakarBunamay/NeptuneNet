@@ -1,6 +1,6 @@
 ﻿# The Neptune script
-
-
+init python:
+    persistent.investigation_choices_viewed = []
 #Characters are:
 # Susan Murphy, Dr. Ezekial Jones, Richard Reed, Rachel Reed, Deborah White, Patricia White, Michael McQuaid, William Windchime, David Dalton, Lloyd Lewis.
 
@@ -95,7 +95,7 @@ label start:
 
     #Susan Murphy
     voice "audio/Character Voices/Character Voices/Narrator 5 - scene 5-3.mp3"
-    sm "Okay, thanks for the information."
+    sm "Alright, thank you."
     hide david
     hide susan 
     
@@ -112,7 +112,7 @@ label start:
     #Scene 6 - Navigation 
 
     scene hallway
-
+    #Footsteps here?  
     "Walking your way to the dining hall"
     #Navigation here
 
@@ -128,7 +128,7 @@ label start:
     #Michael speaking as the player enters the room
     show michael
     voice "audio/Character Voices/Character Voices/Narrator 2 - scene 6.mp3"
-    mm "Ah, and here’s our final guest arriving! Welcome, Susan. Please, take a seat. Now that we’re all here, the party can start!"
+    mm "Ah, and here comes our final guest of the evening! Welcome, Susan. Please, take a seat. Now that we’re all here, the party can start!"
 
     voice "audio/Character Voices/Character Voices/Narrator 2 - scene 7-3-1.mp3"
     mm "I know some of you are already acquainted with each other, but to help break the ice, why don’t we have a few introductions?"
@@ -158,7 +158,8 @@ label start:
     #Michael McQuaid
     show michael 
     voice "audio/Character Voices/Character Voices/Narrator 2 - scene 7-8.mp3"
-    mm "Speaking of here’s dinner now!"
+    #Utensil coming in sound?
+    mm "Ah, and here’s dinner now!"
     hide michael
     
     #Susan Thoughts 
@@ -195,7 +196,8 @@ label start:
 
     #Richard Reed 
     voice "audio/Character Voices/Character Voices/Narrator 7 - scene 7-3.mp3"
-    rr "Michael, see to it that your server is disciplined! I’m going to go get changed out of this mess!"
+    rr "Michael, see to it that your server is disciplined! I’m going to get changed out of this mess!"
+
     hide richard
     hide william
     
@@ -242,7 +244,8 @@ label start:
     #Michael McQuaid 
     show michael at left
     voice "audio/Character Voices/Character Voices/Narrator 2 - scene 7-10.mp3"
-    mm "I expect a certain amount of professionalism, Doctor, and I’d thank you not to tell me my business. Now then, everyone, please continue to enjoy the party."
+    mm "I expect a certain amount of professionalism, Doctor, and I’d thank you not to tell me how to run my business. Now then, everyone, please continue to enjoy the party."
+
     hide michael
     hide zeke 
 
@@ -250,7 +253,7 @@ label start:
     #Ezekiel Jones 
     show zeke at right
     voice "audio/Character Voices/Character Voices/Narrator 9 - scene 7-3.mp3"
-    ej "If you worked for him, that’s why. He’s always nice until he’s not."
+    ej "You just haven’t known him long enough. He’s always nice until he’s not."
 
     #Susan Murphy 
     show susan at left
@@ -266,39 +269,42 @@ label start:
 
     menu scene_7_choice:
         "What are you looking to do?"
+        #Go mingle Choice    
         "Go Mingle":
 
             #Susan Murphy 
             show susan
             voice "audio/Character Voices/Character Voices/Narrator 5 - scene 7-4.mp3"
-            sm "A pleasure to make your acquaintance. Well, Zeke, I think I’ll go mingle a bit. See you around."
+            sm "A pleasure to make your acquaintance. Well, Ezekiel, I think I’ll go mingle a bit. See you around."
             hide susan
 
             jump mingle 
 
+
+        #Get to ezekiel 
         "Get to know Ezekiel":
 
             #Ezekiel Jones
             show zeke at right          
-            ej "Our host said you are an amazing private eye. Do you work for the police as a detective? You must have immensely high intelligence."
+            ej "Our host said you are an amazing private eye. That kind of job takes brains."
 
             #Susan Murphy
             show susan at left 
-            sm "Nonsense, I am smart. I have always had help. I always make sure to have criminals brought to justice."
+            sm "Oh, I’m just as smart as anyone, and besides, I have always had help. But, I always manage to catch my crooks."
 
             #Ezekiel Jones
-            ej "That is very honourable of you. We are living in a tough time, so your job is very important. It may be weird to say this, but if there is anything I can help you with for any reason, don't hesitate to call me."
+            ej "I don’t envy the job, but I’m glad there’s someone doing it. If there is anything I can help you with for any reason, don't hesitate to call me."
 
             #Susan Murphy 
-            sm "Thank you, Ezekiel. You truly are a kind man. But enough about me, what about you? What do you do?"
+            sm "Thank you, Ezekiel. You’re a good man. But enough about me, what about you? What do you do?"
 
             #Ezekiel Jones
             ej "I am a doctor. I help by prescribing the medication that my patients need."
 
-            ej "After the war, my job has been rough because there are many people who need this medication to help them get better."
+            ej "After the war, my job has been rough because there are so many people who need my help."
 
             #Susan Murphy 
-            sm "Your job is no small feat. Your job is also as tough as mine, maybe even tougher."
+            sm "Your job is no small feat. Your job is as tough as mine, maybe even tougher."
 
             sm "Just as you said, if there is anything I can help you with, don't hesitate to ask."
 
@@ -372,7 +378,7 @@ label mingle:
 
     #Narrator 
     voice "audio/Character Voices/Character Voices/Narrator 1 - scene 7.mp3"
-    "A ringing sound is heard, and Michael taps his glass with a spoon like he is making a toast."
+    "A ringing sound is heard, and Michael taps his glass with a spoon as if making a toast."
 
     #Michael McQUiad
     show michael
@@ -442,6 +448,19 @@ label mingle:
     #Ezekiel Jones 
     show zeke at left
     voice "audio/Character Voices/Narrator9Scene7Step22.mp3"
+    ej "I don’t believe you, McQuaid. You’re bluffing."
+
+    #Michael McQuaid 
+    show michael at right
+    voice "audio/Character Voices/Narrator2Scene7Step23.mp3"
+    mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs" 
+
+    #Narrator
+    "As the crowd’s eyes turn towards him, Ezekiel pales."
+
+    #Ezekiel Jones 
+    show zeke at left
+    voice "audio/Character Voices/Narrator9Scene7Step22.mp3"
     ej "What do you want, McQuaid?"
 
     #Michael McQuaid 
@@ -489,7 +508,7 @@ label mingle:
 
     #Narator Voice
     voice"audio/Character Voices/Narrator1Scene9Step3.mp3"
-    "Susan enters the washroom but finds no one."
+    "Susan enters the washroom but finds no one there."
 
     #Susan Murphy Voice
     show susan
@@ -575,7 +594,7 @@ label mingle:
     
     #Michael Mcquaid
     voice"audio/Character Voices/Narrator2Scene12Step29.mp3"
-    mm "Well, it wasn’t me. I was here the entire time? You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
+    mm "Well, it wasn’t me. I was here the entire time! You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
     voice "scene17_N2_mm_2.mp3"
 
     #Susan Murphy
@@ -585,7 +604,7 @@ label mingle:
 
     #Michael Mcquaid
     voice"audio/Character Voices/Character Voices/Narrator 2 - Scene 12-35.mp3"
-    mm "As far as we know, you could have killed him." 
+    mm "As far as we know, you could have killed him!" 
     hide michael
     voice "scene17_N2_mm_3.mp3"
 
@@ -597,21 +616,21 @@ label mingle:
 
     #Susan Murphy
     voice"audio/Character Voices/Character Voices/Narrator 5 - Scene12-36.mp3"
-    sm "You can’t be serious. You all saw me leave here a few seconds ago." 
+    sm "You can’t be serious! You all saw me leave here a few seconds ago!" 
     voice "scene17_N5_sm_4.mp3"
 
     #Patricia White
     hide zeke
     show patricia at right
     voice"audio/Character Voices/Character Voices/Narrator 10 - Scene12-36.mp3"
-    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered."
+    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered!"
     voice "scene17_N10_pw_1.mp3"
 
     #Deborah White
     hide patricia
     show deborah at right
     voice"audio/Character Voices/Character Voices/Narrator 12- Scene12- 36.mp3"
-    dw "Calm down, Patti. Nothing is gonna happen to you."
+    dw "Calm down, Patty. Nothing is gonna happen to you."
     voice "scene17_N12_dw_1.mp3"
 
     #Patricia White
@@ -717,7 +736,8 @@ label mingle:
 
     #Narrator
     voice"audio/Character Voices/Narrator1Scene12Slide41Step1.mp3"
-    "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."
+    "Susan and Ezekiel leave to go to the crime scene. Deborah and Patricia leave moments after to try and find Rachel."
+
     #voice "scene17_N1_3.mp3"
 
     #Scene 18 
@@ -728,8 +748,6 @@ label mingle:
 
     "Navigating to the murder scene"
 
-    #Narrator
-    "While looking at a crime scene, click on points of interest around the area to find clues."
     #voice "scene18_N1_1.mp3"
 
     #Scene 19
@@ -761,7 +779,8 @@ label first_murder:
     #Ezekiel Jones 
     show zeke at right
     voice"audio/Character Voices/Character Voices/Narrator 9_Scene13-45-line1.mp3"
-    ej "I'm afraid everyone's probably going to be asleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
+    ej "I'm afraid everyone's probably gone to sleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
+ 
     #voice "scene20_N9_ej_1.mp3"
 
     #Susan Murphy
@@ -801,7 +820,7 @@ label first_murder:
     scene hallway
     
     #Narrator
-    "Susan is walking through the halls and hears some commotion coming from a bathroom."
+    "Susan is walking through the halls and hears some commotion coming from the bathroom."
 
     #Scene 23 
     #The player navigates to the Bathroom
@@ -854,12 +873,12 @@ label first_murder:
     #Patricia White
     hide deborah
     show patricia at right
-    pw "Yes, we did, *Hrph*"
+    pw "Yes, ma'am, Hrph"
     hide patricia
 
     #Deborah White
     show deborah at right
-    dw  "Yea, we found her. Thank goodness she was okay. Physically."
+    dw  "Yea, we found her. Thank goodness she was okay. Physically, at least."
 
     #Susan Murphy
     sm "Where was she?"
@@ -877,7 +896,7 @@ label first_murder:
     sm "Hmm, okay. Well, I'll try to go and find her."
 
     #Deborah White
-    dw "I think she's in the Dining Hall. When I saw her last, she was still distressed, and McQuaid was with her."
+    dw "I think she's in the Dining Hall. When I saw her last, she was still distressed, and Michael was with her"
 
     #Susan Murphy 
     sm "Thanks. Will you two be okay?"
@@ -908,7 +927,7 @@ label first_murder:
 
     #Susan Thought 
     show susan
-    smt "They say she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
+    smt "They said she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
 
     #Scene 27 
 
@@ -976,6 +995,11 @@ label first_murder:
 
     sm "Exactly. Now please, if you may. Where did you go when you left the dining hall last night?"
 
+    #Rachel Reed
+    show rachel
+    rar "sigh"
+    hide rachel
+
 
     #Rachel Reed
     hide zeke 
@@ -989,7 +1013,7 @@ label first_murder:
     
     #Rachel Reed
     
-    rar "A little. It did help to calm me down. I did hear something, but I thought it was just the party or something. Oh God, what if it was Richard? I could have done something to save him! He would have been alive if I had just stayed by his side."
+    rar "A little. It helped to calm me down. I did hear something, but I thought it was just the party or something. Oh God, what if it was Richard? I could have done something to save him! He would have been alive if I had just stayed by his side."
     
 
     #Susan Murphy
@@ -1000,7 +1024,7 @@ label first_murder:
     #Ezekiel Jones
     hide rachel
     show zeke at right
-    ej "Yea, take it from me. It doesn't help anything at all."
+    ej "Yeah, take it from me. It doesn't help anything at all."
     hide zeke
     
     #Susan Murphy
@@ -1008,8 +1032,11 @@ label first_murder:
 
     #Rachel Reed
     show rachel at right
-    rar "Yes, eventually the White sisters came to help but- *sobs* all they did was made me feel worse by telling me that I lost my Richard."
+    rar "Yes, eventually the White sisters came to help but-"
+
+    rar "*sobs*"
     
+    rar "all they did was made me feel worse by telling me that I lost my Richard."
 
     #Susan Murphy
     
@@ -1017,18 +1044,20 @@ label first_murder:
     
 
     #Rachel Reed
-    rar "*sniff* Richard always had enemies. Since we were back in school, he'd always been a bit...abrasive. They'd just never understood him. Oh, my Richard. I miss you so much.."
+    rar "*sniff*"
 
+    rar "Richard always had enemies. Since we were back in school, he'd always been a bit...abrasive. They'd just never understood him. Oh, my Richard. I miss you so much.."
+    hide rachel
 
     #Ezekiel Jones
-    hide rachel
+    
     show zeke at right
     ej "Okay, that's enough. You should take some time to rest and grieve your loss."
 
 
     #Susan Murphy 
 
-    sm "Yea, I'm sorry this happened."
+    sm "Yes, I'm sorry this happened."
 
 
     #Rachel reed
@@ -1057,7 +1086,7 @@ label first_murder:
     
 
     #Narrator
-    "Susan looks at Ezekiel to confirm that he is coming with her, and then Susan leaves the Dining Hall."
+    "Susan looks at Ezekiel to confirm he is coming with her, and then Susan leaves."
 
     #Navigating the hallway
     scene hallway
@@ -1068,7 +1097,7 @@ label first_murder:
 
     #Scene 30 - Ezekiel Jones (Hallway)
 
-    sm "Ezekiel. I want to ask you a few questions."
+    sm "Ezekiel, I want to ask you a few questions."
             
     #Ezekiel Jones
     ej "I understand. I want this killer brought to justice, and I want to help you. I will answer any questions to the best of my ability."
@@ -1085,16 +1114,16 @@ label first_murder:
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
-            ej "That is an unusual thing to ask. Is there a reason why?"
+            ej "Because of the footprint, right? Do you think it’s me?"
 
             #Susan Murphy 
-            sm "Yes, there is. However, I can only say once I am certain of something."
+            sm "No, I just have to be certain. Better safe than sorry, right?"
 
             #Ezekiel Jones
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
-            sm "Yes, if you have more, please take me to them. I need to check myself."
+            sm "Yes, if you have more, please take me to them. I need to check them myself"
 
             #Ezekiel Jones
             ej "Okay, I will show you to them."
@@ -1121,7 +1150,7 @@ label first_murder:
                     #Scene 33 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
                     #Susan murphy
-                    sm "From the sound of your reaction, it looks like you are hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
+                    sm "From the sound of your reaction, it almost seems like you’re hiding something. If there isn't anything to hide, look me in the eye and say it confidently"
 
                     sm "Do you have another pair of shoes that you are hiding?"
 
@@ -1132,18 +1161,18 @@ label first_murder:
                     sm "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
 
                     #Ezekiel Jones
-                    ej "No, I don't have another pair of shoes. You are free to take a look around my room to check."
+                    ej "No, I don't have another pair of shoes. Feel free to take a look around my room to check."
 
                     #Narrator
-                    "Susan continued to check the room for anything that was hidden evidence but found nothing."
+                    "Susan continued to check the room for anything that was hidden but found nothing."
 
                     #Susan Murphy
                     sm "It seems like I was out of line. Thank you for bearing with me."
 
                     #Ezekiel Jones
-                    ej  "It is okay. I apologize for my reaction as well. I understand all you want to do is find the killer."
+                    ej  "It’s okay. I apologize for my reaction as well. I understand all you want to do is find the killer."
 
-                    ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
+                    ej "I realize you have another question. However, I need to clear my head. Meet me back at the dining hall, and we can talk there."
 
                     #Susan Murphy
                     sm "I understand. I will visit you in the dining hall to continue the conversation."
@@ -1173,89 +1202,95 @@ label first_murder:
                     #Ezekiel Jones
                     ej "It’s okay. I understand that you need to do your job. This is something you must do."
 
+                    jump training
+                    jump cont_ezekiel_inv
+
         "Ask about training":
+            jump cont_ezekiel_inv
+
+label cont_ezekiel_inv:
+
+    #Scene 35 - Ezekiel Jones / Training (Ezekiel's Room)
+
+    #Susan Murphy 
+    sm "I just have a few more questions for you, Ezekiel."
+
+    #Ezekiel Jones
+    ej "Okay, what is it you need to ask me."
+
+    #Susan Murphy 
+    sm "When examining the body, you mentioned you did some training. What kind of training did you do?"
+
+    #Ezekiel Jones
+    ej "I was a combat medic during World War 2. I had to do combat training and help people recover during the War."
+
+    #Susan Murphy
+    sm "hmm... Interesting."
+
+    #Susan Murphy Thoughts
+    sm "I need to choose my words carefully here. One wrong question, and I could low the information I need."
+
+    menu ezekiel_training:
+        "Choose path of investigation"
+        "Press Further":
             
-            #Scene 35 - Ezekiel Jones / Training (Ezekiel's Room)
+            #Scene 36 - Ezekiel Jones / Training (Ezekiel's Room) 
+
+            #pressing further possible choice
+
+            "Pressing Further"
+            
+            #Susan Murphy 
+            sm "War is a harsh time. It can traumatize people. You may be suffering from this traumatic experience."
+
+            #Ezekeil Jones
+            ej "Are you stating that because I was in a War, it harmed me so much that I continued to kill people?!"
+
+            ej "I despise violence! I don't like harming people!"
 
             #Susan Murphy 
-            sm "I just have a few more questions for you, Ezekiel."
+            sm "Yet you were in a War, and War involves killing."
 
             #Ezekiel Jones
-            ej "Okay, what is it you need to ask me."
+            ej "It is true. I am suffering. Seeing innocent people die before your eyes is painful."
 
-            #Susan Murphy 
-            sm "When examining the body, you mentioned you did some training. What kind of training did you do?"
-
-            #Ezekiel Jones
-            ej "I was a combat medic during World War 2. I had to do combat training and help people recover during the War."
-
+            ej "No matter what, I joined the War because it is my duty! I wanted to help people, not kill them!"
+            
             #Susan Murphy
-            sm "hmm... Interesting."
+            sm "I apologize, Ezekiel. I know I was rough with asking questions."
 
-            #Susan Murphy Thoughts
-            sm "I need to choose my words carefully here. One wrong question, and I could low the information I need."
+            #Narrator
+            "Ezekiel tries to calm himself down."
 
-            menu ezekiel_training:
-                "Choose path of investigation"
-                "Press Further":
-                    
-                    #Scene 36 - Ezekiel Jones / Training (Ezekiel's Room) 
+            #Ezekiel Jones
+            ej "It’s okay. You’re just doing your job."
 
-                    #pressing further possible choice
+        #Menu Option - Calm him down    
+        "Calm him down":
+            ##Scene 37 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
-                    "Pressing Further"
-                    
-                    #Susan Murphy 
-                    sm "War is a harsh time. It can traumatize people. You may be suffering from this traumatic experience."
+            #Susan Murphy 
+            sm "Being a medic in the War is tough. You are not suffering from any mental trauma, are you?"
 
-                    #Ezekeil Jones
-                    ej "Are you stating that because I was in a War, it harmed me so much that I continued to kill people?!"
+            #Ezekiel Jones
+            ej "It really hurts me to see people die. While I do admit there might be some trauma that I am facing, I can't stop doing my job to help people."
 
-                    ej "I despise violence! I don't like harming people!"
+            ej "A friend of mine was on the front lines of World War 2, and he got shot. I did my best, everything I could do to save him."
 
-                    #Susan Murphy 
-                    sm "Yet you were in a War, and War involves killing."
+            ej "But no matter how hard I tried, it wasn’t enough. He still died. It haunts me to this day."
 
-                    #Ezekiel Jones
-                    ej "It is true. I am suffering. Seeing innocent people die before your eyes is painful."
+            #Susan Murphy 
+            "That sounds rough. I am sorry for your loss. If there is anything I can do to help, don't hesitate to ask."
 
-                    ej "No matter what, I joined this War because it is my duty! I wanted to help people, not kill them!"
-                    
-                    #Susan Murphy
-                    sm "I apologize, Ezekiel. I know I was rough with asking questions."
-
-                    #Narrator
-                    "Ezekiel calms himself down."
-
-                    #Ezekiel Jones
-                    ej "It is okay. You are just doing your job."
-
-                #Menu Option - Calm him down    
-                "Calm him down":
-                    ##Scene 37 - Ezekiel Jones / Footprint (Ezekiel's Room)
-
-                    #Susan Murphy 
-                    sm "Being a medic in the War is tough. You are not suffering from any mental trauma, are you?"
-
-                    #Ezekiel Jones
-                    ej "It really hurts me to see people die. While I do admit there might be some trauma that I am facing, I can't stop doing my job to help people."
-
-                    ej "A friend of mine was on the front lines of World War 2, and he got shot. I did my best, everything I could do to save him."
-
-                    ej "But no matter how hard I tried, it was not enough. He still died. It haunts me to this day."
-
-                    #Susan Murphy 
-                    "That sounds rough. I am sorry for your loss. If there is anything I can do to help, don't hesitate to ask."
-
-                    #Ezekiel Jones
-                    ej "Thank you, Susan. That means a lot."
-                                        
-                    menu ezekiel_calmhim:
-                        "What's your next step?"
-                        "Interrogate another passenger":
-                            jump investigation_choice
-                        "Quit for the day":
-                            jump end_of_dayone                  
+            #Ezekiel Jones
+            ej "Thank you, Susan. That means a lot."
+                                
+            menu ezekiel_calmhim:
+                "What's your next step?"
+                "Interrogate another passenger":
+                    jump investigation_choice
+                "Quit for the day":
+                    jump end_of_dayone                  
   
      
    
@@ -1263,21 +1298,26 @@ label first_murder:
 
     scene hallway
 
+
     menu investigation_choice:
-        "Choose who interrogate"
-        "William Windchime":
+        "Choose who to interrogate"
+        "William Windchime" if "william" not in persistent.investigation_choices_viewed:
+            $ persistent.investigation_choices_viewed.append("william")
             jump william_inv
-        "David Dalton":
+        "David Dalton" if "david" not in persistent.investigation_choices_viewed:
+            $ persistent.investigation_choices_viewed.append("david")
             jump dalton_inv
-        "Michael McQuaid":
+        "Michael McQuaid" if "michael" not in persistent.investigation_choices_viewed:
+            $ persistent.investigation_choices_viewed.append("michael")
             jump michael_inv
         "Quit for the day":
             jump end_of_dayone
 
+
     
 
 label dalton_inv:
-
+    $ persistent.investigation_choices_viewed.append("David Dalton")
     #Scene 38 - David Dalton (Kitchen)
 
     #keeping for alpha to provide flow to the game linear mechanics
@@ -1315,7 +1355,7 @@ label dalton_inv:
             "Dalton looks taken aback."
 
             #David Dalton 
-            dd  "My shoes? Why would you ever need to see them?"
+            dd  "My shoes? W-Why would you ever need to see them?"
 
             #Susan Murphy 
             sm "Now that's a bit suspicious, Dalton. It would be a fairly innocuous request if you didn't do anything. Why not show us your shoes?"
@@ -1330,7 +1370,7 @@ label dalton_inv:
             dd  "Oh, well, why didn't you say so?"
 
             #Narrator
-            "Dalton removes his shoes and shows Susan the soles. They do not match the print found next to Richard's body."
+            "Dalton removes his shoes and shows Susan the soles. They don’t match the print found next to Richard's body."
 
             #Susan Murphy 
             sm "Well, that rules out that pair, at least. Do you have any other shoes, Dalton?"
@@ -1345,13 +1385,13 @@ label dalton_inv:
             "Dalton steps through a door into the crew quarters."
 
             #Susan Murphy 
-            sm "A thought occurs to me, Ezekiel. If all the staff lockers were in the same place,could Dalton have taken William's shoes?"
+            sm "A thought occurred to me, Ezekiel. If all the staff lockers were in the same place, could Dalton have taken William's shoes?"
 
             #Ezekiel Jones
             ej "Well-"
 
             #Narrator
-            "Dalton enters the room, carrying an identical pair of shoes to the ones he was wearing."
+            "Dalton overhears the conversation as he enters the room, carrying an identical pair of shoes to the ones he was wearing."
 
             #David Dalton
             dd "I could try, Miss Murphy, but the kid keeps a padlock on his locker. And why would I go through the effort in the first place?"
@@ -1418,7 +1458,7 @@ label dalton_inv:
                     dd "I'm not some schoolgirl going to the restroom in packs. Now, if you'll excuse me, I have some dishes to wash."
 
                     #Narrator 
-                    "Dalton turns to the sink, and Susan turns to Ezekiel."
+                    "Dalton turns to the sink, and Susan turns to Ezekiel, speaking quietly"
 
                     #Susan Murphy 
                     sm "Those wounds could definitely have been made in 20 minutes. Most fights don't take longer than a few moments, much less that long."
@@ -1453,9 +1493,9 @@ label dalton_inv:
     
 label william_inv:
     #Scene 42 - William Windchime 
-
+    $ persistent.investigation_choices_viewed.append("William Windchime")
     #Narrator
-    "William Windchime walks into the kitchen"
+    "William Windchime walks into the kitchen."
     
     #Susan Murphy 
     sm "Hello, William. We want to ask you a few questions if you don't mind."
@@ -1521,10 +1561,10 @@ label william_inv:
                     #Ezekiel Jones
                     ej "You have to admit, this seems awfully suspicious. Especially with how rude Richard was to you last night."
 
-                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough, eh?"
+                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough?"
 
                     #William Windchime
-                    ww "I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
+                    ww "I-…I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
 
                     #Narrator 
                     "William storms off."
@@ -1616,7 +1656,7 @@ label william_inv:
                     ej "To what? To murder someone? Someone who humiliated you in front o- "
 
                     #William Windchime
-                    ww "Yes! Of course, I was angry! You'd be, too, if some rich asshole screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
+                    ww "Yes! Of course, I was angry! You'd be, too, if some rich greaser screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
 
                     #Susan Murphy 
                     sm "Easy, kid, we're just covering our bases. Say, how did you end up here, anyways? You don't strike me as the type to go for a service position."
@@ -1721,7 +1761,7 @@ label michael_inv:
             sm "Yes, actually. Is there any chance that Rachel murdered her husband?"
 
             #Michael Mcquaid
-            mm "No. Whatever else they were, they loved each other more than anything."
+            mm "No. Whatever else they were, they loved each other more than anything, and that’s the truth."
 
             menu mcquaid_reeds:
                 "Choose path of investigation"
@@ -1747,7 +1787,7 @@ label michael_inv:
             #Michael Mcquaid
             mm "Sad story, that one. He's worked for me for a few months now. He hasn't said much, but I've looked into him."
 
-            mm "The kid's heir to one of the biggest lawn-decoration companies in the country, but he never wanted that."
+            mm "The kid is heir to one of the biggest lawn-decoration companies in the country, but he never wanted that."
 
             mm "It seems he wanted to travel, but the money dried up when he got to Hawaii. I asked him why he didn't just ask his parents for more money, but…"
 
@@ -1831,7 +1871,7 @@ label end_of_dayone:
     scene kitchen
 
     #Narrator
-    "she is met by Michael McQuaid and some wait staff members surrounding a new murder scene."
+    "She is met by Michael McQuaid and some wait staff members surrounding a new murder scene."
 
     #Susan Murphy 
     sm "McQuaid? What happened here?"
