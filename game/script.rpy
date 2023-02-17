@@ -1995,7 +1995,7 @@ label third:
 
     #Narrator
     voice "audio/scene59_N1_1.mp3"
-    "Ezekiel looks at you, mildly confused, but obeys."
+    "Ezekiel looks at Susan, mildly confused, but obeys."
     
 
     #Ezekiel Jones
@@ -2065,7 +2065,7 @@ label third:
 
     #Michael Mcquaid
     voice "audio/scene60_N2_mm_4.mp3"
-    mm "Let's just say that they didn't exactly come by all that money, honestly. Though I'm not sure, Patty has the wits to know where their money came from."
+    mm "Let's just say that they didn't exactly come by all that money, honestly. Though I'm not sure Patty has the wits to know where their money came from."
     
     voice "audio/scene60_N2_mm_5.mp3"
     mm "Now, I'm sure you have more important things to do. Catch us a murderer, Ms. Holmes!"
@@ -2148,12 +2148,12 @@ label third:
 
     #Deborah White
     voice "audio/scene63_N12_dw_1.mp3"
-    dw "Yea, Patty and I went to look for her and found her on the deck. She was okay, just catching some air. Don't you remember? I told you this."
+    dw "Yeah, Patty and I went to look for her and found her on the deck. She was okay, just catching some air. Don't you remember? I told you this."
     
 
     #Susan Murphy
     voice "audio/scene63_N5_sm_2.mp3" 
-    sm "Yea, just needed a recap. When you found her and told her, how did she react?"
+    sm "Yeah, just needed a reminder. When you found her and told her, how did she react?"
     
 
     #Deborah White
@@ -2171,7 +2171,7 @@ label third:
     dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
     
     voice "audio/scene63_N12_dw_4.mp3"
-    dw "After she broke down, she immediately rushed back to the dining hall. We went   along with her as well."
+    dw "After she broke down, she immediately rushed back to the dininghall. Wewentalong with her."
     
 
     #Susan Murphy
@@ -2191,7 +2191,7 @@ label third:
 
     #Deborah White
     voice "audio/scene63_N12_dw_6.mp3"
-    dw "Thanks, Susan, you're such a God send!"
+    dw "Thanks, Susan, you're such a gift!"
     
 
     #Narrator
@@ -2220,11 +2220,11 @@ label third:
     
 
     #Rachel Reed
-    rar "I lost my husband. I'm miserable."
+    rar "I just lost my husband. I'm miserable."
 
     #Susan Murphy 
     voice "audio/scene64_N5_sm_2.mp3"
-    sm "Yea, no one can blame you for that. I just wanted to ask a couple of questions. Is that okay?"
+    sm "Yea, that's fair. I just wanted to ask a couple of questions. Is that okay?"
     
 
     #Narator
@@ -2266,7 +2266,7 @@ label third:
 
     #Susan Murphy 
     voice "audio/scene65_N5_sm_3.mp3"
-    sm "Oh, okay."
+    sm "I, see."
     
 
     #Scene 66 - Rachel Reed / About Richard
@@ -2293,7 +2293,7 @@ label third:
 
     #Susan Murphy
     voice "audio/scene66_N5_sm_3.mp3" 
-    sm "Does he have a lot of enemies?"
+    sm "Did he have a lot of enemies?"
     
 
     #Rachel Reed
@@ -2303,7 +2303,7 @@ label third:
 
     #Susan Murphy
     voice "audio/scene66_N5_sm_4.mp3" 
-    sm "I'm guessing more people didn't like the taste as opposed to the few that did."
+    sm "I'm guessing more people didn't like the taste."
     
 
     #Rachel Reed
@@ -2346,7 +2346,7 @@ label third:
 
     #Narrator
     voice "audio/scene67_N1_1.mp3"
-    "Susan spotted Ezekiel the moment she walks out on the deck."
+    "Susan spots Ezekiel the moment she walks out on the deck."
     
 
     #Susan Murphy 
@@ -2375,7 +2375,10 @@ label third:
             #Scene 68 - Ezekiel Jones / Whereabouts
 
             #Narrator
-            "Susan asks Ezekiel about his whereabouts during the time of the murder."
+            "Susan asks Ezekiel about his whereabouts during the time of the murder"
+
+            #Susan Murphy
+            sm "Where were you when William was murdered?"
 
             #Ezekiel Jones
             voice "audio/scene68_N9_ej_1.mp3"
@@ -2384,7 +2387,7 @@ label third:
 
             #Susan Murphy thoughts
             voice "audio/scene68_N3_smt_1.mp3"
-            sm "That is correct. However, there were a few times when we might have separated."
+            #sm "That is correct. However, there were a few times when we might have separated."
             
 
             #Susan Murphy 
@@ -2400,12 +2403,12 @@ label third:
             "Pressing Further"
 
             #Susan Murphy 
-            sm "Yes. However, there was one time when we separated. It is suspicious how it was only a few minutes, but it could have been enough time to find information before you kill someone."
+            sm "Yes. However, there was one time when we separated. It is suspicioushowitwasonly a few minutes, but it could have been enough time for you kill someone."
 
             #Ezekiel Jones
-            ej "We have gone over this before. I am not the killer. You can ask a few people on the boat to prove it to you."
+            ej "We’ve have gone over this before. I am not the killer. You can ask anyone on the boat to prove it to you"
 
-            ej "I have been talking to them to gather information. I have nothing to hide."
+            ej "I’ve been talking to them to gather information. I have nothing to hide."
 
             #Susan Murphy 
             sm "I understand. Apologies for questioning your trust."
@@ -2414,8 +2417,10 @@ label third:
             "Ezekiel calms himself down."
 
             #Ezekiel Jones
-            ej "Think nothing of it. If at any point you suspect me, I shall answer any questions truthfully."
+            ej "Think nothing of it. If at any point you suspect me, I will answer anyquestionstruthfully."
 
+            #Narrator
+            "Susan turns and catches David Dalton’s eye."
 
         "Probe for motive":
             #block of code to run
@@ -2458,6 +2463,9 @@ label third:
                     #Ezekiel Jones
                     ej "You're Welcome."
 
+                    #Narrator
+                    "Susan turns and catches David Dalton’s eye."
+
                 "Calm him down":
                     #Scene 72 - Ezekiel Jones / Motive
 
@@ -2482,7 +2490,8 @@ label third:
                     #Ezekiel Jones
                     ej "My pleasure."        
 
-            
+                    #Narrator
+                    "Susan turns and catches David Dalton’s eye."
             
   
    
@@ -2606,7 +2615,7 @@ label third:
                     #----------------- End of Convo
 
                     #Narrator 
-                    "Susan and Ezekiel rocket down the hallway… "
+                    "Susan and Ezekiel rocket down the hallway."
 
                     jump fourth
 
@@ -2692,7 +2701,7 @@ label probemotive:
 
             #Narrator
             voice "audio/scene77_N1_3.mp3"
-            "Susan and Ezekiel rocket down the hallway… "
+            "Susan and Ezekiel rocket down the hallway."
             
 
             jump fourth
@@ -2768,7 +2777,7 @@ label probemotive:
 
             #Narrator 
             voice "audio/scene78_N1_3.mp3"
-            "Susan and Ezekiel rocket down the hallway… "
+            "Susan and Ezekiel rocket down the hallway."
             
 
             jump fourth
@@ -2779,7 +2788,7 @@ label fourth:
 
     #Narrator 
     voice "audio/scene79_N1_1.mp3"
-    "…letting themselves into the Neptune's finely appointed washroom, they find the hunched form of Deborah White, crying over the newly deceased Patricia White."
+    "They let themselves into the Neptune's finely appointed washroom, and find the hunchedformofDeborah White, crying over the newly deceased Patricia White."
     
 
     #Ezekiel Jones
@@ -2826,6 +2835,8 @@ label fourth:
     voice "audio/scene79_N5_sm_3.mp3"
     sm "Well, time to get to work."
     
+    #Narrator
+    "While looking at a crime scene, click on points of interest around the area to find clues."
 
     #Entering the 3rd Crime Scene
 
