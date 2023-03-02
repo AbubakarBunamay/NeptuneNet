@@ -1,4 +1,30 @@
 #Game Machanics
+init:
+    $ style.input.caret = "my_img"
+image my_img:
+    "start.png"
+    xalign 1.5
+    yalign 0.5
+    linear 1.0 alpha 1.0
+    linear 1.0 alpha 0.0
+    repeat
+
+
+
+screen title_screen():
+    
+    imagemap:
+        ground "images/title_screen.png"
+        
+        hotspot (0, 0, 1920, 1080) action Jump ("to_main_menu")
+
+    add "my_img" as caret xpos 680 ypos 800
+        
+        
+   
+
+label to_main_menu():
+    $ MainMenu(confirm=False)()
 
 screen reedscene_investigation():
     imagemap:
@@ -41,7 +67,7 @@ label bodybruise:
     sm "That body shot must've hurt."
 
     #Ezekiel Jones
-    ej "I got punched in the body during training once. I dropped to the ground like a sack of potatoes."
+    ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
         
     menu bodybruise_inv:
         "What's your next step"
@@ -75,6 +101,15 @@ label knockedcase:
     #Susan Murphy 
 
     sm "Did you think they talked before, or did he sneak up on him?"
+
+    #Ezekiel Jones
+
+    ej "I don’t know, you tell me detective"
+
+    #Susan Murphy 
+
+    sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was
+unconscious from the first hit."
 
     menu case_inv:
         "What's your next step"
@@ -248,3 +283,5 @@ label bruising:
             call screen patriciascene_investigation
         "Done Investigating":
             jump thirdmurder 
+
+

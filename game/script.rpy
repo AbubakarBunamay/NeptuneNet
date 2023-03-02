@@ -22,10 +22,16 @@ image navigatetocabin = "hallway.jpg"
 image reedscabin = "murderscene.jpg"
 
 
+#Title Screen
+
+label splashscreen:
+    call screen title_screen
+    
+
 # The game starts here.
 
 label start:
-
+    hide screen title_screen
     #------------------------------------- START OF DAY 1 --------------------------------------------------------#
     
     # Scene 1 - Susan’s house front door
@@ -442,7 +448,7 @@ label mingle:
 
     #Susan Murphy Thoughts
     voice "audio/Character Voices/Narrator3Scene7Step21.mp3"
-    sm "There’s no way he could know. What is this about? Hmm…"
+    smt "There’s no way he could know. What is this about? Hmm…"
     hide susan 
 
     #Ezekiel Jones 
@@ -476,49 +482,55 @@ label mingle:
     smt "Building a list? Why would he possibly be building a list on me? *Sigh* I can’t ever get a vacation. I should probably check on Rachel. I wonder where she ran off too."
     hide susan 
 
-    #Scene 9 
-
-    #narrator voice
-    voice"audio/Character Voices/Narrator1Scene8Step1.mp3"
-    "Susan leaves the room in search of Rachel. She is now in the Hallway."
 
     #Scene 8 
     scene hallway
 
-    "Navigating the hallway"
+    #narrator voice
+    voice"audio/Character Voices/Narrator1Scene8Step1.mp3"
+    "Susan leaves the room in search of Rachel. She is now in the Hallway."
     
-    #Navigate here to hallway
+    #Navigate to?
+    menu navigate_to:
+        "Where are you going to check first?"
+        "Washroom":
+            #Scene 9   
 
+            #Susan Murphy
+            show susan
+            voice"audio/Character Voices/Narrator5Scene8Step2.mp3"
+            sm "She said she was feeling sick. I should probably go and check the washroom."
+            
+            #Scene 10   
+            #Navigating to the washroom
+
+            scene navigatingtowashroom
+
+            "Navigating to washroom"
+
+            #Scene 11
+            scene washroom
+
+            #Narator Voice
+            voice"audio/Character Voices/Narrator1Scene9Step3.mp3"
+            "Susan enters the washroom but finds no one there."
+
+            #Susan Murphy Voice
+            show susan
+            voice"audio/Character Voices/Narrator5Scene9Step4.mp3"
+            sm "Drat, she’s not here. Where else would she be… their cabin!"
+
+            jump nav_cont
+
+        "Reed's Cabin":
+            jump nav_cont
         
-
-    #Susan Murphy
-    show susan
-    voice"audio/Character Voices/Narrator5Scene8Step2.mp3"
-    sm "She said she was feeling sick. I should probably go and check the washroom."
-    
-    #Scene 10   
-    #Navigating to the washroom
-
-    scene navigatingtowashroom
-
-    "Navigating to washroom"
-
-    #Scene 11
-    scene washroom
-
-    #Narator Voice
-    voice"audio/Character Voices/Narrator1Scene9Step3.mp3"
-    "Susan enters the washroom but finds no one there."
-
-    #Susan Murphy Voice
-    show susan
-    voice"audio/Character Voices/Narrator5Scene9Step4.mp3"
-    sm "Drat, she’s not here. Where else would she be… their cabin!"
+label nav_cont:
 
     #Scene 12
     scene navigatetocabin
 
-    "navigation to the cabin"
+    "Navigating to the cabin"
 
     #The player navigates to the Reed’s cabin, the door is slightly ajar
 
@@ -565,177 +577,151 @@ label mingle:
 
     scene hallway
 
-    "Navigating back to the dining hall"
-
-    #scene 17
-    scene diningroom
-
     #Narrator
     voice"audio/Character Voices/Narrator1Scene12Step25.mp3"
     "Susan sprints back to the dining room, bursting through the door, panting."
     #voice "scene17_N1_1.mp3"
 
+    #scene 17
+    scene diningroom
+
     #Susan Murphy
     show susan at left 
-    voice"audio/Character Voices/Narrator5Scene12Step26.mp3"
+    #voice "scene17_N5_sm_1.mp3"
     sm "McQuaid! I thought you wanted us to do your bidding, not kill us"
-    voice "scene17_N5_sm_1.mp3"
 
     #Michael McQuaid
     show michael at right
-    voice"audio/Character Voices/Narrator2Scene12Step27.mp3"
+    #voice "scene17_N2_mm_1.mp3"
     mm "Pardon me, Ms. Murphy?"
-    voice "scene17_N2_mm_1.mp3"
 
     #Susan Murphy 
-    voice"audio/Character Voices/Narrator5Scene12Step28.mp3"
-    sm "I went to look for Rachel because she was feeling a bit sick from your “news,” and I found Richard dead in their cabin. Explain yourself!"
-    voice "scene17_N5_sm_2.mp3"
+    #voice "scene17_N5_sm_2.mp3"
+    sm "I went to look for Rachel because she was feeling a bit sick from your “news” and I found Richard dead in their cabin. Explain yourself!"
     
     #Michael Mcquaid
-    voice"audio/Character Voices/Narrator2Scene12Step29.mp3"
+    #voice "scene17_N2_mm_2.mp3"
     mm "Well, it wasn’t me. I was here the entire time! You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
-    voice "scene17_N2_mm_2.mp3"
 
     #Susan Murphy
-    voice"audio/Character Voices/Character Voices/Narrator5_Scene12-35.mp3"
+    #voice "scene17_N5_sm_3.mp3"
     sm "Oh, come on, that’s ridiculous."
-    voice "scene17_N5_sm_3.mp3"
 
     #Michael Mcquaid
-    voice"audio/Character Voices/Character Voices/Narrator 2 - Scene 12-35.mp3"
+    #voice "scene17_N2_mm_3.mp3"
     mm "As far as we know, you could have killed him!" 
     hide michael
-    voice "scene17_N2_mm_3.mp3"
 
     #Ezekiel Jones
     show zeke at right 
-    voice"audio/Character Voices/Character Voices/Narrator 9 - Scene12-35.mp3"
+    #voice "scene17_N9_ej_1.mp3"
     ej "Hmm, he has a good point. We know nothing for sure. While you do seem like a lovely person Susan, you were out there alone."
-    voice "scene17_N9_ej_1.mp3"
 
     #Susan Murphy
-    voice"audio/Character Voices/Character Voices/Narrator 5 - Scene12-36.mp3"
+    #voice "scene17_N5_sm_4.mp3"
     sm "You can’t be serious! You all saw me leave here a few seconds ago!" 
-    voice "scene17_N5_sm_4.mp3"
 
     #Patricia White
     hide zeke
-    show patricia at right
-    voice"audio/Character Voices/Character Voices/Narrator 10 - Scene12-36.mp3"
+    #show patricia at right
+    #voice "scene17_N10_pw_1.mp3"
     pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered!"
-    voice "scene17_N10_pw_1.mp3"
 
     #Deborah White
     hide patricia
     show deborah at right
-    voice"audio/Character Voices/Character Voices/Narrator 12- Scene12- 36.mp3"
+    #voice "scene17_N12_dw_1.mp3"
     dw "Calm down, Patty. Nothing is gonna happen to you."
-    voice "scene17_N12_dw_1.mp3"
 
     #Patricia White
     hide deborah
     show patricia at right
-    voice"audio/Character Voices/Character Voices/Narrator 10 - Scene12-37.mp3"
+    #voice "scene17_N10_pw_2.mp3"
     pw "You don’t know that! I’m gonna die to a murderer onboard."
-    voice "scene17_N10_pw_2.mp3"
 
     #David Dalton
     hide patricia
     show david at right
-    voice"audio/Character Voices/Character Voices/Narrator 4 - Scene12-37.mp3"
+    #voice "scene17_N4_dd_1.mp3"
     dd "I don’t know if I want to work here if someone is murdering people. Someone tell the captain to turn thi - …"
-    voice "scene17_N4_dd_1.mp3"
 
     hide david
     hide susan
 
     #Narrator
-    voice"audio/Character Voices/Character Voices/Narrator 1 - Scene12-37.mp3"
+    #voice "scene17_N1_2.mp3"
     "Indiscriminate chatter happens amongst the guests."
-    voice "scene17_N1_2.mp3"
 
     #Michael Mcquaid
     show michael
-    voice"audio/Character Voices/Character Voices/Narrator 2 - Scene12-38.mp3"
+    #voice "scene17_N2_mm_4.mp3"
     mm "ALRIGHT, EVERYONE! Settle down. Let’s not lose our heads. Susan, you are a private eye, yeah? I think you have the qualifications to solve this."
-    voice "scene17_N2_mm_4.mp3"
 
     #Susan Murphy
     show susan at left
     show michael at right
-    voice"audio/Character Voices/Character Voices/Narrator 5 - Scene12-38.mp3"
+    #voice "scene17_N5_sm_5.mp3"
     sm "What? You don’t suspect me anymore?"
-    voice "scene17_N5_sm_5.mp3"
 
     #Michael Mcquaid
-    voice"audio/Character Voices/Character Voices/Narrator 2 - Scene12-38-2nd_line.mp3"
+    #voice "scene17_N2_mm_5.mp3"
     mm "I do. That’s why someone should be with you every second."
-    voice "scene17_N2_mm_5.mp3"
 
     hide michael
 
     #Ezekiel Jones
     show zeke at right
-    voice"audio/Character Voices/Character Voices/Narrator 9 - Scene12-38.mp3"
+    #voice "scene17_N9_ej_2.mp3"
     ej "I’ll keep an eye on her."
-    voice "scene17_N9_ej_2.mp3"
 
     #Susan Murphy
-    voice"audio/Character Voices/Narrator5Scene12Slide39Step1.mp3"
+    #voice "scene17_N5_sm_6.mp3"
     sm "Oh, please."
-    voice "scene17_N5_sm_6.mp3"
     
     #Michael Mcquaid
     hide zeke
     show michael at right
-    voice"audio/Character Voices/Narrator2Scene12Slide39Step1.mp3"
+    #voice "scene17_N2_mm_6.mp3"
     mm "Perfect, the doctor and the eye. What a confidential relationship."
-    voice "scene17_N2_mm_6.mp3"
 
     hide michael
 
     #Patrica White
     show patricia at right
-    voice"audio/Character Voices/Narrator10Scene12Slide39Step1.mp3"
+    #voice "scene17_N10_pw_3.mp3"
     pw "I wanna go look for Rachel! She could be in danger!"
     hide patricia 
-    voice "scene17_N10_pw_3.mp3"
 
     #Deborah White
     show deborah at right
-    voice"audio/Character Voices/Narrator12Scene12Slide40Step1.mp3"
+    #voice "scene17_N12_dw_2.mp3"
     dw "Aren’t you afraid of getting murdered?"
     hide deborah
-    voice "scene17_N12_dw_2.mp3"
 
     #Patrica White
     show patricia at right
-    voice"audio/Character Voices/Narrator10Scene12Slide40Step1.mp3"
+    #voice "scene17_N10_pw_4.mp3"
     pw "Yes, but she was nice to me. Oh, please come with me, Debbie."
-    voice "scene17_N10_pw_4.mp3"
 
     hide patricia 
 
     #Deborah White
     show deborah at right
-    voice"audio/Character Voices/Narrator12Scene12Slide40Step2.mp3"
+    #voice "scene17_N12_dw_3.mp3"
     dw "auughhh, fine. Let’s go look for her. Hey Michael! You heard?"
-    voice "scene17_N12_dw_3.mp3"
 
     hide deborah
 
     #Michael Mcquaid
     show michael at right
-    voice"audio/Character Voices/Narrator2Scene12Slide41Step1.mp3"
+    #voice "scene17_N2_mm_7.mp3"
     mm "Loud and clear. The rest of us will stay here. Don’t want anyone else turning up dead now."
-    voice "scene17_N2_mm_7.mp3"
 
     hide michael
     hide susan
 
     #Narrator
-    voice"audio/Character Voices/Narrator1Scene12Slide41Step1.mp3"
+    #voice"audio/Character Voices/Narrator1Scene12Slide41Step1.mp3"
     "Susan and Ezekiel leave to go to the crime scene. Deborah and Patricia leave moments after to try and find Rachel."
 
     #voice "scene17_N1_3.mp3"
@@ -773,32 +759,36 @@ label first_murder:
     #Susan Murphy
     show susan at left
     voice"audio/Character Voices/Character Voices/Narrator 5_Scene13-Line-1-45.mp3"
-    sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
     #voice "scene20_N5_sm_1.mp3"
+    sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
 
     #Ezekiel Jones 
     show zeke at right
     voice"audio/Character Voices/Character Voices/Narrator 9_Scene13-45-line1.mp3"
+    #voice "scene20_N9_ej_1.mp3"
     ej "I'm afraid everyone's probably gone to sleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
  
-    #voice "scene20_N9_ej_1.mp3"
+    
 
     #Susan Murphy
     voice"audio/Character Voices/Character Voices/Narrator 5_Scene13-45-Line 2.mp3"
-    sm "As much as I hate to leave a case like this… you're right. Reconvene in the dining room tomorrow?"
     #voice "scene20_N5_sm_2.mp3"
+    sm "As much as I hate to leave a case like this… you're right. Reconvene in the dining room tomorrow?"
+    
 
     #Ezekiel Jones
     voice"audio/Character Voices/Character Voices/Narrator 9_Scene13-45-Line 2.mp3"
-    ej "Of course."
     #voice "scene20_N9_ej_2.mp3"
+    ej "Of course."
+    
 
     #Narrator
     hide zeke
     hide susan
     voice"audio/Character Voices/Character Voices/Narrator 1_Scene13-45.mp3"
-    "Susan and Ezekiel leave the crime scene and go to their separate rooms."
     #voice "scene20_N1_1.mp3"
+    "Susan and Ezekiel leave the crime scene and go to their separate rooms."
+    
 
     #------------------------------------- END OF DAY 1 --------------------------------------------------------#
 
@@ -1035,7 +1025,7 @@ label first_murder:
 
     rar "*sobs*"
     
-    rar "all they did was made me feel worse by telling me that I lost my Richard."
+    rar "All they did was made me feel worse by telling me that I lost my Richard."
 
     #Susan Murphy
     
@@ -1165,7 +1155,7 @@ label first_murder:
                     "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
 
                     #Susan Murphy Thoughts
-                    sm "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
+                    smt "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
 
                     #Ezekiel Jones
                     ej "No, I don't have another pair of shoes. Feel free to take a look around my room to check."
@@ -1213,7 +1203,6 @@ label first_murder:
                     ej "It’s okay. I understand that you need to do your job. This is something you must do."
                     hide zeke
                     hide susan
-                    jump training
                     jump cont_ezekiel_inv
 
         "Ask about training":
@@ -1241,18 +1230,15 @@ label cont_ezekiel_inv:
     sm "hmm... Interesting."
 
     #Susan Murphy Thoughts
-    sm "I need to choose my words carefully here. One wrong question, and I could low the information I need."
+    smt "I need to choose my words carefully here. One wrong question, and I could low the information I need."
+
     hide zeke
     hide susan
     menu ezekiel_training:
         "Choose path of investigation"
         "Press Further":
             
-            #Scene 36 - Ezekiel Jones / Training (Ezekiel's Room) 
-
-            #pressing further possible choice
-
-            "Pressing Further"
+            #Scene 36 - Ezekiel Jones / Training 
             
             #Susan Murphy 
             show susan at left
@@ -1284,7 +1270,7 @@ label cont_ezekiel_inv:
             hide susan
 
         #Menu Option - Calm him down    
-        "Calm him down":
+        "Ask calmly":
             ##Scene 37 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
             #Susan Murphy 
@@ -1300,7 +1286,7 @@ label cont_ezekiel_inv:
             ej "But no matter how hard I tried, it wasn’t enough. He still died. It haunts me to this day."
 
             #Susan Murphy 
-            "That sounds rough. I am sorry for your loss. If there is anything I can do to help, don't hesitate to ask."
+            sm "That sounds rough. I am sorry for your loss. If there is anything I can do to help, don't hesitate to ask."
 
             #Ezekiel Jones
             ej "Thank you, Susan. That means a lot."
@@ -1340,10 +1326,8 @@ label cont_ezekiel_inv:
 
 label dalton_inv:
     $ persistent.investigation_choices_viewed.append("David Dalton")
+    
     #Scene 38 - David Dalton (Kitchen)
-
-    #keeping for alpha to provide flow to the game linear mechanics
-
     scene hallway
 
     "Navigating to Kitchen" 
@@ -1385,7 +1369,7 @@ label dalton_inv:
             "Dalton looks taken aback."
 
             #David Dalton
-            dd  "My shoes? Why would you ever need to see them?"
+            dd "My shoes? Why would you ever need to see them?"
 
             #Susan Murphy
             show susan at left 
@@ -1396,7 +1380,7 @@ label dalton_inv:
             ej "Come now, Dalton, we found a shoe print at the crime scene, and we just want to verify whose shoe it was."
 
             #Susan Murphy Thoughts
-            sm "Did Ezekiel really tell him that? He doesn't know the first thing about investigations!"
+            smt "Did Ezekiel really tell him that? He doesn't know the first thing about investigations!"
 
             #David Dalton 
             dd  "Oh, well, why didn't you say so?"
@@ -1512,7 +1496,7 @@ label dalton_inv:
                     dd "I'm not some schoolgirl going to the restroom in packs. Now, if you'll excuse me, I have some dishes to wash."
 
                     #Narrator 
-                    "Dalton turns to the sink, and Susan turns to Ezekiel."
+                    "Dalton turns to the sink, and Susan turns to Ezekiel, speaking quietly."
 
                     #Susan Murphy 
                     hide david
@@ -1534,7 +1518,7 @@ label dalton_inv:
 
 
                 "Leave it be":
-                    jump end_of_dayone
+                    jump investigation_choice
                 
                 "Interrogate another passenger":
                     jump investigation_choice
@@ -1546,6 +1530,7 @@ label dalton_inv:
 label william_inv:
     #Scene 42 - William Windchime 
     $ persistent.investigation_choices_viewed.append("William Windchime")
+    
     #Narrator
     show will
     "William Windchime walks into the kitchen"
@@ -1900,7 +1885,7 @@ label michael_inv:
             sm "Yes, actually. Is there any chance that Rachel murdered her husband?"
 
             #Michael Mcquaid
-            mm "No. Whatever else they were, they loved each other more than anything."
+            mm "No. Whatever else they were, they loved each other more than anything, and that’s the truth."
             hide michael 
             hide susan
 
@@ -2131,7 +2116,7 @@ label third:
 
     #Susan Murphy Thoughts
     #voice "audio/scene58_N5_sm_3.mp3"
-    sm "Yeah, yeah. Rub it in, why don't you?"
+    smt "Yeah, yeah. Rub it in, why don't you?"
     
 
     #Michael Mcquaid
@@ -2203,7 +2188,6 @@ label third:
 
     #Scene 60 - Michael McQuaid / White Sisters
 
-    #Asking About Ezekiel Possible Choice
 
     #Susan Murphy
     voice "audio/scene60_N5_sm_1.mp3" 
@@ -2265,115 +2249,126 @@ label third:
     voice "audio/scene61_N12_dw_1.mp3"
     dw "Sure. What would you like to know?"
     
+    menu deb_choice:
+        "Ask her about"
+        "Where is Patty?":
+            #Susan Murphy
+            voice "audio/scene61_N5_sm_2.mp3" 
+            sm "Do you know where I can find Patty?"
+            
 
-    #Susan Murphy
-    voice "audio/scene61_N5_sm_2.mp3" 
-    sm "Do you know where I can find Patty?"
+            #Scene 62 - Debeorah White / Where is patty 
+
+            #Susan Murphy 
+            voice "audio/scene62_N5_sm_1.mp3"
+            sm "It's unusual to see you without your sister. Where is she?"
+            
+
+            #Deborah White
+            voice "audio/scene62_N12_dw_1.mp3"
+            dw "I don't know. I've been worried sick looking for her all morning."
+            
+
+            #Susan Murphy
+            voice "audio/scene62_N5_sm_2.mp3" 
+            sm "Does she usually go off on her own?"
+            
+
+            #Deborah White
+            voice "audio/scene62_N12_dw_2.mp3"
+            dw "When we are home, she usually does her own thing, but she always checks in with me." 
+            
+
+            #Susan Murphy 
+            voice "audio/scene62_N5_sm_3.mp3"
+            sm "Hmm, and she didn't tell you anything this time?"
+            
+
+            #Deborah White
+            voice "audio/scene62_N12_dw_3.mp3"
+            dw "Nothing, I woke up, and she was already gone. Maybe she got seasick again and went out for some air, but I would have found her by now. I hope she's okay."
+            
+
+            #Susan Murphy
+            voice "audio/scene62_N5_sm_4.mp3" 
+            sm "Well, I'm walking around a lot today so if I find her, I will let you know."
+            
+
+            #Deborah White
+            voice "audio/scene62_N12_dw_4.mp3"
+            dw "Thanks, Susan."
+
+            #Narrator
+            #voice "audio/scene_N1_1.mp3"
+            "Susan goes to the bedrooms to go and check on Rachel." 
+
+
+        "Rachel Reaction":
+            #Scene 63 - Debeorah White / Rachel Reaction
+
+            #Susan Murphy
+            voice "audio/scene63_N5_sm_1.mp3" 
+            sm "You girls went looking for Rachel on the first night, right? When you found her, how was she?"
+            
+
+            #Deborah White
+            voice "audio/scene63_N12_dw_1.mp3"
+            dw "Yeah, Patty and I went to look for her and found her on the deck. She was okay, just catching some air. Don't you remember? I told you this."
+            
+
+            #Susan Murphy
+            voice "audio/scene63_N5_sm_2.mp3" 
+            sm "Yeah, just needed a reminder. When you found her and told her, how did she react?"
+            
+
+            #Deborah White
+            voice "audio/scene63_N12_dw_2.mp3"
+            dw "About the same as anyone would react. She didn't believe me at first, but eventually, she broke down crying. Patty was doing her best to try and console her."
+            
+
+            #Susan Murphy 
+            voice "audio/scene63_N5_sm_3.mp3"
+            sm "Oh really?"
+            
+
+            #Deborah White
+            voice "audio/scene63_N12_dw_3.mp3"
+            dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
+            
+            voice "audio/scene63_N12_dw_4.mp3"
+            dw "After she broke down, she immediately rushed back to the dining hall. We went along with her"
+            
+
+            #Susan Murphy
+            voice "audio/scene63_N5_sm_4.mp3" 
+            sm "Hmm, okay. Thanks for sharing"
+            
+
+            #Deborah White
+            voice "audio/scene63_N12_dw_5.mp3"
+            dw "Is that all you had to ask me?"
+            
+
+            #Susan Murphy
+            voice "audio/scene63_N5_sm_5.mp3" 
+            sm "For now, yes. I'll keep looking around for Patty. Good luck."
+            
+
+            #Deborah White
+            voice "audio/scene63_N12_dw_6.mp3"
+            dw "Thanks, Susan, you're such a gift!"
+            
+            hide susan 
+            hide deborah
+
+            #Narrator
+            #voice "audio/scene_N1_1.mp3"
+            "Susan goes to the bedrooms to go and check on Rachel."                     
+        
     
 
-    #Scene 62 - Debeorah White / Where is patty 
-
-    #Susan Murphy 
-    voice "audio/scene62_N5_sm_1.mp3"
-    sm "It's unusual to see you without your sister. Where is she?"
     
-
-    #Deborah White
-    voice "audio/scene62_N12_dw_1.mp3"
-    dw "I don't know. I've been worried sick looking for her all morning."
-    
-
-    #Susan Murphy
-    voice "audio/scene62_N5_sm_2.mp3" 
-    sm "Does she usually go off on her own?"
-    
-
-    #Deborah White
-    voice "audio/scene62_N12_dw_2.mp3"
-    dw "When we are home, she usually does her own thing, but she always checks in with me." 
-    
-
-    #Susan Murphy 
-    voice "audio/scene62_N5_sm_3.mp3"
-    sm "Hmm, and she didn't tell you anything this time?"
-    
-
-    #Deborah White
-    voice "audio/scene62_N12_dw_3.mp3"
-    dw "Nothing, I woke up, and she was already gone. Maybe she got seasick again and went out for some air, but I would have found her by now. I hope she's okay."
-    
-
-    #Susan Murphy
-    voice "audio/scene62_N5_sm_4.mp3" 
-    sm "Well, I'm walking around a lot today so if I find her, I will let you know."
-    
-
-    #Deborah White
-    voice "audio/scene62_N12_dw_4.mp3"
-    dw "Thanks, Susan."
-    
-
-    #Scene 63 - Debeorah White / Rachel Reaction
-
-    #Susan Murphy
-    voice "audio/scene63_N5_sm_1.mp3" 
-    sm "You girls went looking for Rachel on the first night, right? When you found her, how was she?"
-    
-
-    #Deborah White
-    voice "audio/scene63_N12_dw_1.mp3"
-    dw "Yeah, Patty and I went to look for her and found her on the deck. She was okay, just catching some air. Don't you remember? I told you this."
-    
-
-    #Susan Murphy
-    voice "audio/scene63_N5_sm_2.mp3" 
-    sm "Yeah, just needed a reminder. When you found her and told her, how did she react?"
-    
-
-    #Deborah White
-    voice "audio/scene63_N12_dw_2.mp3"
-    dw "About the same as anyone would react. She didn't believe me at first, but eventually, she broke down crying. Patty was doing her best to try and console her."
-    
-
-    #Susan Murphy 
-    voice "audio/scene63_N5_sm_3.mp3"
-    sm "Oh really?"
-    
-
-    #Deborah White
-    voice "audio/scene63_N12_dw_3.mp3"
-    dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
-    
-    voice "audio/scene63_N12_dw_4.mp3"
-    dw "After she broke down, she immediately rushed back to the dininghall. Wewentalong with her."
-    
-
-    #Susan Murphy
-    voice "audio/scene63_N5_sm_4.mp3" 
-    sm "Hmm, okay. Thanks for sharing"
-    
-
-    #Deborah White
-    voice "audio/scene63_N12_dw_5.mp3"
-    dw "Is that all you had to ask me?"
-    
-
-    #Susan Murphy
-    voice "audio/scene63_N5_sm_5.mp3" 
-    sm "For now, yes. I'll keep looking around for Patty. Good luck."
-    
-
-    #Deborah White
-    voice "audio/scene63_N12_dw_6.mp3"
-    dw "Thanks, Susan, you're such a gift!"
-    
-    hide susan 
-    hide deborah
-
-    #Narrator
-    #voice "audio/scene_N1_1.mp3"
-    "Susan goes to the bedrooms to go and check on Rachel."
-    
+label day3_cont:   
 
     #navigating to Rachel Cabin
 
@@ -2575,7 +2570,7 @@ label third:
             
 
             #Susan Murphy thoughts
-            voice "audio/scene68_N3_smt_1.mp3"
+            #voice "audio/scene68_N3_smt_1.mp3"
             #sm "That is correct. However, there were a few times when we might have separated."
             
 
@@ -2588,34 +2583,39 @@ label third:
             hide zeke
             #Scene 69 - Ezekiel Jones / whereabouts
             
-            #Pressing Further Possible Choice
+            menu ej_wh_choice:
+                "Proceed by"
+                "Press further":
+                    #Susan Murphy 
+                    sm "Yes. However, there was one time when we separated. It is suspicioushowitwasonly a few minutes, but it could have been enough time for you kill someone."
+                    show susan at left
+                    show zeke at right
 
-            "Pressing Further"
+                    #Ezekiel Jones
+                    ej "We’ve have gone over this before. I am not the killer. You can ask anyone on the boat to prove it to you"
 
-            #Susan Murphy 
-            sm "Yes. However, there was one time when we separated. It is suspicioushowitwasonly a few minutes, but it could have been enough time for you kill someone."
-            show susan at left
-            show zeke at right
+                    ej "I’ve been talking to them to gather information. I have nothing to hide."
 
-            #Ezekiel Jones
-            ej "We’ve have gone over this before. I am not the killer. You can ask anyone on the boat to prove it to you"
+                    #Susan Murphy 
+                    sm "I understand. Apologies for questioning your trust."
 
-            ej "I’ve been talking to them to gather information. I have nothing to hide."
+                    #Narrator
+                    "Ezekiel calms himself down."
 
-            #Susan Murphy 
-            sm "I understand. Apologies for questioning your trust."
+                    #Ezekiel Jones
+                    ej "Think nothing of it. If at any point you suspect me, I will answer anyquestionstruthfully."
+                    hide susan
+                    hide zeke
+                    
 
-            #Narrator
-            "Ezekiel calms himself down."
+                    #Narrator
+                    "Susan turns and catches David Dalton’s eye."
 
-            #Ezekiel Jones
-            ej "Think nothing of it. If at any point you suspect me, I will answer anyquestionstruthfully."
-            hide susan
-            hide zeke
+                "Go talk to david":
+                    #Narrator
+                    "Susan turns and catches David Dalton’s eye."
+
             
-
-            #Narrator
-            "Susan turns and catches David Dalton’s eye."
 
         "Probe for motive":
             #block of code to run
@@ -2700,12 +2700,6 @@ label third:
                     #Narrator
                     "Susan turns and catches David Dalton’s eye."
             
-  
-   
-    #Narrator
-    show susan
-    voice "audio/scene72_N1_1.mp3"
-    "Susan turns and catches David Dalton’s eye."
     
 
     #Scene 73 - David Dalton
@@ -3029,7 +3023,7 @@ label fourth:
     
 
     #Deborah White
-    susan at left
+    show susan at left
     show deborah at right
     voice "audio/scene79_N12_dw_1.mp3"
     dw "I couldn't find Patty anywhere, and I looked around the boat all day for her."
