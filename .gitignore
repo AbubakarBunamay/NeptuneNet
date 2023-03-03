@@ -3,8 +3,8 @@
 *.pyo
 __pycache__/
 .rapt/
-.rpyc/
-.rpyb/
+*.rpyc
+*.rpyb
 *.ttf.cache
 
 # Ignore generated files and folders
@@ -39,3 +39,4 @@ game/_cache/
 game/build/
 game/dist/
 game/backup/
+game/saves
