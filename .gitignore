@@ -1,0 +1,41 @@
+# Ignore compiled bytecode files and cached data
+*.pyc
+*.pyo
+__pycache__/
+.rapt/
+.rpyc/
+.rpyb/
+*.ttf.cache
+
+# Ignore generated files and folders
+generated/
+*.exe
+*.app
+*.pyd
+*.dll
+*.so
+*.dylib
+*.apk
+*.aab
+*.apk.arm64
+*.ipa
+*.xcodeproj
+*.xcworkspace
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.ldb
+*.opendb
+*.log
+*.DS_Store
+
+# Ignore Ren'Py build and project files
+game/renpy/
+game/.renpy/
+game/.history/
+game/_cache/
+game/build/
+game/dist/
+game/backup/

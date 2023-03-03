@@ -25,6 +25,7 @@ image reedscabin = "murderscene.jpg"
 #Title Screen
 
 label splashscreen:
+    play music "audio/title_music.mp3" 
     call screen title_screen
     
 
