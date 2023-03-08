@@ -40,3 +40,4 @@ game/build/
 game/dist/
 game/backup/
 game/saves
+*.rpyb

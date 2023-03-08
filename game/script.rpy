@@ -957,7 +957,6 @@ label first_murder:
     smt "They said she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
 
     #Scene 27 
-	
     #The player navigates to the dining room
 
     scene hallway
@@ -1281,7 +1280,7 @@ label first_murder:
                     jump cont_ezekiel_inv
 
         "Ask about training":
-            
+            jump cont_ezekiel_inv
             #Scene 35 - Ezekiel Jones / Training (Ezekiel's Room)
 
 label cont_ezekiel_inv:
@@ -1309,16 +1308,18 @@ label cont_ezekiel_inv:
     #Susan Murphy
     
     sm "hmm... Interesting."
+
     voice "audio/day2 path/scene35_n5_sm_3.mp3"
     #Susan Murphy Thoughts
     smt "I need to choose my words carefully here. One wrong question, and I could low the information I need."
 
     hide zeke
     hide susan
+
     menu ezekiel_training:
         "Choose path of investigation"
+
         "Press Further":
-            
             #Scene 36 - Ezekiel Jones / Training 
             
             #Susan Murphy 
