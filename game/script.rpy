@@ -292,50 +292,50 @@ label start:
 
             #Ezekiel Jones
             show ezekiel at right 
-            #voice "audio/day1/scene7_n9_ej5.mp3" 
+            voice "audio/day1/scene7_N9_ej5.mp3" 
             ej "Our host said you are an amazing private eye. That kind of job takes brains."
 
             #Susan Murphy
-            #voice "audio/day1/scene7_n5_sm5.mp3"
+            voice "audio/day1/scene7_N5_sm5.mp3"
             show susan at left 
             sm "Oh, I’m just as smart as anyone, and besides, I have always had help. But, I always manage to catch my crooks."
 
             #Ezekiel Jones
-            #voice "audio/day1/scene7_N9_ej6.mp3"
+            voice "audio/day1/scene7_N9_ej7.mp3"
             ej "I don’t envy the job, but I’m glad there’s someone doing it. If there is anything I can help you with for any reason, don't hesitate to call me."
 
             #Susan Murphy 
-            #voice "audio/day1/scene7_N5_sm6.mp3"
+            voice "audio/day1/scene7_N5_sm6.mp3"
             sm "Thank you, Ezekiel. You truly are a kind man. But enough about me, what about you? What do you do?"
 
             #Ezekiel Jones
-            #voice "audio/day1/scene7_N9_ej7.mp3"
+            voice "audio/day1/scene7_N9_ej8.mp3"
             ej "I am a doctor. I help by prescribing the medication that my patients need."
 
-            #voice "audio/day1/scene7_N9_ej8.mp3"
+            voice "audio/day1/scene7_N9_ej9.mp3"
             ej "After the war, my job has been rough because there are many people who need this medication to help them get better."
 
             #Susan Murphy 
-            #voice "audio/day1/scene7_N5_sm7.mp3"
+            voice "audio/day1/scene7_N5_sm7.mp3"
             sm "Your job is no small feat. Your job is as tough as mine, maybe even tougher."
 
-            #voice "audio/day1/scene7_N5_sm8.mp3"
+            voice "audio/day1/scene7_N5_sm8.mp3"
             sm "Just as you said, if there is anything I can help you with, don't hesitate to ask."
 
             #Narrator
-            #voice "audio/day1/scene7_N1_sm8.mp3"
+            voice "audio/day1/scene7_N1_11.mp3.mp3"
             "Ezekiel looked at Susan with a thankful smile. His smile was sincere and enough to move almost anyone."
             
             #Ezekiel Jones
-            #voice "audio/day1/scene7_N9_ej9.mp3"
+            voice "audio/day1/scene7_N9_ej10.mp3"
             ej "Thank you for those kind words."
 
             #Susan Murphy
-            #voice "audio/day1/scene7_N5_sm9.mp3"
+            voice "audio/day1/scene7_N5_sm11.mp3"
             sm "I want to mingle a bit. Thank you for the talk."
 
             #Ezekiel Jones
-            #voice "audio/day1/scene7_N9_ej10.mp3"
+            voice "audio/day1/scene7_N9_ej12.mp3"
             ej "The pleasure is mine, thank you."
             hide ezekiel
             hide susan
