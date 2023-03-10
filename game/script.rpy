@@ -87,7 +87,7 @@ label start:
     play sound "audio/sfx/waves.mp3" fadein 2.0 fadeout 1.0 volume 0.3 
     voice "audio/day1/Scene4_N1.mp3"
     "A couple of weeks later, Susan readies to board the Neptune, admiring the lavish yacht."
-    
+    stop sound 
     # Scene 5 - Susan Cabin
 
     #scene bg - Inside Susan Cabin
@@ -514,12 +514,12 @@ label mingle:
         "Where are you going to check first?"
         "Washroom":
             #Scene 9   
-
+            
             #Susan Murphy
             show susan
             voice "audio/day1/scene9_N5_sm.mp3"
             sm "She said she was feeling sick. I should probably go and check the washroom."
-            
+            play sound "audio/sfx/Footstep_near_far.mp3"
             #Scene 10   
             #Navigating to the washroom
 
@@ -536,6 +536,7 @@ label mingle:
 
             #Susan Murphy Voice
             show susan
+            play sound "audio/sfx/doorknock2.mp3"
             voice "audio/day1/scene11_N5_sm.mp3"
             sm "Drat, she’s not here. Where else would she be… their cabin!"
 
@@ -559,6 +560,7 @@ label nav_cont:
     scene hallwayfacingdoor
 
     #Narrator
+    
     voice "audio/day1/scene13_N1.mp3"
     "When Susan arrives at the Reed's cabin, she finds the door slightly ajar."
 
@@ -596,14 +598,17 @@ label nav_cont:
     scene hallway
 
     #Narrator
+    play sound "audio/sfx/footsteps_far_near.mp3" volume 1.0
     voice "audio/day1/scene17_N1_2.mp3"
     "Susan sprints back to the dining room, bursting through the door, panting."
 
     #scene 17
     scene diningroom
+    
 
     #Susan Murphy
     show susan at left 
+     
     voice "audio/day1/scene17_N5_sm.mp3"
     sm "McQuaid! I thought you wanted us to do your bidding, not kill us"
 
@@ -671,14 +676,17 @@ label nav_cont:
     hide susan
 
     #Narrator
+    play sound "audio/sfx/bg_chatter.mp3"
     voice "audio/day1/scene17_N1_3.mp3"
     "Indiscriminate chatter happens amongst the guests."
 
     #Michael Mcquaid
     show michael
+    #stop sound fadeout 0.5
     voice "audio/day1/scene17_N2_mm.mp3"
+    stop sound fadeout 5
     mm "ALRIGHT, EVERYONE! Settle down. Let’s not lose our heads. Susan, you are a private eye, yeah? I think you have the qualifications to solve this."
-
+    
     #Susan Murphy
     show susan at left
     show michael at right
@@ -753,6 +761,7 @@ label nav_cont:
 
     scene hallway
 
+    play sound "audio/sfx/Footstep_near_far.mp3"
     "Navigating to the murder scene"
 
     #Narrator
@@ -769,16 +778,16 @@ label nav_cont:
     #Narrator
     voice "audio/day1/scene19_N1.mp3"
     "While looking at a crime scene, click on points of interest around the area to find clues."
-
+    #play music "audio/sfx/DetectiveBackgroundMusic.mp3" volume 0.2
     hide screen reedscene_investigation
     
 label first_murder:   
 
     #scene 20
     scene richard_murderscene
-
     #Susan Murphy
     show susan at left
+    
     voice "audio/day1/scene20_N5_sm.mp3"
     sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
 
