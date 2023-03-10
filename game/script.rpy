@@ -42,7 +42,7 @@ label start:
     #Susan's Apartment from door with mail slot (background)
 
     # Narrator 
-    #voice"audio/day1/Scene1_N1_1.mp3"
+    voice "audio/day1/Scene1_N1_1.mp3"
     "Coming home from her latest case, Susan Murphy, private eye, opens the door to her apartment."
     # Scene 2 - inside Susan’s front door, mail on the floor 
 
@@ -52,11 +52,11 @@ label start:
     #Inside Susan Apartment Mail on floor
 
     # Narrator 
-    #voice"audio/day1/Scene2_N1.mp3"
+    voice"audio/day1/Scene2_N1.mp3"
     "Stepping inside, glancing down, she sees the expected bills and magazines slipped through the mail slot onto the floor."
 
     # Narrator 
-    #voice"audio/day1/Scene2_N2_mm.mp3"
+    voice"audio/day1/Scene2_N2_mm.mp3"
     "Among the pile is an ornate envelope, with an equally ornate invitation inside."
 
     # Scene 3 - Envelope 
@@ -1189,13 +1189,8 @@ label first_murder:
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
-<<<<<<< Updated upstream
-            voice "audio/day2path/scene31_n5_ej_3.mp3"
-            sm "Yes, if you have more, please take me to them. I need to check them myself."
-=======
             voice "audio/day2/scene31_n5_ej_3.mp3"
             sm "Yes, if you have more, please take me to them. I need to check them myself"
->>>>>>> Stashed changes
 
             #Ezekiel Jones
             voice "audio/day2/scene31_n5_sm_3.mp3"
@@ -1233,15 +1228,9 @@ label first_murder:
                     #Susan murphy
                     show susan at left
                     show ezekiel at right
-<<<<<<< Updated upstream
-                    voice "audio/day2path/scene33_n5_sm.mp3"
-                    sm "From the sound of your reaction, it almost seems like you’re hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
-                    voice "audio/day2path/scene33_n5_sm_2.mp3"
-=======
                     voice "audio/day2/scene33_n5_sm.mp3"
                     sm "From the sound of your reaction, it almost seems like you’re hiding something. If there isn't anything to hide, look me in the eye and say it confidently"
                     voice "audio/day2/scene33_n5_sm_2.mp3"
->>>>>>> Stashed changes
                     sm "Do you have another pair of shoes that you are hiding?"
 
                     #Narrator
@@ -1506,13 +1495,8 @@ label dalton_inv:
             "Dalton looks taken aback."
 
             #David Dalton
-<<<<<<< Updated upstream
-            voice "audio/day2path/scene38_n4_dd_3.mp3"
-            dd "My shoes? W-Why would you ever need to see them?"
-=======
             voice "audio/day2/scene38_n4_dd_3.mp3"
             dd "My shoes? Why would you ever need to see them?"
->>>>>>> Stashed changes
 
             #Susan Murphy
             show susan at left 
@@ -1553,26 +1537,16 @@ label dalton_inv:
             "Dalton steps through a door into the crew quarters."
 
             #Susan Murphy 
-<<<<<<< Updated upstream
-            #voice "audio/day2path/scene38.mp3"
-            sm "A thought occurred to me, Ezekiel. If all the staff lockers were in the same place, could Dalton have taken William's shoes?"
-=======
             #voice "audio/day2/scene38.mp3"
             sm "A thought occurs to me, Ezekiel. If all the staff lockers were in the same place,could Dalton have taken William's shoes?"
->>>>>>> Stashed changes
 
             #Ezekiel Jones
             voice "audio/day2/scene38_n9_ej_3.mp3"
             ej "Well-"
 
             #Narrator
-<<<<<<< Updated upstream
-            voice "audio/day2path/scene38_n1_ej_4.mp3"
-            "Dalton overhears the conversation as he enters the room, carrying an identical pair of shoes to the ones he was wearing."
-=======
             voice "audio/day2/scene38_n1_ej_4.mp3"
             "Dalton enters the room, carrying an identical pair of shoes to the ones he was wearing."
->>>>>>> Stashed changes
 
             #David Dalton
             voice "audio/day2/scene38_n4_dd_6.mp3"
@@ -1720,13 +1694,8 @@ label william_inv:
 
     #Narrator
     show william
-<<<<<<< Updated upstream
-    #voice "audio/day2 path/scene42.mp3"
-    "Moments later, William Windchime walks into the kitchen"
-=======
     #voice "audio/day2/scene42.mp3"
     "William Windchime walks into the kitchen"
->>>>>>> Stashed changes
     hide william
 
     #Susan Murphy 
@@ -1848,21 +1817,12 @@ label william_inv:
                     voice "audio/day2/scene43_n9_ej_3.mp3"
                     ej "You have to admit, this seems awfully suspicious. Especially with how rude Richard was to you last night."
 
-<<<<<<< Updated upstream
-                    #voice "audio/day2 path/scene43_n9_ej_4.mp3"
-                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough?"
-
-                    #William Windchime
-                    #voice "audio/day2 path/scene43.mp3"
-                    ww "I-…I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
-=======
                     #voice "audio/day2/scene43_n9_ej_4.mp3"
                     ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough, eh?"
 
                     #William Windchime
                     #voice "audio/day2/scene43.mp3"
                     ww "I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
->>>>>>> Stashed changes
                     hide william
                     show ezekiel at right
                     show susan at left 
@@ -2001,13 +1961,8 @@ label william_inv:
                     ej "To what? To murder someone? Someone who humiliated you in front o- "
 
                     #William Windchime
-<<<<<<< Updated upstream
-                    voice "audio/day2path/scene47_n8_ww_2.mp3"
-                    ww "Yes! Of course, I was angry! You'd be, too, if some rich greaser screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
-=======
                     voice "audio/day2/scene47_n8_ww_2.mp3"
                     ww "Yes! Of course, I was angry! You'd be, too, if some rich asshole screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
->>>>>>> Stashed changes
 
                     #Susan Murphy
                     hide ezekiel
@@ -2644,7 +2599,7 @@ label third:
             
 
             #Susan Murphy
-           #voice "audio/scene63_N5_sm_4.mp3" 
+            #voice "audio/scene63_N5_sm_4.mp3" 
             sm "Hmm, okay. Thanks for sharing"
             
 
