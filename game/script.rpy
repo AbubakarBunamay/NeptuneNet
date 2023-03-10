@@ -106,7 +106,7 @@ label start:
 
     #Susan Murphy
     voice "audio/day1/scene5_N5_sm.mp3"
-    sm "Okay, thanks for the information."
+    sm "Alright, thank you."
     hide david
     hide susan 
     
@@ -169,7 +169,7 @@ label start:
     #Michael McQuaid
     show michael 
     voice "audio/day1/scene7_N2_mm8.mp3"
-    mm "Speaking of here’s dinner now!"
+    mm "Ah, and here’s dinner now!"
     hide michael
     
     #Susan Thoughts 
@@ -189,7 +189,7 @@ label start:
     rr"How dare you! Don’t you know who I am, boy?"
 
     #William Windchime
-    show william at left
+    show William upset at left
     voice "audio/day1/scene7_N8_ww.mp3"
     ww "I-I’m so sorry, mister Reed, sir, I didn’t mean t-"
 
@@ -221,7 +221,7 @@ label start:
     hide susan
 
     #Michael McQuaid 
-    show michael
+    show Michael angry
     voice "audio/day1/scene7_N2_mm9.mp3"
     mm "William! Go wait in the kitchen. We’ll talk about this later!"
     hide michael
@@ -556,7 +556,7 @@ label nav_cont:
     #Scene 13
 
     #The Hallway Facing the Ajar Cabin Door
-    scene hallwayfacingdoor
+    scene cabindoorajar
 
     #Narrator
     voice "audio/day1/scene13_N1.mp3"
