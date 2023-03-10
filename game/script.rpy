@@ -1665,10 +1665,10 @@ label william_inv:
     $ persistent.investigation_choices_viewed.append("William Windchime")
     
     #Narrator
-    show will
+    show william
     #voice "audio/day2 path/scene42.mp3"
     "William Windchime walks into the kitchen"
-    hide will
+    hide william
 
     #Susan Murphy 
     show susan
@@ -1677,10 +1677,10 @@ label william_inv:
     hide susan
 
     #William Windchime
-    show will 
+    show william 
     voice "audio/day2 path/scene42_n8_ww.mp3"
     ww "Oh. Um. I guess not. It's about the murder, right?"
-    hide will
+    hide william
 
     #Ezkeiel Jones
     show ezekiel
@@ -1702,10 +1702,10 @@ label william_inv:
             hide susan
 
             #William Windchime
-            show will
+            show william
             voice "audio/day2 path/scene42_n8_ww_2.mp3"
             ww "What? Why?"
-            hide will
+            hide william
 
             #Ezekiel Jones
             show ezekiel
@@ -1714,10 +1714,10 @@ label william_inv:
             hide ezekiel
 
             #William Windchime
-            show will
+            show william
             voice "audio/day2 path/scene43_n8_ww_3.mp3"
             ww "Well, hold on, wait a minute-"
-            hide will
+            hide william
 
             #Susan Murphy 
             show susan
@@ -1726,10 +1726,10 @@ label william_inv:
             hide susan
 
             #William Windchime
-            show will
+            show william
             voice "audio/day2 path/scene43_n8_ww_4.mp3"
             ww "Well- but- okay…"
-            hide will
+            hide william
 
             #Narrator 
             voice "audio/day2 path/scene43_n1.mp3"
@@ -1742,10 +1742,10 @@ label william_inv:
             hide susan
 
             #William Windchime
-            show will
+            show william
             voice "audio/day2 path/scene43_n8_ww_5.mp3"
             ww "I swear it's not me! Someone stole them last night!"
-            hide will
+            hide william
 
             #Ezekiel Jones
             show ezekiel
@@ -1754,10 +1754,10 @@ label william_inv:
             hide ezekiel
 
             #William Windchime
-            show will
+            show william
             voice "audio/day2 path/scene43_n8_ww_6.mp3"
             ww "No, no. I have a second pair that I was wearing. Please, it wasn't me!"
-            hide will
+            hide william
 
             menu windchime_footprint:
 
@@ -1772,7 +1772,7 @@ label william_inv:
 
                     #Susan Murphy 
                     show susan at left
-                    show will at right
+                    show william at right
                     voice "audio/day2 path/scene43_n5_sm_5.mp3"
                     sm "Right. Someone stole your spare pair of shoes, committed murder, and then returned them to you."
 
@@ -1795,7 +1795,7 @@ label william_inv:
                     #William Windchime
                     #voice "audio/day2 path/scene43.mp3"
                     ww "I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
-                    hide will
+                    hide william
                     show ezekiel at right
                     show susan at left 
 
@@ -1832,7 +1832,7 @@ label william_inv:
    
             #Susan Murphy 
             show susan at left
-            show will at right
+            show william at right
             voice "audio/day2path/scene45_n5_sm.mp3"
             sm "Where were you around 6:30 last night?"
 
@@ -1866,7 +1866,7 @@ label william_inv:
             voice "audio/day2path/scene45_n9_ej_2.mp3"
             ej "Sure, kid, sure."
             hide ezekiel
-            hide will
+            hide william
 
             menu windchime_whereabouts:
 
@@ -1881,7 +1881,7 @@ label william_inv:
                         
                     #Susan Murphy 
                     show susan at left
-                    show will at right
+                    show william at right
                     voice "audio/day2path/scene46_n5_sm.mp3"
                     sm "You're positive that no one could vouch for your whereabouts? No one came down for a snack, and you didn\'t go to the washroom or leave?"
 
@@ -1899,7 +1899,7 @@ label william_inv:
                     voice "audio/day2path/scene46_n8_ww_2.mp3"
                     ww "Well.. yes, but I swear, it wasn't me!"
                     hide ezekiel 
-                    hide will
+                    hide william
 
                     menu windchime_further:
 
@@ -1918,7 +1918,7 @@ label william_inv:
 
                     #Susan Murphy 
                     show susan at left
-                    show will at right
+                    show william at right
                     voice "audio/day2path/scene47_n5_sm.mp3"
                     sm "Alright, William, I have another question for you. When you spilled that soup on Richard, he shouted at you, right? That must have made you angry."
 
@@ -1942,8 +1942,8 @@ label william_inv:
                     voice "audio/day2path/scene47_n5_sm_2.mp3"
                     sm "Easy, kid, we're just covering our bases. Say, how did you end up here, anyways? You don't strike me as the type to go for a service position."
                     hide susan
-                    hide will
-                    show will
+                    hide william
+                    show william
                     #Narrator
                     voice "audio/day2path/scene47_n1.mp3"
                     "William grows visibly nervous."
@@ -1971,7 +1971,7 @@ label william_inv:
                     #Narrator
                     voice "audio/day2path/scene47.mp3"
                     "William walks off in a huff."
-                    hide will
+                    hide william
                     #Ezekiel Jones
                     show ezekiel at right
                     show susan at left
@@ -2196,7 +2196,7 @@ label end_of_dayone:
 
     #Scene 52 - Susan Cabin 
 
-    scene susansabin 
+    scene susancabin 
 
     #Narrator
     #voice "audio/day2path/scene52
@@ -2285,7 +2285,7 @@ label third:
 
     #Scene 57 - Post Murder in Kitchen
 
-    scene murderscene_kitchen
+    scene windchime_murderscene
 
     #Susan Murphy 
     show susan
@@ -2315,7 +2315,7 @@ label third:
 
     #------------------------------------- START OF DAY 3 --------------------------------------------------------#
 
-    scene day3
+    scene daythree
 
     "Day 3"
 
@@ -3320,7 +3320,7 @@ label thirdmurder:
 
     #-------------------------------------------------------------------------------------- Start of day 4
 
-    scene day 4
+    scene dayfour
 
     "Day 4"
 
@@ -3846,7 +3846,7 @@ label finale:
 
     #Scene 91 - The password
 
-    scene holdingbomb
+    scene bomb
 
     #Ezekiel Jones
     #voice "audio/scene91_N9_ej_1.mp3"
@@ -4091,7 +4091,7 @@ label finale:
 
                     #Scene 97 - THE END
 
-                    scene theend
+                    scene win
 
                     #Narrator
                     #voice "audio/scene97_N1_1.mp3"
@@ -4105,38 +4105,7 @@ label finale:
                     
 
                     return 
-
-
-                "Change":
-
-                    #Scene 92 - Explosion
-
-                    #Susan Murphy 
-                    #voice "audio/scene92_N5_sm_1.mp3"
-                    sm "No, wait-"
                     
-
-                    #Narrator
-                    #voice "audio/scene92_N1_1.mp3"
-                    "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
-                    
-
-                    #Narrator
-                    #voice "audio/scene92_N1_2.mp3"
-                    "Others are drowned, caught in Neptune's Net."
-                    
-
-                    #Narrator
-                    #voice "audio/scene92_N1_3.mp3"
-                    "With them died the knowledge of what happened on this five-day cruise and any evidence that the passengers were anything less than upstanding members of the community."
-                    
-
-                    scene game_over
-
-                    "Game over"
-
-                    return
-
                 "Dining Room":
                     
                     #Susan Murphy 
@@ -4144,6 +4113,38 @@ label finale:
                     sm "“No that doesn’t make sense. There wouldn’t be a microphone for the intercom there."
 
                     jump dalton_location
+
+        "Change":
+
+                #Scene 92 - Explosion
+
+                #Susan Murphy 
+                #voice "audio/scene92_N5_sm_1.mp3"
+                sm "No, wait-"
+                
+
+                #Narrator
+                #voice "audio/scene92_N1_1.mp3"
+                "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
+                
+
+                #Narrator
+                #voice "audio/scene92_N1_2.mp3"
+                "Others are drowned, caught in Neptune's Net."
+                
+
+                #Narrator
+                #voice "audio/scene92_N1_3.mp3"
+                "With them died the knowledge of what happened on this five-day cruise and any evidence that the passengers were anything less than upstanding members of the community."
+                
+
+                scene game_over
+
+                "Game over"
+
+                return
+
+                
 
 
 
