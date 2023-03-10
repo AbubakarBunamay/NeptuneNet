@@ -189,7 +189,7 @@ label start:
     rr"How dare you! Don’t you know who I am, boy?"
 
     #William Windchime
-    show William upset at left
+    show william upset at left
     voice "audio/day1/scene7_N8_ww.mp3"
     ww "I-I’m so sorry, mister Reed, sir, I didn’t mean t-"
 
@@ -221,7 +221,7 @@ label start:
     hide susan
 
     #Michael McQuaid 
-    show Michael angry
+    show michael angry
     voice "audio/day1/scene7_N2_mm9.mp3"
     mm "William! Go wait in the kitchen. We’ll talk about this later!"
     hide michael
@@ -235,7 +235,7 @@ label start:
     "The man sitting next to Susan turns toward her and starts talking to her quietly."
     
     #Ezekiel Jones 
-    show ezekiel at right
+    show ezekiel smiling at right
     voice "audio/day1/scene7_N9_ej2.mp3"
     ej "Seems like that really got him going."
 
@@ -353,7 +353,7 @@ label mingle:
     scene switchtables
 
     #Patricia White 
-    show patricia at right
+    show patricia upset at right
     voice "audio/day1/scene7_N10_pw.mp3"
     pw "Well, I don’t see why Richard had to go and make such a fuss! I mean, it was just booze!"
 
@@ -371,26 +371,26 @@ label mingle:
 
     #Patricia White
     
-    show patricia at right
+    show patricia happy at right
     voice "audio/day1/scene7_N10_pw2.mp3"
     pw "Oh, if it isn’t “the brilliant Susan Murphy”? What’d you do for McQuaid to be called ‘brilliant’?"
 
     #Susan Murphy
     hide deborah
-    show susan at left
+    show susan content at left
     voice "audio/day1/scene7_N5_sm.mp3"
     sm "I found a leak in his bank account for him. I’m sorry. I know McQuaid introduced us, but it went by a bit fast. Would you mind reminding me of your names?"
 
     #Deborah White
     hide patricia
-    show deborah at right
+    show deborah happy at right
     voice "audio/day1/scene7_N12_dw2.mp3"
     dw "Oh, pardon me! I’m Deborah. This is my sister Patricia, and this is Rachel, the blowhard’s wife."
     hide deborah
     hide susan
 
     #Rachel
-    show rachel
+    show rachel upset 
     voice "audio/day1/scene7_N11_rr2.mp3"
     rar "Hey!"
     hide rachel
@@ -425,31 +425,31 @@ label mingle:
     hide michael 
 
     #Susan Murphy 
-    show susan
+    show susan pissed
     voice "audio/day1/scene7_N5_sm10.mp3"
     sm "What!"
     hide susan 
 
     #Deborah White 
-    show deborah
+    show deborah pissed
     voice "audio/day1/scene7_N12_dw3.mp3"
     dw "How dare you!"
     hide deborah
 
     #Ezekiel Jones 
-    show ezekiel
+    show ezekiel angry
     voice "audio/day1/scene7_N9_ej11.mp3"
     ej "What on  Earth are you talking about"
     hide ezekiel
 
     #Patricia White 
-    show patricia
+    show patricia upset
     voice "audio/day1/Scene7_N10_pw3.mp3"
     pw "WHAT IN THE FLYING FUCK ARE YOU ON ABOUT!"
     hide patricia
 
-    #Rachel Reed 
-    show rachel
+    #Rachel Reed  
+    show rachel upset
     voice "audio/day1/scene7_N11_rr3.mp3"
     rar "Hrrk! I think I’m going to be sick."
     hide rachel
@@ -470,12 +470,12 @@ label mingle:
     hide susan 
 
     #Ezekiel Jones 
-    show zeke at left
+    show ezekiel angry at left
     #voice "audio/day1/scene7_N9_ej.mp3"
     ej "I don’t believe you, McQuaid. You’re bluffing."
 
     #Michael McQuaid 
-    show michael at right
+    show michael smiling at right
     #voice "audio/day1/scene7_N3_mm.mp3"
     mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs" 
 
@@ -484,12 +484,12 @@ label mingle:
     "As the crowd’s eyes turn towards him, Ezekiel pales."
 
     #Ezekiel Jones 
-    show ezekiel at left
+    show ezekiel angry at left
     voice "audio/day1/scene7_N9_ej6.mp3"
     ej "What do you want, McQuaid?"
 
     #Michael McQuaid 
-    show michael at right
+    show michael smiling at right
     voice "audio/day1/scene7_N2_mm14.mp3"
     mm "The same I’ve always wanted, always deserved. Power. While you yucks have been going about your days with your crimes, I’ve been building a list on all of you."
     hide michael 
@@ -535,8 +535,8 @@ label mingle:
             "Susan enters the washroom but finds no one there."
 
             #Susan Murphy Voice
-            show susan
             play sound "audio/sfx/doorknock2.mp3"
+            show susan pissed
             voice "audio/day1/scene11_N5_sm.mp3"
             sm "Drat, she’s not here. Where else would she be… their cabin!"
 
@@ -583,7 +583,7 @@ label nav_cont:
     #voice "scene15_N1_1.mp3"
 
     #Susan Murphy 
-    show susan at left
+    show susan pissed at left
     voice "audio/day1/scene15_N5_sm.mp3"
     sm "Oh Shit. Is that Richard? Oh my God, I need to tell everyone about this."
     
@@ -607,13 +607,13 @@ label nav_cont:
     
 
     #Susan Murphy
-    show susan at left 
+    show susan pissed at left 
      
     voice "audio/day1/scene17_N5_sm.mp3"
     sm "McQuaid! I thought you wanted us to do your bidding, not kill us"
 
     #Michael McQuaid
-    show michael at right
+    show michael angry at right
     voice "audio/day1/scene17_N2_mm7.mp3"
     mm "Pardon me, Ms. Murphy?"
 
@@ -637,7 +637,7 @@ label nav_cont:
     hide michael
 
     #Ezekiel Jones
-    show ezekiel at right 
+    show ezekiel angry at right 
     voice "audio/day1/scene17_N9_ej4.mp3"
     ej "Hmm, he has a good point. We know nothing for sure. While you do seem like a lovely person Susan, you were out there alone."
 
@@ -648,14 +648,14 @@ label nav_cont:
 
     #Patricia White
     hide ezekiel
-    show patricia at right
+    show patricia upset at right
     voice "audio/day1/scene17_N10_pw.mp3"
     pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered."
     
 
     #Deborah White
     hide patricia
-    show deborah at right
+    show deborah pissed at right
     voice "audio/day1/scene17_N12_dw.mp3"
     dw "Calm down, Patti. Nothing is gonna happen to you."
     
@@ -681,14 +681,14 @@ label nav_cont:
     "Indiscriminate chatter happens amongst the guests."
 
     #Michael Mcquaid
-    show michael
+    show michael angry
     #stop sound fadeout 0.5
     voice "audio/day1/scene17_N2_mm.mp3"
     stop sound fadeout 5
     mm "ALRIGHT, EVERYONE! Settle down. Let’s not lose our heads. Susan, you are a private eye, yeah? I think you have the qualifications to solve this."
     
     #Susan Murphy
-    show susan at left
+    show susan questioning at left
     show michael at right
     voice "audio/day1/scene17_N5_sm19.mp3"
     sm "What? You don’t suspect me anymore?"
@@ -705,9 +705,12 @@ label nav_cont:
     ej "I’ll keep an eye on her."
 
     #Susan Murphy
+    hide susan 
+    show susan pissed
     voice "audio/day1/scene17_N5_sm18.mp3"
     sm "Oh, please."
-    
+    hide susan
+
     #Michael Mcquaid
     hide ezekiel
     show michael at right
@@ -717,26 +720,26 @@ label nav_cont:
     hide michael
 
     #Patrica White
-    show patricia at right
+    show patricia upset at right
     voice "audio/day1/scene17_N10_pw3.mp3"
     pw "I wanna go look for Rachel! She could be in danger!"
     hide patricia 
 
     #Deborah White
-    show deborah at right
+    show deborah pissed at right
     voice "audio/day1/scene17_N12_dw2.mp3"
     dw "Aren’t you afraid of getting murdered?"
     hide deborah
 
     #Patrica White
-    show patricia at right
+    show patricia upset at right
     voice "audio/day1/scene17_N10_pw4.mp3"
     pw "Yes, but she was nice to me. Oh, please come with me, Debbie."
 
     hide patricia 
 
     #Deborah White
-    show deborah at right
+    show deborah pissed at right
     voice"audio/day1/scene17_N12_dw3.mp3"
     dw "auughhh, fine. Let’s go look for her. Hey Michael! You heard?"
 
@@ -799,6 +802,8 @@ label first_murder:
     
 
     #Susan Murphy
+    hide susan
+    show susan pissed at left
     voice "audio/day1/scene20_N5_sm2.mp3"
     sm "As much as I hate to leave a case like this… you're right. Reconvene in the dining room tomorrow?"
     
