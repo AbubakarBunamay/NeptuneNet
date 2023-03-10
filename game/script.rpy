@@ -32,7 +32,6 @@ label splashscreen:
 label start:
     hide screen title_screen
     #------------------------------------- START OF DAY 1 --------------------------------------------------------#
-
     scene dayone
     
     # Scene 1 - Susan’s house front door
@@ -45,11 +44,11 @@ label start:
     # Narrator 
     voice"audio/day1/Scene1_N1_1.mp3"
     "Coming home from her latest case, Susan Murphy, private eye, opens the door to her apartment."
-
     # Scene 2 - inside Susan’s front door, mail on the floor 
 
     #scene Bg
     scene mail
+    play sound "audio/sfx/footsteps_far_near.mp3" volume 1.0
     #Inside Susan Apartment Mail on floor
 
     # Narrator 
@@ -65,10 +64,14 @@ label start:
     #Scene Bg - an image of the envelope and invitation with text on them
     scene envelope #inside The invitation 
 
+    
+    play sound "audio/sfx/Seaguls.mp3" fadein 1.0 volume 0.2
     #voice of mcquaid
     #do we need this as text or would a graphic be enough?
     voice"audio/day1/Scene3_N2_mm.mp3"
     "Dear Susan Murphy, you have been cordially invited as a distinguished guest to ring in 1952 in style aboard the USS Neptune. We will be departing at 6:00 P.M. December 30th from Honolulu Harbour, and returning to the same location on January 3rd. I hope to see you there! - Michael McQuaid"
+    #play sound "audio/sfx/waves.mp3" fadein 2.0 volume 0.5
+    stop sound fadeout 1.0
 
     # Susan thought  
     show susan
@@ -81,9 +84,10 @@ label start:
     scene yatchonwater
 
     #Narrator 
+    play sound "audio/sfx/waves.mp3" fadein 2.0 fadeout 1.0 volume 0.3 
     voice "audio/day1/Scene4_N1.mp3"
     "A couple of weeks later, Susan readies to board the Neptune, admiring the lavish yacht."
-
+    
     # Scene 5 - Susan Cabin
 
     #scene bg - Inside Susan Cabin
@@ -397,6 +401,7 @@ label mingle:
 
     #Michael McQUiad
     show michael
+    play sound "audio/sfx/toast.mp3"
     voice "audio/day1/scene7_N2_mm15.mp3"
     mm "Everyone! I hope you've enjoyed your evening, but now it's time to get to business"
     hide michael
@@ -450,8 +455,10 @@ label mingle:
     hide rachel
 
     #Narrator
+    play sound "audio/sfx/footstep_near_far.mp3"
     voice "audio/day1/scene7_N1_14.mp3" 
     "Heads turn as Rachel runs from the room, sickened by Michael’s words."
+    
 
     #Susan Murphy thoughts
     voice "audio/day1/scene7_N3_sm4.mp3"
@@ -469,7 +476,7 @@ label mingle:
 
     #Michael McQuaid 
     show michael at right
-    voice "audio/day1/scene7_N3_mm.mp3"
+    #voice "audio/day1/scene7_N3_mm.mp3"
     mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs" 
 
     #Narrator
