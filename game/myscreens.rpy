@@ -33,7 +33,7 @@ screen reedscene_investigation():
         ground "images/richard_murderscene.png"
         
         hotspot (1215, 467, 101, 54) action Jump ("headwound")
-        hotspot (1464, 723, 188, 174) action Jump ("bodybruise")
+        #hotspot (1464, 723, 188, 174) action Jump ("bodybruise")
         hotspot (1302, 22, 599, 458) action Jump ("bloodstains")
         hotspot (19, 601, 601, 462) action Jump ("knockedcase")
         hotspot (429, 982, 237, 67) action Jump ("Guadycane")
@@ -84,20 +84,20 @@ label bodybruise:
             jump first_murder        
 
     
-label bloodstains:
+# label bloodstains:
 
-    scene bloodstains
+#     scene bloodstains
 
     #Susan Murphy 
     voice"audio/day2/scene19_N3_sm3.mp3"
     sm "Looks like he was beaten before he was killed."
 
-    menu hbloodstains_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":
-            jump first_murder
+#     menu hbloodstains_inv:
+#         "What's your next step"
+#         "Continue Investigating":
+#             call screen reedscene_investigation
+#         "Done Investigating":
+#             jump first_murder
 
 
 label knockedcase:
@@ -139,6 +139,12 @@ label Guadycane:
     #Susan Murphy 
     #voice"audio/day2/scene19.mp3"
     sm "Maybe there is something to what McQuaid said…"
+
+    #Susan Murphy 
+    sm "That body shot must've hurt."
+
+    #Ezekiel Jones
+    ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
 
     menu gaudy_inv:
         "What's your next step"
