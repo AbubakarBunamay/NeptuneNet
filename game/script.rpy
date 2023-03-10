@@ -323,7 +323,7 @@ label start:
             sm "Just as you said, if there is anything I can help you with, don't hesitate to ask."
 
             #Narrator
-            voice "audio/day1/scene7_N1_11.mp3.mp3"
+            voice "audio/day1/scene7_N1_11.mp3"
             "Ezekiel looked at Susan with a thankful smile. His smile was sincere and enough to move almost anyone."
             
             #Ezekiel Jones
@@ -335,11 +335,14 @@ label start:
             sm "I want to mingle a bit. Thank you for the talk."
 
             #Ezekiel Jones
+            play sound "audio/sfx/footstep_near_far.mp3" volume 1.0
             voice "audio/day1/scene7_N9_ej12.mp3"
             ej "The pleasure is mine, thank you."
+            
             hide ezekiel
             hide susan
-
+            
+            
             jump mingle
 
 label mingle:
@@ -1170,27 +1173,32 @@ label first_murder:
             #Scene 31 - Ezekiel Jones / Footprint (Hallway)
 
             #Susan Murphy 
-            voice "audio/day2path/scene31_n5_sm_4.mp3.mp3"
+            voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
-            #voice "audio/day2path/scene31_n9_ej_1.mp3"
+            #voice "audio/day2/scene31_n9_ej_1.mp3"
             ej "Because of the footprint, right? Do you think it’s me?"
 
             #Susan Murphy 
-            #voice "audio/day2path/scene31_n9_ej_2.mp3"
+            #voice "audio/day/scene31_n9_ej_2.mp3"
             sm "No, I just have to be certain. Better safe than sorry, right?"
 
             #Ezekiel Jones
-            voice "audio/day2path/scene31_n9_ej_2.mp3"
+            voice "audio/day2/scene31_n9_ej_2.mp3"
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
+<<<<<<< Updated upstream
             voice "audio/day2path/scene31_n5_ej_3.mp3"
             sm "Yes, if you have more, please take me to them. I need to check them myself."
+=======
+            voice "audio/day2/scene31_n5_ej_3.mp3"
+            sm "Yes, if you have more, please take me to them. I need to check them myself"
+>>>>>>> Stashed changes
 
             #Ezekiel Jones
-            voice "audio/day2path/scene31_n5_sm_3.mp3"
+            voice "audio/day2/scene31_n5_sm_3.mp3"
             ej "Okay, I will show you to them."
             hide ezekiel
             hide susan
@@ -1200,17 +1208,17 @@ label first_murder:
             scene ezekielroom
 
             #Susan Murphy 
-            voice "audio/day2path/scene32_n5_sm_5.mp3"
+            voice "audio/day2/scene32_n5_sm_5.mp3"
             show susan at left
             show ezekiel at right
             sm "It is interesting how you have so many shoes and yet not a single match. Are you sure that is all of them, or are you hiding another pair?"
 
             #Ezekiel Jones
-            voice "audio/day2path/scene31_n5_sm_5.mp3"
+            voice "audio/day2/scene31_n5_sm_5.mp3"
             ej "W-what? Is- is that r-really what you think of me? I-I I thought we were friends. I even told you I would help you if you needed anything."
 
             #Narrator
-            voice "audio/day2path/scene32_n1.mp3"
+            voice "audio/day2/scene32_n1.mp3"
             "Pain was filling Susan up inside, but she kept a poker face to see his reaction."
             hide ezekiel
             hide susan
@@ -1225,40 +1233,46 @@ label first_murder:
                     #Susan murphy
                     show susan at left
                     show ezekiel at right
+<<<<<<< Updated upstream
                     voice "audio/day2path/scene33_n5_sm.mp3"
                     sm "From the sound of your reaction, it almost seems like you’re hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
                     voice "audio/day2path/scene33_n5_sm_2.mp3"
+=======
+                    voice "audio/day2/scene33_n5_sm.mp3"
+                    sm "From the sound of your reaction, it almost seems like you’re hiding something. If there isn't anything to hide, look me in the eye and say it confidently"
+                    voice "audio/day2/scene33_n5_sm_2.mp3"
+>>>>>>> Stashed changes
                     sm "Do you have another pair of shoes that you are hiding?"
 
                     #Narrator
-                    voice "audio/day2path/scene33_n1.mp3"
+                    voice "audio/day2/scene33_n1.mp3"
                     "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
 
                     #Susan Murphy Thoughts
-                    voice "audio/day2path/scene33_n3_sm.mp3"
+                    voice "audio/day2/scene33_n3_sm.mp3"
                     smt "Okay, that ules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
 
                     #Ezekiel Jones
-                    voice "audio/day2path/scene33_n9_ej.mp3"
+                    voice "audio/day2/scene33_n9_ej.mp3"
                     ej "No, I don't have another pair of shoes. Feel free to take a look around my room to check."
 
                     #Narrator
-                    voice "audio/day2path/scene33_n1_2.mp3"
+                    voice "audio/day2/scene33_n1_2.mp3"
                     "Susan continued to check the room for anything that was hidden but found nothing."
 
                     #Susan Murphy
-                    voice "audio/day2path/scene33_n5_sm_3.mp3"
+                    voice "audio/day2/scene33_n5_sm_3.mp3"
                     sm "It seems like I was out of line. Thank you for bearing with me."
 
                     #Ezekiel Jones
-                    voice "audio/day2path/scene33_n9_ej_2.mp3"
+                    voice "audio/day2/scene33_n9_ej_2.mp3"
                     ej  "It is okay. I apologize for my reaction as well. I understand all you want to do is find the killer."
 
-                    voice "audio/day2path/scene33_n9_ej_3.mp3"
+                    voice "audio/day2/scene33_n9_ej_3.mp3"
                     ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
 
                     #Susan Murphy
-                    voice "audio/day2path/.mp3"
+                    voice "audio/day2/.mp3"
                     sm "I understand. I will visit you in the dining hall to continue the conversation."
                     hide ezekiel
                     hide susan
@@ -1269,29 +1283,29 @@ label first_murder:
                     #Scene 34 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
                     #Susan Murphy 
-                    voice "audio/day2path/scene34_n5_sm.mp3"
+                    voice "audio/day2/scene34_n5_sm.mp3"
                     sm  "Of course, we are friends, but you must understand that I am a detective. I can't leave any stone unturned."
 
-                    voice "audio/day2path/scene34_n5_sm_2.mp3"
+                    voice "audio/day2/scene34_n5_sm_2.mp3"
                     sm  "If you genuinely have nothing, then you won't mind if I check your room. I view you as a friend and someone I trust."
 
-                    voice "audio/day2path/scene34_n5_sm_3.mp3"
+                    voice "audio/day2/scene34_n5_sm_3.mp3"
                     sm  "To do my job, I must do this. Please help me."
 
                     #Ezekiel Jones
-                    voice "audio/day2path/scene34_n9_ej.mp3"
+                    voice "audio/day2/scene34_n9_ej.mp3"
                     ej "Okay, I understand you may look around for anything that could help your investigation."
 
                     #Narrator
-                    voice "audio/day2path/scene34_n1.mp3"
+                    voice "audio/day2/scene34_n1.mp3"
                     "Susan looked through Ezekiel's room and found nothing."
 
                     #Susan Murphy 
-                    voice "audio/day2path/scene34_n5_sm_4.mp3"
+                    voice "audio/day2/scene34_n5_sm_4.mp3"
                     sm "Thank you for bearing with me through this."
 
                     #Ezekiel Jones
-                    voice "audio/day2path/scene34_n9_ej_2.mp3"
+                    voice "audio/day2/scene34_n9_ej_2.mp3"
                     ej "It’s okay. I understand that you need to do your job. This is something you must do."
                     hide ezekiel
                     hide susan
@@ -1308,26 +1322,26 @@ label cont_ezekiel_inv:
     #Susan Murphy 
     show susan at left
     show ezekiel at right
-    voice "audio/day2 path/scene35_n5_sm.mp3"
+    voice "audio/day2 /scene35_n5_sm.mp3"
     sm "I just have a few more questions for you, Ezekiel."
 
     #Ezekiel Jones
-    voice "audio/day2path/scene35_n9_ej.mp3"
+    voice "audio/day2/scene35_n9_ej.mp3"
     ej "Okay, what is it you need to ask me."
 
     #Susan Murphy 
-    voice "audio/day2path/scene35_n5_sm_2.mp3"
+    voice "audio/day2/scene35_n5_sm_2.mp3"
     sm "When examining the body, you mentioned you did some training. What kind of training did you do?"
 
     #Ezekiel Jones
-    voice "audio/day2path/scene35_n9_ej_2.mp3"
+    voice "audio/day2/scene35_n9_ej_2.mp3"
     ej "I was a combat medic during World War 2. I had to do combat training and help people recover during the War."
 
     #Susan Murphy
     
     sm "hmm... Interesting."
 
-    voice "audio/day2 path/scene35_n5_sm_3.mp3"
+    voice "audio/day2 /scene35_n5_sm_3.mp3"
     #Susan Murphy Thoughts
     smt "I need to choose my words carefully here. One wrong question, and I could low the information I need."
 
@@ -1335,7 +1349,7 @@ label cont_ezekiel_inv:
     hide susan
 
     menu ezekiel_training:
-        "Choose path of investigation"
+        "Choose  of investigation"
 
         "Press Further":
             #Scene 36 - Ezekiel Jones / Training 
@@ -1343,37 +1357,37 @@ label cont_ezekiel_inv:
             #Susan Murphy 
             show susan at left
             show ezekiel at right
-            voice "audio/day2path/scene36_n5_sm.mp3"
+            voice "audio/day2/scene36_n5_sm.mp3"
             sm "War is a harsh time. It can traumatize people. You may be suffering from this traumatic experience."
 
             #Eezekielil Jones
-            voice "audio/day2path/scene36_n9_ej.mp3"
+            voice "audio/day2/scene36_n9_ej.mp3"
             ej "Are you stating that because I was in a War, it harmed me so much that I continued to kill people?!"
 
-            voice "audio/day2path/scene36_n9_ej_2.mp3"
+            voice "audio/day2/scene36_n9_ej_2.mp3"
             ej "I despise violence! I don't like harming people!"
 
             #Susan Murphy 
-            voice "audio/day2path/scene36_n5_sm_2.mp3"
+            voice "audio/day2/scene36_n5_sm_2.mp3"
             sm "Yet you were in a War, and War involves killing."
 
             #Ezekiel Jones
-            voice "audio/day2path/scene36_n9_ej_3.mp3"
+            voice "audio/day2/scene36_n9_ej_3.mp3"
             ej "It is true. I am suffering. Seeing innocent people die before your eyes is painful."
 
-            voice "audio/day2path/scene36_n9_ej_4.mp3"
+            voice "audio/day2/scene36_n9_ej_4.mp3"
             ej "No matter what, I joined the War because it is my duty! I wanted to help people, not kill them!"
             
             #Susan Murphy
-            voice "audio/day2path/scene36_n5_sm_3.mp3"
+            voice "audio/day2/scene36_n5_sm_3.mp3"
             sm "I apologize, Ezekiel. I know I was rough with asking questions."
 
             #Narrator
-            #voice"audio/day2path/scene36.mp3"
+            #voice"audio/day2/scene36.mp3"
             "Ezekiel tries to calm himself down."
 
             #Ezekiel Jones
-            voice "audio/day2path/scene36_n9_ej_5.mp3"
+            voice "audio/day2/scene36_n9_ej_5.mp3"
             ej "It’s okay. You’re just doing your job."
             hide ezekiel
             hide susan
@@ -1385,25 +1399,25 @@ label cont_ezekiel_inv:
             #Susan Murphy 
             show susan at left 
             show ezekiel at right
-            voice "audio/day2path/scene37_n5_sm.mp3"
+            voice "audio/day2/scene37_n5_sm.mp3"
             sm "Being a medic in the War is tough. You are not suffering from any mental trauma, are you?"
 
             #Ezekiel Jones
-            voice "audio/day2path/scene37_n9_ej.mp3"
+            voice "audio/day2/scene37_n9_ej.mp3"
             ej "It really hurts me to see people die. While I do admit there might be some trauma that I am facing, I can't stop doing my job to help people."
 
-            voice "audio/day2path/scene37_n9_ej_2.mp3"
+            voice "audio/day2/scene37_n9_ej_2.mp3"
             ej "A friend of mine was on the front lines of World War 2, and he got shot. I did my best, everything I could do to save him."
 
-            voice "audio/day2path/scene37_n9_ej_3"
+            voice "audio/day2/scene37_n9_ej_3"
             ej "But no matter how hard I tried, it wasn’t enough. He still died. It haunts me to this day."
 
             #Susan Murphy 
-            voice "audio/day2path/scene37_n5_sm_2.mp3"
+            voice "audio/day2/scene37_n5_sm_2.mp3"
             sm "That sounds rough. I am sorry for your loss. If there is anything I can do to help, don't hesitate to ask."
 
             #Ezekiel Jones
-            voice "audio/day2path/scene37_n9_ej_4.mp3"
+            voice "audio/day2/scene37_n9_ej_4.mp3"
             ej "Thank you, Susan. That means a lot."
             hide ezekiel
             hide susan
@@ -1456,17 +1470,17 @@ label dalton_inv:
 
     #David Dalton 
     show david
-    voice "audio/day2path/Scene38_n4_dd.mp3" 
+    voice "audio/day2/Scene38_n4_dd.mp3" 
     dd "Well, if it isn't the detective and her faithful Watson. Here to ask me a few questions, then?"
 
     #Susan Murphy 
     show susan at left
     show david at right
-    voice "audio/day2path/Scene38_n5_sm.mp3"
+    voice "audio/day2/Scene38_n5_sm.mp3"
     sm "Yes, actually. But first, I'm afraid I never caught your name…"
 
     #David Dalton 
-    voice "audio/day2path/Scene38_n4_dd_2.mp3"
+    voice "audio/day2/Scene38_n4_dd_2.mp3"
     dd "Dalton. David Dalton."
     hide susan
     hide david
@@ -1482,71 +1496,86 @@ label dalton_inv:
 
             #Susan Murphy 
             show susan 
-            voice "audio/day2path/scene38_n5_sm_2.mp3"
+            voice "audio/day2/scene38_n5_sm_2.mp3"
             sm "Dalton, can we see your shoes for a moment?"
 
             #Narrator
             hide susan
             show david 
-            voice "audio/day2path/scene38_n1.mp3"
+            voice "audio/day2/scene38_n1.mp3"
             "Dalton looks taken aback."
 
             #David Dalton
+<<<<<<< Updated upstream
             voice "audio/day2path/scene38_n4_dd_3.mp3"
             dd "My shoes? W-Why would you ever need to see them?"
+=======
+            voice "audio/day2/scene38_n4_dd_3.mp3"
+            dd "My shoes? Why would you ever need to see them?"
+>>>>>>> Stashed changes
 
             #Susan Murphy
             show susan at left 
             show david at right 
-            voice "audio/day2path/scene38_n5_ssm_3.mp3"
+            voice "audio/day2/scene38_n5_ssm_3.mp3"
             sm "Now that's a bit suspicious, Dalton. It would be a fairly innocuous request if you didn't do anything. Why not show us your shoes?"
 
             #Ezekiel Jones
-            voice "audio/day2path/scene38_n9_ej.mp3"
+            voice "audio/day2/scene38_n9_ej.mp3"
             ej "Come now, Dalton, we found a shoe print at the crime scene, and we just want to verify whose shoe it was."
 
             #Susan Murphy Thoughts
-            voice "audio/day2path/scene38_n9_ej.mp3"
+            voice "audio/day2/scene38_n9_ej.mp3"
             smt "Did Ezekiel really tell him that? He doesn't know the first thing about investigations!"
 
             #David Dalton 
-            voice "audio/day2path/scene38_n4_dd_4.mp3"
+            voice "audio/day2/scene38_n4_dd_4.mp3"
             dd  "Oh, well, why didn't you say so?"
 
             #Narrator
-            voice "audio/day2path/scene38_n1_2.mp3"
+            voice "audio/day2/scene38_n1_2.mp3"
             "Dalton removes his shoes and shows Susan the soles. They do not match the print found next to Richard's body."
 
             #Susan Murphy 
-            voice "audio/day2path/scene38_n5_sm_4.mp3"
+            voice "audio/day2/scene38_n5_sm_4.mp3"
             sm "Well, that rules out that pair, at least. Do you have any other shoes, Dalton?"
 
             #David Dalton 
-            voice "audio/day2path/scene38_n4_dd_5.mp3"
+            voice "audio/day2/scene38_n4_dd_5.mp3"
             dd "I do, but they're identical. I can go and grab them from my locker if you like."
 
             #Ezekiel Jones
-            voice "audio/day2path/scene38_n9_ej_2.mp3"
+            voice "audio/day2/scene38_n9_ej_2.mp3"
             ej "We'd appreciate it, just to be thorough."
 
             #Narrator
-            voice "audio/day2path/scene38_n1_3.mp3"
+            voice "audio/day2/scene38_n1_3.mp3"
             "Dalton steps through a door into the crew quarters."
 
             #Susan Murphy 
+<<<<<<< Updated upstream
             #voice "audio/day2path/scene38.mp3"
             sm "A thought occurred to me, Ezekiel. If all the staff lockers were in the same place, could Dalton have taken William's shoes?"
+=======
+            #voice "audio/day2/scene38.mp3"
+            sm "A thought occurs to me, Ezekiel. If all the staff lockers were in the same place,could Dalton have taken William's shoes?"
+>>>>>>> Stashed changes
 
             #Ezekiel Jones
-            voice "audio/day2path/scene38_n9_ej_3.mp3"
+            voice "audio/day2/scene38_n9_ej_3.mp3"
             ej "Well-"
 
             #Narrator
+<<<<<<< Updated upstream
             voice "audio/day2path/scene38_n1_ej_4.mp3"
             "Dalton overhears the conversation as he enters the room, carrying an identical pair of shoes to the ones he was wearing."
+=======
+            voice "audio/day2/scene38_n1_ej_4.mp3"
+            "Dalton enters the room, carrying an identical pair of shoes to the ones he was wearing."
+>>>>>>> Stashed changes
 
             #David Dalton
-            voice "audio/day2 path/scene38_n4_dd_6.mp3"
+            voice "audio/day2/scene38_n4_dd_6.mp3"
             dd "I could try, Miss Murphy, but the kid keeps a padlock on his locker. And why would I go through the effort in the first place?"
             hide susan 
             hide david
@@ -1565,49 +1594,49 @@ label dalton_inv:
 
             #Susan Murphy 
             show susan
-            voice "audio/day2 path/scene40_n5_sm.mp3"
+            voice "audio/day2/scene40_n5_sm.mp3"
             sm "Where were you between 6:00 and 7:00 PM last night?"
 
             #David Dalton
             hide susan
             show david 
-            voice "audio/day2 path/scene40_n4_dd.mp3"
+            voice "audio/day2/scene40_n4_dd.mp3"
             dd "Well, I was in the Dining Hall until 6:30 when Mr. McQuaid asked me to come down here and get some more hors d'oeuvres, so I came in and got them, then went right back."
 
             #Susan Murphy
             show susan at left
             show david at right 
-            voice "audio/day2 path/scene40_n5_sm_2.mp3"
+            voice "audio/day2/scene40_n5_sm_2.mp3"
             sm "Can anyone verify that?"
 
             #David Dalton 
-            voice "audio/day2 path/scene40_n4_dd_2.mp3"
+            voice "audio/day2/scene40_n4_dd_2.mp3"
             dd "Sure, Mr. McQuaid sent me, and William was here when I got down. Oh, and some of the guests might have heard the boss's order."
 
             #Susan Murphy 
-            voice "audio/day2 path/scene40_n5_sm_3.mp3"
+            voice "audio/day2/scene40_n5_sm_3.mp3"
             sm "And when did you get back to the Dining Hall?"
 
             #David Dalton 
-            voice "audio/day2 path/scene40_n4_dd_3.mp3"
+            voice "audio/day2/scene40_n4_dd_3.mp3"
             dd "Oh, 6:50, 6:55."
 
             #Ezekiel Jones
             hide susan
             hide david
             show ezekiel
-            #voice "audio/day2 path/scene40_n4_dd_4.mp3"
+            #voice "audio/day2/scene40_n4_dd_4.mp3"
             ej "That seems like an awfully long time to get some appetizers. Sure you didn't take a little detour to murder a prick who insulted your co-worker?"
             hide ezekiel
 
             #David Dalton 
             show david
-            #voice "audio/day2 path/scene40_n4_dd_5.mp3"
+            #voice "audio/day2/scene40_n4_dd_5.mp3"
             dd "Kill? For William? Oh please, I like the kid, but we ain't that close. We were out of appetizers, so I had to make more."
-            voice"audio/day2 path/scene40_n4_dd_5.mp3"
+            voice"audio/day2/scene40_n4_dd_5.mp3"
             
             #David Dalton
-            voice "audio/day2 path/scene40_n4_dd_6.mp3"
+            voice "audio/day2/scene40_n4_dd_6.mp3"
             dd "Now, do you have anything else to ask, or can I get back to these dishes?"
             hide david
 
@@ -1620,31 +1649,31 @@ label dalton_inv:
 
                     #Susan Murphy 
                     show susan
-                    voice "audio/day2 path/scene41_n5_sm.mp3"
+                    voice "audio/day2/scene41_n5_sm.mp3"
                     sm "You're sure that's all you did? It seems rather sloppy not to have spare hors d'oeuvres ready. And surely it would take less than 20 minutes."
                     hide susan
 
                     #David Dalton
                     show david 
-                    voice "audio/day2 path/scene41_n4_dd.mp3"
+                    voice "audio/day2/scene41_n4_dd.mp3"
                     dd "Well, I might've taken a moment to go to the washroom, but is that a crime?"
                     hide david
 
                     #Ezekiel Jones
                     show ezekiel
-                    voice "audio/day2 path/scene41_n9_ej.mp3"
+                    voice "audio/day2/scene41_n9_ej.mp3"
                     ej "No, but murder is, so forgive us for wanting to know what you did in a mysterious 20-minute window."
                     hide ezekiel
 
                     #Susan Murphy
                     show susan 
-                    voice "audio/day2 path/scene41_n5_sm_2.mp3"
+                    voice "audio/day2/scene41_n5_sm_2.mp3"
                     sm "Can anyone corroborate this?"
                     hide susan
 
                     #David Dalton 
                     show david
-                    voice "audio/day2 path/scene41_n4_dd_2.mp3"
+                    voice "audio/day2/scene41_n4_dd_2.mp3"
                     dd "I'm not some schoolgirl going to the restroom in packs. Now, if you'll excuse me, I have some dishes to wash."
 
                     #Narrator 
@@ -1653,13 +1682,13 @@ label dalton_inv:
                     #Susan Murphy 
                     hide david
                     show susan
-                    voice "audio/day2 path/scene41_n5_sm_3.mp3"
+                    voice "audio/day2/scene41_n5_sm_3.mp3"
                     sm "Those wounds could definitely have been made in 20 minutes. Most fights don't take longer than a few moments, much less that long."
                     hide susan
 
                     #Ezekiel Jones
                     show ezekiel
-                    voice "audio/day2 path/scene41_n9_ej_2.mp3"
+                    voice "audio/day2/scene41_n9_ej_2.mp3"
                     ej "We'll have to keep an eye on him."
                     hide ezekiel
 
@@ -1691,25 +1720,30 @@ label william_inv:
 
     #Narrator
     show william
+<<<<<<< Updated upstream
     #voice "audio/day2 path/scene42.mp3"
     "Moments later, William Windchime walks into the kitchen"
+=======
+    #voice "audio/day2/scene42.mp3"
+    "William Windchime walks into the kitchen"
+>>>>>>> Stashed changes
     hide william
 
     #Susan Murphy 
     show susan
-    voice "audio/day2 path/scene42_n5_sm.mp3"
+    voice "audio/day2/scene42_n5_sm.mp3"
     sm "Hello, William. We want to ask you a few questions if you don't mind."
     hide susan
 
     #William Windchime
     show william 
-    voice "audio/day2 path/scene42_n8_ww.mp3"
+    voice "audio/day2/scene42_n8_ww.mp3"
     ww "Oh. Um. I guess not. It's about the murder, right?"
     hide william
 
     #Ezkeiel Jones
     show ezekiel
-    voice "audio/day2 path/scene42_n9_ej.mp3"
+    voice "audio/day2/scene42_n9_ej.mp3"
     ej "Yes, it is. Now son, make sure to answer truthfully. We just want to get to the bottom of this."
     hide ezekiel
 
@@ -1722,65 +1756,65 @@ label william_inv:
 
             #Susan Murphy 
             show susan
-            voice "audio/day2 path/scene43_n5_sm_2.mp3"
+            voice "audio/day2/scene43_n5_sm_2.mp3"
             sm "Can we see your shoes?"
             hide susan
 
             #William Windchime
             show william
-            voice "audio/day2 path/scene42_n8_ww_2.mp3"
+            voice "audio/day2/scene42_n8_ww_2.mp3"
             ww "What? Why?"
             hide william
 
             #Ezekiel Jones
             show ezekiel
-            voice "audio/day2 path/scene43_n9_ej_2.mp3"
+            voice "audio/day2/scene43_n9_ej_2.mp3"
             ej "We found a shoe print at the scene of the crime, and we're trying to narrow down whose it was. Now come on, show us. "
             hide ezekiel
 
             #William Windchime
             show william
-            voice "audio/day2 path/scene43_n8_ww_3.mp3"
+            voice "audio/day2/scene43_n8_ww_3.mp3"
             ww "Well, hold on, wait a minute-"
             hide william
 
             #Susan Murphy 
             show susan
-            voice "audio/day2 path/scene43_n5_sm_3.mp3"
+            voice "audio/day2/scene43_n5_sm_3.mp3"
             sm "What's the problem, kid? If you didn't do it, you've got nothing to hide."
             hide susan
 
             #William Windchime
             show william
-            voice "audio/day2 path/scene43_n8_ww_4.mp3"
+            voice "audio/day2/scene43_n8_ww_4.mp3"
             ww "Well- but- okay…"
             hide william
 
             #Narrator 
-            voice "audio/day2 path/scene43_n1.mp3"
+            voice "audio/day2/scene43_n1.mp3"
             "William takes off his shoe and shows it to Susan. It matches the shoe print."
 
             #Susan Murphy
             show susan 
-            voice "audio/day2 path/scene43_n5_sm_4.mp3"
+            voice "audio/day2/scene43_n5_sm_4.mp3"
             sm "It's a match!"
             hide susan
 
             #William Windchime
             show william
-            voice "audio/day2 path/scene43_n8_ww_5.mp3"
+            voice "audio/day2/scene43_n8_ww_5.mp3"
             ww "I swear it's not me! Someone stole them last night!"
             hide william
 
             #Ezekiel Jones
             show ezekiel
-            voice "audio/day2 path/scene43_n9_ej.mp3"
+            voice "audio/day2/scene43_n9_ej.mp3"
             ej "Right, sure they did. I'm sure they took them right off your feet. "
             hide ezekiel
 
             #William Windchime
             show william
-            voice "audio/day2 path/scene43_n8_ww_6.mp3"
+            voice "audio/day2/scene43_n8_ww_6.mp3"
             ww "No, no. I have a second pair that I was wearing. Please, it wasn't me!"
             hide william
 
@@ -1798,38 +1832,47 @@ label william_inv:
                     #Susan Murphy 
                     show susan at left
                     show william at right
-                    voice "audio/day2 path/scene43_n5_sm_5.mp3"
+                    voice "audio/day2/scene43_n5_sm_5.mp3"
                     sm "Right. Someone stole your spare pair of shoes, committed murder, and then returned them to you."
 
-                    #voice "audio/day2 path/scene43.mp3"
+                    #voice "audio/day2/scene43.mp3"
                     sm "Because that sounds entirely plausible. Who would even do that?"
                     
                     #William Windchime
-                    voice "audio/day2 path/scene43_n8_ww_8.mp3"
+                    voice "audio/day2/scene43_n8_ww_8.mp3"
                     ww "W-w-well, Dalton and I share a locker. It could have been him!"
 
                     #Ezekiel Jones
                     hide susan
                     show ezekiel at left
-                    voice "audio/day2 path/scene43_n9_ej_3.mp3"
+                    voice "audio/day2/scene43_n9_ej_3.mp3"
                     ej "You have to admit, this seems awfully suspicious. Especially with how rude Richard was to you last night."
 
+<<<<<<< Updated upstream
                     #voice "audio/day2 path/scene43_n9_ej_4.mp3"
                     ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough?"
 
                     #William Windchime
                     #voice "audio/day2 path/scene43.mp3"
                     ww "I-…I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
+=======
+                    #voice "audio/day2/scene43_n9_ej_4.mp3"
+                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough, eh?"
+
+                    #William Windchime
+                    #voice "audio/day2/scene43.mp3"
+                    ww "I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
+>>>>>>> Stashed changes
                     hide william
                     show ezekiel at right
                     show susan at left 
 
                     #Narrator 
-                    voice "audio/day2 path/scene43_n1.mp3"
+                    voice "audio/day2/scene43_n1.mp3"
                     "William storms off."
 
                     #Susan Murphy
-                    voice "audio/day2 path/scene43_n5_sm_6.mp3"
+                    voice "audio/day2/scene43_n5_sm_6.mp3"
                     sm "Damn, there he goes." 
                     hide susan
                     hide ezekiel
@@ -1858,37 +1901,37 @@ label william_inv:
             #Susan Murphy 
             show susan at left
             show william at right
-            voice "audio/day2path/scene45_n5_sm.mp3"
+            voice "audio/day2/scene45_n5_sm.mp3"
             sm "Where were you around 6:30 last night?"
 
             #William Windchime
-            voice "audio/day2path/scene45_n8_ww.mp3"
+            voice "audio/day2/scene45_n8_ww.mp3"
             ww "I was here, in the kitchen. I spilled that soup, and then Mr. McQuaid yelled at me, and I didn't want to cause more trouble, so I came right down."
 
             #Ezekiel Jones
             hide susan
             show ezekiel at left
-            voice "audio/day2path/scene45_n9_ej.mp3"
+            voice "audio/day2/scene45_n9_ej.mp3"
             ej "Can anybody corroborate that story?"
 
             #William Windchime
-            voice "audio/day2path/scene45_n8_ww_2.mp3"
+            voice "audio/day2/scene45_n8_ww_2.mp3"
             ww "W-well, Dalton was in here around 6:50, and Mr. McQuaid sent me-"
 
             #Susan Murphy
             hide ezekiel
             show susan at left 
-            voice "audio/day2path/scene45_n5_sm_2.mp3"
+            voice "audio/day2/scene45_n5_sm_2.mp3"
             sm  "So no."
 
             #William Windchime
-            voice "audio/day2path/scene45_n8_ww_3.mp3"
+            voice "audio/day2/scene45_n8_ww_3.mp3"
             ww "I… I guess not. But it wasn't me, I swear! I was cleaning up the kitchen, that's all!"
 
             #Ezkeiel Jones
             hide susan
             show ezekiel at left
-            voice "audio/day2path/scene45_n9_ej_2.mp3"
+            voice "audio/day2/scene45_n9_ej_2.mp3"
             ej "Sure, kid, sure."
             hide ezekiel
             hide william
@@ -1907,21 +1950,21 @@ label william_inv:
                     #Susan Murphy 
                     show susan at left
                     show william at right
-                    voice "audio/day2path/scene46_n5_sm.mp3"
+                    voice "audio/day2/scene46_n5_sm.mp3"
                     sm "You're positive that no one could vouch for your whereabouts? No one came down for a snack, and you didn\'t go to the washroom or leave?"
 
                     #William Windchime
-                    voice "audio/day2path/scene46_n8_ww.mp3"
+                    voice "audio/day2/scene46_n8_ww.mp3"
                     ww "No, ma'am. Mister McQuaid told me to stay down here, so… I did."
 
                     #Ezkeiel Jones
                     hide susan
                     show ezekiel at left
-                    voice "audio/day2path/scene43_n9_ej_5.mp3"
+                    voice "audio/day2/scene43_n9_ej_5.mp3"
                     ej "Well, no one will fault you for loyalty, but you've got to admit how suspicious this sounds."
 
                     #William Windchime
-                    voice "audio/day2path/scene46_n8_ww_2.mp3"
+                    voice "audio/day2/scene46_n8_ww_2.mp3"
                     ww "Well.. yes, but I swear, it wasn't me!"
                     hide ezekiel 
                     hide william
@@ -1944,67 +1987,72 @@ label william_inv:
                     #Susan Murphy 
                     show susan at left
                     show william at right
-                    voice "audio/day2path/scene47_n5_sm.mp3"
+                    voice "audio/day2/scene47_n5_sm.mp3"
                     sm "Alright, William, I have another question for you. When you spilled that soup on Richard, he shouted at you, right? That must have made you angry."
 
                     #William Windchime
-                    voice "audio/day2path/scene47_n8_ww_3.mp3"
+                    voice "audio/day2/scene47_n8_ww_3.mp3"
                     ww "Well, yes, but not enough to... to- "
 
                     #Ezkeiel Jones
                     hide susan
                     show ezekiel at left
-                    voice "audio/day2path/scene47_n9_ej.mp3"
+                    voice "audio/day2/scene47_n9_ej.mp3"
                     ej "To what? To murder someone? Someone who humiliated you in front o- "
 
                     #William Windchime
+<<<<<<< Updated upstream
                     voice "audio/day2path/scene47_n8_ww_2.mp3"
                     ww "Yes! Of course, I was angry! You'd be, too, if some rich greaser screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
+=======
+                    voice "audio/day2/scene47_n8_ww_2.mp3"
+                    ww "Yes! Of course, I was angry! You'd be, too, if some rich asshole screamed at you for an accident! But I'm not some loon to kill somebody over something like that!"
+>>>>>>> Stashed changes
 
                     #Susan Murphy
                     hide ezekiel
                     show susan at left 
-                    voice "audio/day2path/scene47_n5_sm_2.mp3"
+                    voice "audio/day2/scene47_n5_sm_2.mp3"
                     sm "Easy, kid, we're just covering our bases. Say, how did you end up here, anyways? You don't strike me as the type to go for a service position."
                     hide susan
                     hide william
                     show william
                     #Narrator
-                    voice "audio/day2path/scene47_n1.mp3"
+                    voice "audio/day2/scene47_n1.mp3"
                     "William grows visibly nervous."
 
                     #William Windchime
-                    voice "audio/day2path/scene47_n8_ww_4.mp3"
+                    voice "audio/day2/scene47_n8_ww_4.mp3"
                     ww "Well- um-"
 
                     #Narrator
-                    voice "audio/day2path/scene47_n2_2.mp3"
+                    voice "audio/day2/scene47_n2_2.mp3"
                     "William sighs."
 
                     #William Windchime
-                    voice "audio/day2path/scene47_n8_ww_5.mp3"
+                    voice "audio/day2/scene47_n8_ww_5.mp3"
                     ww  "You're right. I'm not really cut out for this sort of work. What I really want is to travel, to see the world, but…"
 
                     #william Windchime
-                    voice "audio/day2path/scene47_n8_ww_6.mp3"
+                    voice "audio/day2/scene47_n8_ww_6.mp3"
                     ww "Well, it's a little embarrassing, but I'm out of money. I had quite a bit from my parents, but it didn't… last as long as I thought it would."
 
                     #william Windchime
-                    voice "audio/day2path/scene47_n1_3.mp3"
+                    voice "audio/day2/scene47_n1_3.mp3"
                     ww "Why am I even telling you this? I have to go. I've got things to do."
 
                     #Narrator
-                    voice "audio/day2path/scene47.mp3"
+                    voice "audio/day2/scene47.mp3"
                     "William walks off in a huff."
                     hide william
                     #Ezekiel Jones
                     show ezekiel at right
                     show susan at left
-                    voice "audio/day2path/scene47_n8_ej.mp3"
+                    voice "audio/day2/scene47_n8_ej.mp3"
                     ej  "Is it just me, or did he sound… resentful? Do you think he could have killed Richard to humiliate his employer?"
 
                     #Susan Murphy 
-                    voice "audio/day2path/scene47_n5_sm_3.mp3"
+                    voice "audio/day2/scene47_n5_sm_3.mp3"
                     sm "It's certainly possible but unlikely."
                     hide susan
                     hide ezekiel
@@ -2023,7 +2071,7 @@ label william_inv:
 label michael_inv:
 
     #Narrator 
-    voice "audio/day2path/scene47_n5_sm_3"
+    voice "audio/day2/scene47_n5_sm_3"
     "Susan and Ezekiel leave for the Dining Hall."
 
     #Navigating to the DIning Hall 
@@ -2037,19 +2085,19 @@ label michael_inv:
 
     #Michael Mcquaid
     show michael
-    #voice "audio/day2path/scene48"
+    #voice "audio/day2/scene48"
     mm "Well, well, well, if it isn't our very own Ms. Holmes and Dr. Watson. Any luck out there?"
     hide michael
 
     #Susan Murphy
     show susan
-    #voice "audio/day2path/scene48"
+    #voice "audio/day2/scene48"
     sm "We're looking at a few avenues of investigation, and I was hoping to pick your brain about some of the people here."
     hide susan
 
     #Michael Mcquaid
     show michael
-    voice "audio/day2path/scene48"
+    voice "audio/day2/scene48"
     mm "Of course! I'm all ears."
     hide michael
 
@@ -2064,52 +2112,52 @@ label michael_inv:
             #Susan Murphy
             show susan at left
             show michael at right
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             sm "Did Richard or his wife have any enemies? Particularly among those aboard?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             mm "Oh, no shortage! How do you think I was going to blackmail him? But the people on this boat?"
 
             #Narrator
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             "The party's host hesitates for a moment."
 
             #Michael Mcquaid
-            #voice"audio/day2path/scene49
+            #voice"audio/day2/scene49
             mm "Not that I know of."
 
             #Susan Murphy
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             sm "Care to elaborate on that?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             mm "Richard was… involved, shall we say, with quite a few shady dealings. He took a lot of money from a lot of people."
 
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             mm "Besides that, you saw how abrasive he was with poor William? He was like that with everyone except his beloved Rachel."
 
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             mm  "That sort of behaviour earned him no few enemies. But as far as I know, none of them are on this boat."
 
             #Susan Murphy
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             sm "Speaking of the blackmail… What exactly is it that you have on me?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene49
+            #voice "audio/day2/scene49
             mm "Oh, I think you know exactly what I have on you, Murphy. Now. Do you have any questions that I'll actually answer?"
 
 
             #Scene 50 - Michael McQUaid / The Reeds (Dining Hall)
 
             #Susan Murphy
-            #voice "audio/day2path/scene50
+            #voice "audio/day2/scene50
             sm "Yes, actually. Is there any chance that Rachel murdered her husband?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene50
+            #voice "audio/day2/scene50
             mm "No. Whatever else they were, they loved each other more than anything, and that’s the truth."
             hide michael 
             hide susan
@@ -2132,73 +2180,73 @@ label michael_inv:
             #Susan Murphy
             show susan at left
             show michael at right
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             sm "What can you tell us about the kid, Windchime?"
 
             #Narrator
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             "Michael shakes his head sadly."
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Sad story, that one. He's worked for me for a few months now. He hasn't said much, but I've looked into him."
 
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "The kid's heir to one of the biggest lawn-decoration companies in the country, but he never wanted that."
 
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "It seems he wanted to travel, but the money dried up when he got to Hawaii. I asked him why he didn't just ask his parents for more money, but…"
 
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Well, he always gives me a sad look when I ask."
 
             #Susan Murphy
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             sm "And what can you tell us about your other waiter?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Oh. Dave's worked for me for quite a while. I trust him to take care of the things I don't want to do around the boat."
 
             #Ezekiel Jones
             hide susan
             show ezekiel at left
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             ej "High praise for a simple waiter."
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Oh, he's more of a jack of all trades. He's a dab hand with a wrench and a decent cook."
 
             #Susan Murphy
             hide ezekiel
             show susan at left
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             sm "When did you hire him?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Oh, four, five years ago now. He'd fallen on some hard times and needed work. So I took him on, and now he's here!"
 
             #Susan Murphy
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             sm "Do you know what he did before he fell on these ‘hard times’?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Y'know, I'm not quite sure. Whenever I asked, he would always say he doesn't like talking about it."
 
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "Personally, I suspect it was some trade or other, but I never got answers out of him"
 
             #Ezekiel Jones
             hide susan
             show ezekiel at left
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             ej "Would he have any reason to kill Richard?"
 
             #Michael Mcquaid
-            #voice "audio/day2path/scene51
+            #voice "audio/day2/scene51
             mm "None that I can think of. Do you have any more questions for me? "
             hide ezekiel
             hide michael
@@ -2224,7 +2272,7 @@ label end_of_dayone:
     scene susancabin 
 
     #Narrator
-    #voice "audio/day2path/scene52
+    #voice "audio/day2/scene52
     "After a long day of talking to everyone on board and finding clues about what happened to Richard Reed, Susan enters her room to go to sleep when suddenly…"
 
     #Scream sound
@@ -2239,7 +2287,7 @@ label end_of_dayone:
     scene hallway
 
     #Narrator 
-    #voice "audio/day2path/scene53
+    #voice "audio/day2/scene53
     "...she is jolted back into action and rushes toward the sounds of commotion. As Susan is runningin the direction of the scream, she sees a female member of the waitstaff coming out of the kitchen sobbing with her hands covering her eyes. As Susan enters the kitchen"
 
     #Scene 54 - Kitchen 
@@ -2247,16 +2295,16 @@ label end_of_dayone:
     scene kitchen
 
     #Narrator
-    #voice "audio/day2path/scene54
+    #voice "audio/day2/scene54
     "She is met by Michael McQuaid and some wait staff members surrounding a new murder scene."
 
     #Susan Murphy 
     show susan
-    #voice "audio/day2path/scene54
+    #voice "audio/day2/scene54
     sm "McQuaid? What happened here?"
 
     #Narrator
-    #voice "audio/day2path/scene54
+    #voice "audio/day2/scene54
     "Susan now sees what the commotion was all about."
 
     #Seeing the scne
@@ -2266,13 +2314,13 @@ label end_of_dayone:
     #Scene 55 - Kitchen / SUsan Face 
 
     #Narrator
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     "Lying there, dead, is William Windchime. Just as Susan sees the body, Ezekiel comes rushing in."
 
     #Ezekiel Jones
     show susan at left
     show ezekiel at right
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     ej "What happen- oh.."
 
     #Susan Murphy 
@@ -2281,21 +2329,21 @@ label end_of_dayone:
     #Michael Mcquaid
     hide ezekiel
     show michael at right
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     mm "Okay, the detectives are here. Let's let them do their work."
 
     #Susan Murphy 
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     sm "Wait, where is the girl that found him here?"
 
     #Michael Mcquaid
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     mm "I'll go out and look for her. We'll be close by."
 
     #Ezekiel Jones
     hide michael
     show ezekiel at right
-    #voice "audio/day2path/scene55
+    #voice "audio/day2/scene55
     ej "Well, time to go to work. Again."
 
     
@@ -2314,24 +2362,24 @@ label third:
 
     #Susan Murphy 
     show susan
-    #voice "audio/day2path/scene57
+    #voice "audio/day2/scene57
     sm "That seems to be all there is to find here."
     hide susan
 
     #Ezekiel Jones
     show ezekiel
-    #voice "audio/day2path/scene57
+    #voice "audio/day2/scene57
     ej "And it looks like the day is over. Any point in holding interrogations right now?"
     hide ezekiel
 
     #Susan Murphy 
     show susan
-    #voice "audio/day2path/scene57
+    #voice "audio/day2/scene57
     sm "I don't think so. We should retire for the night and pick back up tomorrow."
     hide susan 
 
     #Narrator
-    #voice "audio/day2path/scene57
+    #voice "audio/day2/scene57
     "The pair go to their rooms and sleep a restless night."
 
     

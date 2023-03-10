@@ -47,9 +47,11 @@ label headwound:
     scene headwound
     
     #Susan Murphy 
+    voice "audio/day1/scene19_N3_sm.mp3"
     sm "This must be what killed him. Poor bastard. The bruising seems to say that it happened recently."
 
     #Ezekiel Jones
+    voice"audio/day2/scene19_N9_ej.mp3"
     ej "I've seen enough head wounds in my time. That's a deadly one." 
 
     menu headwound_inv:
@@ -67,9 +69,11 @@ label bodybruise:
     scene bodybruise
 
     #Susan Murphy 
+    voice"audio/day2/scene19_N3_sm2.mp3"
     sm "That body shot must've hurt."
 
     #Ezekiel Jones
+    voice"audio/day2/scene19_N9_ej2.mp3"
     ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
         
     menu bodybruise_inv:
@@ -85,6 +89,7 @@ label bloodstains:
     scene bloodstains
 
     #Susan Murphy 
+    voice"audio/day2/scene19_N3_sm3.mp3"
     sm "Looks like he was beaten before he was killed."
 
     menu hbloodstains_inv:
@@ -98,19 +103,19 @@ label bloodstains:
 label knockedcase:
 
     #Ezekiel Jones
-
+    voice"audio/day2/scene19_N9_ej6.mp3"
     ej "Seems like a struggle happened"
     
     #Susan Murphy 
-
+    voice"audio/day2/scene19.mp3"
     sm "Did you think they talked before, or did he sneak up on him?"
 
     #Ezekiel Jones
-
+    #voice"audio/day2/scene19.mp3"
     ej "I don’t know, you tell me detective"
 
     #Susan Murphy 
-
+    voice"audio/day2/scene19_N5_sm9.mp3"
     sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was unconscious from the first hit."
 
     menu case_inv:
@@ -124,13 +129,15 @@ label Guadycane:
 
     scene gaudycane
     #Susan Murphy 
+    voice"audio/day2/scene19_N5_sm5.mp3"
     sm "I think we've found our murder weapon."
 
     #Ezekiel Jones
+    voice"audio/day2/scene19_N9_ej5.mp3"
     ej "I think I saw Rachel carry that on board."
 
     #Susan Murphy 
-
+    #voice"audio/day2/scene19.mp3"
     sm "Maybe there is something to what McQuaid said…"
 
     menu gaudy_inv:
@@ -145,11 +152,11 @@ label shoeprint:
     scene shoeprint
     
     #Ezekiel Jones
-
+    #voice"audio/day2/scene19.mp3"
     ej "Any bright ideas about that shoe print?"
 
     #Susan Murphy 
-
+    voice"audio/day2/scene19_N3_sm4.mp3"
     sm "Doesn't look like something expensive. Perhaps one of the waiters?"
 
     menu shoe_inv:
@@ -178,9 +185,11 @@ label bareFeet:
     scene BareFeet
     
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "Looks like his shoes were removed."
 
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "Seems like it really was someone stealing his shoes."
 
     menu chime_barefeet_inv:
@@ -195,9 +204,11 @@ label knife:
     scene knife
 
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "Enough blood on that thing to feed Dracula for a month."
 
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "And judging by those stab wounds, it's certainly the murder weapon."
 
     menu chime_knife_inv:
@@ -213,9 +224,11 @@ label w_bloodstains:
     scene bloodstains
 
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "That blood's been there a while. See how it's crusted?"
 
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
 
     menu chime_stains_inv:
@@ -231,9 +244,11 @@ label shoePrints:
     scene shoePrints
     
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "At a glance, those are a match for William's. Poor kid, murdered for his footwear."
     
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
     
     menu chime_shoeprint_inv:
@@ -257,9 +272,11 @@ label handprint:
     scene handprint
     
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "Looks like his shoes were removed."
 
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "Seems like it really was someone stealing his shoes."
 
     menu white_handprint_inv:
@@ -274,9 +291,11 @@ label bruising:
     scene bruising
 
     #Susan Murphy 
+    #voice"audio/day2/scene19.mp3"
     sm "Enough blood on that thing to feed Dracula for a month."
 
     #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3"
     ej "And judging by those stab wounds, it's certainly the murder weapon."
 
     menu white_bruising_inv:
