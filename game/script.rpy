@@ -558,7 +558,7 @@ label nav_cont:
     #Scene 14
 
     #The player navigates to the Reed's cabin, opens the door and looks inside
-    scene reedscabin
+    scene cabindoorajar
 
     "Reaching the cabin, opening the door to look inside"
 
