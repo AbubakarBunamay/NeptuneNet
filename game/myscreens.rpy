@@ -4,7 +4,7 @@ init:
 image my_img:
     "start.png"
     xalign 1.5
-    yalign 0.5
+    yalign 1.5
     linear 1.0 alpha 1.0
     linear 1.0 alpha 0.0
     repeat
@@ -19,6 +19,8 @@ screen title_screen():
         hotspot (0, 0, 1920, 1080) action Jump ("to_main_menu")
 
     add "my_img" as caret xpos 680 ypos 800
+
+    image "gui/name_title.png" xpos 220 ypos 550
         
         
    
@@ -28,16 +30,17 @@ label to_main_menu():
 
 screen reedscene_investigation():
     imagemap:
-        ground "images/murdersceneimage.png"
+        ground "images/richard_murderscene.png"
         
-        hotspot (6, 7, 619, 483) action Jump ("headwound")
-        hotspot (659, 14, 603, 473) action Jump ("bodybruise")
+        hotspot (1215, 467, 101, 54) action Jump ("headwound")
+        hotspot (1464, 723, 188, 174) action Jump ("bodybruise")
         hotspot (1302, 22, 599, 458) action Jump ("bloodstains")
         hotspot (19, 601, 601, 462) action Jump ("knockedcase")
-        hotspot (657, 593, 608, 477) action Jump ("Guadycane")
-        hotspot (1306, 599, 598, 464) action Jump ("shoeprint")     
-        hotspot (12, 501, 1888, 69) action Jump ("first_murder")
+        hotspot (429, 982, 237, 67) action Jump ("Guadycane")
+        hotspot (837, 774, 201, 132) action Jump ("shoeprint")     
+        hotspot (1484, 68, 414, 76) action Jump ("first_murder")
 
+    add "my_img" as caret xpos 2024 ypos 150
 
 label headwound:
    
@@ -108,8 +111,7 @@ label knockedcase:
 
     #Susan Murphy 
 
-    sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was
-unconscious from the first hit."
+    sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was unconscious from the first hit."
 
     menu case_inv:
         "What's your next step"
@@ -162,7 +164,7 @@ label shoeprint:
 screen windchimescene_investigation():
 
     imagemap:
-        ground "images/windchine_scene.jpg"
+        ground "images/windchine_scene.png"
         hotspot (19, 95, 919, 317) action Jump ("bareFeet")
         hotspot (1120, 157, 612, 234) action Jump ("knife")
         hotspot (61, 588, 831, 434) action Jump ("w_bloodstains")
@@ -244,7 +246,7 @@ label shoePrints:
 screen patriciascene_investigation():
 
     imagemap:
-        ground "images/white_murder_scene.jpg"
+        ground "images/white_murderscene.png"
         hotspot (109, 356, 705, 358) action Jump ("handprint")
         hotspot (1017, 356, 869, 305) action Jump ("bruising")
         hotspot (928, 0, 41, 1079) action Jump ("thirdmurder")

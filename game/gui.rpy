@@ -23,17 +23,17 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#7c1a2e'
+define gui.accent_color = '#000000'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#000000'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#ffffff'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#7c1a2e'
+define gui.hover_color = '#db1039'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -48,8 +48,8 @@ define gui.muted_color = '#512800'
 define gui.hover_muted_color = '#7a3d00'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#36454F'
-define gui.interface_text_color = '#ffffff'
+define gui.text_color = '#454b52'
+define gui.interface_text_color = '#c41212'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -85,7 +85,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "gui/title_screen.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -246,7 +246,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 90
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15

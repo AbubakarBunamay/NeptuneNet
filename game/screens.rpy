@@ -290,11 +290,14 @@ screen navigation():
         hbox:
             style_prefix "hnavigation"
 
+            image "gui/name_title.png" xpos 220 ypos 550
+
             #xalign 0.5
             #yalign 1.0
             #yoffset -40
 
             spacing gui.navigation_spacing
+
 
             if main_menu:
 
@@ -309,7 +312,7 @@ screen navigation():
 
             #textbutton _("Load") action ShowMenu("load")
 
-            imagebutton auto "gui/mm_load_%s.png" xpos 850 ypos 578 focus_mask True action ShowMenu("load") hovered [ Play("sound","audio/click.mp3")]
+            imagebutton auto "gui/mm_load_%s.png" xpos 860 ypos 578 focus_mask True action ShowMenu("load") hovered [ Play("sound","audio/click.mp3")]
 
             #textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -325,21 +328,21 @@ screen navigation():
 
             #textbutton _("About") action ShowMenu("about")
 
-            imagebutton auto "gui/mm_about_%s.png" xpos 340 ypos 742 focus_mask True action ShowMenu("about") hovered [ Play("sound","audio/click.mp3")]
+            imagebutton auto "gui/mm_cred_%s.png" xpos 320 ypos 742 focus_mask True action ShowMenu("about") hovered [ Play("sound","audio/click.mp3")]
 
             if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
                 ## Help isn't necessary or relevant to mobile devices.
                 #textbutton _("Help") action ShowMenu("help")
 
-                imagebutton auto "gui/mm_help_%s.png" xpos 170 ypos 836 focus_mask True action ShowMenu("help") hovered [ Play("sound","audio/click.mp3")]
+                imagebutton auto "gui/mm_con_%s.png" xpos 70 ypos 836 focus_mask True action ShowMenu("help") hovered [ Play("sound","audio/click.mp3")]
 
             if renpy.variant("pc"):
 
                 ## The quit button is banned on iOS and unnecessary on Android and
                 ## Web.
                 #textbutton _("Quit") action Quit(confirm=not main_menu)
-                imagebutton auto "gui/mm_quit_%s.png" xpos 40 ypos 920 focus_mask True action Quit(confirm=not main_menu) hovered [ Play("sound","audio/click.mp3")]
+                imagebutton auto "gui/mm_quit_%s.png" xpos -125 ypos 920 focus_mask True action Quit(confirm=not main_menu) hovered [ Play("sound","audio/click.mp3")]
     else:
         vbox:
             style_prefix "navigation"
@@ -372,12 +375,12 @@ screen navigation():
 
                 textbutton _("Main Menu") action MainMenu()
 
-            textbutton _("About") action ShowMenu("about")
+            textbutton _("Credits") action ShowMenu("about")
 
             if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
                 ## Help isn't necessary or relevant to mobile devices.
-                textbutton _("Help") action ShowMenu("help")
+                textbutton _("Controls") action ShowMenu("help")
 
             if renpy.variant("pc"):
 
@@ -429,8 +432,8 @@ screen main_menu():
             text "[config.name!t]":
                 style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+            # text "[config.version]":
+            #     style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -1023,7 +1026,7 @@ screen help():
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 33
 
             hbox:
 
@@ -1190,7 +1193,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "gui/overlay/game_menu.png"
 
     frame:
 
@@ -1221,7 +1224,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/overlay/game_menu.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5

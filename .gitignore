@@ -35,9 +35,15 @@ generated/
 game/renpy/
 game/.renpy/
 game/.history/
-game/_cache/
+game/cache/
 game/build/
 game/dist/
 game/backup/
 game/saves
 *.rpyb
+*.rpyb
+*.rpyc
+game/script.rpyc
+game/screens.rpyc
+game/options.rpyc
+*.txt
