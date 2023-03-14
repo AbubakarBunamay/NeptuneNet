@@ -47,3 +47,4 @@ game/script.rpyc
 game/screens.rpyc
 game/options.rpyc
 *.txt
+project.json
