@@ -246,8 +246,8 @@ screen quick_menu():
         vbox:
             style_prefix "quick"
 
-            xpos 200
-            ypos 750
+            xpos 5
+            ypos 35
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -258,11 +258,16 @@ screen quick_menu():
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
+screen menuButton():
+    textbutton "Menu" action ToggleVariable("quick_menu", True, False)
+    
+
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
 init python:
     config.overlay_screens.append("quick_menu")
+    config.overlay_screens.append("menuButton")
 
 default quick_menu = True
 
