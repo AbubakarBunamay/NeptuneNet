@@ -137,7 +137,7 @@ label Guadycane:
     ej "I think I saw Rachel carry that on board."
 
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3" #havent found file 
+    #voice"audio/day2/scene19_N9_ej5.mp3" #havent found file 
     sm "Maybe there is something to what McQuaid said…"
 
     #Susan Murphy 
