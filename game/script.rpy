@@ -971,7 +971,7 @@ label first_murder:
     #Scene 26
      
     #Narrator 
-    #voice "audio/day2/scene26_N1.mp3"
+    voice "audio/day2/scene26_N1_1.mp3"
     "Susan leaves the White sisters in the bathroom."
 
     #Susan Thought 
@@ -988,7 +988,7 @@ label first_murder:
     #Scene 28 - The dining Hall
 
     #Narrator 
-    #voice "audio/day2/scene28_N1.mp3"
+    voice "audio/day2/scene28_N1.mp3"
     "Susan now enters the Dining Hall. She sees Rachel with her head in her hands, Ezekiel trying to comfort her, and McQuaid is in the corner."
 
     #Ezekiel Jones
@@ -1020,12 +1020,12 @@ label first_murder:
 
 
     #Susan Murphy 
-    #voice "audio/day2/scene28_N3.mp3"
+    #voice "audio/day2/scene28_N5.mp3"
     sm "Don't think we've forgotten about you, McQuaid. Unfortunately, there are more pressing matters at hand."
 
 
     #Susan Murphy
-    #voice "audio/day2/scene28_N3.mp3"
+    #voice "audio/day2/scene28_N5.mp3"
     sm "But yes, I'll figure it out. Don't you worry about that! Rachel, I hope you don't mind, but I need to ask you some questions."
 
     hide michael
@@ -1116,7 +1116,7 @@ label first_murder:
 
 
     #Susan Murphy 
-    #voice "audio/day2/scene28_n3.mp3"
+    voice "audio/day2/scene28_N5_sm_10.mp3"
     sm "Yea, I'm sorry this happened."
 
     #Rachel reed
@@ -1175,7 +1175,7 @@ label first_murder:
             #Scene 31 - Ezekiel Jones / Footprint (Hallway)
 
             #Susan Murphy 
-            #voice "audio/day2/scene31_n5_sm_4.mp3.mp3" can't find file#
+            voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
@@ -1183,15 +1183,15 @@ label first_murder:
             ej "Because of the footprint, right? Do you think it’s me?"
 
             #Susan Murphy 
-            #voice "audio/day/scene31_n9_ej_2.mp3"
+            #voice "audio/day/scene31_n5_sm.mp3"
             sm "No, I just have to be certain. Better safe than sorry, right?"
 
-            #Ezekiel Jones
+            Ezekiel Jones
             voice "audio/day2/scene31_n9_ej_2.mp3"
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
-            #voice "audio/day2/scene31_n5_ej_3.mp3"
+            voice "audio/day2/scene31_n5_ej_3.mp3"
             sm "Yes, if you have more, please take me to them. I need to check them myself"
 
             #Ezekiel Jones
@@ -1212,7 +1212,7 @@ label first_murder:
 
             #Ezekiel Jones
             show ezekiel angry at right
-            #voice "audio/day2/scene31_n5_sm_5.mp3" 
+            voice "audio/day2/scene32_n5_sm_5.mp3" 
             ej "W-what? Is- is that r-really what you think of me? I-I I thought we were friends. I even told you I would help you if you needed anything."
 
             #Narrator
@@ -1371,7 +1371,7 @@ label cont_ezekiel_inv:
             sm "Yet you were in a War, and War involves killing."
 
             #Ezekiel Jones
-            #voice "audio/day2/scene36_n9_ej_3.mp3"
+            voice "audio/day2/scene36_n9_ej_3.mp3"
             ej "It is true. I am suffering. Seeing innocent people die before your eyes is painful."
 
             voice "audio/day2/scene36_n9_ej_4.mp3"
@@ -1409,7 +1409,7 @@ label cont_ezekiel_inv:
             voice "audio/day2/scene37_n9_ej_2.mp3"
             ej "A friend of mine was on the front lines of World War 2, and he got shot. I did my best, everything I could do to save him."
 
-            #voice "audio/day2/scene37_n9_ej_3"
+            voice "audio/day2/scene37_n9_ej_3.mp3"
             ej "But no matter how hard I tried, it wasn’t enough. He still died. It haunts me to this day."
 
             #Susan Murphy 
@@ -1540,11 +1540,11 @@ label dalton_inv:
             dd "I do, but they're identical. I can go and grab them from my locker if you like."
 
             #Ezekiel Jones
-            #voice "audio/day2/scene38_n9_ej_2.mp3"
+            voice "audio/day2/scene38_n9_ej_2.mp3"
             ej "We'd appreciate it, just to be thorough."
 
             #Narrator
-            #voice "audio/day2/scene38_n1_3.mp3"
+            voice "audio/day2/scene38_n1_3.mp3"
             "Dalton steps through a door into the crew quarters."
 
             #Susan Murphy 
@@ -1613,7 +1613,7 @@ label dalton_inv:
             hide susan
             hide david
             show ezekiel
-            #voice "audio/day2/scene40_n4_dd_4.mp3"
+            voice "audio/day2/scene40_n4_dd_4.mp3"
             ej "That seems like an awfully long time to get some appetizers. Sure you didn't take a little detour to murder a prick who insulted your co-worker?"
             hide ezekiel
 
@@ -1714,6 +1714,7 @@ label william_inv:
             #voice "audio/day2 path/scene42_N3_smt_1.mp3"
             smt "Damn, I thought he’d be here."
 
+            #voice "audio/day2 path/scene42_N3_smt_2.mp3"
             smt "He is probably in the kitchen"
                 
             jump william_kitchen
@@ -1729,7 +1730,7 @@ label william_kitchen:
     scene kitchen
     #Narrator
     show william
-    #voice "audio/day2/scene42.mp3"
+    voice "audio/day2/scene42_N1_1.mp3"
     "William Windchime walks into the kitchen"
     hide william
 
@@ -1835,7 +1836,7 @@ label william_kitchen:
                     voice "audio/day2/scene43_n5_sm_5.mp3"
                     sm "Right. Someone stole your spare pair of shoes, committed murder, and then returned them to you."
 
-                    #voice "audio/day2/scene43.mp3"
+                    voice "audio/day2/scene43_n5_sm_5.mp3"
                     sm "Because that sounds entirely plausible. Who would even do that?"
                     
                     #William Windchime
@@ -1848,7 +1849,7 @@ label william_kitchen:
                     voice "audio/day2/scene43_n9_ej_3.mp3"
                     ej "You have to admit, this seems awfully suspicious. Especially with how rude Richard was to you last night."
 
-                    #voice "audio/day2/scene43_n9_ej_4.mp3"
+                    voice "audio/day2/scene43_n9_ej_4.mp3"
                     ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough, eh?"
 
                     #William Windchime
