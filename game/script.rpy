@@ -31,6 +31,8 @@ label splashscreen:
 
 label start:
     hide screen title_screen
+    stop music fadeout 1.0
+
     #------------------------------------- START OF DAY 1 --------------------------------------------------------#
     scene dayone
     
@@ -75,7 +77,7 @@ label start:
 
     # Susan thought  
     show susan
-    #voice "audio/day1/Scene3_N3_sm.mp3"
+    voice "audio/day1/Scene3_N3_smt.mp3"
     smt "McQuaid, McQuaid, where have I heard that name before? Oh right, I did a case for him. Well, I could use a vacation after today…Sure, why the heck not!"
 
     # Scene 4 - Yatch
@@ -85,7 +87,7 @@ label start:
 
     #Narrator 
     play sound "audio/sfx/waves.mp3" fadein 2.0 fadeout 1.0 volume 0.3 
-    #voice "audio/day1/Scene4_N1.mp3"
+    voice "audio/day1/Scene4_N1.mp3"
     "A couple of weeks later, Susan readies to board the Neptune, admiring the lavish yacht."
     stop sound 
     # Scene 5 - Susan Cabin
@@ -95,13 +97,13 @@ label start:
 
     #Narrator 
     show susan
-    #voice "audio/day1/Scene5_N1.mp3"
+    voice "audio/day1/Scene5_N1.mp3"
     "As Susan sorts through her luggage, there is a knock at the door."
     show susan at left
 
     #dalton 
     show david at right
-    #voice "audio/day1/scene5_N4_dd.mp3"
+    voice "audio/day1/scene5_N4_dd.mp3"
     dd "There will be a dinner for all the guests in the dining hall in 30 minutes."
 
     #Susan Murphy
@@ -112,7 +114,7 @@ label start:
     
     #play sound susan cabin thought
     show susan
-    #voice "audio/day1/scene5_N3_sm.mp3"
+    voice "audio/day1/scene5_N3_smt.mp3"
     smt " Okay, time for me to get dolled up for dinner. I hope the food is going to be good."
     hide susan
 
@@ -123,7 +125,7 @@ label start:
     #Scene 6 - Navigation 
 
     scene hallway
-
+    #Change Need to add sound effect and code for it here**
     "Walking your way to the dining hall"
     #Navigation here
 
@@ -132,60 +134,60 @@ label start:
     scene diningroom
 
     #Narrator 
-    #voice "audio/day1/scene7_N1.mp3"
+    voice "audio/day1/scene7_N1.mp3"
     "Susan enters the dining room and sees a well-dressed crowd sitting around the room at different tables."
     
     #play sound/music with fade in here not voice
     #Michael speaking as the player enters the room
     show michael
-    #voice "audio/day1/scene7_N2_mm.mp3"
+    voice "audio/day1/scene7_N2_mm.mp3"
     mm "Ah, and here comes our final guest of the evening! Welcome, Susan. Please, take a seat. Now that we’re all here, the party can start!"
 
-    #voice "audio/day1/scene7_N2_mm2.mp3"
+    voice "audio/day1/scene7_N2_mm2.mp3"
     mm "I know some of you are already acquainted with each other, but to help break the ice, why don’t we have a few introductions?"
     hide michael
-    #Presenting the characters introducing them to the player ( IDEA: Unique BG, sounds etc)
+
     show richard at left
     show rachel at right
-    #voice "audio/day1/scene7_N2_mm3.mp3"
+    voice "audio/day1/scene7_N2_mm3.mp3"
     mm "First, we have Mr. Richard Reed, the CEO of Reed Industries, and his wife, Mrs. Rachel Reed."
     hide richard
     hide rachel
     show ezekiel
-    #voice "audio/day1/scene7_N2_mm4.mp3"
+    voice "audio/day1/scene7_N2_mm4.mp3"
     mm "Next, we have the illustrious Dr. Ezekiel Jones. The man’s service to our country and his patients' lives speaks for itself."
     hide ezekiel
     show deborah at right
     show patricia at left 
-    #voice "audio/day1/scene7_N2_mm5.mp3"
+    voice "audio/day1/scene7_N2_mm5.mp3"
     mm "Then, We have the White sisters, Deborah and Patricia. True yin and yang if I’ve ever seen one."
     hide deborah
     hide patricia
     show susan
-    #voice "audio/day1/scene7_N2_mm6.mp3"
+    voice "audio/day1/scene7_N2_mm6.mp3"
     mm "Of course, the brilliant Susan Murphy, one of the great detectives of our time."
     hide susan
 
     #Michael McQuaid
     show michael 
-    #voice "audio/day1/scene7_N2_mm8.mp3"
+    #voice "audio/day1/scene7_N2_mm8.mp3" #old version
     mm "Ah, and here’s dinner now!"
     hide michael
     
     #Susan Thoughts 
     show susan
-    #voice "audio/day1/scene7_N3_sm_2.mp3"
+    #voice "audio/day1/scene7_N3_smt_1.mp3"
     smt "Well, seems like McQuaid is in high spirits tonight. But why invite me? I stand out among these high-society types like a pebble among rhinestones. Hmm."
     hide susan
     
 
     #Narrator
-    #voice "audio/day1/scene7_N1_4.mp3"
+    voice "audio/day1/scene7_N1_4.mp3"
     "Just then, Susan hears a commotion from another table."
 
     #Richard Reed
     show richard at right
-    #voice "audio/day1/scene7_N7_rr.mp3"
+    voice "audio/day1/scene7_N7_rr.mp3"
     rr"How dare you! Don’t you know who I am, boy?"
 
     #William Windchime
@@ -196,27 +198,27 @@ label start:
     #The Scene Here would still be in the room
 
     #Narrator  
-    #voice "audio/day1/scene7_n1_5.mp3" 
+    voice "audio/day1/scene7_N1_5.mp3"
     "She turns to see one of the guests, Richard Reed covered in drink and screaming at the waitstaff."
 
     #Richard Reed 
     show richard
-    #voice "audio/day1/scene7_n7_rr_2.mp3"
+    voice "audio/day1/scene7_N7_rr_2.mp3"
     rr"I don’t care! Can’t you see how expensive this suit is! It’s worth more than your life, at the very least."
 
     #Richard Reed 
-    #voice "audio/day1/scene7_n7_rr_3.mp3"
+    voice "audio/day1/scene7_N7_rr_3.mp3"
     rr "Michael, see to it that your server is disciplined! I’m going to get changed out of this mess!"
     hide richard
     hide william
     
     #Narator 
-    #voice "audio/day1/Scene7_n1_6.mp3"
+    voice "audio/day1/Scene7_n1_6.mp3"
     "Richard leaves, muttering about having to replace a perfectly good suit."
 
     #Susan Murphy Thoughts
     show susan
-    #voice "audio/day1/scene7_N3_sm3.mp3"
+    voice "audio/day1/scene7_N3_sm3.mp3"
     smt "Well, Richard seems to be a very happy camper. I wonder if he’s always like this… Does the same go for his wife?"
     hide susan
 
@@ -227,11 +229,11 @@ label start:
     hide michael
 
     #Narrator 
-    #voice "audio/day1/scene7_N1_6.mp3"
+    #voice "audio/day1/scene7_N1_6.mp3" #canot find audio file yet
     "The waitstaff member leaves, looking abashed."
 
     #Narrator  
-    #voice "audio/day1/scene7_N1_7.mp3" 
+    voice "audio/day1/scene7_N1_7.mp3"
     "The man sitting next to Susan turns toward her and starts talking to her quietly."
     
     #Ezekiel Jones 
@@ -241,18 +243,18 @@ label start:
 
     #Susan Murphy 
     show susan at left
-    #voice "audio/day1/scene7_N5_sm_2.mp3"
+    voice "audio/day1/scene7_N5_sm_2.mp3"
     sm "Yeah,really got his goat. Seems very uptight. I don’t remember him being like this."
     
     #Ezekiel Jones
     show ezekiel at right
-    #voice "audio/day1/scene7_N9_Ej.mp3"
+    voice "audio/day1/scene7_N9_ej.mp3"
     ej "Don’t be too harsh on him, McQuaid. It was an honest mistake. The poor boy just tripped."
     hide susan
 
     #Michael McQuaid 
     show michael at left
-    #voice "audio/day1/scene7_N2_mm10.mp3"
+    voice "audio/day1/scene7_N2_mm10.mp3"
     mm "I expect a certain amount of professionalism, Doctor, and I’d thank you not to tell me how to run my business. Now then, everyone, please continue to enjoy the party."
 
     hide michael
@@ -261,16 +263,16 @@ label start:
 
     #Ezekiel Jones 
     show ezekiel at right
-    #voice "audio/day1/scene7_N9_ej_7_3.mp3"
+    #voice "audio/day1/scene7_N9_ej_7_3.mp3" #file not found yet
     ej "You just haven’t known him long enough. He’s always nice until he’s not."
 
     #Susan Murphy 
     show susan at left
-    #voice "audio/day1/Scene7_n5_sm3.mp3"
+    voice "audio/day1/Scene7_n5_sm3.mp3"
     sm "Seems like you know our host quite a bit."
 
     #Ezekiel Jones
-    #voice "audio/day1/Scene7_n9_ej4.mp3" 
+    voice "audio/day1/Scene7_n9_ej4.mp3"
     ej "Yeah, I know Michael, unfortunately. Hi, I’m Ezekiel."
 
     hide ezekiel 
@@ -282,8 +284,9 @@ label start:
 
             #Susan Murphy 
             show susan
-            #voice "audio/day1/scene7_N5_sm4.mp3"
+            #voice "audio/day1/scene7_N5_sm4.mp3" #the file is not the updated text from Zeik to Ezeikeil Caleb Nov 15
             sm "A pleasure to make your acquaintance. Well, Ezekiel, I think I’ll go mingle a bit. See you around."
+            play sound "audio/sfx/footstep_near_far.mp3" volume 1.0
             hide susan
 
             jump mingle 
@@ -349,7 +352,7 @@ label mingle:
     
     #Narrator 
     show susan
-    #voice "audio/day1/scene7_N1_9.mp3"
+    voice "audio/day1/scene7_N1_9.mp3"
     "Susan gets up and wanders the dining room. She comes to a table with three elegantly dressed women where Richard had been sitting."
     
 
@@ -362,14 +365,14 @@ label mingle:
 
     #Rachel Reed 
     show rachel at left
-    #voice "audio/day1/scene7_N11_rr.mp3"
+    voice "audio/day1/scene7_N11_rr.mp3"
     rar "Richard just gets easily upset when something happens to his things. I mean, that was a very expensive suit."
     
 
     #Deborah White
     hide rachel
     show deborah at left 
-    #voice "audio/day1/scene7_N12_dw.mp3"
+    voice "audio/day1/scene7_N12_dw.mp3"
     dw "He’s a man who cares about his appearance. Can’t ask for much more than that these days."
 
     #Patricia White
@@ -399,37 +402,37 @@ label mingle:
     hide rachel
 
     #Narrator 
-    #voice "audio/day1/scene7_N1_10.mp3"
+    voice "audio/day1/scene7_N1_10.mp3"
     "A ringing sound is heard, and Michael taps his glass with a spoon as if making a toast."
 
     #Michael McQUiad
     show michael
     play sound "audio/sfx/toast.mp3"
-    #voice "audio/day1/scene7_N2_mm15.mp3"
+    voice "audio/day1/scene7_N2_mm15.mp3"
     mm "Everyone! I hope you've enjoyed your evening, but now it's time to get to business."
     hide michael
 
     #Narrator 
-    #voice "audio/day1//scene7_N1_2.mp3"
+    voice "audio/day1//scene7_N1_2.mp3"
     "A hush settles over the room."
 
     #Michael Mcquaid 
     show michael
-    #voice "audio/day1/scene7_N2_mm16.mp3"
+    voice "audio/day1/scene7_N2_mm16.mp3"
     mm "You see, I may have told a little white lie on your invitations. The real reason you’re here is that each one of you has a secret. Something hidden that would ruin you if it were to get out."
 
     #Michael McQuaid 
-    #voice "audio/day1/scene7_N2_mm2.mp3"
+    #voice "audio/day1/scene7_N2_mm2.mp3" #haven't found the file yet
     mm "I brought you all here so we could come to a little… arrangement. Over the next few days, I am sure you’ll find this to be in your best interest."
 
     #Michael McQuaid 
-    #voice "audio/day1/scene7_N2_mm2.mp3"
+    #voice "audio/day1/scene7_N2_mm2.mp3" #haven't found the file yet
     mm "After all, who knows what would happen if your little secrets were no longer secret."
     hide michael 
 
     #Susan Murphy 
     show susan pissed
-    voice "audio/day1/scene7_N5_sm10.mp3"
+    voice "audio/day1/scene7_N5_sm10.mp3" #This is not the correct file - it should only say What!
     sm "What!"
     hide susan 
 
@@ -459,31 +462,32 @@ label mingle:
 
     #Narrator
     play sound "audio/sfx/footstep_near_far.mp3"
-    #voice "audio/day1/scene7_N1_14.mp3" 
+    voice "audio/day1/scene7_N1_14.mp3"
     "Heads turn as Rachel runs from the room, sickened by Michael’s words."
     
 
     #Susan Murphy thoughts
-    #voice "audio/day1/scene7_N3_sm4.mp3"
+    stop sound
+    voice "audio/day1/scene7_N3_smt_4.mp3"
     smt "He couldn’t mean… but how could he… No, that’s impossible."
 
     #Susan Murphy Thoughts
-    #voice "audio/day1/scene7_N3_sm5.mp3"
+    voice "audio/day1/scene7_N3_smt_5.mp3"
     smt "There’s no way he could know. What is this about? Hmm…"
     hide susan 
 
     #Ezekiel Jones 
     show ezekiel angry at left
-    #voice "audio/day1/scene7_N9_ej.mp3"
+    #voice "audio/day1/scene7_N9_ej.mp3" #haven't found the file yet
     ej "I don’t believe you, McQuaid. You’re bluffing."
 
     #Michael McQuaid 
     show michael smiling at right
-    #voice "audio/day1/scene7_N3_mm.mp3"
+    #voice "audio/day1/scene7_N3_mm.mp3" #haven't found the file yet
     mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs last week?" 
 
     #Narrator
-    #voice "audio/day1/scene7_N1.mp3"
+    #voice "audio/day1/scene7_N1.mp3" #haven't found the file yet
     "As the crowd’s eyes turn towards him, Ezekiel pales."
 
     #Ezekiel Jones 
@@ -500,7 +504,7 @@ label mingle:
 
     #Susan Murphy Thoughts
     show susan
-    #voice "audio/day1/scene7_N3_sm6.mp3"
+    voice "audio/day1/scene7_N3_sm6.mp3"
     smt "Building a list? Why would he possibly be building a list on me? *Sigh* I can’t ever get a vacation. I should probably check on Rachel. I wonder where she ran off too."
     hide susan 
 
@@ -509,7 +513,7 @@ label mingle:
     scene hallway
 
     #narrator voice
-    #voice "audio/day1/scene9_N1.mp3"
+    voice "audio/day1/scene9_N1.mp3"
     "Susan leaves the room in search of Rachel. She is now in the Hallway."
     
     #Navigate to?
@@ -520,7 +524,7 @@ label mingle:
             
             #Susan Murphy
             show susan
-            #voice "audio/day1/scene9_N5_sm.mp3"
+            voice "audio/day1/scene9_N5_sm.mp3" 
             sm "She said she was feeling sick. I should probably go and check the washroom."
             play sound "audio/sfx/Footstep_near_far.mp3"
             #Scene 10   
@@ -576,12 +580,10 @@ label nav_cont:
 
     #Scene 15 - First Murder   
 
-
-
     scene richard_murderscene
 
     #Narrator 
-    #voice "audio/day1/scene15_N1.mp3"
+    voice "audio/day1/scene15_N1.mp3"
     "As Susan opens the door, she is met with a horrific sight. Richard Reed, former CEO of Reed Industries, has been beaten bloody, and unmoving."
     #voice "scene15_N1_1.mp3"
 
@@ -4020,7 +4022,7 @@ label finale:
 
         "Choose Wisely"
 
-        "Avenge":
+        "Blackmail":
            
             #Scene 92 - Explosion
 
@@ -4280,7 +4282,7 @@ label finale:
 
                     jump dalton_location
 
-        "Change":
+        "Payback":
 
                 #Scene 92 - Explosion
 

@@ -34,9 +34,9 @@ screen reedscene_investigation():
         
         hotspot (1215, 467, 101, 54) action Jump ("headwound")
         #hotspot (1464, 723, 188, 174) action Jump ("bodybruise")
-        hotspot (1302, 22, 599, 458) action Jump ("bloodstains")
-        hotspot (19, 601, 601, 462) action Jump ("knockedcase")
-        hotspot (429, 982, 237, 67) action Jump ("Guadycane")
+        #hotspot (1302, 22, 599, 458) action Jump ("bloodstains")
+        hotspot (496, 859, 354, 185) action Jump ("knockedcase")
+        hotspot (1385, 773, 70, 41) action Jump ("Guadycane")
         hotspot (837, 774, 201, 132) action Jump ("shoeprint")     
         hotspot (1484, 68, 414, 76) action Jump ("first_murder")
 
@@ -47,11 +47,11 @@ label headwound:
     scene headwound
     
     #Susan Murphy 
-    #voice "audio/day1/scene19_N3_sm.mp3"
+    voice "audio/day1/scene19_N3_sm.mp3"
     sm "This must be what killed him. Poor bastard. The bruising seems to say that it happened recently."
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19_N9_ej.mp3"
+    voice"audio/day1/scene19_N9_ej.mp3"
     ej "I've seen enough head wounds in my time. That's a deadly one." 
 
     menu headwound_inv:
@@ -103,19 +103,19 @@ label bodybruise:
 label knockedcase:
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19_N9_ej6.mp3"
+    voice"audio/day1/scene19_N9_ej_6.mp3"
     ej "Seems like a struggle happened"
     
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    voice"audio/day1/scene19_N5_sm_7.mp3"
     sm "Did you think they talked before, or did he sneak up on him?"
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    #voice"audio/day2/scene19.mp3" #havent found file
     ej "I don’t know, you tell me detective"
 
     #Susan Murphy 
-    #voice"audio/day2/scene19_N5_sm9.mp3"
+    voice"audio/day1/scene19_N5_sm_9.mp3"
     sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was unconscious from the first hit."
 
     menu case_inv:
@@ -129,21 +129,23 @@ label Guadycane:
 
     scene gaudycane
     #Susan Murphy 
-    #voice"audio/day2/scene19_N5_sm5.mp3"
+    voice"audio/day1/scene19_N5_sm5.mp3"
     sm "I think we've found our murder weapon."
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19_N9_ej5.mp3"
+    voice "audio/day1/scene19_N9_ej5.mp3"
     ej "I think I saw Rachel carry that on board."
 
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    #voice"audio/day2/scene19.mp3" #havent found file 
     sm "Maybe there is something to what McQuaid said…"
 
     #Susan Murphy 
+    voice "audio/day1/scene19_N3_sm2.mp3"
     sm "That body shot must've hurt."
 
     #Ezekiel Jones
+    voice "audio/day1/scene19_N9_ej2.mp3"
     ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
 
     menu gaudy_inv:
@@ -158,11 +160,11 @@ label shoeprint:
     scene shoeprint
     
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    #voice"audio/day2/scene19.mp3" #havent found file
     ej "Any bright ideas about that shoe print?"
 
     #Susan Murphy 
-    #voice"audio/day2/scene19_N3_sm4.mp3"
+    voice "audio/day1/scene19_N3_sm4.mp3"
     sm "Doesn't look like something expensive. Perhaps one of the waiters?"
 
     menu shoe_inv:
