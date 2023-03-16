@@ -169,8 +169,8 @@ label start:
 
     #Michael McQuaid
     show michael 
-    #voice "audio/day1/scene7_N2_mm8.mp3" #line change
-    mm "Ah, and here’s dinner now!"
+    #voice "audio/day1/scene7_N2_mm8.mp3" #can't find audio
+    mm "Ah, and here’s dinner now!" 
     hide michael
     
     #Susan Thoughts 
@@ -855,7 +855,7 @@ label first_murder:
     scene insidebathroom
 
     #Narrator
-    voice "audio/day2/scene24_N1.mp3" 
+    #voice "audio/day2/scene24_N1.mp3" 
     "Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
 
     #Patrcia Sound Effect Retches
@@ -1371,7 +1371,7 @@ label cont_ezekiel_inv:
             sm "Yet you were in a War, and War involves killing."
 
             #Ezekiel Jones
-            voice "audio/day2/scene36_n9_ej_3.mp3"
+            #voice "audio/day2/scene36_n9_ej_3.mp3"
             ej "It is true. I am suffering. Seeing innocent people die before your eyes is painful."
 
             voice "audio/day2/scene36_n9_ej_4.mp3"
@@ -1512,7 +1512,7 @@ label dalton_inv:
             #Susan Murphy
             show susan at left 
             show david at right 
-            voice "audio/day2/scene38_n5_ssm_3.mp3"
+            voice "audio/day2/scene38_n5_sm_3.mp3"
             sm "Now that's a bit suspicious, Dalton. It would be a fairly innocuous request if you didn't do anything. Why not show us your shoes?"
 
             #Ezekiel Jones
@@ -1766,7 +1766,7 @@ label william_kitchen:
 
             #William Windchime
             show william
-            voice "audio/day2/scene42_n8_ww_2.mp3"
+            #voice "audio/day2/scene42_n8_ww_2.mp3"
             ww "What? Why?"
             hide william
 
@@ -2028,7 +2028,7 @@ label william_kitchen:
                     ww "Why am I even telling you this? I have to go. I've got things to do."
 
                     #Narrator
-                    voice "audio/day2/scene47.mp3"
+                    voice "audio/day2/scene47_n1_3.mp3"
                     "William walks off in a huff."
                     hide william
                     #Ezekiel Jones
@@ -2057,7 +2057,7 @@ label william_kitchen:
 label michael_inv:
 
     #Narrator 
-    voice "audio/day2/scene47_n5_sm_3"
+    #voice "audio/day2/scene47_n1_4.mp3"
     "Susan and Ezekiel leave for the Dining Hall."
 
     #Navigating to the DIning Hall 
@@ -2881,7 +2881,7 @@ label day3_cont:
             
 
             #Susan Murphy 
-            voice "audio/day3/scene68.mp3"
+            voice "audio/day3/scene68_N5_sm_1.mp3"
             sm "There were a few times we separated. Where did you go during those times?"
 
             #Ezekiel Jones
@@ -3153,7 +3153,7 @@ label day3_cont:
                     dd "Are you sure you're a real detective? It sure seems you're trying to pin it on the butler…"
 
                     #Susan Murphy Thoughts
-                    voice "audio/day3/scene74.mp3"
+                    voice "audio/day3/scene75_N3_smt_1.mp3"
                     sm "Wait, could he…? No, that's impossible. Would McQuaid have told him?"
 
                     #Susan Murphy
@@ -3830,7 +3830,7 @@ label thirdmurder:
             
 
             #Narrator
-            voice "audio/day4/scene_N1_1.mp3"
+            voice "audio/day4/scene87_N1_1.mp3"
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
             
 
@@ -3859,7 +3859,7 @@ label thirdmurder:
 
             #Michael McQuaid
             show michael angry at right
-            voice "audio/day4/scene87_N2_mm_1.mp3"
+            voice "audio/day4/scene88_N2_mm_1.mp3"
             mm "Dalton? What's the meaning of this?"
             hide michael
             hide david
