@@ -524,7 +524,7 @@ label mingle:
             show susan
             voice "audio/day1/scene9_N5_sm.mp3"
             sm "She said she was feeling sick. I should probably go and check the washroom."
-            play sound "audio/sfx/Footstep_near_far.mp3"
+            play sound "audio/sfx/footstep_near_far.mp3"
             #Scene 10   
             #Navigating to the washroom
 
@@ -767,7 +767,7 @@ label nav_cont:
 
     scene hallway
 
-    play sound "audio/sfx/Footstep_near_far.mp3"
+    play sound "audio/sfx/footstep_near_far.mp3"
     "Navigating to the murder scene"
 
     #Narrator
@@ -971,7 +971,7 @@ label first_murder:
     #Scene 26
      
     #Narrator 
-    voice "audio/day2/scene26_N1_1.mp3"
+    #voice "audio/day2/scene26_N1_1.mp3"
     "Susan leaves the White sisters in the bathroom."
 
     #Susan Thought 
@@ -1175,7 +1175,7 @@ label first_murder:
             #Scene 31 - Ezekiel Jones / Footprint (Hallway)
 
             #Susan Murphy 
-            voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
+            #voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
@@ -1186,12 +1186,12 @@ label first_murder:
             #voice "audio/day/scene31_n5_sm.mp3"
             sm "No, I just have to be certain. Better safe than sorry, right?"
 
-            Ezekiel Jones
+            #Ezekiel Jones
             voice "audio/day2/scene31_n9_ej_2.mp3"
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
-            voice "audio/day2/scene31_n5_ej_3.mp3"
+            #voice "audio/day2/scene31_n5_ej_3.mp3"
             sm "Yes, if you have more, please take me to them. I need to check them myself"
 
             #Ezekiel Jones
@@ -2254,7 +2254,7 @@ label end_of_dayone:
     #Navigating to the Cabin
 
     scene hallway
-
+    play sound "audio/sfx/footstep_near_far.mp3"
     "Navigating to the cabin"
 
     #Scene 52 - Susan Cabin 
