@@ -627,7 +627,7 @@ label nav_cont:
     
     #Michael Mcquaid
     voice "audio/day1/scene17_N2_mm8.mp3"
-    mm "Well, it wasn’t me. I was here the entire time? You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
+    mm "Well, it wasn’t me. I was here the entire time! You said you went to find Rachel? What if she went to get rid of her dastardly husband?"
     
 
     #Susan Murphy
@@ -636,7 +636,7 @@ label nav_cont:
 
     #Michael Mcquaid
     voice "audio/day1/scene17_N2_mm9.mp3"
-    mm "As far as we know, you could have killed him." 
+    mm "As far as we know, you could have killed him!" 
     hide michael
 
     #Ezekiel Jones
@@ -646,21 +646,21 @@ label nav_cont:
 
     #Susan Murphy
     voice "audio/day1/scene17_N5_sm17.mp3"
-    sm "You can’t be serious. You all saw me leave here a few seconds ago." 
+    sm "You can’t be serious! You all saw me leave here a few seconds ago!" 
     
 
     #Patricia White
     hide ezekiel
     show patricia upset at right
     voice "audio/day1/scene17_N10_pw.mp3"
-    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered."
+    pw "Oh no, sis, are we gonna get murdered? I’m too pretty to get murdered!"
     
 
     #Deborah White
     hide patricia
     show deborah pissed at right
     voice "audio/day1/scene17_N12_dw.mp3"
-    dw "Calm down, Patti. Nothing is gonna happen to you."
+    dw "Calm down, Patty. Nothing is gonna happen to you."
     
 
     #Patricia White
@@ -758,8 +758,7 @@ label nav_cont:
 
     #Narrator
     voice "audio/day1/scene17_N1_5.mp3"
-    "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."
-    
+    "Susan and Ezekiel leave to go to the crime scene. Deborah and Patricia leave moments after to try and find Rachel."    
 
     #Scene 18 
 
@@ -1057,6 +1056,10 @@ label first_murder:
     #Rachel Reed
     hide ezekiel 
     show rachel upset at right
+
+    #voice "" -Ovewriiten with the commit
+    rar "Sigh"
+
     #voice "audio/day2/scene28_N11.mp3"
     rar "Well, after the news, I felt nauseous. So I started to head to the bathroom. On my way there, I caught a draft of the ocean breeze and decided to go on the deck instead."
 
@@ -1094,7 +1097,8 @@ label first_murder:
 
     rar "*sobs*"
     
-    rar "All they did was made me feel worse by telling me that I lost my Richard."
+    rar "all they did was make me feel worse by telling me that I lost my dreamboat, my Richard." 
+
 
     #Susan Murphy
     #voice "audio/day2/scene28_n3.mp3"
@@ -1104,12 +1108,12 @@ label first_murder:
     #Rachel Reed
     #voice "audio/day2/scene28_n11.mp3"
     rar "*sniff*"
+
     #voice "audio/day2/scene28_n11.mp3"
     rar "Richard always had enemies. Since we were back in school, he'd always been a bit...abrasive. They'd just never understood him. Oh, my Richard. I miss you so much.."
     hide rachel
 
     #Ezekiel Jones
-    hide rachel
     show ezekiel at right
     #voice "audio/day2/scene28_n9.mp3"
     ej "Okay, that's enough. You should take some time to rest and grieve your loss."
@@ -1164,9 +1168,11 @@ label first_murder:
     
     #Ezekiel Jones
     #voice "audio/day2/scene30_n9.mp3"
-    ej "I understand. I want this killer brought to justice, and I want to help you. I will answer any questions to the best of my ability."
+    ej "I understand. I want this killer brought to justice, and I want to help you. I will answer any questions to the best of my ability, Here, let’s go to my room."
     hide ezekiel
     hide susan
+
+    scene ezekielroom
 
     menu ezekiel_inv:
         "Choose path of investigation"
@@ -1202,7 +1208,7 @@ label first_murder:
 
             #Scene 32 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
-            scene ezekielroom
+            #scene ezekielroom - To be deleted
 
             #Susan Murphy 
             voice "audio/day2/scene32_n5_sm_5.mp3"
@@ -1507,7 +1513,7 @@ label dalton_inv:
 
             #David Dalton
             voice "audio/day2/scene38_n4_dd_3.mp3"
-            dd "My shoes? Why would you ever need to see them?"
+            dd "My shoes? W-Why would you ever need to see them?"
 
             #Susan Murphy
             show susan at left 
@@ -1665,6 +1671,7 @@ label dalton_inv:
                     dd "I'm not some schoolgirl going to the restroom in packs. Now, if you'll excuse me, I have some dishes to wash."
 
                     #Narrator 
+                    #voice ""
                     "Dalton turns to the sink, and Susan turns to Ezekiel, speaking quietly."
 
                     #Susan Murphy 
@@ -1850,11 +1857,12 @@ label william_kitchen:
                     ej "You have to admit, this seems awfully suspicious. Especially with how rude Richard was to you last night."
 
                     voice "audio/day2/scene43_n9_ej_4.mp3"
-                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough, eh?"
+                    ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough?"
 
                     #William Windchime
                     #voice "audio/day2/scene43.mp3"
-                    ww "I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
+                    ww "I-…I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
+
                     hide william
                     show ezekiel at right
                     show susan at left 
@@ -2266,7 +2274,7 @@ label end_of_dayone:
     "After a long day of talking to everyone on board and finding clues about what happened to Richard Reed, Susan enters her room to go to sleep when suddenly…"
 
     #Scream sound
-    "A scream will be heard here"
+    "Screams"
 
     #Navigating to the Hallway 
     
@@ -2532,10 +2540,6 @@ label third:
 
     #Scene 61 - Deborah White 
 
-    #Going to question deborah white possible choice
-
-    "Going to question deborah white"
-
     #Susan Murphy
     show susan
     voice "audio/day3/scene61_N5_sm.mp3" 
@@ -2702,7 +2706,7 @@ label day3_cont:
     
 
     #Susan Murphy 
-    voice "audio/day3/scene64_N5_sm_2.mp3" #line change
+    voice "audio/day3/scene64_N5_sm_2.mp3" 
     sm "Yea,that's fair. I just wanted to ask a couple of questions. Is that okay?"
     
 
@@ -2873,13 +2877,7 @@ label day3_cont:
 
             #Ezekiel Jones
             voice "audio/day3/scene68_N9_ej_1.mp3"
-            ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."
-            
-
-            #Susan Murphy thoughts
-            #voice "audio/scene68_N3_smt_1.mp3"
-            #sm "That is correct. However, there were a few times when we might have separated."
-            
+            ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."            
 
             #Susan Murphy 
             voice "audio/day3/scene68_N5_sm_1.mp3"
@@ -2897,7 +2895,6 @@ label day3_cont:
                 "Press further":
                     #Susan Murphy 
                     voice "audio/day3/scene69_N5_sm.mp3"
-                    sm "Yes. However, there was one time when we separated. It is suspicioushowitwasonly a few minutes, but it could have been enough time for you kill someone."
                     show susan at left
                     sm "Yes. However, there was one time when we separated. It is suspicious how it was only a few minutes, but it could have been enough time for you kill someone."
                     
@@ -2981,7 +2978,7 @@ label day3_cont:
 
                     #Ezekiel Jones
                     voice "audio/day3/scene71_N9_ej2.mp3"
-                    ej "I can confirm that I was not the last person to see him that day. It was, in fact, (player to insert name here). I have not seen him since"
+                    ej "I can confirm that I was not the last person to see him that day. It was, in fact I have not seen him since"
 
                     #Susan Murphy Thoughts
                     voice "audio/day3/scene71_N3_smt.mp3"
@@ -3366,7 +3363,7 @@ label fourth:
 
     #Narrator 
     #voice "audio/day3/scene79_N1_1.mp3"
-    "They let themselves into the Neptune's finely appointed washroom, and find the hunchedformofDeborah White, crying over the newly deceased Patricia White."
+    "They let themselves into the Neptune's finely appointed washroom, and find the hunched form of Deborah White, crying over the newly deceased Patricia White."
     
     scene white_murderscene
 
@@ -4007,7 +4004,7 @@ label finale:
 
     #Scene 90 - The Bomb
 
-    scene bomblocation
+    scene bomb
 
     #Narrator
     voice "audio/day4/scene90_N1_1.mp3"
@@ -4056,7 +4053,7 @@ label finale:
 
         "Choose Wisely"
 
-        "Avenge":
+        "Blackmail":
            
             #Scene 92 - Explosion
 
@@ -4092,7 +4089,7 @@ label finale:
             
             #Scene 93 - Accepted
 
-            scene passwordaccepted
+            scene bomb
 
             #Susan Murphy 
             show susan at left
@@ -4198,7 +4195,7 @@ label finale:
 
                     #David Dalton
                     voice "audio/day4/scene95_N4_dd_5.mp3" 
-                    dd "You know if you arrest me, I will reveal all your dirty little secrets. Even if I can't kill you, I'll ruin you."
+                    dd "You know if you arrest me, I'll reveal all your dirty little secrets. Even if I can't kill you, I'll ruin you."
                     
 
                     #Susan Murphy 
@@ -4315,7 +4312,7 @@ label finale:
 
                     jump dalton_location
 
-        "Change":
+        "Payback":
 
                 #Scene 92 - Explosion
 
