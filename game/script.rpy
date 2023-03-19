@@ -117,15 +117,11 @@ label start:
     smt " Okay, time for me to get dolled up for dinner. I hope the food is going to be good."
     hide susan
 
-
-    #Scene Bg - Navigation Option screen
-
-
     #Scene 6 - Navigation 
 
-    scene hallway
+    #scene hallway
     #Change Need to add sound effect and code for it here**
-    "Walking your way to the dining hall"
+    #"Walking your way to the dining hall"
     #Navigation here
 
     #Scene 7 - Dining Hall
@@ -528,9 +524,9 @@ label mingle:
             #Scene 10   
             #Navigating to the washroom
 
-            scene navigatingtowashroom
+            #scene navigatingtowashroom
 
-            "Navigating to washroom"
+            #"Navigating to washroom"
 
             #Scene 11
             scene washroom
@@ -553,9 +549,9 @@ label mingle:
 label nav_cont:
 
     #Scene 12
-    scene hallway
+    #scene hallway
 
-    "Susan is navigating to the cabin"
+    #"Susan is navigating to the cabin"
 
     #The player navigates to the Reed’s cabin, the door is slightly ajar
 
@@ -764,10 +760,10 @@ label nav_cont:
 
     #Player navigates to the Murder 1 Scene Inside the Reed’s Cabin
 
-    scene hallway
+    #scene hallway
 
-    play sound "audio/sfx/footstep_near_far.mp3"
-    "Navigating to the murder scene"
+    #play sound "audio/sfx/footstep_near_far.mp3"
+    #"Navigating to the murder scene"
 
     #Narrator
     voice "audio/day1/scene19_N1.mp3"
@@ -834,8 +830,8 @@ label first_murder:
 
     #NAVIGATION HERE
     #The player Navigates to the bathroom
-    scene hallway
-    "Navigating the hallway"
+    #scene hallway
+    #"Navigating the hallway"
     
     #Scene 22
     scene hallway
@@ -847,8 +843,8 @@ label first_murder:
     #Scene 23 
     #The player navigates to the Bathroom
 
-    scene hallway
-    "Navigating to the bathroom"
+    #scene hallway
+    #"Navigating to the bathroom"
 
     #Scene 24
     scene insidebathroom
@@ -964,8 +960,8 @@ label first_murder:
 
     #The player navigates to the Hallway
     
-    scene hallway 
-    "Navigating the hallway"
+    #scene hallway 
+    #"Navigating the hallway"
 
     #Scene 26
      
@@ -981,8 +977,8 @@ label first_murder:
     #Scene 27 
     #The player navigates to the dining room
 
-    scene hallway
-    "Navigating to dining room"
+    #scene hallway
+    #"Navigating to dining room"
 
     #Scene 28 - The dining Hall
 
@@ -1160,7 +1156,7 @@ label first_murder:
     show susan at left
     show ezekiel at right
 
-    "Navigating hallway together"
+    #"Navigating hallway together"
 
     #Scene 30 - Ezekiel Jones (Hallway)
     voice "audio/day2/scene30_N5_sm_1.mp3"
@@ -1466,9 +1462,9 @@ label dalton_inv:
 
     #keeping for alpha to provide flow to the game linear mechanics
 
-    scene hallway
+    #scene hallway
 
-    "Navigating to Kitchen" 
+    #"Navigating to Kitchen" 
 
     # ----------
 
@@ -2070,9 +2066,9 @@ label michael_inv:
     "Susan and Ezekiel leave for the Dining Hall."
 
     #Navigating to the DIning Hall 
-    scene hallway 
+    #scene hallway 
 
-    "Navigating to the Dining Hall"
+    #"Navigating to the Dining Hall"
 
     #Scene 48 - Michael McQUaid (Dining Hall)
 
@@ -2261,9 +2257,9 @@ label end_of_dayone:
 
     #Navigating to the Cabin
 
-    scene hallway
-    play sound "audio/sfx/footstep_near_far.mp3"
-    "Navigating to the cabin"
+    #scene hallway
+    #play sound "audio/sfx/footstep_near_far.mp3"
+    #"Navigating to the cabin"
 
     #Scene 52 - Susan Cabin 
 
@@ -2278,7 +2274,7 @@ label end_of_dayone:
 
     #Navigating to the Hallway 
     
-    "Going to the hallway"
+    #"Going to the hallway"
 
     #Scene 53 - Hallway
     
@@ -2678,9 +2674,9 @@ label day3_cont:
 
     #navigating to Rachel Cabin
 
-    scene hallway
+    #scene hallway
 
-    "Navigating to Rachel Cabin"
+    #"Navigating to Rachel Cabin"
 
     #Scene 64 - Rachel Reed 
 
@@ -2820,9 +2816,9 @@ label day3_cont:
 
     #navgating to the desk
 
-    scene hallway
+    #scene hallway
 
-    "Navigating to the Deck"
+    #"Navigating to the Deck"
 
     #The Deck
 
@@ -3493,9 +3489,9 @@ label thirdmurder:
 
     #To the Dining Hall
 
-    scene hallway
+    #scene hallway
 
-    "Navigating to the dining hall"
+    #"Navigating to the dining hall"
 
     #Scene 83- The Dining Hall
     scene diningroom
