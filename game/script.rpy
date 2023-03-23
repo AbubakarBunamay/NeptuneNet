@@ -1582,7 +1582,7 @@ label dalton_inv:
             hide ezekiel
             show david at right
             voice "audio/day2/scene38_n4_dd_6.mp3"
-            dd "I could try, Miss Murphy, but the kid keeps a padlock on his locker. And why would I go through the effort in the first place?"
+            dd "Come on Ms. Murphy, you’re really accusing one of the only poor men on this boat of being a thief? And besides, why would I want to?"
             hide susan 
             hide david
 
@@ -1638,7 +1638,7 @@ label dalton_inv:
             #David Dalton 
             show david
             voice "audio/day2/scene40_n4_dd_5.mp3"
-            dd "Kill? For William? Oh please, I like the kid, but we ain't that close. We were out of appetizers, so I had to make more."
+            dd "Kill? For William? Oh please, I like the kid, but we ain't that close. We were out of appetizers, so I had to make more for the rich pigs."
             voice"audio/day2/scene40_n4_dd_5.mp3"
             
             #David Dalton
@@ -1918,7 +1918,7 @@ label william_kitchen:
 
             #William Windchime
             voice "audio/day2/scene45_n8_ww.mp3"
-            ww "I was here, in the kitchen. I spilled that soup, and then Mr. McQuaid yelled at me, and I didn't want to cause more trouble, so I came right down."
+            ww "I was here, in the kitchen. I spilled that drink, and then Mr. McQuaid yelled at me, and I didn't want to cause more trouble, so I came right down."
 
             #Ezekiel Jones
             hide susan
@@ -2000,7 +2000,7 @@ label william_kitchen:
                     show susan at left
                     show william upset at right
                     voice "audio/day2/scene47_n5_sm.mp3"
-                    sm "Alright, William, I have another question for you. When you spilled that soup on Richard, he shouted at you, right? That must have made you angry."
+                    sm "Alright, William, I have another question for you. When you spilled that drink on Richard, he shouted at you, right? That must have made you angry."
 
                     #William Windchime
                     voice "audio/day2/scene47_n8_ww_3.mp3"
@@ -4287,10 +4287,17 @@ label finale:
                     voice "audio/day4/scene96_N4_dd_3.mp3"
                     show david smiling
                     dd "Brave enough to order a death, but not enough to do it himself."
-                    hide david
-                    
+                    hide david                                
 
                     #Narrator
+                    #voice     
+                    "David looks around the room, making eye contact with every person there."
+
+                    #David Dalton
+                    #voice 
+                    dd "I may not be able to kill you rich bastards, but you’ll be sorry you ever met me."
+
+                    #Narrator    
                     voice "audio/day4/scene96_N1_3.mp3"
                     "Ezekiel walks in with Deborah."
                     

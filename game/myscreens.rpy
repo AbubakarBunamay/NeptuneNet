@@ -2,7 +2,7 @@
 init:
     $ style.input.caret = "my_img"
 image my_img:
-    "start.png"
+    "skip.png"
     xalign 1.5
     yalign 1.5
     linear 1.0 alpha 1.0
@@ -32,15 +32,31 @@ screen reedscene_investigation():
     imagemap:
         ground "images/richard_murderscene.png"
         
-        hotspot (1215, 467, 101, 54) action Jump ("headwound")
-        #hotspot (1464, 723, 188, 174) action Jump ("bodybruise")
-        #hotspot (1302, 22, 599, 458) action Jump ("bloodstains")
-        hotspot (496, 859, 354, 185) action Jump ("knockedcase")
-        hotspot (1385, 773, 70, 41) action Jump ("Guadycane")
-        hotspot (837, 774, 201, 132) action Jump ("shoeprint")     
-        hotspot (1484, 68, 414, 76) action Jump ("first_murder")
+        hotspot (1226, 299, 128, 146) action Jump ("headwound")
+        hotspot (1527, 723, 94, 126) action Jump ("bodybruise")
+        hotspot (1689, 739, 137, 141) action Jump ("bloodstains")
+        hotspot (649, 867, 145, 153) action Jump ("knockedcase")
+        hotspot (1359, 724, 165, 171) action Jump ("Guadycane")
+        hotspot (896, 754, 99, 125) action Jump ("shoeprint")     
+        hotspot (1484, 68, 414, 76) action If(not persistent.clicked_shoeprint, Jump("shoeprint_not_clicked"), Jump("first_murder"))
 
     add "my_img" as caret xpos 2024 ypos 150
+    
+
+
+
+label shoeprint_not_clicked:
+
+    scene shoeprint_not_clicked
+
+    #Ezekial Jones
+    ej "Hey, Murphy, look at that shoe print."
+
+    #Susan Murphy 
+    sm "Hm. It doesn’t look expensive. One of the waiters, maybe?"
+    
+    jump shoeprint
+
 
 label headwound:
    
@@ -156,6 +172,7 @@ label Guadycane:
             jump first_murder
 
 label shoeprint:
+    $ persistent.clicked_shoeprint = True
 
     scene shoeprint
     
@@ -180,10 +197,11 @@ screen windchimescene_investigation():
 
     imagemap:
         ground "images/windchime_murderscene.png"
-        hotspot (788, 985, 366, 90) action Jump ("bareFeet")
-        hotspot (251, 996, 203, 49) action Jump ("knife")
+        hotspot (1034, 940, 109, 124) action Jump ("bareFeet")
+        hotspot (273, 959, 127, 106) action Jump ("knife")
         hotspot (418, 786, 145, 124) action Jump ("w_bloodstains")
-        hotspot (1702, 792, 211, 112) action Jump ("shoePrints")
+        hotspot (1785, 813, 128, 133) action Jump ("shoePrints")
+        hotspot (243, 728, 70, 86) action Jump ("cloth")
         hotspot (1597, 87, 323, 83) action Jump ("third") 
 
     add "my_img" as caret xpos 2024 ypos 150
@@ -265,6 +283,15 @@ label shoePrints:
             call screen windchimescene_investigation
         "Done Investigating":
             jump third 
+
+label cloth:
+
+    scene cloth
+    #Susan Murphy
+    sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
+
+    jump third
+
 
 screen patriciascene_investigation():
 
