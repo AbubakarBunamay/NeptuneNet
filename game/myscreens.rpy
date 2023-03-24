@@ -100,20 +100,20 @@ label bodybruise:
             jump first_murder        
 
     
-# label bloodstains:
+label bloodstains:
 
-#     scene bloodstains
+    scene bloodstains
 
     #Susan Murphy 
     #voice"audio/day2/scene19_N3_sm3.mp3"
     sm "Looks like he was beaten before he was killed."
 
-#     menu hbloodstains_inv:
-#         "What's your next step"
-#         "Continue Investigating":
-#             call screen reedscene_investigation
-#         "Done Investigating":
-#             jump first_murder
+    menu hbloodstains_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":   
+            jump first_murder
 
 
 label knockedcase:

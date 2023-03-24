@@ -1181,7 +1181,7 @@ label first_murder:
             #Scene 31 - Ezekiel Jones / Footprint (Hallway)
 
             #Susan Murphy 
-            voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
+            voice "audio/day2/scene31_n5_sm_4.mp3"
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
@@ -1189,7 +1189,7 @@ label first_murder:
             ej "Because of the footprint, right? Do you think it’s me?"
 
             #Susan Murphy 
-            voice "audio/day/scene31_N5_sm_2.mp3"
+            voice "audio/day2/scene31_N5_sm_2.mp3"
             sm "No, I just have to be certain. Better safe than sorry, right?"
 
             #Ezekiel Jones
@@ -4135,7 +4135,7 @@ label finale:
 
             #Ezekiel Jones
             show ezekiel at right
-            voice "audio/da4/scene93_N9_ej_1.mp3"
+            voice "audio/day4/scene93_N9_ej_1.mp3"
             ej "Right."
             hide susan
             hide ezekiel
