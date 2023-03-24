@@ -3478,7 +3478,7 @@ label thirdmurder:
     voice "audio/day4/scene82_N3_smt_1.mp3"
     smt "God, we need to catch this maniac. There aren't that many of us left."
     
-    #voice "audio/day4/scene82_N3_smt_2.mp3"
+    voice "audio/day4/scene82_n3_smt_2.mp3"
     smt "Okay, think, what do I know? The killer finds Richard in his suite and beats him, to death, with his wife's cane, apparently wearing William's shoes."
     
 
@@ -3755,7 +3755,7 @@ label thirdmurder:
             
 
             #Susan Murphy Thoughts
-            #voice "audio/day4/scene85_N3_smt.mp3"
+            voice "audio/day4/scene85_n3_smt_2.mp3"
             sm "Huh?...Oh shit."
             
             hide david
@@ -3813,7 +3813,7 @@ label thirdmurder:
             
 
             #Susan Murphy Thoughts
-            #voice "audio/day4/scene86_N3_smt_1.mp3"
+            voice "audio/day4/scene85_n3_smt_2.mp3"
             sm "Huh?...Oh shit."
             
             hide david
@@ -3871,14 +3871,14 @@ label thirdmurder:
             
 
             #Susan Murphy Thoughts
-            #voice "audio/day4/scene87_N3_smt_1.mp3"
+            voice "audio/day4/scene85_n3_smt_2.mp3"
             sm "Huh?...Oh shit."
             
             hide david
             hide susan
 
             #Narrator
-            #voice "audio/day4/scene87_N1_2.mp3"
+            voice "audio/day4/scene87_N1_2.mp3"
             "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
             
 
@@ -3929,7 +3929,7 @@ label thirdmurder:
             
 
             #Susan Murphy Thoughts
-            #voice "audio/day4/scene88_N5_sm_2.mp3"
+            voice "audio/day4/scene88_n5_smt_2.mp3"
             sm "Huh?...Oh shit."
             
             hide david
@@ -4011,7 +4011,7 @@ label finale:
 
     #Rachel Reed
     show rachel at right
-    #voice "audio/day4/scene89_N11_rar_1.mp3"
+    voice "audio/day4/Scene89_N11_rar_1.mp3"
     rar "Not as far as I can remember. Richard might have known him, though."
     hide rachel
 
@@ -4069,19 +4069,19 @@ label finale:
     ej "We must be able to defuse it. See those three wires? It looks like we have three choices."
     
     #Susan Murphy 
-    #voice "audio/day4/scene91_N5_sm.mp3"
+    voice "audio/day4/scene91_N5_sm_1.mp3"
     sm "Yes, but what wire is the correct wire?"
 
     #Susan Murphy 
-    #voice "audio/day4/scene91_N5_sm_2.mp3"
+    voice "audio/day4/scene91_N5_sm_2.mp3"
     sm "What do you mean, these are wires?"
 
     #Ezekiel Jones
-    #voice "audio/day4/scene91_N5_sm_3.mp3""
+    voice "audio/day4/scene91_N9_ej_2.mp3"
     ej "Oh right, sorry I’m stressed. What could the correct wire be?"
 
     #Susan Murphy 
-    #voice "audio/day4/scene91_N5_sm_4.mp3"
+    voice "audio/day4/scene91_N5_sm_3.mp3"
     sm "Hmm, well the only wire that is standing out to me is.."
 
 
@@ -4135,7 +4135,7 @@ label finale:
 
             #Ezekiel Jones
             show ezekiel at right
-            #voice "audio/da4/scene93_N9_ej_1.mp3"
+            voice "audio/da4/scene93_N9_ej_1.mp3"
             ej "Right."
             hide susan
             hide ezekiel
@@ -4164,7 +4164,7 @@ label finale:
 
                     #Susan Murphy 
                     show susan
-                    #voice "audio/day4/scene94_N5_sm_3.mp3"
+                    voice "audio/day4/scene94_N5_sm_3.mp3"
                     sm "No that doesn’t make sense. There wouldn’t be a microphone for the intercom there."
 
                     jump dalton_location
@@ -4172,7 +4172,7 @@ label finale:
                 "Helm":
 
                     #Susan Murphy 
-                    #voice "audio/day4/scene94_N5_sm_4.mp3"
+                    voice "audio/day4/scene94_N5_sm_4.mp3"
                     sm "“That makes sense. They have to be at the helm!"
 
                     #Scene 95 - the helm
@@ -4235,7 +4235,7 @@ label finale:
                     
 
                     #Susan Murphy 
-                    #voice "audio/day4/scene95_N5.mp3"
+                    voice "audio/day4/scene95_N5_sm_5.mp3"
                     sm "Save it for the judge, Dalton."
                     
 
@@ -4292,11 +4292,13 @@ label finale:
                     hide david                                
 
                     #Narrator
-                    #voice     
+                    #voice  
+                    #voice "audio/day4/scene96_N1_1.mp3"   
                     "David looks around the room, making eye contact with every person there."
 
                     #David Dalton
                     #voice 
+                    #voice "audio/day4/scene96_N4_dd_3.mp3"
                     dd "I may not be able to kill you rich bastards, but you’ll be sorry you ever met me."
 
                     #Narrator    
