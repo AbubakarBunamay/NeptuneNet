@@ -2531,7 +2531,7 @@ label third:
     
 
     #Susan Murphy
-    #voice "audio/day3/scene60_N5_sm_3.mp3" 
+    voice "audio/day3/scene60_N5_sm_3.mp3" 
     sm "What do you mean by that, McQuaid?"
     
 
@@ -2734,17 +2734,17 @@ label day3_cont:
     #Scene 65 - Rachel Reed / Diamond Cane
 
     #Susan Murphy
-    #voice "audio/day3/scene65_N5_sm_1.mp3" 
+    voice "audio/day3/scene65_N5_sm_1.mp3" 
     sm "You were seen carrying a Diamond Cane. Where did you get it from?"
     
 
     #Rachel Reed
-    #voice "audio/day3/scene65_N11_rar_1.mp3"
+    voice "audio/day3/scene65_N11_rar_1.mp3"
     rar "From Richard. He bought it for me as an anniversary present. Sure, it cost a lot of money, but he bought it to apologize for being a little extra mean back then. Business wasn't good, but it got better."
     
 
     #Rachel Reed
-    #voice "audio/day3/scene65_N11_rar_2.mp3"
+    voice "audio/day3/scene65_N11_rar_2.mp3"
     rar "The gesture meant more to me than the stupid cane."
     
 
@@ -2759,7 +2759,7 @@ label day3_cont:
     
 
     #Susan Murphy 
-    #voice "audio/day3/scene65_N5_sm3.mp3"
+    voice "audio/day3/scene65_n5_sm_3.mp3"
     sm "I, see."
     
 
@@ -2825,7 +2825,7 @@ label day3_cont:
     "Rachel closes the door on Susan."
 
     show susan
-    #voice "audio/day3/scene66_N1_2.mp3"
+    voice "audio/day3/scene66_N1_2.mp3"
     "Susan heads up on deck for a breath of fresh air."
     hide susan
 
@@ -2883,7 +2883,7 @@ label day3_cont:
             "Susan asks Ezekiel about his whereabouts during the time of the murder."
 
             #Susan Murphy
-            #voice "audio/day3/scene68.mp3"
+            voice "audio/day3/scene68_n5_sm_1.mp3"
             sm "Where were you when William was murdered?"
 
             #Ezekiel Jones
@@ -2891,7 +2891,7 @@ label day3_cont:
             ej "This is an unusual question. I was with you for most of the day. Remember I was helping you."            
 
             #Susan Murphy 
-            voice "audio/day3/scene68_N5_sm_1.mp3"
+            voice "audio/day3/scene68_N5_sm_2.mp3"
             sm "There were a few times we separated. Where did you go during those times?"
 
             #Ezekiel Jones
@@ -2934,12 +2934,12 @@ label day3_cont:
                     
 
                     #Narrator
-                    #voice "audio/day3/scene69_N1.mp3"
+                    voice "audio/day3/scene69_n1_2.mp3"
                     "Susan turns and catches David Dalton’s eye."
 
                 "Go talk to david":
                     #Narrator
-                    #voice "audio/day3/scene69_N1_2.mp3"
+                    voice "audio/day3/scene69_n1_2.mp3"
                     "Susan turns and catches David Dalton’s eye."
 
             
@@ -3023,11 +3023,11 @@ label day3_cont:
                     ej "Why I have nothing against him. While I have seen him recently, I have no reason or motive to go against him."
 
                     #Susan Murphy
-                    #voice "audio/day3/scene70_N5_sm.mp3"
+                    #voice "audio/day3/scene72_N5_sm.mp3"
                     sm "Were you the last to see him?"
 
                     #Ezekiel Jones
-                    #voice "audio/day3/scene70_N9_ej_.mp3"
+                    voice "audio/day3/scene72_N9_ej_2.mp3"
                     ej "I can confirm that I was not the last person to see him that day. It was, in fact, (the player asked to insert name here). I have not seen him since."
 
                     #Susan Murphy Thoughts
@@ -3045,7 +3045,7 @@ label day3_cont:
                     hide ezekiel        
 
                     #Narrator
-                    #voice "audio/day3/scene72.mp3"
+                    voice "audio/day3/scene72_N1.mp3"
                     "Susan turns and catches David Dalton’s eye."
             
     
@@ -3376,43 +3376,43 @@ label fourth:
     #Scene 79 - The scream
 
     #Narrator 
-    #voice "audio/day3/scene79_N1_1.mp3"
+    voice "audio/day3/scene79_n1_1.mp3"
     "They let themselves into the Neptune's finely appointed washroom, and find the hunched form of Deborah White, crying over the newly deceased Patricia White."
     
     scene white_murderscene
 
     #Ezekiel Jones
     show ezekiel
-    #voice "audio/day3/scene79_N9_ej_1.mp3"
+    voice "audio/day3/scene79_n9_ej_1.mp3"
     ej "Oh, Patty…"
     
 
     #Susan Murphy
     hide ezekiel 
     show susan
-    #voice "audio/day3/scene79_N5_sm_1.mp3"
+    voice "audio/day3/scene79_n5_sm_1.mp3"
     sm "Deborah, what happened here?"
     
 
     #Deborah White
     show susan at left
     show deborah at right
-    #voice "audio/day3/scene79_N12_dw_1.mp3"
+    voice "audio/day3/scene79_N12_dw_1.mp3"
     dw "I couldn't find Patty anywhere, and I looked around the boat all day for her."
     
 
     #Narrator
-    #voice "audio/day3/scene79_N1_2.mp3"
+    voice "audio/day3/scene79_N1_2.mp3"
     "Deborah's words start to slur together as her panic lends speed to her mouth. By the time she becomes intelligible again, all she says is:"
     
 
     #Deborah White
-    #voice "audio/day3/scene79_N12_dw_2.mp3"
+    voice "audio/day3/scene79_N12_dw_2.mp3"
     dw "And now she's dead!"
     
 
     #Susan Murphy
-    #voice "audio/day3/scene79_N5_sm_2.mp3"
+    voice "audio/day3/scene79_N5_sm_2.mp3"
     sm "It'll be alright, Deborah. I'll catch the one who did this. Ezekiel, could you…"
     
 
@@ -3420,12 +3420,12 @@ label fourth:
     hide susan
     hide deborah
     show ezekiel
-    #voice "audio/day3/scene79_N9_ej_2.mp3"
+    voice "audio/day3/scene79_N9_ej_2.mp3"
     ej "Of course. Debbie, please, come with me."
     
 
     #Narrator
-    #voice "audio/day3/scene79_N1_3.mp3"
+    voice "audio/day3/scene79_N1_3.mp3"
     "Ezekiel leads the weeping White sister out of the bathroom, leaving Susan alone with a finely dressed corpse."
     
 
@@ -3433,7 +3433,7 @@ label fourth:
     hide ezekiel
     hide deborah
     show susan
-    #voice "audio/day3/scene79_N5_sm_3.mp3"
+    voice "audio/day3/scene79_N5_sm_3.mp3"
     sm "Well, time to get to work."
     
     #Narrator
