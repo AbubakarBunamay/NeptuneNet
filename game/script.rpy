@@ -106,7 +106,7 @@ label start:
     dd "There will be a dinner for all the guests in the dining hall in 30 minutes."
 
     #Susan Murphy
-    #voice "audio/day1/scene5_N5_sm.mp3" #changed line
+    voice "audio/day1/scene5_n5_sm_1.mp3"
     sm "Alright, thank you."
     hide david
     hide susan 
@@ -165,7 +165,7 @@ label start:
 
     #Michael McQuaid
     show michael 
-    #voice "audio/day1/scene7_N2_mm8.mp3" #can't find audio
+    voice "audio/day1/scene7_n2_mm8.mp3" 
     mm "Ah, and here’s dinner now!" 
     hide michael
     
@@ -258,7 +258,7 @@ label start:
 
     #Ezekiel Jones 
     show ezekiel at right
-    #voice "audio/day1/scene7_N9_ej_7_3.mp3"
+    voice "audio/day1/scene7_n9_ej_13.mp3"
     ej "You just haven’t known him long enough. He’s always nice until he’s not."
 
     #Susan Murphy 
@@ -417,17 +417,17 @@ label mingle:
     mm "You see, I may have told a little white lie on your invitations. The real reason you’re here is that each one of you has a secret. Something hidden that would ruin you if it were to get out."
 
     #Michael McQuaid 
-    #voice "audio/day1/scene7_N2_mm2.mp3"  #haven't found the file yet
+    voice "audio/day1/scene7_n2_mm11.mp3" 
     mm "I brought you all here so we could come to a little… arrangement. Over the next few days, I am sure you’ll find this to be in your best interest."
 
     #Michael McQuaid 
-    #voice "audio/day1/scene7_N2_mm2.mp3"  #haven't found the file yet
+    voice "audio/day1/scene7_n2_mm12.mp3" 
     mm "After all, who knows what would happen if your little secrets were no longer secret."
     hide michael 
 
     #Susan Murphy 
     show susan pissed
-    voice "audio/day1/scene7_N5_sm10.mp3"  #This is not the correct file - it should only say What!
+    voice "audio/day1/scene7_N5_sm9.mp3"  
     sm "What!"
     hide susan 
 
@@ -477,7 +477,7 @@ label mingle:
 
     #Michael McQuaid 
     show michael smiling at right
-    #voice "audio/day1/scene7_N3_mm.mp3"
+    voice "audio/day1/scene7_n2_mm17.mp3"
     mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs" 
 
     #Narrator
