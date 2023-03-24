@@ -208,7 +208,7 @@ label start:
     hide william
     
     #Narator 
-    voice "audio/day1/Scene7_n1_6.mp3"
+    voice "audio/day1/Scene7_n1_4.mp3"
     "Richard leaves, muttering about having to replace a perfectly good suit."
 
     #Susan Murphy Thoughts
@@ -472,7 +472,7 @@ label mingle:
 
     #Ezekiel Jones 
     show ezekiel angry at left
-    voice "audio/day1/scene7_N9_ej.mp3"
+    voice "audio/day1/scene7_N9_ej_12.mp3"
     ej "I don’t believe you, McQuaid. You’re bluffing."
 
     #Michael McQuaid 
@@ -481,7 +481,7 @@ label mingle:
     mm "Really Ezekiel? Then you wouldn’t mind me telling all these fine people about that missing shipment of drugs" 
 
     #Narrator
-    #voice "audio/day1/scene7_N1.mp3"
+    voice "audio/day1/scene7_N1_12.mp3" 
     "As the crowd’s eyes turn towards him, Ezekiel pales."
 
     #Ezekiel Jones 
@@ -533,7 +533,7 @@ label mingle:
 
             #Narator Voice
             voice "audio/day1/scene11_N1_sm.mp3"
-            "Susan enters the washroom but finds no one there."
+            "Susan enters the washroom but finds no one."
 
             #Susan Murphy Voice
             play sound "audio/sfx/doorknock2.mp3"
@@ -568,8 +568,8 @@ label nav_cont:
     #Scene 14
 
     #The player navigates to the Reed's cabin, opens the door and looks inside
-    scene cabindoorajar
-
+    scene cabindoorajar 
+    voice "audio/day1/scene14_n1_1.mp3"
     "Reaching the cabin, opening the door to look inside"
 
     #Scene 15 - First Murder   
@@ -714,7 +714,7 @@ label nav_cont:
     #Michael Mcquaid
     hide ezekiel
     show michael
-    voice "audio/day1/scene17_N2_mm11.mp3"
+    voice "audio/day1/scene17_N2_mm_6.mp3"
     mm "Perfect, the doctor and the eye. What a confidential relationship."
 
     hide michael
@@ -755,7 +755,7 @@ label nav_cont:
 
     #Narrator
     voice "audio/day1/scene17_N1_5.mp3"
-    "Susan and Ezekiel leave to go to the crime scene. Deborah and Patricia leave moments after to try and find Rachel."    
+    "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."    
 
     #Scene 18 
 
@@ -851,7 +851,7 @@ label first_murder:
     scene insidebathroom
 
     #Narrator
-    #voice "audio/day2/scene24_N1.mp3" 
+    voice "audio/day2/scene24_N1_1.mp3" 
     "Inside the bathroom, she sees the sisters, Patricia and Deborah White. Patricia is by the toilet, feeling sick to her stomach. Deborah is keeping her company."
 
     #Patrcia Sound Effect Retches
@@ -906,8 +906,8 @@ label first_murder:
     #Patricia White
     hide deborah
     show patricia at right
-    #voice "audio/day2/scene24_N10.mp3"  #can't find file
-    pw "Yes, ma'am, Hrph"
+    voice "audio/day2/scene24_N10_pw_2.mp3"
+    pw "Yes."
     hide patricia
 
     #Deborah White
@@ -990,8 +990,8 @@ label first_murder:
     #Ezekiel Jones
     hide susan
     show ezekiel smiling
-    #voice "audio/day2/scene28_N9.mp3"
-    ej "Ah, Susan, good morni-"
+    voice "audio/day2/scene28_N9_ej.mp3"
+    ej "Ah, Susan, good morning"
     hide ezekiel
 
     #Rachel Reed

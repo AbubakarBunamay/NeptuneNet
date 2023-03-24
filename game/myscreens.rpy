@@ -60,15 +60,24 @@ label shoeprint_not_clicked:
 
 label headwound:
    
-    scene headwound
+    scene headwoundbg
     
+    #headwound
+    show headwound at right
+
     #Susan Murphy 
     voice "audio/day1/scene19_N3_sm.mp3"
+    show susan at left 
     sm "This must be what killed him. Poor bastard. The bruising seems to say that it happened recently."
+    hide susan 
 
     #Ezekiel Jones
+    show ezekiel at left
     voice"audio/day1/scene19_N9_ej.mp3"
     ej "I've seen enough head wounds in my time. That's a deadly one." 
+    hide ezekiel
+
+    hide headwound
 
     menu headwound_inv:
         "What's your next step"
@@ -85,7 +94,7 @@ label bodybruise:
     scene bodybruise
 
     #Susan Murphy 
-    #voice"audio/day2/scene19_N3_sm2.mp3"
+    voice "audio/day1/scene19_N3_sm2.mp3"
     sm "That body shot must've hurt."
 
     #Ezekiel Jones
@@ -105,7 +114,7 @@ label bloodstains:
     scene bloodstains
 
     #Susan Murphy 
-    #voice"audio/day2/scene19_N3_sm3.mp3"
+    voice"audio/day2/scene19_n9_ej_3.mp3"
     sm "Looks like he was beaten before he was killed."
 
     menu hbloodstains_inv:
@@ -127,7 +136,7 @@ label knockedcase:
     sm "Did you think they talked before, or did he sneak up on him?"
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3" #havent found file
+    voice"audio/day1/scene19_n9_ej_7.mp3"
     ej "I don’t know, you tell me detective"
 
     #Susan Murphy 
@@ -153,7 +162,7 @@ label Guadycane:
     ej "I think I saw Rachel carry that on board."
 
     #Susan Murphy 
-    #voice"audio/day2/scene19_N9_ej5.mp3" #havent found file 
+    voice"audio/day2/scene19_n5_sm_6.mp3"
     sm "Maybe there is something to what McQuaid said…"
 
     #Susan Murphy 
@@ -177,7 +186,7 @@ label shoeprint:
     scene shoeprint
     
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3" #havent found file
+    voice"audio/day2/scene19_n9_ej_3.mp3" 
     ej "Any bright ideas about that shoe print?"
 
     #Susan Murphy 
