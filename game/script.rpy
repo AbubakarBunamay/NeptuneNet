@@ -880,7 +880,7 @@ label first_murder:
 
     #Patricia White
     show patricia upset at right
-    #voice "audio/day2/scene24_N10.mp3" #can't find audio
+    voice "audio/day2/scene24_N10_pw_1.mp3" #can't find audio
     pw "Ughh, yea… at least this bathroom has a porthole. Though I'm not too fond of the sea smell."
     hide patricia
 
@@ -906,7 +906,7 @@ label first_murder:
     #Patricia White
     hide deborah
     show patricia at right
-    #voice "audio/day2/scene24_N10.mp3"  #can't find audio
+    #voice "audio/day2/scene24_N10.mp3"  #can't find file
     pw "Yes, ma'am, Hrph"
     hide patricia
 
@@ -967,7 +967,7 @@ label first_murder:
     #Scene 26
      
     #Narrator 
-    #voice "audio/day2/scene26_N1_1.mp3"
+    voice "audio/day2/scene26_N1.mp3"
     "Susan leaves the White sisters in the bathroom."
 
     #Susan Thought 
@@ -996,7 +996,7 @@ label first_murder:
 
     #Rachel Reed
     show rachel upset  
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_1.mp3"
     rar "Susan? SUSAN! You're the private eye. Right? Did you find out who did it? Did you find my husband's killer?"
 
     #Susan Murphy
@@ -1006,13 +1006,13 @@ label first_murder:
     sm "Not yet. I'm still working on it. I have gathered some clues, but I'm still working it all out."
     
     #Racheel Reed
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_2.mp3"
     rar "So you have nothing? It's a Yacht! Someone here is responsible! They must be found and pay for what they've done!"
     hide rachel
 
     #Michael Mcquaid
     show michael at right 
-    #voice "audio/day2/scene28_N2.mp3"
+    voice "audio/day2/scene28_N2_mm_1.mp3"
     mm "Easy there. I'm sure Ms. Murphy is doing everything she can to solve this case."
 
 
@@ -1028,7 +1028,7 @@ label first_murder:
     hide michael
     #Rachel Reed
     show rachel upset at right 
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_3.mp3"
     rar "What? Why me?"
     
     #Susan Murphy
@@ -1037,13 +1037,13 @@ label first_murder:
 
     
     #Rachel Reed
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_4.mp3"
     rar "You... You can't seriously be thinking I did this. He was my husband, for Christ's sake!"
     hide rachel
 
     #Ezekiel Jones
     show ezekiel at right
-    #voice "audio/day2/scene28_N9.mp3"
+    voice "audio/day2/scene28_N9_ej_2.mp3"
     ej "She isn't accusing you of anything, dear. She just needs to know where everyone was to paint the picture of what happened last night. Nothing more."
 
 
@@ -1058,7 +1058,7 @@ label first_murder:
     #voice "" -Ovewriiten with the commit
     rar "Sigh"
 
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_6.mp3"
     rar "Well, after the news, I felt nauseous. So I started to head to the bathroom. On my way there, I caught a draft of the ocean breeze and decided to go on the deck instead."
 
     #Susan Murphy
@@ -1067,7 +1067,7 @@ label first_murder:
     
     
     #Rachel Reed
-    #voice "audio/day2/scene28_N11.mp3"
+    voice "audio/day2/scene28_N11_rar_7.mp3"
     rar "A little. It helped to calm me down. I did hear something, but I thought it was just the party or something. Oh God, what if it was Richard? I could have done something to save him! He would have been alive if I had just stayed by his side."
     
 
@@ -1079,7 +1079,7 @@ label first_murder:
     #Ezekiel Jones
     hide rachel
     show ezekiel at right
-    #voice "audio/day2/scene28_n9.mp3"
+    voice "audio/day2/scene28_N9_ej_3.mp3"
     ej "Yeah, take it from me. It doesn't help anything at all."
     hide ezekiel
     
@@ -1090,11 +1090,13 @@ label first_murder:
 
     #Rachel Reed
     show rachel upset at right
-    #voice "audio/day2/scene28_n11.mp3"
+    voice "audio/day2/scene28_N11_rar_8.mp3"
     rar "Yes, eventually the White sisters came to help but-"
-
-    rar "*sobs*"
     
+    voice "audio/day2/scene28_N11_rar_9.mp3"
+    rar "*sobs*"
+
+    voice "audio/day2/scene28_N11_rar_10.mp3"
     rar "all they did was make me feel worse by telling me that I lost my dreamboat, my Richard." 
 
 
@@ -1104,16 +1106,16 @@ label first_murder:
     
 
     #Rachel Reed
-    #voice "audio/day2/scene28_n11.mp3"
+    voice "audio/day2/scene28_N11_rar_11.mp3"
     rar "*sniff*"
 
-    #voice "audio/day2/scene28_n11.mp3"
+    voice "audio/day2/scene28_N11_rar_12.mp3"
     rar "Richard always had enemies. Since we were back in school, he'd always been a bit...abrasive. They'd just never understood him. Oh, my Richard. I miss you so much.."
     hide rachel
 
     #Ezekiel Jones
     show ezekiel at right
-    #voice "audio/day2/scene28_n9.mp3"
+    voice "audio/day2/scene28_N9_ej_4.mp3"
     ej "Okay, that's enough. You should take some time to rest and grieve your loss."
 
 
@@ -1124,7 +1126,7 @@ label first_murder:
     #Rachel reed
     hide ezekiel
     show rachel upset at right
-    #voice "audio/day2/scene28_n11.mp3"
+    voice "audio/day2/scene28_N11_rar_13.mp3"
     rar "Me too."
     hide rachel 
  
@@ -1136,7 +1138,7 @@ label first_murder:
 
     #Michael Mcquiad
     show michael at right
-    #voice "audio/day2/scene28_n2.mp3"
+    voice "audio/day2/scene28_N2_mm_2.mp3"
     mm "I sent him back to the kitchen to do some extra work. He should be there now if you want to talk to him."
 
     #Susan Murphy
@@ -1150,7 +1152,7 @@ label first_murder:
     
 
     #Narrator
-    #voice "audio/day2/scene28_n1.mp3"
+    voice "audio/day2/scene28_N1_2.mp3"
     "Susan looks at Ezekiel to confirm he is coming with her, and then Susan leaves."
 
     #Navigating the hallway
@@ -1165,7 +1167,7 @@ label first_murder:
     sm "Ezekiel, I want to ask you a few questions."
     
     #Ezekiel Jones
-    #voice "audio/day2/scene30_n9.mp3"
+    voice "audio/day2/scene30_N9_ej_1.mp3"
     ej "I understand. I want this killer brought to justice, and I want to help you. I will answer any questions to the best of my ability, Here, let’s go to my room."
     hide ezekiel
     hide susan
@@ -1179,15 +1181,15 @@ label first_murder:
             #Scene 31 - Ezekiel Jones / Footprint (Hallway)
 
             #Susan Murphy 
-            #voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
+            voice "audio/day2/scene31_n5_sm_4.mp3.mp3"
             sm "I would like to check your shoes."
         
             #Ezekiel Jones
-            #voice "audio/day2/scene31_n9_ej.mp3"
+            voice "audio/day2/scene31_N9_ej_4.mp3"
             ej "Because of the footprint, right? Do you think it’s me?"
 
             #Susan Murphy 
-            #voice "audio/day/scene31_n5_sm.mp3"
+            voice "audio/day/scene31_N5_sm_2.mp3"
             sm "No, I just have to be certain. Better safe than sorry, right?"
 
             #Ezekiel Jones
@@ -1195,7 +1197,7 @@ label first_murder:
             ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
                             
             #Susan Murphy 
-            #voice "audio/day2/scene31_n5_ej_3.mp3"
+            voice "audio/day2/scene31_n5_sm_3.mp3"
             sm "Yes, if you have more, please take me to them. I need to check them myself"
 
             #Ezekiel Jones
@@ -1268,7 +1270,7 @@ label first_murder:
                     ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
 
                     #Susan Murphy
-                    #voice "audio/day2/.mp3"
+                    #voice "audio/day2/scen33_n5_sm_.mp3"
                     sm "I understand. I will visit you in the dining hall to continue the conversation."
                     hide ezekiel
                     hide susan
@@ -1321,7 +1323,7 @@ label cont_ezekiel_inv:
     #Susan Murphy 
     show susan at left
     show ezekiel at right
-    #voice "audio/day2 /scene35_n5_sm.mp3"
+    voice "audio/day2/scene35_n5_sm.mp3"
     sm "I just have a few more questions for you, Ezekiel."
 
     #Ezekiel Jones
@@ -1339,10 +1341,10 @@ label cont_ezekiel_inv:
     ej "I was a combat medic during World War 2. I had to do combat training and help people recover during the War."
 
     #Susan Murphy
-    
+    voice "audio/day2/scene35_n5_sm_3.mp3"
     sm "hmm... Interesting."
 
-    #voice "audio/day2 /scene35_n5_sm_3.mp3"
+    voice "audio/day2/scene35_N5_sm_4.mp3"
     #Susan Murphy Thoughts
     smt "I need to choose my words carefully here. One wrong question, and I could low the information I need."
 
@@ -2145,7 +2147,7 @@ label michael_inv:
             voice "audio/day2/scene49_n2_mm2.mp3"
             mm "Besides that, you saw how abrasive he was with poor William? He was like that with everyone except his beloved Rachel."
 
-            #voice "audio/day2/scene49_n2_mm5.mp3"
+            voice "audio/day2/scene49_n2_mm5.mp3"
             mm  "That sort of behaviour earned him no few enemies. But as far as I know, none of them are on this boat."
 
             #Susan Murphy
@@ -2229,22 +2231,22 @@ label michael_inv:
             #Susan Murphy
             hide ezekiel
             show susan at left
-            #voice "audio/day2/scene51.mp3"
+            voice "audio/day2/scene51_N5_sm_3.mp3"
             sm "When did you hire him?"
 
             #Michael Mcquaid
-            #voice "audio/day2/scene51_n2_mm7.mp3"
+            voice "audio/day2/scene51_n2_mm7.mp3"
             mm "Oh, four, five years ago now. He'd fallen on some hard times and needed work. So I took him on, and now he's here!"
 
             #Susan Murphy
-            #voice "audio/day2/scene51_n5_sm3.mp3"
+            voice "audio/day2/scene51_N5_sm_4.mp3"
             sm "Do you know what he did before he fell on these ‘hard times’?"
 
             #Michael Mcquaid
-            #voice "audio/day2/scene51_n5_sm4.mp3"
+            voice "audio/day2/scene51_n2_mm8.mp3"
             mm "Y'know, I'm not quite sure. Whenever I asked, he would always say he doesn't like talking about it."
 
-            #voice "audio/day2/scene51_n2_mm8.mp3"
+            voice "audio/day2/scene51_n2_mm9.mp3"
             mm "Personally, I suspect it was some trade or other, but I never got answers out of him"
 
             #Ezekiel Jones
@@ -2408,7 +2410,7 @@ label third:
     scene dininghall
 
     #Susan Murphy 
-    #voice "audio/day3/scene58_N5_sm.mp3"
+    voice "audio/day3/scene58_N5_sm_1.mp3"
     show susan
     sm "McQuaid."
     
@@ -2421,7 +2423,7 @@ label third:
     
 
     #Susan Murphy
-    #voice "audio/day3/scene58_N5_sm2.mp3" 
+    voice "audio/day3/scene58_N5_sm_2.mp3" 
     sm "We've got a few leads that we're following."
     
 
@@ -2490,7 +2492,7 @@ label third:
     
 
     #Narrator
-    #voice "audio/day3/scene59_N1_2.mp3"
+    voice "audio/day3/scene59_n1_2.mp3"
     "Michael laughs in her face."
     
 
