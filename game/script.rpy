@@ -66,13 +66,10 @@ label start:
     scene envelope #inside The invitation 
 
     
-    play sound "audio/sfx/Seaguls.mp3" fadein 1.0 volume 0.2
     #voice of mcquaid
-    #do we need this as text or would a graphic be enough?
     voice"audio/day1/Scene3_N2_mm.mp3"
     "Dear Susan Murphy, you have been cordially invited as a distinguished guest to ring in 1952 in style aboard the USS Neptune. We will be departing at 6:00 P.M. December 30th from Honolulu Harbour, and returning to the same location on January 3rd. I hope to see you there! - Michael McQuaid"
     #play sound "audio/sfx/waves.mp3" fadein 2.0 volume 0.5
-    stop sound fadeout 1.0
 
     # Susan thought  
     show susan
@@ -85,10 +82,14 @@ label start:
     scene yatchonwater
 
     #Narrator 
+    play sound "audio/sfx/Seaguls.mp3" fadein 1.0 volume 0.2 
     play sound "audio/sfx/waves.mp3" fadein 2.0 fadeout 1.0 volume 0.3 
     voice "audio/day1/Scene4_N1.mp3"
     "A couple of weeks later, Susan readies to board the Neptune, admiring the lavish yacht."
     stop sound 
+
+
+
     # Scene 5 - Susan Cabin
 
     #scene bg - Inside Susan Cabin
@@ -97,32 +98,30 @@ label start:
     #Narrator 
     show susan
     voice "audio/day1/Scene5_N1.mp3"
+    play sound "audio/sfx/doorknock2.mp3"
     "As Susan sorts through her luggage, there is a knock at the door."
-    show susan at left
+    show susan 
+    hide susan
 
     #dalton 
+    scene hallway
     show david at right
     voice "audio/day1/scene5_N4_dd.mp3"
     dd "There will be a dinner for all the guests in the dining hall in 30 minutes."
+    hide david
 
     #Susan Murphy
+    scene susancabin
+    show susan
     voice "audio/day1/scene5_n5_sm_1.mp3"
     sm "Alright, thank you."
-    hide david
-    hide susan 
     
-    #play sound susan cabin thought
-    show susan
+    #Susan Murphy Thoughts
     voice "audio/day1/scene5_N3_sm.mp3"
     smt " Okay, time for me to get dolled up for dinner. I hope the food is going to be good."
     hide susan
 
-    #Scene 6 - Navigation 
-
-    #scene hallway
-    #Change Need to add sound effect and code for it here**
-    #"Walking your way to the dining hall"
-    #Navigation here
+    #Scene 6 - Navigation - Deleted Scene
 
     #Scene 7 - Dining Hall
 
@@ -132,8 +131,7 @@ label start:
     voice "audio/day1/scene7_N1.mp3"
     "Susan enters the dining room and sees a well-dressed crowd sitting around the room at different tables."
     
-    #play sound/music with fade in here not voice
-    #Michael speaking as the player enters the room
+    #Michael
     show michael
     voice "audio/day1/scene7_N2_mm.mp3"
     mm "Ah, and here comes our final guest of the evening! Welcome, Susan. Please, take a seat. Now that we’re all here, the party can start!"
@@ -141,23 +139,30 @@ label start:
     voice "audio/day1/scene7_N2_mm2.mp3"
     mm "I know some of you are already acquainted with each other, but to help break the ice, why don’t we have a few introductions?"
     hide michael
-    #Presenting the characters introducing them to the player ( IDEA: Unique BG, sounds etc)
+
+    scene switchtables
+
     show richard at left
     show rachel at right
     voice "audio/day1/scene7_N2_mm3.mp3"
     mm "First, we have Mr. Richard Reed, the CEO of Reed Industries, and his wife, Mrs. Rachel Reed."
     hide richard
     hide rachel
+
     show ezekiel
     voice "audio/day1/scene7_N2_mm4.mp3"
     mm "Next, we have the illustrious Dr. Ezekiel Jones. The man’s service to our country and his patients' lives speaks for itself."
     hide ezekiel
+
+    scene diningroom
+
     show deborah at right
     show patricia at left 
     voice "audio/day1/scene7_N2_mm5.mp3"
     mm "Then, We have the White sisters, Deborah and Patricia. True yin and yang if I’ve ever seen one."
     hide deborah
     hide patricia
+
     show susan
     voice "audio/day1/scene7_N2_mm6.mp3"
     mm "Of course, the brilliant Susan Murphy, one of the great detectives of our time."
@@ -165,9 +170,11 @@ label start:
 
     #Michael McQuaid
     show michael 
-    voice "audio/day1/scene7_n2_mm8.mp3" 
+    voice "audio/day1/scene7_n2_mm_7.mp3" 
     mm "Ah, and here’s dinner now!" 
     hide michael
+
+    scene switchtables
     
     #Susan Thoughts 
     show susan
@@ -189,8 +196,6 @@ label start:
     show william upset at left
     voice "audio/day1/scene7_N8_ww.mp3"
     ww "I-I’m so sorry, mister Reed, sir, I didn’t mean t-"
-
-    #The Scene Here would still be in the room
 
     #Narrator  
     voice "audio/day1/scene7_n1_5.mp3" 
@@ -663,7 +668,7 @@ label nav_cont:
     hide deborah
     show patricia at right
     voice "audio/day1/scene17_N10_pw2.mp3"
-    pw "You don’t know that! I’m gonna die to a murderer onboard."
+    pw "You don’t know that! I’m gonna die to a murderer on board."
 
     #David Dalton
     hide patricia
@@ -753,18 +758,13 @@ label nav_cont:
     hide michael
     hide susan
 
+    scene hallway
+
     #Narrator
     voice "audio/day1/scene17_N1_5.mp3"
     "Susan and Ezekiel left to go to the crime scene. Deborah and Patricia left moments after to try and find Rachel."    
 
-    #Scene 18 
-
-    #Player navigates to the Murder 1 Scene Inside the Reed’s Cabin
-
-    #scene hallway
-
-    #play sound "audio/sfx/footstep_near_far.mp3"
-    #"Navigating to the murder scene"
+    #Scene 18 - Navigation - deleted 
 
     #Narrator
     voice "audio/day1/scene19_N1.mp3"
@@ -773,14 +773,15 @@ label nav_cont:
 
     #Scene 19
 
+    #Narrator
+    voice "audio/day1/scene19_N1.mp3"
+    "While looking at a crime scene, click on points of interest around the area to find clues."
+
     #Investigating Richard's Murder Scene
 
     call screen reedscene_investigation
 
-    #Narrator
-    voice "audio/day1/scene19_N1.mp3"
-    "While looking at a crime scene, click on points of interest around the area to find clues."
-    #play music "audio/sfx/DetectiveBackgroundMusic.mp3" volume 0.2
+    
     hide screen reedscene_investigation
     
 label first_murder:   
@@ -795,7 +796,7 @@ label first_murder:
 
     #Ezekiel Jones 
     show ezekiel at right
-    voice "audio/day1/scene20_N9_ej.mp3"
+    voice "audio/day1/scene20_N9_ej_1.mp3"
     ej "I'm afraid everyone's probably gone to sleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
  
     
@@ -856,7 +857,8 @@ label first_murder:
 
     #Patrcia Sound Effect Retches
     show patricia upset
-    #voice "audio/day2/scene24_N1_1.mp3" #can't find audio
+
+    voice "audio/day2/scene24_retches.mp3"
     pw "Retches"
     hide patricia
 
@@ -880,7 +882,7 @@ label first_murder:
 
     #Patricia White
     show patricia upset at right
-    voice "audio/day2/scene24_N10_pw_1.mp3" #can't find audio
+    voice "audio/day2/scene24_N10_pw_1.mp3" 
     pw "Ughh, yea… at least this bathroom has a porthole. Though I'm not too fond of the sea smell."
     hide patricia
 
@@ -957,15 +959,10 @@ label first_murder:
     hide deborah 
     hide susan
 
-    #Scene 25
-
-    #The player navigates to the Hallway
-    
-    #scene hallway 
-    #"Navigating the hallway"
+    #Scene 25 - Navigation - Deleted
 
     #Scene 26
-     
+    scene hallway
     #Narrator 
     voice "audio/day2/scene26_N1.mp3"
     "Susan leaves the White sisters in the bathroom."
@@ -975,13 +972,10 @@ label first_murder:
     voice "audio/day2/scene26_N3_sm_1.mp3"
     smt "They said she broke down. It still doesn't excuse her totally. I have to keep looking for clues. Let's see how Rachel is actually doing."
 
-    #Scene 27 
-    #The player navigates to the dining room
-
-    #scene hallway
-    #"Navigating to dining room"
+    #Scene 27 - Navigation - Deleted
 
     #Scene 28 - The dining Hall
+    scene diningroom
 
     #Narrator 
     voice "audio/day2/scene28_N1.mp3"
@@ -1002,7 +996,7 @@ label first_murder:
     #Susan Murphy
     show susan at left
     show rachel upset at right
-    #voice "audio/day2/scene28_N5.mp3"
+    voice "audio/day2/scene28_N5_sm_1.mp3"
     sm "Not yet. I'm still working on it. I have gathered some clues, but I'm still working it all out."
     
     #Racheel Reed
@@ -1017,12 +1011,12 @@ label first_murder:
 
 
     #Susan Murphy 
-    #voice "audio/day2/scene28_N5.mp3"
+    voice "audio/day2/scene28_N5_sm_2.mp3"
     sm "Don't think we've forgotten about you, McQuaid. Unfortunately, there are more pressing matters at hand."
 
 
     #Susan Murphy
-    #voice "audio/day2/scene28_N5.mp3"
+    voice "audio/day2/scene28_N5_sm_3.mp3"
     sm "But yes, I'll figure it out. Don't you worry about that! Rachel, I hope you don't mind, but I need to ask you some questions."
 
     hide michael
@@ -1032,7 +1026,7 @@ label first_murder:
     rar "What? Why me?"
     
     #Susan Murphy
-    #voice "audio/day2/scene28_N3.mp3"
+    voice "audio/day2/scene28_N5_sm_4.mp3"
     sm "Well, to be perfectly honest, you left the room last night and then Mr. Reed…you know."
 
     
@@ -1048,21 +1042,23 @@ label first_murder:
 
 
     #Susan Murphy
-    #voice "audio/day2/scene28_N3.mp3"
+    voice "audio/day2/scene28_N5_sm_5.mp3"
     sm "Exactly. Now please, if you may. Where did you go when you left the dining hall last night?"
 
-    #Rachel Reed
+    
     hide ezekiel 
+
+    #Rachel Reed
     show rachel upset at right
 
-    #voice "" -Ovewriiten with the commit
+    voice "audio/day2/scene28_N11_rar_5.mp3"
     rar "Sigh"
 
     voice "audio/day2/scene28_N11_rar_6.mp3"
     rar "Well, after the news, I felt nauseous. So I started to head to the bathroom. On my way there, I caught a draft of the ocean breeze and decided to go on the deck instead."
 
     #Susan Murphy
-    #voice "audio/day2/scene28_N3.mp3"
+    voice "audio/day2/scene28_N5_sm_6.mp3"
     sm "Did the ocean breeze help?"
     
     
@@ -1072,7 +1068,7 @@ label first_murder:
     
 
     #Susan Murphy
-    #voice "audio/day2/scene28_N3.mp3"
+    voice "audio/day2/scene28_N5_sm_7.mp3"
     sm "Hey, don't do that. There's nothing you could have done to see this coming."
     
 
@@ -1084,7 +1080,7 @@ label first_murder:
     hide ezekiel
     
     #Susan Murphy
-    #voice "audio/day2/scene28_n5_sm.mp3"
+    voice "audio/day2/scene28_N5_sm_8.mp3"
     show rachel upset at right
     sm "Did you find your way back to the party?"
 
@@ -1101,7 +1097,7 @@ label first_murder:
 
 
     #Susan Murphy
-    #voice "audio/day2/scene28_n3.mp3"
+    voice "audio/day2/scene28_n5_sm_9.mp3"
     sm "A couple more questions, okay? Do you know anyone that could've done this?"
     
 
@@ -1132,7 +1128,7 @@ label first_murder:
  
     #Susan Murphy 
     show michael at right
-    #voice "audio/day2/scene28_n3.mp3"
+    voice "audio/day2/scene28_N5_sm_11.mp3"
     sm "McQuaid. What happened to the waitstaff member that had a squabble with Reed last night?"
 
 
@@ -1142,12 +1138,12 @@ label first_murder:
     mm "I sent him back to the kitchen to do some extra work. He should be there now if you want to talk to him."
 
     #Susan Murphy
-    #voice "audio/day2/scene28_n3.mp3"
+    voice "audio/day2/scene28_N5_sm_12.mp3"
     sm "Okay. We aren't done here either."
     
 
     #Michael Mcquiad
-    #voice "audio/day2/scene28_n3.mp3"
+    voice "audio/day2/scene28_N2_mm_3.mp3"
     mm "Oh, Ms. Murphy, where would I possibly go?"
     
 
@@ -1194,21 +1190,21 @@ label first_murder:
 
             #Ezekiel Jones
             voice "audio/day2/scene31_n9_ej_2.mp3"
-            ej "I understand. I should mention I have multiple pairs of shoes. Would you like me to see them as well?"
+            ej "I understand. I should mention I have multiple pairs of shoes. Would you like to see them as well?"
                             
             #Susan Murphy 
             voice "audio/day2/scene31_n5_sm_3.mp3"
-            sm "Yes, if you have more, please take me to them. I need to check them myself"
+            sm "Yes, if you have more, please take me to them. I need to check myself"
 
             #Ezekiel Jones
-            voice "audio/day2/scene31_n5_sm_3.mp3"
+            voice "audio/day2/scene31_n9_ej_3.mp3"
             ej "Okay, I will show you to them."
             hide ezekiel
             hide susan
 
             #Scene 32 - Ezekiel Jones / Footprint (Ezekiel's Room)
 
-            #scene ezekielroom - To be deleted
+            #scene ezekielroom
 
             #Susan Murphy 
             voice "audio/day2/scene32_n5_sm_5.mp3"
@@ -1270,7 +1266,7 @@ label first_murder:
                     ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
 
                     #Susan Murphy
-                    #voice "audio/day2/scen33_n5_sm_.mp3"
+                    voice "audio/day2/scene33_N5_sm_4.mp3"
                     sm "I understand. I will visit you in the dining hall to continue the conversation."
                     hide ezekiel
                     hide susan
@@ -1344,8 +1340,8 @@ label cont_ezekiel_inv:
     voice "audio/day2/scene35_n5_sm_3.mp3"
     sm "hmm... Interesting."
 
-    voice "audio/day2/scene35_N5_sm_4.mp3"
     #Susan Murphy Thoughts
+    voice "audio/day2/scene35_N5_sm_4.mp3"
     smt "I need to choose my words carefully here. One wrong question, and I could low the information I need."
 
     hide ezekiel
@@ -1464,14 +1460,6 @@ label dalton_inv:
     
     #Scene 38 - David Dalton (Kitchen)
 
-    #keeping for alpha to provide flow to the game linear mechanics
-
-    #scene hallway
-
-    #"Navigating to Kitchen" 
-
-    # ----------
-
     scene kitchen 
 
     #David Dalton 
@@ -1531,7 +1519,7 @@ label dalton_inv:
             hide ezekiel
             hide david
             show susan
-            voice "audio/day2/scene38_n9_ej.mp3"
+            voice "audio/day2/scene39_N5_sm_3.mp3"
             smt "Did Ezekiel really tell him that? He doesn't know the first thing about investigations!"
 
             #David Dalton 
@@ -1567,7 +1555,7 @@ label dalton_inv:
             "Dalton steps through a door into the crew quarters."
 
             #Susan Murphy 
-            #voice "audio/day2/scene38_n5_sm.mp3"
+            voice "audio/day2/scene39_N5_sm_4.mp3"
             show susan at left
             show ezekiel at right
             sm "A thought occurs to me, Ezekiel. If all the staff lockers were in the same place,could Dalton have taken William's shoes?"
@@ -1641,7 +1629,6 @@ label dalton_inv:
             show david
             voice "audio/day2/scene40_n4_dd_5.mp3"
             dd "Kill? For William? Oh please, I like the kid, but we ain't that close. We were out of appetizers, so I had to make more for the rich pigs."
-            voice"audio/day2/scene40_n4_dd_5.mp3"
             
             #David Dalton
             voice "audio/day2/scene40_n4_dd_6.mp3"
@@ -1685,7 +1672,7 @@ label dalton_inv:
                     dd "I'm not some schoolgirl going to the restroom in packs. Now, if you'll excuse me, I have some dishes to wash."
 
                     #Narrator 
-                    #voice ""
+                    voice "audio/day2/scene41_N1_1.mp3"
                     "Dalton turns to the sink, and Susan turns to Ezekiel, speaking quietly."
 
                     #Susan Murphy 
@@ -1788,7 +1775,7 @@ label william_kitchen:
 
             #William Windchime
             show william
-            #voice "audio/day2/scene42_n8_ww_2.mp3"
+            voice "audio/day2/scene43_N8_ww_1.mp3"
             ww "What? Why?"
             hide william
 
@@ -1874,7 +1861,7 @@ label william_kitchen:
                     ej  "Now, I'm sure that others have been rude to you in the past, but maybe you finally had enough?"
 
                     #William Windchime
-                    #voice "audio/day2/scene43.mp3"
+                    voice "audio/day2/scene44_N8_ww_2.mp3"
                     ww "I-…I don't have to stand here and take this! If you'll excuse me, there are things I need to do."
 
                     hide william
@@ -1882,7 +1869,7 @@ label william_kitchen:
                     show susan at left 
 
                     #Narrator 
-                    voice "audio/day2/scene43_n1.mp3"
+                    voice "audio/day2/scene44_N1_1.mp3"
                     "William storms off."
 
                     #Susan Murphy
@@ -1955,9 +1942,8 @@ label william_kitchen:
                 "Choose path of investigation"
 
                 "Press Further":
-                    #Scene 46 William Windchime / Whereabouts (kitchen)
 
-                    #Pressing Further Possible Option 
+                    #Scene 46 William Windchime / Whereabouts (kitchen)
 
                     "Pressing Further"
                         
@@ -2043,11 +2029,11 @@ label william_kitchen:
                     ww  "You're right. I'm not really cut out for this sort of work. What I really want is to travel, to see the world, but…"
 
                     #william Windchime
-                    voice "audio/day2/scene47_n8_ww_6.mp3"
+                    voice "audio/day2/scene47_n8_ww_6_fix.mp3"
                     ww "Well, it's a little embarrassing, but I'm out of money. I had quite a bit from my parents, but it didn't… last as long as I thought it would."
 
                     #william Windchime
-                    voice "audio/day2/scene47_n1_3.mp3"
+                    voice "audio/day2/scene47_N8_ww_6.mp3"
                     ww "Why am I even telling you this? I have to go. I've got things to do."
 
                     #Narrator
@@ -2082,11 +2068,6 @@ label michael_inv:
     #Narrator 
     #voice "audio/day2/scene47_n1_4.mp3"
     "Susan and Ezekiel leave for the Dining Hall."
-
-    #Navigating to the DIning Hall 
-    #scene hallway 
-
-    #"Navigating to the Dining Hall"
 
     #Scene 48 - Michael McQUaid (Dining Hall)
 
@@ -2147,7 +2128,7 @@ label michael_inv:
             voice "audio/day2/scene49_n2_mm2.mp3"
             mm "Besides that, you saw how abrasive he was with poor William? He was like that with everyone except his beloved Rachel."
 
-            voice "audio/day2/scene49_n2_mm5.mp3"
+            voice "audio/day2/scene49_n2_mm_5.mp3"
             mm  "That sort of behaviour earned him no few enemies. But as far as I know, none of them are on this boat."
 
             #Susan Murphy
@@ -2235,7 +2216,7 @@ label michael_inv:
             sm "When did you hire him?"
 
             #Michael Mcquaid
-            voice "audio/day2/scene51_n2_mm7.mp3"
+            voice "audio/day2/scene51_n2_mm_7.mp3"
             mm "Oh, four, five years ago now. He'd fallen on some hard times and needed work. So I took him on, and now he's here!"
 
             #Susan Murphy
@@ -2271,12 +2252,6 @@ label michael_inv:
 
 label end_of_dayone:
 
-    #Navigating to the Cabin
-
-    #scene hallway
-    #play sound "audio/sfx/footstep_near_far.mp3"
-    #"Navigating to the cabin"
-
     #Scene 52 - Susan Cabin 
 
     scene susancabin 
@@ -2287,10 +2262,6 @@ label end_of_dayone:
 
     #Scream sound
     "Screams"
-
-    #Navigating to the Hallway 
-    
-    #"Going to the hallway"
 
     #Scene 53 - Hallway
     
@@ -2305,7 +2276,7 @@ label end_of_dayone:
     scene kitchen
 
     #Narrator
-    #audio continuationfrom last line
+    voice "audio/day2/scene54_N1_1.mp3"
     "She is met by Michael McQuaid and some wait staff members surrounding a new murder scene."
 
     #Susan Murphy 
@@ -2317,11 +2288,7 @@ label end_of_dayone:
     voice "audio/day2/scene54_n1_2.mp3"
     "Susan now sees what the commotion was all about."
 
-    #Seeing the scne
-
-    "Going to see the scene"
-
-    #Scene 55 - Kitchen / SUsan Face 
+    #Scene 55 - Kitchen / Susan Face 
 
     scene windchime_murderscene
     #Narrator
@@ -2543,10 +2510,6 @@ label third:
     mm "Now, I'm sure you have more important things to do. Catch us a murderer, Ms. Holmes!"
     hide susan
     hide michael
-
-    #Narrator
-    #voice "audio/day3/scene60_N1.mp3"
-    "Susan walks out of the dining and sees Deborah White."
     
 
     #Scene 61 - Deborah White 
@@ -2565,13 +2528,12 @@ label third:
     
     menu deb_choice:
         "Ask her about"
+
+        #Scene 62 - Debeorah White / Where is patty
         "Where is Patty?":
             #Susan Murphy
             voice "audio/day3/scene61_N5_sm2.mp3" 
-            sm "Do you know where I can find Patty?"
-            
-
-            #Scene 62 - Debeorah White / Where is patty 
+            sm "Do you know where I can find Patty?" 
 
             #Susan Murphy 
             voice "audio/day3/scene62_N5_sm_1.mp3"
@@ -2682,16 +2644,8 @@ label third:
             voice "audio/day3/scene63_N1_1.mp3"
             "Susan goes to the bedrooms to go and check on Rachel."                     
         
-    
-
-    
+        
 label day3_cont:   
-
-    #navigating to Rachel Cabin
-
-    #scene hallway
-
-    #"Navigating to Rachel Cabin"
 
     #Scene 64 - Rachel Reed 
 
@@ -2829,12 +2783,6 @@ label day3_cont:
     "Susan heads up on deck for a breath of fresh air."
     hide susan
 
-    #navgating to the desk
-
-    #scene hallway
-
-    #"Navigating to the Deck"
-
     #The Deck
 
     scene deck
@@ -2879,7 +2827,7 @@ label day3_cont:
             #Narrator
             show susan at left
             show ezekiel at right
-            voice "audio/day3/scene68_N9_ej2.mp3"
+            voice "audio/day3/scene67_n1_2.mp3"
             "Susan asks Ezekiel about his whereabouts during the time of the murder."
 
             #Susan Murphy
@@ -2905,7 +2853,7 @@ label day3_cont:
                 "Proceed by"
                 "Press further":
                     #Susan Murphy 
-                    voice "audio/day3/scene69_N5_sm.mp3"
+                    voice "audio/day3/scene69_n5_sm_1.mp3"
                     show susan at left
                     sm "Yes. However, there was one time when we separated. It is suspicious how it was only a few minutes, but it could have been enough time for you kill someone."
                     
@@ -3292,7 +3240,7 @@ label probemotive:
             
 
             #David Dalton
-            voice "audio/scene78_N4_dd_1.mp3"
+            voice "audio/day3/scene78_N4_dd_1.mp3"
             dd "Not as such, but he did seem concerned about the lock he was using. Apparently, the boss gave it to him when he asked about the security of the lockers."
             
 
@@ -3453,7 +3401,7 @@ label thirdmurder:
 
     #Susan Murphy
     show susan
-    #voice "audio/day3/scene81_N5_sm_1.mp3" 
+    voice "audio/day3/scene81_n5_sm_1.mp3" 
     sm "Not much to go by. I need some rest, and we can reconvene tomorrow morning."
     hide susan
     
@@ -3504,13 +3452,6 @@ label thirdmurder:
     
     voice "audio/day4/scene82_N5_sm_7.mp3"
     sm "I need to call everyone to the dining hall!"
-    
-
-    #To the Dining Hall
-
-    #scene hallway
-
-    #"Navigating to the dining hall"
 
     #Scene 83- The Dining Hall
     scene diningroom
@@ -3653,8 +3594,9 @@ label thirdmurder:
             
 
             #Narrator
-            voice "audio/day4/scene84_N5_sm_1.mp3"
+            voice "audio/day4/Scene84_N1_1.mp3"
             "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
+
             hide susan
             show david
             #David Dalton 

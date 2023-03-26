@@ -165,14 +165,6 @@ label Guadycane:
     voice"audio/day2/scene19_n5_sm_6.mp3"
     sm "Maybe there is something to what McQuaid said…"
 
-    #Susan Murphy 
-    voice "audio/day1/scene19_N3_sm2.mp3"
-    sm "That body shot must've hurt."
-
-    #Ezekiel Jones
-    voice "audio/day1/scene19_N9_ej2.mp3"
-    ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
-
     menu gaudy_inv:
         "What's your next step"
         "Continue Investigating":
@@ -192,6 +184,10 @@ label shoeprint:
     #Susan Murphy 
     voice "audio/day1/scene19_N3_sm4.mp3"
     sm "Doesn't look like something expensive. Perhaps one of the waiters?"
+
+    #Ezekiel Jones
+    #voice"audio/day2/scene19.mp3" 
+    ej "Richard was awfully rude to that William kid."
 
     menu shoe_inv:
         "Say Statement"
@@ -220,11 +216,11 @@ label bareFeet:
     scene BareFeet
     
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N5_sm_1.mp3"
     sm "Looks like his shoes were removed."
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N9_ej_1.mp3"
     ej "Seems like it really was someone stealing his shoes."
 
     menu chime_barefeet_inv:
@@ -239,12 +235,12 @@ label knife:
     scene knife
 
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N5_sm_2.mp3"
     sm "Enough blood on that thing to feed Dracula for a month."
 
-    #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
-    ej "And judging by those stab wounds, it's certainly the murder weapon."
+    #Susan Murphy
+    voice "audio/day2/scene56_N5_sm_3.mp3"
+    sm "And judging by those stab wounds, it's certainly the murder weapon."
 
     menu chime_knife_inv:
         "What's your next step"
@@ -259,11 +255,11 @@ label w_bloodstains:
     scene bloodstains
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N9_ej_2.mp3"
     ej "That blood's been there a while. See how it's crusted?"
 
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N5_sm_4.mp3"
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
 
     menu chime_stains_inv:
@@ -279,11 +275,11 @@ label shoePrints:
     scene shoePrints
     
     #Susan Murphy 
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N5_sm_5.mp3"
     sm "At a glance, those are a match for William's. Poor kid, murdered for his footwear."
     
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    voice "audio/day2/scene56_N9_ej_3.mp3"
     ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
     
     menu chime_shoeprint_inv:
@@ -296,7 +292,9 @@ label shoePrints:
 label cloth:
 
     scene cloth
+
     #Susan Murphy
+    voice "audio/day2/scene56_N5_sm_6.mp3"
     sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
 
     jump third
