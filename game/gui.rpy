@@ -26,14 +26,14 @@ init python:
 define gui.accent_color = '#000000'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#000000'
+define gui.idle_color = '#FFFFFF'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#ffffff'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#5A5A5A'
+define gui.hover_color = '#651C32'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -49,7 +49,7 @@ define gui.hover_muted_color = '#7a3d00'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#454b52'
-define gui.interface_text_color = '#5A5A5A'
+define gui.interface_text_color = '#FFFFFF'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -169,7 +169,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## The horizontal alignment of the button text. (0.0 is left, 0.5 is center, 1.0
 ## is right).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## These variables override settings for different kinds of buttons. Please see
@@ -246,7 +246,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 90
+define gui.navigation_xpos = 125
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15

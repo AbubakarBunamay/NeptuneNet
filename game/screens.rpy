@@ -583,8 +583,8 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 475
+    ysize 250
 
 style game_menu_label_text:
     size gui.title_text_size
