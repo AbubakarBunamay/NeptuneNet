@@ -2,7 +2,7 @@
 init:
     $ style.input.caret = "my_img"
 image my_img:
-    "skip.png"
+    "start.png"
     xalign 1.5
     yalign 1.5
     linear 1.0 alpha 1.0
@@ -47,7 +47,7 @@ screen reedscene_investigation():
 
 label shoeprint_not_clicked:
 
-    scene shoeprint_not_clicked
+    scene murder_bg
 
     #Ezekial Jones
     ej "Hey, Murphy, look at that shoe print."
@@ -60,10 +60,10 @@ label shoeprint_not_clicked:
 
 label headwound:
    
-    scene headwoundbg
+    scene murder_bg
     
     #headwound
-    show headwound at right
+    show richard_headwound at right
 
     #Susan Murphy 
     voice "audio/day1/scene19_N3_sm.mp3"
@@ -77,7 +77,7 @@ label headwound:
     ej "I've seen enough head wounds in my time. That's a deadly one." 
     hide ezekiel
 
-    hide headwound
+    scene murder_bg
 
     menu headwound_inv:
         "What's your next step"
@@ -91,16 +91,23 @@ label headwound:
 
 label bodybruise:
     
-    scene bodybruise
+    scene murder_bg
 
+    show richard_blood at right
     #Susan Murphy 
+    show susan at left 
     voice "audio/day1/scene19_N3_sm2.mp3"
     sm "That body shot must've hurt."
+    hide susan
 
     #Ezekiel Jones
+    show ezekiel at left
     #voice"audio/day2/scene19_N9_ej2.mp3"
     ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
-        
+    hide ezekiel
+
+    scene murder_bg
+
     menu bodybruise_inv:
         "What's your next step"
         "Continue Investigating":
@@ -111,11 +118,18 @@ label bodybruise:
     
 label bloodstains:
 
-    scene bloodstains
+    scene murder_bg
+
+    show richard_blood at right
 
     #Susan Murphy 
-    voice"audio/day2/scene19_n9_ej_3.mp3"
+    show susan at left
+    voice"audio/day1/scene19_N5_sm_10.mp3"
     sm "Looks like he was beaten before he was killed."
+    hide susan
+
+    scene murder_bg
+
 
     menu hbloodstains_inv:
         "What's your next step"
@@ -127,9 +141,11 @@ label bloodstains:
 
 label knockedcase:
 
+    scene murder_bg
+
     #Ezekiel Jones
     voice"audio/day1/scene19_N9_ej_6.mp3"
-    ej "Seems like a struggle happened"
+    ej "Seems like a struggle happened."
     
     #Susan Murphy 
     voice"audio/day1/scene19_N5_sm_7.mp3"
@@ -137,7 +153,7 @@ label knockedcase:
 
     #Ezekiel Jones
     voice"audio/day1/scene19_n9_ej_7.mp3"
-    ej "I don’t know, you tell me detective"
+    ej "I don’t know, you tell me detective."
 
     #Susan Murphy 
     voice"audio/day1/scene19_N5_sm_9.mp3"
@@ -152,18 +168,30 @@ label knockedcase:
 
 label Guadycane:
 
-    scene gaudycane
+    scene murder_bg
+
+    show richard_cane at right
+
     #Susan Murphy 
+    show susan at left
     voice"audio/day1/scene19_N5_sm5.mp3"
     sm "I think we've found our murder weapon."
+    hide susan
 
     #Ezekiel Jones
+    show ezekiel at left 
     voice "audio/day1/scene19_N9_ej5.mp3"
     ej "I think I saw Rachel carry that on board."
+    hide ezekiel
 
     #Susan Murphy 
+    show susan at left 
     voice"audio/day2/scene19_n5_sm_6.mp3"
     sm "Maybe there is something to what McQuaid said…"
+    hide susan
+
+    scene murder_bg
+
 
     menu gaudy_inv:
         "What's your next step"
@@ -175,19 +203,29 @@ label Guadycane:
 label shoeprint:
     $ persistent.clicked_shoeprint = True
 
-    scene shoeprint
+    scene murder_bg
     
+    show richard_footprint at right 
+
     #Ezekiel Jones
+    show ezekiel at left
     voice"audio/day2/scene19_n9_ej_3.mp3" 
     ej "Any bright ideas about that shoe print?"
+    hide ezekiel
 
     #Susan Murphy 
+    show susan at left 
     voice "audio/day1/scene19_N3_sm4.mp3"
     sm "Doesn't look like something expensive. Perhaps one of the waiters?"
+    hide susan
 
     #Ezekiel Jones
     #voice"audio/day2/scene19.mp3" 
+    show ezekiel at left
     ej "Richard was awfully rude to that William kid."
+    hide ezekiel
+
+    scene murder_bg
 
     menu shoe_inv:
         "Say Statement"
@@ -213,7 +251,7 @@ screen windchimescene_investigation():
 
 label bareFeet:
 
-    scene BareFeet
+    scene murder_bg
     
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_1.mp3"
@@ -232,7 +270,7 @@ label bareFeet:
 
 label knife:
     
-    scene knife
+    scene murder_bg
 
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_2.mp3"
@@ -252,7 +290,7 @@ label knife:
     
 label w_bloodstains:
 
-    scene bloodstains
+    scene murder_bg
 
     #Ezekiel Jones
     voice "audio/day2/scene56_N9_ej_2.mp3"
@@ -272,7 +310,7 @@ label w_bloodstains:
 
 label shoePrints:
 
-    scene shoePrints
+    scene murder_bg
     
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_5.mp3"
@@ -291,7 +329,7 @@ label shoePrints:
 
 label cloth:
 
-    scene cloth
+    scene murder_bg
 
     #Susan Murphy
     voice "audio/day2/scene56_N5_sm_6.mp3"
@@ -313,7 +351,7 @@ screen patriciascene_investigation():
 
 label handprint:
 
-    scene handprint
+    scene murder_bg
     
     #Susan Murphy 
     #voice"audio/day2/scene19.mp3"
@@ -332,7 +370,7 @@ label handprint:
 
 label bruising:
     
-    scene bruising
+    scene murder_bg
 
     #Susan Murphy 
     #voice"audio/day2/scene19.mp3"
@@ -349,4 +387,19 @@ label bruising:
         "Done Investigating":
             jump thirdmurder 
 
+#Envelope Invitation Screen
+screen envelope():
+    
+    imagemap:
+        ground "images/envelope.png"
 
+        hotspot (0, 0, 1920, 1080) action Jump ("cont_env")
+
+
+#Day Screens
+screen day_one():
+    
+    imagemap:
+        ground "images/dayone.png"
+        
+        hotspot (0, 0, 1920, 1080) action Jump ("dayone")
