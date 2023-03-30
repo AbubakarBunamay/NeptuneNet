@@ -40,6 +40,11 @@ Director
 Brenda Garlow 
 
 
+Programmer 
+
+Abubakar Bunamay
+
+
 Writer/Design 
 
 Brenda Garlow (Editor & Lead Design) 
@@ -68,10 +73,6 @@ Lucas D’innocenzo
 
 Caleb Awinoron 
 
-
-Programming 
-
-Abubakar Bunamay (Lead) 
 """)
 
 
