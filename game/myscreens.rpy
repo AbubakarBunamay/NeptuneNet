@@ -11,6 +11,7 @@ image my_img:
 
 
 
+
 screen title_screen():
     
     imagemap:
@@ -38,23 +39,31 @@ screen reedscene_investigation():
         hotspot (649, 867, 145, 153) action Jump ("knockedcase")
         hotspot (1359, 724, 165, 171) action Jump ("Guadycane")
         hotspot (896, 754, 99, 125) action Jump ("shoeprint")     
-        hotspot (1484, 68, 414, 76) action If(not persistent.clicked_shoeprint, Jump("shoeprint_not_clicked"), Jump("first_murder"))
+        #hotspot (1484, 68, 414, 76) action If(persistent.clicked_shoeprint == False, Jump("shoeprint_not_clicked"), Jump("first_murder"))
 
-    add "my_img" as caret xpos 2024 ypos 150
+    #add "my_img" as caret xpos 2024 ypos 150
+    
     
 
 
 
 label shoeprint_not_clicked:
-
+    $ persistent.clicked_shoeprint = True
     scene murder_bg
 
+    show richard_footprint at right 
+
     #Ezekial Jones
+    show ezekiel at left
     ej "Hey, Murphy, look at that shoe print."
+    hide ezekiel
 
     #Susan Murphy 
+    show susan at left
     sm "Hm. It doesn’t look expensive. One of the waiters, maybe?"
-    
+    hide susan
+    hide richard_footprint
+
     jump shoeprint
 
 
@@ -77,15 +86,8 @@ label headwound:
     ej "I've seen enough head wounds in my time. That's a deadly one." 
     hide ezekiel
 
-    scene murder_bg
+    call screen reedscene_investigation
 
-    menu headwound_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":
-            jump first_murder
-        
 
     
 
@@ -93,7 +95,7 @@ label bodybruise:
     
     scene murder_bg
 
-    show richard_blood at right
+    show richard_bodybruise at right
     #Susan Murphy 
     show susan at left 
     voice "audio/day1/scene19_N3_sm2.mp3"
@@ -102,18 +104,13 @@ label bodybruise:
 
     #Ezekiel Jones
     show ezekiel at left
-    #voice"audio/day2/scene19_N9_ej2.mp3"
+    voice"audio/day1/scene19_N9_ej_8.mp3"
     ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
     hide ezekiel
 
     scene murder_bg
 
-    menu bodybruise_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":
-            jump first_murder        
+    call screen reedscene_investigation       
 
     
 label bloodstains:
@@ -131,40 +128,41 @@ label bloodstains:
     scene murder_bg
 
 
-    menu hbloodstains_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":   
-            jump first_murder
+    call screen reedscene_investigation   
 
 
 label knockedcase:
 
     scene murder_bg
 
+    show richard_case at right
+
     #Ezekiel Jones
+    show ezekiel at left 
     voice"audio/day1/scene19_N9_ej_6.mp3"
     ej "Seems like a struggle happened."
-    
+    hide ezekiel
+
     #Susan Murphy 
+    show susan at left
     voice"audio/day1/scene19_N5_sm_7.mp3"
     sm "Did you think they talked before, or did he sneak up on him?"
+    hide susan
 
     #Ezekiel Jones
+    show ezekiel at left
     voice"audio/day1/scene19_n9_ej_7.mp3"
     ej "I don’t know, you tell me detective."
+    hide ezekiel
 
     #Susan Murphy 
+    show susan at left
     voice"audio/day1/scene19_N5_sm_9.mp3"
     sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was unconscious from the first hit."
+    hide susan
+    hide richard_case
 
-    menu case_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":
-            jump first_murder
+    call screen reedscene_investigation   
 
 label Guadycane:
 
@@ -186,22 +184,17 @@ label Guadycane:
 
     #Susan Murphy 
     show susan at left 
-    voice"audio/day2/scene19_n5_sm_6.mp3"
+    voice"audio/day1/scene19_n5_sm_6.mp3"
     sm "Maybe there is something to what McQuaid said…"
     hide susan
 
     scene murder_bg
 
 
-    menu gaudy_inv:
-        "What's your next step"
-        "Continue Investigating":
-            call screen reedscene_investigation
-        "Done Investigating":
-            jump first_murder
+    call screen reedscene_investigation    
 
 label shoeprint:
-    $ persistent.clicked_shoeprint = True
+    $ persistent.clicked_shoeprint = False
 
     scene murder_bg
     
@@ -220,7 +213,7 @@ label shoeprint:
     hide susan
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3" 
+    voice"audio/day1/scene19_N9_ej_10.mp3" 
     show ezekiel at left
     ej "Richard was awfully rude to that William kid."
     hide ezekiel

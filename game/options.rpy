@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Neptune")
+define config.name = _("Neptune's Net")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,55 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.1"
+define config.version = "1.5"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Producer
+
+Xinyi Chen 
+
+
+Director 
+
+Brenda Garlow 
+
+
+Writer/Design 
+
+Brenda Garlow (Editor & Lead Design) 
+
+Rory Dunton 
+
+Sam Dalbayrak 
+
+Amani Hughes 
+
+
+Art  
+
+Emily (Lead) 
+
+Angelo (UI/UX) 
+
+Everybody (Background) 
+
+
+Sound 
+
+Megan Moffat (Lead) 
+
+Lucas D’innocenzo 
+
+Caleb Awinoron 
+
+
+Programming 
+
+Abubakar Bunamay (Lead) 
 """)
 
 

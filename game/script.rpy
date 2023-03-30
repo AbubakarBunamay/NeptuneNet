@@ -218,7 +218,7 @@ label dayone:
     #Richard Reed 
     show richard
     voice "audio/day1/scene7_n7_rr_2.mp3"
-    rr"I don’t care! Can’t you see how expensive this suit is! It’s worth more than your life, at the very least"
+    rr"I don’t care! Can’t you see how expensive this suit is! It’s worth more than your life, at the very least."
 
     #Richard Reed 
     voice "audio/day1/scene7_n7_rr_3.mp3"
@@ -433,7 +433,7 @@ label mingle:
     #Patricia White
     show patricia happy at left
     voice "audio/day1/scene7_N10_pw2.mp3"
-    pw "Oh, if it isn’t “the brilliant Susan Murphy”? What’d you do for McQuaid to be called ‘brilliant’?"
+    pw "Oh, if it isn’t “the brilliant Susan Murphy”? What did you do for McQuaid to be called ‘brilliant’?"
 
     #Susan Murphy
     scene d_h_bsusan
@@ -469,8 +469,10 @@ label mingle:
     #Narrator 
     voice "audio/day1//scene7_N1_2.mp3"
     "A hush settles over the room."
+    hide michael 
 
     #Michael Mcquaid 
+    show michael at right
     voice "audio/day1/scene7_N2_mm16.mp3"
     mm "You see, I may have told a little white lie on your invitations. The real reason you’re here is that each one of you has a secret. Something hidden that would ruin you if it were to get out."
 
@@ -480,7 +482,7 @@ label mingle:
 
     #Michael McQuaid 
     voice "audio/day1/scene7_n2_mm12.mp3" 
-    mm "After all, who knows what would happen if your little secrets were no longer secret."
+    mm "After all, who knows what would happen if your little secrets were no longer secrets."
     hide michael 
 
     scene d_h_bsusan
@@ -500,7 +502,7 @@ label mingle:
     #Ezekiel Jones 
     show ezekiel angry at left
     voice "audio/day1/scene7_N9_ej11.mp3"
-    ej "What on  Earth are you talking about"
+    ej "What on  Earth are you talking about?"
     hide ezekiel
 
     #Patricia White 
@@ -600,7 +602,7 @@ label mingle:
 
             #Narator Voice
             voice "audio/day1/scene11_n1_1.mp3"
-            "Susan enters the washroom but finds no one."
+            "Susan enters the washroom but finds no one there."
 
             #Susan Murphy Voice
             #play sound "audio/sfx/doorknock2.mp3"
@@ -637,7 +639,7 @@ label nav_cont:
     #The player navigates to the Reed's cabin, opens the door and looks inside
     scene cabindoorajar 
     voice "audio/day1/scene14_n1_1.mp3"
-    "Reaching the cabin, opening the door to look inside"
+    "Reaching the cabin, opening the door to look inside."
 
     #Scene 15 - First Murder   
 
@@ -732,7 +734,7 @@ label nav_cont:
 
     #Deborah White
     scene switchtables
-    show deborah pissed at right
+    show deborah pissed at left
     voice "audio/day1/scene17_N12_dw.mp3"
     dw "Calm down, Patty. Nothing is gonna happen to you."
     
@@ -839,51 +841,50 @@ label nav_cont:
     #Scene 18 - Navigation - deleted 
 
     #Narrator
-    voice "audio/day1/scene19_N1.mp3"
+    voice "audio/day1/scene19_N1.mp3" 
     "While looking at a crime scene, click on points of interest around the area to find clues."
    
 
     #Scene 19
 
     #Investigating Richard's Murder Scene
-
+    play sound "audio/murder_bgsound.mp3" volume 0.5
     call screen reedscene_investigation
-
+    
     
     hide screen reedscene_investigation
     
 label first_murder:   
-
+    stop sound
     #scene 20
     scene richard_murder_noclues
     #Susan Murphy
     show susan at left
-    
     voice "audio/day1/scene20_N5_sm.mp3"
     sm "I think that's all we can get from the crime scene. How about we go do some interviews?"
+    hide susan
 
     #Ezekiel Jones 
-    show ezekiel at right
+    show ezekiel at left
     voice "audio/day1/scene20_N9_ej_1.mp3"
     ej "I'm afraid everyone's probably gone to sleep, Murphy. Perhaps we should break for the night and pick up where we left off in the morning?"
  
     
 
     #Susan Murphy
-    hide susan
     show susan pissed at left
     voice "audio/day1/scene20_N5_sm2.mp3"
     sm "As much as I hate to leave a case like this… you're right. Reconvene in the dining room tomorrow?"
-    
+    hide susan
 
     #Ezekiel Jones
+    show ezekiel
     voice "audio/day1/scene20_N9_ej2.mp3"
     ej "Of course."
-    
+    hide ezekiel
+
     scene hallwayleft
     #Narrator
-    hide ezekiel
-    hide susan
     voice "audio/day1/scene20_N1_2.mp3"
     "Susan and Ezekiel leave the crime scene and go to their separate rooms."
     
@@ -896,7 +897,7 @@ label first_murder:
     #Day 2 
     #Scene 21
     scene daytwo
-    "Day two"
+    pause
 
     #NAVIGATION HERE
     #The player Navigates to the bathroom
@@ -967,7 +968,7 @@ label first_murder:
     hide deborah
     show deborah happy at right
     voice "audio/day2/scene24_N12_dw_4.mp3"
-    dw  "I hear you'. A working girl's work is never done."
+    dw  "I hear you. A working girl's work is never done."
 
     #Susan Murphy
     voice "audio/day2/scene24_N5_sm_3.mp3"
