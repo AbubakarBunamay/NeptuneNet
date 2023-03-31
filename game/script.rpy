@@ -2406,7 +2406,7 @@ label end_of_dayone:
 
     #Scene 54 - Kitchen 
 
-    scene kitchen
+    scene prebodykitchen
 
     #Narrator
     voice "audio/day2/scene54_N1_1.mp3"
@@ -2757,7 +2757,7 @@ label third:
             dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
             
             voice "audio/day3/scene63_N12_dw_4.mp3"
-            dw "After she broke down, she immediately rushed back to the dining hall. We went along with her as well"
+            dw "After she broke down, she immediately rushed back to the dining hall. We went along with her as well."
             
 
             #Susan Murphy
@@ -2814,7 +2814,7 @@ label day3_cont:
 
     #Susan Murphy 
     voice "audio/day3/scene64_N5_sm_2.mp3" 
-    sm "Yea,that's fair. I just wanted to ask a couple of questions. Is that okay?"
+    sm "Yeah,that's fair. I just wanted to ask a couple of questions. Is that okay?"
     
 
     #Narator
@@ -2893,7 +2893,7 @@ label day3_cont:
 
     #Susan Murphy
     voice "audio/day3/scene66_N5_sm_4.mp3" 
-    sm "I'm guessing more people didn't like the taste."
+    sm "I'm guessing more people didn't like the taste as opposed to the few that did."
     
 
     #Rachel Reed

@@ -49,7 +49,7 @@ screen reedscene_investigation():
         hotspot (896, 754, 99, 125) action Jump ("shoeprint")     
         hotspot (1484, 68, 414, 76) action Jump("first_murder")
 
-    add "my_skip" as caret xpos 2024 ypos 150
+    #add "my_skip" as caret xpos 2024 ypos 150
     
     
 
@@ -254,13 +254,19 @@ label bareFeet:
 
     scene murder_bg
     
+    show chime_feet at right
+
+    show susan at left 
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_1.mp3"
     sm "Looks like his shoes were removed."
+    hide susan
 
+    show ezekiel at left 
     #Ezekiel Jones
     voice "audio/day2/scene56_N9_ej_1.mp3"
     ej "Seems like it really was someone stealing his shoes."
+    hide susan
 
     menu chime_barefeet_inv:
         "What's your next step?"
@@ -273,13 +279,18 @@ label knife:
     
     scene murder_bg
 
+    show chime_knife at right
+
+    show susan at left
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_2.mp3"
     sm "Enough blood on that thing to feed Dracula for a month."
+     
 
     #Susan Murphy
     voice "audio/day2/scene56_N5_sm_3.mp3"
     sm "And judging by those stab wounds, it's certainly the murder weapon."
+    hide susan
 
     menu chime_knife_inv:
         "What's your next step?"
@@ -293,13 +304,19 @@ label w_bloodstains:
 
     scene murder_bg
 
+    show chime_body at right
+
+    show ezekiel at left 
     #Ezekiel Jones
     voice "audio/day2/scene56_N9_ej_2.mp3"
     ej "That blood's been there a while. See how it's crusted?"
+    hide ezekiel
 
+    show susan at left 
     #Susan Murphy 
     voice "audio/day2/scene56_N5_sm_4.mp3"
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
+    hide susan
 
     menu chime_stains_inv:
         "What's your next step?"
