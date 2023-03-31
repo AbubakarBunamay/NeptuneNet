@@ -350,11 +350,13 @@ screen patriciascene_investigation():
 label handprint:
 
     scene murder_bg
-    
+    show patty clue right 
+
     #Susan Murphy 
+    show susan at left
     #voice"audio/day2/scene19.mp3"
     sm "Looks like the killer wasn't as tidy as usual. Those look like handprints."
-
+    hide susan
 
     menu white_handprint_inv:
         "What's your next step"
@@ -367,7 +369,10 @@ label bruising:
     
     scene murder_bg
 
+    show patty clue right 
+
     #Susan Murphy 
+    show susan at left
     #voice"audio/day2/scene19.mp3"
     sm "There are strangle marks on her neck that are sure signs of a struggle."
 

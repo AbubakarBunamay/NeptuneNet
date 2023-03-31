@@ -2658,12 +2658,17 @@ label third:
     show deborah at right
     voice "audio/day3/scene61_N12_dw.mp3"
     dw "Sure. What would you like to know?"
-    
+    hide susan 
+    hide deborah
+
     menu deb_choice:
+
         "Ask her about"
 
         #Scene 62 - Debeorah White / Where is patty
         "Where is Patty?":
+            show susan at left
+            show deborah at right
             #Susan Murphy
             voice "audio/day3/scene61_N5_sm2.mp3" 
             sm "Do you know where I can find Patty?" 
@@ -2716,6 +2721,8 @@ label third:
 
 
         "Rachel Reaction":
+            show susan at left
+            show deborah at right
             #Scene 63 - Debeorah White / Rachel Reaction
 
             #Susan Murphy
@@ -3162,12 +3169,16 @@ label day3_cont:
     #Susan Murphy
     voice "audio/day3/scene73_N5_sm_2.mp3"
     sm "Now, we do have a couple more questions."
-    
+    hide susan
+    hide david
 
     menu dalton_pathIvestigation:
         "Choose Path of Investigation"
         #Scene 74 - David Dalton / Whereabouts 
         "Ask About Whereabouts":
+
+            show susan at left
+            show david at right
             
             #Susan Murphy
             voice "audio/day3/scene74_N5_sm_1.mp3"
@@ -3265,7 +3276,7 @@ label day3_cont:
                     hide susan
 
                     #Narrator
-                    play sound "audio/sfx/female_scream.mp3"
+                    play sound "audio/sfx/female_scream.mp3" volume 0.5
                     voice "audio/day3/scene75_N1_3.mp3"
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
                     
@@ -3291,7 +3302,8 @@ label day3_cont:
 
 
 label probemotive:
-
+    show susan at left
+    show david at right
     #Susan Murphy
     voice "audio/day3/scene76_N5_sm_1.mp3"
     sm "Before he died, did you notice any changes in behaviour from William?"
@@ -3355,7 +3367,8 @@ label probemotive:
             hide susan    
 
             #Narrator
-            play sound "audio/sfx/female_scream.mp3"
+            play sound "audio/sfx/female_scream.mp3" volume 0.5
+
             voice "audio/day3/scene75_N1_3.mp3"
             "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
             
@@ -3445,7 +3458,7 @@ label probemotive:
             hide susan
 
             #Narrator
-            play sound "audio/sfx/female_scream.mp3"
+            play sound "audio/sfx/female_scream.mp3" volume 0.5
             voice "audio/day3/scene75_N1_3.mp3"
             "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
             
