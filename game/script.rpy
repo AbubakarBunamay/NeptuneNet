@@ -2358,7 +2358,7 @@ label michael_inv:
             mm "Y'know, I'm not quite sure. Whenever I asked, he would always say he doesn't like talking about it."
 
             voice "audio/day2/scene51_n2_mm9.mp3"
-            mm "Personally, I suspect it was some trade or other, but I never got answers out of him"
+            mm "Personally, I suspect it was some trade or other, but I never got answers out of him."
 
             #Ezekiel Jones
             hide susan
@@ -2391,6 +2391,7 @@ label end_of_dayone:
     "After a long day of talking to everyone on board and finding clues about what happened to Richard Reed, Susan enters her room to go to sleep when suddenly…"
 
     #Scream sound
+    play sound "audio/sfx/female_scream.mp3"
     "Screams"
 
     #Scene 53 - Hallway
@@ -2457,7 +2458,7 @@ label end_of_dayone:
 
     
     #Scene 56 - Murder Scene in kitchen
-    
+    play sound "audio/murder_bgsound.mp3" volume 0.5
     call screen windchimescene_investigation 
 
 
@@ -2467,7 +2468,7 @@ label third:
 
     #Scene 57 - Post Murder in Kitchen
     hide screen windchimescene_investigation
-
+    stop sound
     scene windchime_murderscene
 
     #Susan Murphy 
@@ -2488,6 +2489,8 @@ label third:
     sm "I don't think so. We should retire for the night and pick back up tomorrow."
     hide susan 
 
+    scene hallway
+
     #Narrator
     voice "audio/day2/scene57_n1.mp3"
     "The pair go to their rooms and sleep a restless night."
@@ -2500,7 +2503,7 @@ label third:
 
     scene daythree
 
-    "Day 3"
+    pause
 
     #Scene 58 - Michael MCquiad 
 
@@ -2727,7 +2730,7 @@ label third:
 
             #Susan Murphy
             voice "audio/day3/scene63_N5_sm_2.mp3" 
-            sm "Yeah, just needed a reminder. When you found her and told her, how did she react?"
+            sm "Yeah, just needed a recap. When you found her and told her, how did she react?"
             
 
             #Deborah White
@@ -2745,12 +2748,12 @@ label third:
             dw "Yea, she seemed like she was out there a little while because she was shivering. After she accepted what we were telling her wasn't a lie, she turned pale—like all the blood left her face."
             
             voice "audio/day3/scene63_N12_dw_4.mp3"
-            dw "After she broke down, she immediately rushed back to the dining hall. We went along with her"
+            dw "After she broke down, she immediately rushed back to the dining hall. We went along with her as well"
             
 
             #Susan Murphy
             voice "audio/day3/scene63_N5_sm_4.mp3" 
-            sm "Hmm, okay. Thanks for sharing"
+            sm "Hmm, okay. Thanks for sharing."
             
 
             #Deborah White
@@ -2920,9 +2923,10 @@ label day3_cont:
     #Scene 67 - Ezekiel Jones
 
     #Narrator
+    show ezekiel
     voice "audio/day3/scene67_N1_1.mp3"
     "Susan spots Ezekiel the moment she walks out on the deck."
-    
+    hide ezekiel
 
     #Susan Murphy 
     show susan
@@ -3006,14 +3010,16 @@ label day3_cont:
 
                     #Ezekiel Jones
                     voice "audio/day3/scene69_N9_ej3.mp3"
-                    ej "Think nothing of it. If at any point you suspect me, I will answer anyquestionstruthfully."
+                    ej "Think nothing of it. If at any point you suspect me, I will answer any questions truthfully."
                     hide susan
                     hide ezekiel
                     
 
                     #Narrator
+                    show david
                     voice "audio/day3/scene69_n1_2.mp3"
                     "Susan turns and catches David Dalton’s eye."
+                    hide david
 
                 "Go talk to david":
                     #Narrator
@@ -3042,7 +3048,7 @@ label day3_cont:
 
             #Ezekiel Jones
             voice "audio/day3/scene70_N9_ej2.mp3"
-            ej "Yes, I had."
+            ej "Yes, I have."
             hide susan
             hide ezekiel
 
@@ -3067,7 +3073,7 @@ label day3_cont:
 
                     #Ezekiel Jones
                     voice "audio/day3/scene71_N9_ej2.mp3"
-                    ej "I can confirm that I was not the last person to see him that day. It was, in fact I have not seen him since"
+                    ej "I can confirm that I was not the last person to see him that day. It was, in fact I have not seen him since."
 
                     #Susan Murphy Thoughts
                     voice "audio/day3/scene71_N3_smt.mp3"
@@ -3106,7 +3112,7 @@ label day3_cont:
 
                     #Ezekiel Jones
                     voice "audio/day3/scene72_N9_ej_2.mp3"
-                    ej "I can confirm that I was not the last person to see him that day. It was, in fact, (the player asked to insert name here). I have not seen him since."
+                    ej "I can confirm that I was not the last person to see him that day. It was, in fact, I have not seen him since."
 
                     #Susan Murphy Thoughts
                     voice "audio/day3/scene72_N3_smt.mp3"
@@ -3259,15 +3265,17 @@ label day3_cont:
                     hide susan
 
                     #Narrator
+                    play sound "audio/sfx/female_scream.mp3"
                     voice "audio/day3/scene75_N1_3.mp3"
                     "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
                     
                     #----------------- End of Convo
 
-                    #Narrator 
+                    #Narrator
+                    stop sound
+ 
                     voice "audio/day3/scene75_N1_4.mp3"
                     "Susan and Ezekiel rocket down the hallway."
-
                     jump fourth
 
 
@@ -3347,11 +3355,14 @@ label probemotive:
             hide susan    
 
             #Narrator
-            voice "audio/day3/scene77_N1_2.mp3"
+            play sound "audio/sfx/female_scream.mp3"
+            voice "audio/day3/scene75_N1_3.mp3"
             "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
             
-            # add screem
-            #----------- End of convo
+            #----------------- End of Convo
+
+            #Narrator
+            stop sound
 
             #Narrator
             voice "audio/day3/scene77_N1_3.mp3"
@@ -3434,8 +3445,14 @@ label probemotive:
             hide susan
 
             #Narrator
-            voice "audio/day3/scene78_N1_2.mp3"
+            play sound "audio/sfx/female_scream.mp3"
+            voice "audio/day3/scene75_N1_3.mp3"
             "A scream echoes from the depths of the ship. You turn to Ezekiel, nod, and run toward it."
+            
+            #----------------- End of Convo
+
+            #Narrator
+            stop sound
             hide susan 
             hide ezekiel
             hide david
@@ -3521,12 +3538,12 @@ label fourth:
     #Entering the 3rd Crime Scene
 
     #Scene 80 - 3rd Murder in the bathroom 
-
+    play sound "audio/murder_bgsound.mp3" volume 0.5
     call screen patriciascene_investigation
 
 
 label thirdmurder:
-
+    stop sound
     #Scene 81 - Murder Scene 
 
     #Susan Murphy
@@ -3542,7 +3559,7 @@ label thirdmurder:
 
     scene dayfour
 
-    "Day 4"
+    pause
 
     #Scene 82 - Susan's Cabin
 
@@ -3564,7 +3581,7 @@ label thirdmurder:
     voice "audio/day4/scene82_N5_sm_1.mp3"
     sm "So they're smart enough to cover thier tracks, to confuse whoever investigates. Clearly, whoever did it wanted us to think it was one of those two."
     
-    voice "audio/day4/scene82_N5_sm_2.mp3"
+    #voice "audio/day4/scene82_N5_sm_2.mp3"
     sm "Then the next day, William is murdered after we ask about his shoes and cause him to panic. Maybe he asked around and stumbled upon the real killer."
     
     voice "audio/day4/scene82_N5_sm_3.mp3"
@@ -3682,7 +3699,13 @@ label thirdmurder:
     show michael smiling
     mm "You don't know?"
     
+    #Narrator 
+    "He starts to laugh."
 
+    #Michael McQuaid
+    voice "audio/day4/scene83_N2_mm_11.mp3"
+    show michael smiling
+    mm "You don't know!"
 
     #Susan Murphy
     voice "audio/day4/scene83_N5_sm_8.mp3"
@@ -4126,7 +4149,7 @@ label finale:
     
 
     #Narrator
-    voice "audio/day4/scene90_N1_1.mp3"
+    #voice "audio/day4/scene90_N1_1.mp3"
     "Ezekiel examines the bomb closely, flinching as it ticks."
     
 
@@ -4168,10 +4191,11 @@ label finale:
             #Susan Murphy 
             voice "audio/day4/scene92_N5_sm_1.mp3"
             sm "No, wait-"
-            
+            play sound "audio/sfx/bomb_explosion.mp3"
             scene explosion
-
+            pause
             #Narrator
+            stop sound
             voice "audio/day4/scene92_N1_1.mp3"
             "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
             
@@ -4188,7 +4212,7 @@ label finale:
 
             scene game_over
 
-            "Game over"
+            pause
 
             return
 
@@ -4245,7 +4269,7 @@ label finale:
 
                     #Susan Murphy 
                     voice "audio/day4/scene94_N5_sm_4.mp3"
-                    sm "“That makes sense. They have to be at the helm!"
+                    sm "That makes sense. They have to be at the helm!"
 
                     #Scene 95 - the helm
 
@@ -4297,7 +4321,7 @@ label finale:
                     
 
                     #Narrator 
-                    voice "audio/day4/scene95_N1_2.mp3"
+                    voice "audio/day4/scene95_N1_3_n.mp3"
                     "Dalton hesitates for a moment."
                     
 
@@ -4442,10 +4466,12 @@ label finale:
                 voice "audio/day4/scene92_N5_sm_1.mp3"
                 sm "No, wait-"
                 hide susan
-                
+                play sound "audio/sfx/bomb_explosion.mp3"
                 scene explosion
+                pause
 
                 #Narrator
+                stop sound
                 voice "audio/day4/scene92_N1_1.mp3"
                 "An explosion rips through the Neptune, a roaring inferno over the water. Many on the boat are killed outright, while others…"
                 
@@ -4462,7 +4488,7 @@ label finale:
 
                 scene game_over
 
-                "Game over"
+                pause
 
                 return
 

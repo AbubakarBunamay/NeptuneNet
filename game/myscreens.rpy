@@ -328,7 +328,12 @@ label cloth:
     voice "audio/day2/scene56_N5_sm_6.mp3"
     sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
 
-    jump third
+    menu chime_cloth_inv:
+        "What's your next step"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
 
 screen patriciascene_investigation():
@@ -348,11 +353,8 @@ label handprint:
     
     #Susan Murphy 
     #voice"audio/day2/scene19.mp3"
-    sm "Looks like his shoes were removed."
+    sm "Looks like the killer wasn't as tidy as usual. Those look like handprints."
 
-    #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
-    ej "Seems like it really was someone stealing his shoes."
 
     menu white_handprint_inv:
         "What's your next step"
@@ -367,11 +369,11 @@ label bruising:
 
     #Susan Murphy 
     #voice"audio/day2/scene19.mp3"
-    sm "Enough blood on that thing to feed Dracula for a month."
+    sm "There are strangle marks on her neck that are sure signs of a struggle."
 
     #Ezekiel Jones
     #voice"audio/day2/scene19.mp3"
-    ej "And judging by those stab wounds, it's certainly the murder weapon."
+    sm "And the bruising seems to indicate that somebody killed her in the morning."
 
     menu white_bruising_inv:
         "What's your next step"
