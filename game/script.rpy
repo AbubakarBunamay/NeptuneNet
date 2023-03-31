@@ -976,7 +976,7 @@ label first_murder:
     show susan at left
     voice "audio/day2/scene24_N5_sm_3.mp3"
     sm "Yea, speaking of, did you two find Rachel last night?"
-    hide susan
+    hide deborah
 
     #Patricia White
     show patricia at right
@@ -1263,8 +1263,10 @@ label first_murder:
     
     scene d_h_bsusan
     #Narrator
+    show susan
     voice "audio/day2/scene28_N1_2.mp3"
     "Susan looks at Ezekiel to confirm he is coming with her, and then Susan leaves."
+    hide susan
 
     #Navigating the hallway
     scene hallway
@@ -2391,7 +2393,7 @@ label end_of_dayone:
     "After a long day of talking to everyone on board and finding clues about what happened to Richard Reed, Susan enters her room to go to sleep when suddenly…"
 
     #Scream sound
-    play sound "audio/sfx/female_scream.mp3"
+    play sound "audio/sfx/female_scream.mp3" volume 0.5
     "Screams"
 
     #Scene 53 - Hallway
@@ -3330,7 +3332,8 @@ label probemotive:
     #Susan Murphy
     voice "audio/day3/scene76_N5_sm_3.mp3"
     sm "Hopefully not. We've got enough to deal with."
-    
+    hide susan
+    hide david
 
     #Choice during motive
 
@@ -3340,7 +3343,8 @@ label probemotive:
         #Scene 77 - David Dalton / Motive - Confortation
 
         "Asking About confrontation":
-            
+            show susan at left
+            show david at right
             #Susan Murphy
             voice "audio/day3/scene77_N5_sm_1.mp3"
             sm "This conversation, did he… accuse you of anything?"
@@ -3387,7 +3391,8 @@ label probemotive:
         #Scene 78 - David Dalton / Motive - Confortation
 
         "Press Further":
-            
+            show susan at left
+            show david at right
             #Susan Murphy
             voice "audio/day3/scene78_N5_sm_1.mp3"
             sm "Did William mention being suspicious of anyone in particular during this conversation?"
@@ -4191,14 +4196,16 @@ label finale:
     #Susan Murphy 
     voice "audio/day4/scene91_N5_sm_3.mp3"
     sm "Hmm, well the only wire that is standing out to me is.."
-
+    hide susan
+    hide ezekiel
 
     menu defuse_bomb:
 
         "Choose Wisely"
 
         "Blackmail":
-           
+            show ezekiel at right
+            show susan at left
             #Scene 92 - Explosion
 
             #Susan Murphy 
@@ -4231,7 +4238,8 @@ label finale:
 
 
         "Revenge":
-            
+            show ezekiel at right
+            show susan at left            
             #Scene 93 - Accepted
 
             scene bomb
@@ -4408,12 +4416,17 @@ label finale:
                     #David Dalton
                     #voice 
                     #voice "audio/day4/scene96_N4_dd_3.mp3"
+                    show david
                     dd "I may not be able to kill you rich bastards, but you’ll be sorry you ever met me."
+                    hide david
 
-                    #Narrator    
+                    #Narrator   
+                    show ezekiel at right
+                    show deborah at left  
                     voice "audio/day4/scene96_N1_3.mp3"
                     "Ezekiel walks in with Deborah."
-                    
+                    hide ezekiel
+                    hide deborah
 
                     #Ezekiel Jones
                     show ezekiel
@@ -4471,7 +4484,8 @@ label finale:
                     jump dalton_location
 
         "Payback":
-
+                show ezekiel at right
+                show susan at left
                 #Scene 92 - Explosion
 
                 #Susan Murphy 

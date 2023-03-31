@@ -9,7 +9,15 @@ image my_img:
     linear 1.0 alpha 0.0
     repeat
 
-
+init:
+    $ style.input.caret = "my_skip"
+image my_skip:
+    "skip.png"
+    xalign 1.5
+    yalign 1.5
+    linear 1.0 alpha 1.0
+    linear 1.0 alpha 0.0
+    repeat
 
 
 screen title_screen():
@@ -39,9 +47,9 @@ screen reedscene_investigation():
         hotspot (649, 867, 145, 153) action Jump ("knockedcase")
         hotspot (1359, 724, 165, 171) action Jump ("Guadycane")
         hotspot (896, 754, 99, 125) action Jump ("shoeprint")     
-        #hotspot (1484, 68, 414, 76) action If(persistent.clicked_shoeprint == False, Jump("shoeprint_not_clicked"), Jump("first_murder"))
+        hotspot (1484, 68, 414, 76) action Jump("first_murder")
 
-    #add "my_img" as caret xpos 2024 ypos 150
+    add "my_skip" as caret xpos 2024 ypos 150
     
     
 
@@ -221,7 +229,7 @@ label shoeprint:
     scene murder_bg
 
     menu shoe_inv:
-        "Say Statement"
+        "What's your next step?"
         "Continue Investigating":
             call screen reedscene_investigation
         "Done Investigating":
@@ -240,7 +248,7 @@ screen windchimescene_investigation():
         hotspot (243, 728, 70, 86) action Jump ("cloth")
         hotspot (1597, 87, 323, 83) action Jump ("third") 
 
-    add "my_img" as caret xpos 2024 ypos 150
+    add "my_skip" as caret xpos 2024 ypos 150
 
 label bareFeet:
 
@@ -255,7 +263,7 @@ label bareFeet:
     ej "Seems like it really was someone stealing his shoes."
 
     menu chime_barefeet_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
@@ -274,7 +282,7 @@ label knife:
     sm "And judging by those stab wounds, it's certainly the murder weapon."
 
     menu chime_knife_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
@@ -294,7 +302,7 @@ label w_bloodstains:
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
 
     menu chime_stains_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
@@ -314,7 +322,7 @@ label shoePrints:
     ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
     
     menu chime_shoeprint_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
@@ -329,7 +337,7 @@ label cloth:
     sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
 
     menu chime_cloth_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
@@ -344,13 +352,13 @@ screen patriciascene_investigation():
         hotspot (1537, 814, 70, 73) action Jump ("bruising")
         hotspot (1533, 66, 387, 102) action Jump ("thirdmurder")
     
-    add "my_img" as caret xpos 2024 ypos 150
+    add "my_skip" as caret xpos 2024 ypos 150
 
 
 label handprint:
 
     scene murder_bg
-    show patty clue right 
+    show patty_clue at right
 
     #Susan Murphy 
     show susan at left
@@ -359,7 +367,7 @@ label handprint:
     hide susan
 
     menu white_handprint_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen patriciascene_investigation
         "Done Investigating":
@@ -369,7 +377,7 @@ label bruising:
     
     scene murder_bg
 
-    show patty clue right 
+    show patty_clue at right
 
     #Susan Murphy 
     show susan at left
@@ -381,7 +389,7 @@ label bruising:
     sm "And the bruising seems to indicate that somebody killed her in the morning."
 
     menu white_bruising_inv:
-        "What's your next step"
+        "What's your next step?"
         "Continue Investigating":
             call screen patriciascene_investigation
         "Done Investigating":

@@ -62,6 +62,8 @@ Emily (Lead)
 
 Angelo (UI/UX) 
 
+Antonio 
+
 Everybody (Background) 
 
 
