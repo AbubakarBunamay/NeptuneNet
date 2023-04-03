@@ -1026,7 +1026,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 

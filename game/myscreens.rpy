@@ -248,7 +248,7 @@ screen windchimescene_investigation():
         hotspot (243, 728, 70, 86) action Jump ("cloth")
         hotspot (1597, 87, 323, 83) action Jump ("third") 
 
-    add "my_skip" as caret xpos 2024 ypos 150
+    #add "my_skip" as caret xpos 2024 ypos 150
 
 label bareFeet:
 
@@ -268,12 +268,7 @@ label bareFeet:
     ej "Seems like it really was someone stealing his shoes."
     hide susan
 
-    menu chime_barefeet_inv:
-        "What's your next step?"
-        "Continue Investigating":
-            call screen windchimescene_investigation
-        "Done Investigating":
-            jump third 
+    call screen windchimescene_investigation
 
 label knife:
     
@@ -292,12 +287,7 @@ label knife:
     sm "And judging by those stab wounds, it's certainly the murder weapon."
     hide susan
 
-    menu chime_knife_inv:
-        "What's your next step?"
-        "Continue Investigating":
-            call screen windchimescene_investigation
-        "Done Investigating":
-            jump third 
+    call screen windchimescene_investigation 
 
     
 label w_bloodstains:
@@ -318,40 +308,42 @@ label w_bloodstains:
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
     hide susan
 
-    menu chime_stains_inv:
-        "What's your next step?"
-        "Continue Investigating":
-            call screen windchimescene_investigation
-        "Done Investigating":
-            jump third 
+    call screen windchimescene_investigation
 
 
 label shoePrints:
 
     scene murder_bg
     
+    show chime_shoeprint at right
+
     #Susan Murphy 
+    show susan at left
     voice "audio/day2/scene56_N5_sm_5.mp3"
     sm "At a glance, those are a match for William's. Poor kid, murdered for his footwear."
-    
+    hide susan
+
     #Ezekiel Jones
+    show ezekiel at left
     voice "audio/day2/scene56_N9_ej_3.mp3"
     ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
-    
-    menu chime_shoeprint_inv:
-        "What's your next step?"
-        "Continue Investigating":
-            call screen windchimescene_investigation
-        "Done Investigating":
-            jump third 
+    hide ezekiel
+
+    call screen windchimescene_investigation
 
 label cloth:
 
     scene murder_bg
 
+    show chime_cloth at right
+
     #Susan Murphy
+    show susan at left
     voice "audio/day2/scene56_N5_sm_6.mp3"
     sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
+
+    hide chime_cloth
+    hide susan
 
     menu chime_cloth_inv:
         "What's your next step?"
@@ -365,11 +357,11 @@ screen patriciascene_investigation():
 
     imagemap:
         ground "images/white_murderscene.png"
-        hotspot (109, 356, 705, 358) action Jump ("handprint")
+        hotspot (1614, 850, 56, 41) action Jump ("handprint")
         hotspot (1537, 814, 70, 73) action Jump ("bruising")
         hotspot (1533, 66, 387, 102) action Jump ("thirdmurder")
     
-    add "my_skip" as caret xpos 2024 ypos 150
+    #add "my_skip" as caret xpos 2024 ypos 150
 
 
 label handprint:
@@ -382,6 +374,7 @@ label handprint:
     #voice"audio/day2/scene19.mp3"
     sm "Looks like the killer wasn't as tidy as usual. Those look like handprints."
     hide susan
+    hide patty_clue
 
     menu white_handprint_inv:
         "What's your next step?"
@@ -405,12 +398,7 @@ label bruising:
     #voice"audio/day2/scene19.mp3"
     sm "And the bruising seems to indicate that somebody killed her in the morning."
 
-    menu white_bruising_inv:
-        "What's your next step?"
-        "Continue Investigating":
-            call screen patriciascene_investigation
-        "Done Investigating":
-            jump thirdmurder 
+    call screen patriciascene_investigation
 
 #Envelope Invitation Screen
 screen envelope():
