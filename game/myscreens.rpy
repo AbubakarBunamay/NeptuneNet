@@ -208,9 +208,21 @@ label shoeprint:
     
     show richard_footprint at right 
 
+    #Ezekial Jones
+    show ezekiel at left
+    voice "audio/day1/scene19_N9_ej_14.mp3"
+    ej "Hey, Murphy, look at that shoe print."
+    hide ezekiel
+
+    #Susan Murphy 
+    show susan at left
+    voice "audio/day1/scene19_N5_sm_16.mp3"
+    sm "Hm. It doesn’t look expensive. One of the waiters, maybe?"
+    hide susan
+
     #Ezekiel Jones
     show ezekiel at left
-    voice"audio/day2/scene19_n9_ej_3.mp3" 
+    voice"audio/day1/scene19_n9_ej_3.mp3" 
     ej "Any bright ideas about that shoe print?"
     hide ezekiel
 
@@ -371,8 +383,11 @@ label handprint:
 
     #Susan Murphy 
     show susan at left
-    #voice"audio/day2/scene19.mp3"
+    voice"audio/day3/scene80_N5_sm_3.mp3"
     sm "Looks like the killer wasn't as tidy as usual. Those look like handprints."
+
+    voice"audio/day3/scene80_N5_sm_4.mp3"
+    sm "There seems to be more of a bruise on the left side of her neck. The killer must be left-handed."
     hide susan
     hide patty_clue
 
@@ -391,11 +406,11 @@ label bruising:
 
     #Susan Murphy 
     show susan at left
-    #voice"audio/day2/scene19.mp3"
+    voice"audio/day3/scene80_N5_sm_1.mp3"
     sm "There are strangle marks on her neck that are sure signs of a struggle."
 
     #Ezekiel Jones
-    #voice"audio/day2/scene19.mp3"
+    voice"audio/day3/scene80_N5_sm_2.mp3"
     sm "And the bruising seems to indicate that somebody killed her in the morning."
 
     call screen patriciascene_investigation
