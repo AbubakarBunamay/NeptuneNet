@@ -54,7 +54,6 @@ screen reedscene_investigation():
         hotspot (649, 867, 145, 153) action Jump ("knockedcase")
         hotspot (1359, 724, 165, 171) action Jump ("Guadycane")
         hotspot (896, 754, 99, 125) action Jump ("shoeprint")     
-        hotspot (1484, 68, 414, 76) action Jump("first_murder")
 
     #add "my_skip" as caret xpos 2024 ypos 150
     
@@ -245,7 +244,7 @@ screen windchimescene_investigation():
         hotspot (418, 786, 145, 124) action Jump ("w_bloodstains")
         hotspot (1785, 813, 128, 133) action Jump ("shoePrints")
         hotspot (243, 728, 70, 86) action Jump ("cloth")
-        hotspot (1597, 87, 323, 83) action Jump ("third") 
+        
 
     #add "my_skip" as caret xpos 2024 ypos 150
 
@@ -361,7 +360,7 @@ screen patriciascene_investigation():
         ground "images/white_murderscene.png"
         hotspot (1614, 850, 56, 41) action Jump ("handprint")
         hotspot (1537, 814, 70, 73) action Jump ("bruising")
-        hotspot (1533, 66, 387, 102) action Jump ("thirdmurder")
+        
     
     #add "my_skip" as caret xpos 2024 ypos 150
 
