@@ -1,4 +1,6 @@
 #Game Machanics
+
+#Click to start Image
 init:
     $ style.input.caret = "my_img"
 image my_img:
@@ -9,6 +11,7 @@ image my_img:
     linear 1.0 alpha 0.0
     repeat
 
+#Click to skip Image
 init:
     $ style.input.caret = "my_skip"
 image my_skip:
@@ -19,7 +22,7 @@ image my_skip:
     linear 1.0 alpha 0.0
     repeat
 
-
+#Title Sceen
 screen title_screen():
     
     imagemap:
@@ -33,10 +36,14 @@ screen title_screen():
         
         
    
-
+#Skip to main menu
 label to_main_menu():
     $ MainMenu(confirm=False)()
 
+#-----------------------------End of Game Mechanics
+
+
+#Richard Murder Scene Mechanics
 screen reedscene_investigation():
     imagemap:
         ground "images/richard_murderscene.png"
@@ -53,28 +60,7 @@ screen reedscene_investigation():
     
     
 
-
-
-label shoeprint_not_clicked:
-    $ persistent.clicked_shoeprint = True
-    scene murder_bg
-
-    show richard_footprint at right 
-
-    #Ezekial Jones
-    show ezekiel at left
-    ej "Hey, Murphy, look at that shoe print."
-    hide ezekiel
-
-    #Susan Murphy 
-    show susan at left
-    sm "Hm. It doesn’t look expensive. One of the waiters, maybe?"
-    hide susan
-    hide richard_footprint
-
-    jump shoeprint
-
-
+#Headwound Clue Scene
 label headwound:
    
     scene murder_bg
@@ -98,7 +84,7 @@ label headwound:
 
 
     
-
+#Bodybruise Clue Scene
 label bodybruise:
     
     scene murder_bg
@@ -120,7 +106,7 @@ label bodybruise:
 
     call screen reedscene_investigation       
 
-    
+#Bloodstain Clue Scene    
 label bloodstains:
 
     scene murder_bg
@@ -138,7 +124,7 @@ label bloodstains:
 
     call screen reedscene_investigation   
 
-
+#Knocked Case Clue Scene
 label knockedcase:
 
     scene murder_bg
@@ -172,6 +158,7 @@ label knockedcase:
 
     call screen reedscene_investigation   
 
+#Gaudy Cane Clue Scene
 label Guadycane:
 
     scene murder_bg
@@ -201,8 +188,8 @@ label Guadycane:
 
     call screen reedscene_investigation    
 
+#Shoeprint Clue Scene
 label shoeprint:
-    $ persistent.clicked_shoeprint = False
 
     scene murder_bg
     
@@ -248,7 +235,7 @@ label shoeprint:
             jump first_murder
         
 
-
+#Windchime Murder Scene Mechanics
 screen windchimescene_investigation():
 
     imagemap:
@@ -262,6 +249,7 @@ screen windchimescene_investigation():
 
     #add "my_skip" as caret xpos 2024 ypos 150
 
+#Barefeet Clue Scene
 label bareFeet:
 
     scene murder_bg
@@ -282,6 +270,7 @@ label bareFeet:
 
     call screen windchimescene_investigation
 
+#Knife Clue Scene
 label knife:
     
     scene murder_bg
@@ -301,7 +290,7 @@ label knife:
 
     call screen windchimescene_investigation 
 
-    
+#Bloodstain Clue Scene  
 label w_bloodstains:
 
     scene murder_bg
@@ -322,7 +311,7 @@ label w_bloodstains:
 
     call screen windchimescene_investigation
 
-
+#Shoeprint Clue Scene
 label shoePrints:
 
     scene murder_bg
@@ -343,6 +332,7 @@ label shoePrints:
 
     call screen windchimescene_investigation
 
+#Cloth Clue Scene
 label cloth:
 
     scene murder_bg
@@ -364,7 +354,7 @@ label cloth:
         "Done Investigating":
             jump third 
 
-
+#Patricia Murder Scene Mechanics
 screen patriciascene_investigation():
 
     imagemap:
@@ -375,7 +365,7 @@ screen patriciascene_investigation():
     
     #add "my_skip" as caret xpos 2024 ypos 150
 
-
+#Handprint Clue Scene
 label handprint:
 
     scene murder_bg
@@ -398,6 +388,7 @@ label handprint:
         "Done Investigating":
             jump thirdmurder 
 
+#Bruising Clue Scene
 label bruising:
     
     scene murder_bg
@@ -424,7 +415,7 @@ screen envelope():
         hotspot (0, 0, 1920, 1080) action Jump ("cont_env")
 
 
-#Day Screens
+#Day Screens - Found an Alternative
 screen day_one():
     
     imagemap:
