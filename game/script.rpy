@@ -63,10 +63,10 @@ label start:
 
     #Scene Bg - an image of the envelope and invitation with text on them
     voice "audio/day1/Scene3_N2_mm.mp3"
-    call screen envelope #inside The invitation 
-    hide screen envelope
-
-label cont_env: 
+    
+    scene envelope
+    pause
+ 
     #voice of mcquaid
     #voice"audio/day1/Scene3_N2_mm.mp3"
     #"Dear Susan Murphy, you have been cordially invited as a distinguished guest to ring in 1952 in style aboard the USS Neptune. We will be departing at 6:00 P.M. December 30th from Honolulu Harbour, and returning to the same location on January 3rd. I hope to see you there! - Michael McQuaid"
@@ -92,7 +92,7 @@ label cont_env:
     stop music
 
     scene dayone
-    play music "audio/day.mp3"
+    play music "audio/day.mp3" loop
     pause
 
     # Scene 5 - Susan Cabin
@@ -357,7 +357,7 @@ label cont_env:
             scene d_h_bsusan 
             show susan at left              
             voice "audio/day1/scene7_N5_sm6.mp3"
-            sm "Thank you, Ezekiel. You truly are a kind man. But enough about me, what about you? What do you do?"
+            sm "Thank you, Ezekiel. You truly are a good man. But enough about me, what about you? What do you do?"
             hide susan
 
 
@@ -934,7 +934,7 @@ label first_murder:
     #Day 2 
     #Scene 21
     scene daytwo
-    play music "audio/day.mp3"
+    play music "audio/day.mp3" loop
     stop sound
     pause
 
@@ -1289,7 +1289,7 @@ label first_murder:
     scene d_h_bsusan
     show susan at left
     voice "audio/day2/scene28_N5_sm_10.mp3"
-    sm "Yea, I'm sorry this happened."
+    sm "Yes, I'm sorry this happened."
 
     
 
@@ -1450,10 +1450,6 @@ label first_murder:
                     voice "audio/day2/scene33_n1.mp3"
                     "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
 
-                    #Susan Murphy Thoughts
-                    voice "audio/day2/scene33_n3_sm.mp3"
-                    smt "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
-
                     #Ezekiel Jones
                     voice "audio/day2/scene33_n9_ej.mp3"
                     ej "No, I don't have another pair of shoes. You are free to take a look around my room to check."
@@ -1462,6 +1458,10 @@ label first_murder:
                     hide ezekiel
                     voice "audio/day2/scene33_n1_2.mp3"
                     "Susan continued to check the room for anything that was hidden but found nothing."
+
+                    #Susan Murphy Thoughts
+                    voice "audio/day2/scene33_n3_sm.mp3"
+                    smt "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
 
                     #Susan Murphy
                     voice "audio/day2/scene33_n5_sm_3.mp3"
@@ -2589,7 +2589,7 @@ label end_of_dayone:
     #Narrator 
     voice "audio/day2/scene53_n1.mp3"
     play sound "audio/sfx/susanfootsteps.mp3"
-    "...she is jolted back into action and rushes toward the sounds of commotion. As Susan is runningin the direction of the scream, she sees a female member of the waitstaff coming out of the kitchen sobbing with her hands covering her eyes. As Susan enters the kitchen,"
+    "...she is jolted back into action and rushes toward the sounds of commotion. As Susan is running in the direction of the scream, she sees a female member of the waitstaff coming out of the kitchen sobbing with her hands covering her eyes. As Susan enters the kitchen,"
 
     #Scene 54 - Kitchen 
 
@@ -2698,7 +2698,7 @@ label third:
     #------------------------------------- START OF DAY 3 --------------------------------------------------------#
 
     scene daythree
-    play music "audio/day.mp3"
+    play music "audio/day.mp3" loop
     stop sound
     pause
 
@@ -3219,8 +3219,7 @@ label day3_cont:
 
     scene deck
     stop sound
-    play sound "audio/sfx/boat_engine.mp3" loop volume 0.5
-    play music "audio/sfx/waves_seagulls.mp3" loop volume 0.3
+    play music "audio/sfx/waves_seagulls.mp3" fadein 1.0 loop volume 0.1
     #Scene 67 - Ezekiel Jones
 
     #Narrator
@@ -3896,7 +3895,7 @@ label thirdmurder:
     #-------------------------------------------------------------------------------------- Start of day 4
 
     scene dayfour
-    play music "audio/day.mp3"
+    play music "audio/day.mp3" loop
     pause
 
     #Scene 82 - Susan's Cabin

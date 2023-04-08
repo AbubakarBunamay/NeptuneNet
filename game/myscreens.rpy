@@ -2,6 +2,9 @@
 
 #Click to start Image
 init:
+    $ shoeprint = False
+
+init:
     $ style.input.caret = "my_img"
 image my_img:
     "start.png"
@@ -21,6 +24,8 @@ image my_skip:
     linear 1.0 alpha 1.0
     linear 1.0 alpha 0.0
     repeat
+
+
 
 #Title Sceen
 screen title_screen():
@@ -48,7 +53,7 @@ screen reedscene_investigation():
     imagemap:
         ground "images/richard_murderscene.png"
         
-        hotspot (1226, 299, 128, 146) action Jump ("headwound")
+        hotspot (1209, 430, 118, 115) action Jump ("headwound")
         hotspot (1527, 723, 94, 126) action Jump ("bodybruise")
         hotspot (1689, 739, 137, 141) action Jump ("bloodstains")
         hotspot (649, 867, 145, 153) action Jump ("knockedcase")
@@ -79,7 +84,17 @@ label headwound:
     ej "I've seen enough head wounds in my time. That's a deadly one." 
     hide ezekiel
 
-    call screen reedscene_investigation
+    hide richard_headwound
+
+    menu head_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked
 
 
     
@@ -101,9 +116,17 @@ label bodybruise:
     ej "I got punched in the body during training a few times. I dropped to the ground like a sack of potatoes."
     hide ezekiel
 
-    scene murder_bg
+    hide richard_bodybruise
 
-    call screen reedscene_investigation       
+    menu bodyrichard_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked       
 
 #Bloodstain Clue Scene    
 label bloodstains:
@@ -118,10 +141,18 @@ label bloodstains:
     sm "Looks like he was beaten before he was killed."
     hide susan
 
-    scene murder_bg
+    hide richard_blood
 
 
-    call screen reedscene_investigation   
+    menu bloodrichard_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked   
 
 #Knocked Case Clue Scene
 label knockedcase:
@@ -153,9 +184,18 @@ label knockedcase:
     voice"audio/day1/scene19_N5_sm_9.mp3"
     sm "Well, there doesn’t seem to be any abrasion on the knuckles, or torn fingernails, so I’d say he was unconscious from the first hit."
     hide susan
+
     hide richard_case
 
-    call screen reedscene_investigation   
+    menu caserichard_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked   
 
 #Gaudy Cane Clue Scene
 label Guadycane:
@@ -182,16 +222,24 @@ label Guadycane:
     sm "Maybe there is something to what McQuaid said…"
     hide susan
 
+    hide richard_cane
+
+
+    menu canerichard_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked  
+
+#If shoeprint not clicked clue scene
+label shoeprint_not_clicked:
+    $ shoeprint = True
     scene murder_bg
 
-
-    call screen reedscene_investigation    
-
-#Shoeprint Clue Scene
-label shoeprint:
-
-    scene murder_bg
-    
     show richard_footprint at right 
 
     #Ezekial Jones
@@ -205,6 +253,25 @@ label shoeprint:
     voice "audio/day1/scene19_N5_sm_16.mp3"
     sm "Hm. It doesn’t look expensive. One of the waiters, maybe?"
     hide susan
+
+    hide richard_footprint
+
+    menu shoerichard_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen reedscene_investigation
+        "Done Investigating":
+            if shoeprint == True:
+                jump first_murder
+            else:
+                jump shoeprint_not_clicked 
+
+#Shoeprint Clue Scene
+label shoeprint:
+    $ shoeprint = True
+    scene murder_bg
+    
+    show richard_footprint at right 
 
     #Ezekiel Jones
     show ezekiel at left
@@ -224,7 +291,7 @@ label shoeprint:
     ej "Richard was awfully rude to that William kid."
     hide ezekiel
 
-    scene murder_bg
+    hide richard_footprint
 
     menu shoe_inv:
         "What's your next step?"
@@ -265,9 +332,16 @@ label bareFeet:
     #Ezekiel Jones
     voice "audio/day2/scene56_N9_ej_1.mp3"
     ej "Seems like it really was someone stealing his shoes."
-    hide susan
+    hide ezekiel
 
-    call screen windchimescene_investigation
+    hide chime_feet
+
+    menu chime_barefeet_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
 #Knife Clue Scene
 label knife:
@@ -287,7 +361,14 @@ label knife:
     sm "And judging by those stab wounds, it's certainly the murder weapon."
     hide susan
 
-    call screen windchimescene_investigation 
+    hide chime_knife
+
+    menu chime_knife_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third  
 
 #Bloodstain Clue Scene  
 label w_bloodstains:
@@ -308,7 +389,14 @@ label w_bloodstains:
     sm "You're right. I'd put it a few hours old, around noon, I'd say."
     hide susan
 
-    call screen windchimescene_investigation
+    hide chime_body
+
+    menu chime_stains_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third 
 
 #Shoeprint Clue Scene
 label shoePrints:
@@ -329,7 +417,14 @@ label shoePrints:
     ej "Say, didn't he say that McQuaid or Dalton were the only others with access to his shoes?"
     hide ezekiel
 
-    call screen windchimescene_investigation
+    hide chime_shoeprint
+
+    menu chime_shoeprint_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen windchimescene_investigation
+        "Done Investigating":
+            jump third
 
 #Cloth Clue Scene
 label cloth:
@@ -342,9 +437,10 @@ label cloth:
     show susan at left
     voice "audio/day2/scene56_N5_sm_6.mp3"
     sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
-
-    hide chime_cloth
+    
     hide susan
+    hide chime_cloth
+    
 
     menu chime_cloth_inv:
         "What's your next step?"
@@ -378,6 +474,7 @@ label handprint:
     voice"audio/day3/scene80_N5_sm_4.mp3"
     sm "There seems to be more of a bruise on the left side of her neck. The killer must be left-handed."
     hide susan
+
     hide patty_clue
 
     menu white_handprint_inv:
@@ -398,12 +495,21 @@ label bruising:
     show susan at left
     voice"audio/day3/scene80_N5_sm_1.mp3"
     sm "There are strangle marks on her neck that are sure signs of a struggle."
+    
 
     #Ezekiel Jones
     voice"audio/day3/scene80_N5_sm_2.mp3"
     sm "And the bruising seems to indicate that somebody killed her in the morning."
 
-    call screen patriciascene_investigation
+    hide susan
+    hide patty_clue
+
+    menu white_bruising_inv:
+        "What's your next step?"
+        "Continue Investigating":
+            call screen patriciascene_investigation
+        "Done Investigating":
+            jump thirdmurder
 
 #Envelope Invitation Screen
 screen envelope():
@@ -413,11 +519,3 @@ screen envelope():
 
         hotspot (0, 0, 1920, 1080) action Jump ("cont_env")
 
-
-#Day Screens - Found an Alternative
-screen day_one():
-    
-    imagemap:
-        ground "images/dayone.png"
-        
-        hotspot (0, 0, 1920, 1080) action Jump ("dayone")
