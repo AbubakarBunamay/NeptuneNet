@@ -3,6 +3,8 @@
 #Click to start Image
 init:
     $ shoeprint = False
+    $ wshoeprint = False
+
 
 init:
     $ style.input.caret = "my_img"
@@ -309,7 +311,7 @@ screen windchimescene_investigation():
         hotspot (1034, 940, 109, 124) action Jump ("bareFeet")
         hotspot (273, 959, 127, 106) action Jump ("knife")
         hotspot (418, 786, 145, 124) action Jump ("w_bloodstains")
-        hotspot (1785, 813, 128, 133) action Jump ("shoePrints")
+        hotspot (1785, 813, 128, 133) action Jump ("wshoeprints")
         hotspot (243, 728, 70, 86) action Jump ("cloth")
         
 
@@ -341,7 +343,10 @@ label bareFeet:
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
-            jump third 
+            if wshoeprint == True:
+                jump third
+            else:
+                jump wshoeprints 
 
 #Knife Clue Scene
 label knife:
@@ -368,7 +373,10 @@ label knife:
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
-            jump third  
+            if wshoeprint == True:
+                jump third
+            else:
+                jump wshoeprints  
 
 #Bloodstain Clue Scene  
 label w_bloodstains:
@@ -396,11 +404,14 @@ label w_bloodstains:
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
-            jump third 
+            if wshoeprint == True:
+                jump third
+            else:
+                jump wshoeprints 
 
 #Shoeprint Clue Scene
-label shoePrints:
-
+label wshoeprints:
+    $ wshoeprint = True
     scene murder_bg
     
     show chime_shoeprint at right
@@ -447,7 +458,10 @@ label cloth:
         "Continue Investigating":
             call screen windchimescene_investigation
         "Done Investigating":
-            jump third 
+            if wshoeprint == True:
+                jump third
+            else:
+                jump wshoeprints 
 
 #Patricia Murder Scene Mechanics
 screen patriciascene_investigation():

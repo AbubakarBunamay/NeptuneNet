@@ -357,7 +357,7 @@ label start:
             scene d_h_bsusan 
             show susan at left              
             voice "audio/day1/scene7_N5_sm6.mp3"
-            sm "Thank you, Ezekiel. You truly are a good man. But enough about me, what about you? What do you do?"
+            sm "Thank you, Ezekiel. You're a good man. But enough about me, what about you? What do you do?"
             hide susan
 
 
@@ -1361,184 +1361,189 @@ label first_murder:
     menu ezekiel_inv:
         "Choose path of investigation"
         "Ask About Footprint":
-            
-            #Scene 31 - Ezekiel Jones / Footprint   
-
-               
-            #Susan Murphy
-            scene hallway 
-            show susan at left 
-            voice "audio/day2/scene31_n5_sm_4.mp3"
-            sm "I would like to check your shoes."
-        
-            
-            #Ezekiel Jones
-            scene hallwayleft
-            show ezekiel at right
-            voice "audio/day2/scene31_N9_ej_4.mp3"
-            ej "Because of the footprint, right? Do you think it’s me?"
-
-                
-            #Susan Murphy
-            scene hallway
-            show susan at left  
-            voice "audio/day2/scene31_N5_sm_2.mp3"
-            sm "No, I just have to be certain. Better safe than sorry, right?"
-
-            
-            #Ezekiel Jones
-            scene hallwayleft
-            show ezekiel at right
-            voice "audio/day2/scene31_N9_ej_2.mp3"
-            ej "I understand. I should mention I have multiple pairs of shoes. Would you like to see them as well?"
-                            
-               
-            #Susan Murphy
-            scene hallway 
-            show susan at left  
-            voice "audio/day2/scene31_n5_sm_3.mp3"
-            sm "Yes, if you have more, please take me to them. I need to check myself."
-
-            
-            #Ezekiel Jones
-            scene hallwayleft
-            show ezekiel at right
-            voice "audio/day2/scene31_n9_ej_3.mp3"
-            ej "Okay, I will show you to them."
-            hide ezekiel
-            hide susan
-
-            #Scene 32 - Ezekiel Jones / Footprint (Ezekiel's Room)
-
-            scene ezekielroom
-
-            #Susan Murphy 
-            voice "audio/day2/scene32_n5_sm_5.mp3"
-            show susan at left
-            sm "It is interesting how you have so many shoes and yet not a single match. Are you sure that is all of them, or are you hiding another pair?"
-
-            #Ezekiel Jones
-            show ezekiel angry at right
-            voice "audio/day2/scene32_N9_ej_1.mp3" 
-            ej "W-what? Is- is that r-really what you think of me? I-I I thought we were friends. I even told you I would help you if you needed anything."
-            hide ezekiel
-            hide susan
-
-            #Narrator
-            show susan at left
-            voice "audio/day2/scene32_n1.mp3"
-            "Pain was filling Susan up inside, but she kept a poker face to see his reaction."
-            hide susan
-
-            menu ezekiel_footprint:
-
-                "Choose path of investigation"
-
-                "Press Further":
-                    
-                    #Scene 33 - Ezekiel Jones / Footprint (Ezekiel's Room)
-
-                    #Susan murphy
-                    show susan at left
-                    show ezekiel at right
-                    voice "audio/day2/scene33_n5_sm.mp3"
-                    sm "From the sound of your reaction, it looks like you are hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
-                    voice "audio/day2/scene33_n5_sm_2.mp3"
-                    sm "Do you have another pair of shoes that you are hiding?"
-
-                    #Narrator
-                    voice "audio/day2/scene33_n1.mp3"
-                    "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
-
-                    #Ezekiel Jones
-                    voice "audio/day2/scene33_n9_ej.mp3"
-                    ej "No, I don't have another pair of shoes. You are free to take a look around my room to check."
-
-                    #Narrator
-                    hide ezekiel
-                    voice "audio/day2/scene33_n1_2.mp3"
-                    "Susan continued to check the room for anything that was hidden but found nothing."
-
-                    #Susan Murphy Thoughts
-                    voice "audio/day2/scene33_n3_sm.mp3"
-                    smt "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
-
-                    #Susan Murphy
-                    voice "audio/day2/scene33_n5_sm_3.mp3"
-                    sm "It seems like I was out of line. Thank you for bearing with me."
-
-                    #Ezekiel Jones
-                    show ezekiel at right
-                    voice "audio/day2/scene33_n9_ej_2.mp3"
-                    ej  "It is okay. I apologize for my reaction as well. I understand all you want to do is find the killer."
-
-                    #voice "audio/day2/scene33_n9_ej_3.mp3"
-                    #ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
-
-                    #Susan Murphy
-                    #voice "audio/day2/scene33_N5_sm_4.mp3"
-                    #sm "I understand. I will visit you in the dining hall to continue the conversation."
-                    hide ezekiel
-                    hide susan
-
-                    menu ezekiel_presshim:
-                        "What's your next step?"
-                        "Interrogate another passenger":
-                            jump investigation_choice
-                        "Quit for the day":
-                            jump end_of_dayone                      
-
-                #Menu Option - Calm him down
-                "Calm him down":
-                    
-                    #Scene 34 - Ezekiel Jones / Footprint (Ezekiel's Room)
-                    show susan
-                    #Susan Murphy 
-                    voice "audio/day2/scene34_n5_sm.mp3"
-                    sm  "Of course, we are friends, but you must understand that I am a detective. I can't leave any stone unturned."
-
-                    hide susan
-                    show susan questioning at left
-                    voice "audio/day2/scene34_n5_sm_2.mp3"
-                    sm  "If you genuinely have nothing, then you won't mind if I check your room. I view you as a friend and someone I trust."
-
-                    voice "audio/day2/scene34_n5_sm_3.mp3"
-                    sm  "To do my job, I must do this. Please help me."
-
-                    #Ezekiel Jones
-                    show ezekiel questioning at right
-                    voice "audio/day2/scene34_n9_ej.mp3"
-                    ej "Okay, I understand. You may look around for anything that could help your investigation."
-                    hide ezekiel
-
-                    #Narrator
-                    scene hallway 
-                    voice "audio/day2/scene34_n1.mp3"
-                    "Susan looked through Ezekiel's room and found nothing."
-
-                    #Susan Murphy 
-                    show susan at left 
-                    voice "audio/day2/scene34_n5_sm_4.mp3"
-                    sm "Thank you for bearing with me through this."
-                    hide susan
-
-                    
-                    #Ezekiel Jones
-                    scene hallwayleft
-                    show ezekiel at right
-                    voice "audio/day2/scene34_n9_ej_2.mp3"
-                    ej "It’s okay. I understand that you need to do your job. This is something you must do."
-                    hide ezekiel
-                    menu ezekiel_callhimstep:
-                        "What's your next step?"
-                        "Interrogate another passenger":
-                            jump investigation_choice
-                        "Quit for the day":
-                            jump end_of_dayone
+            jump ezekiel_footprints           
 
         "Ask about training":
             jump cont_ezekiel_inv
             #Scene 35 - Ezekiel Jones / Training (Ezekiel's Room)
+
+label ezekiel_footprints:
+    #Scene 31 - Ezekiel Jones / Footprint   
+
+               
+    #Susan Murphy
+    scene hallway 
+    show susan at left 
+    voice "audio/day2/scene31_n5_sm_4.mp3"
+    sm "I would like to check your shoes."
+
+    
+    #Ezekiel Jones
+    scene hallwayleft
+    show ezekiel at right
+    voice "audio/day2/scene31_N9_ej_4.mp3"
+    ej "Because of the footprint, right? Do you think it’s me?"
+
+        
+    #Susan Murphy
+    scene hallway
+    show susan at left  
+    voice "audio/day2/scene31_N5_sm_2.mp3"
+    sm "No, I just have to be certain. Better safe than sorry, right?"
+
+    
+    #Ezekiel Jones
+    scene hallwayleft
+    show ezekiel at right
+    voice "audio/day2/scene31_N9_ej_2.mp3"
+    ej "I understand. I should mention I have multiple pairs of shoes. Would you like to see them as well?"
+                    
+        
+    #Susan Murphy
+    scene hallway 
+    show susan at left  
+    voice "audio/day2/scene31_n5_sm_3.mp3"
+    sm "Yes, if you have more, please take me to them. I need to check myself."
+
+    
+    #Ezekiel Jones
+    scene hallwayleft
+    show ezekiel at right
+    voice "audio/day2/scene31_n9_ej_3.mp3"
+    ej "Okay, I will show you to them."
+    hide ezekiel
+    hide susan
+
+    #Scene 32 - Ezekiel Jones / Footprint (Ezekiel's Room)
+
+    scene ezekielroom
+
+    #Susan Murphy 
+    voice "audio/day2/scene32_n5_sm_5.mp3"
+    show susan at left
+    sm "It is interesting how you have so many shoes and yet not a single match. Are you sure that is all of them, or are you hiding another pair?"
+
+    #Ezekiel Jones
+    show ezekiel angry at right
+    voice "audio/day2/scene32_N9_ej_1.mp3" 
+    ej "W-what? Is- is that r-really what you think of me? I-I I thought we were friends. I even told you I would help you if you needed anything."
+    hide ezekiel
+    hide susan
+
+    #Narrator
+    show susan at left
+    voice "audio/day2/scene32_n1.mp3"
+    "Pain was filling Susan up inside, but she kept a poker face to see his reaction."
+    hide susan
+
+    menu ezekiel_footprint:
+
+        "Choose path of investigation"
+
+        "Press Further":
+            
+            #Scene 33 - Ezekiel Jones / Footprint (Ezekiel's Room)
+
+            #Susan murphy
+            show susan at left
+            show ezekiel at right
+            voice "audio/day2/scene33_n5_sm.mp3"
+            sm "From the sound of your reaction, it looks like you are hiding something. If there isn't anything to hide, look me in the eye and say it confidently."
+            voice "audio/day2/scene33_n5_sm_2.mp3"
+            sm "Do you have another pair of shoes that you are hiding?"
+
+            #Narrator
+            voice "audio/day2/scene33_n1.mp3"
+            "Ezekiel Jones had pain in his eyes of anger and sadness but also understanding. He calmed himself and took a deep breath."
+
+            #Ezekiel Jones
+            voice "audio/day2/scene33_n9_ej.mp3"
+            ej "No, I don't have another pair of shoes. You are free to take a look around my room to check."
+
+            #Narrator
+            hide ezekiel
+            voice "audio/day2/scene33_n1_2.mp3"
+            "Susan continued to check the room for anything that was hidden but found nothing."
+
+            #Susan Murphy Thoughts
+            voice "audio/day2/scene33_n3_sm.mp3"
+            smt "Okay, that rules him out in that part, at least. I am glad, it pains me, but I must do this to find the killer."
+
+            #Susan Murphy
+            voice "audio/day2/scene33_n5_sm_3.mp3"
+            sm "It seems like I was out of line. Thank you for bearing with me."
+
+            #Ezekiel Jones
+            show ezekiel at right
+            voice "audio/day2/scene33_n9_ej_2.mp3"
+            ej  "It is okay. I apologize for my reaction as well. I understand all you want to do is find the killer."
+
+            #voice "audio/day2/scene33_n9_ej_3.mp3"
+            #ej "I realize you have another question. However, I want to clear my head. Meet me back at the dining hall, and we can talk there."
+
+            #Susan Murphy
+            #voice "audio/day2/scene33_N5_sm_4.mp3"
+            #sm "I understand. I will visit you in the dining hall to continue the conversation."
+            hide ezekiel
+            hide susan
+
+            menu ezekiel_presshim:
+                "What's your next step?"
+                "Interrogate another passenger":
+                    jump investigation_choice
+                "Quit for the day":
+                    jump end_of_dayone                      
+
+        #Menu Option - Calm him down
+        "Calm him down":
+            
+            #Scene 34 - Ezekiel Jones / Footprint (Ezekiel's Room)
+            scene ezekielroom
+
+            #Susan Murphy
+            show susan 
+            voice "audio/day2/scene34_n5_sm.mp3"
+            sm  "Of course, we are friends, but you must understand that I am a detective. I can't leave any stone unturned."
+
+            hide susan
+            show susan questioning at left
+            voice "audio/day2/scene34_n5_sm_2.mp3"
+            sm  "If you genuinely have nothing, then you won't mind if I check your room. I view you as a friend and someone I trust."
+
+            voice "audio/day2/scene34_n5_sm_3.mp3"
+            sm  "To do my job, I must do this. Please help me."
+
+            #Ezekiel Jones
+            show ezekiel questioning at right
+            voice "audio/day2/scene34_n9_ej.mp3"
+            ej "Okay, I understand. You may look around for anything that could help your investigation."
+            hide ezekiel
+
+            #Narrator
+            scene hallway 
+            voice "audio/day2/scene34_n1.mp3"
+            "Susan looked through Ezekiel's room and found nothing."
+
+            #Susan Murphy 
+            show susan at left 
+            voice "audio/day2/scene34_n5_sm_4.mp3"
+            sm "Thank you for bearing with me through this."
+            hide susan
+
+            
+            #Ezekiel Jones
+            scene hallwayleft
+            show ezekiel at right
+            voice "audio/day2/scene34_n9_ej_2.mp3"
+            ej "It’s okay. I understand that you need to do your job. This is something you must do."
+            hide ezekiel
+
+            menu ezekiel_callhimstep:
+                "What's your next step?"
+                "Interrogate another passenger":
+                    jump investigation_choice
+                "Quit for the day":
+                    jump end_of_dayone
 
 label cont_ezekiel_inv:
 
@@ -1635,6 +1640,8 @@ label cont_ezekiel_inv:
                     jump investigation_choice
                 "Quit for the day":
                     jump end_of_dayone
+                "Ask About Footprint":
+                    jump ezekiel_footprints
 
         #Menu Option - Calm him down    
         "Ask calmly":
@@ -1655,7 +1662,7 @@ label cont_ezekiel_inv:
             ej "A friend of mine was on the front lines of World War 2, and he got shot. I did my best, everything I could do to save him."
 
             voice "audio/day2/scene37_n9_ej_3.mp3"
-            ej "But no matter how hard I tried, it wasn’t enough. He still died. It haunts me to this day."
+            ej "But no matter how hard I tried, it was not enough. He still died. It haunts me to this day."
 
             #Susan Murphy 
             voice "audio/day2/scene37_n5_sm_2.mp3"
@@ -1672,8 +1679,10 @@ label cont_ezekiel_inv:
                 "Interrogate another passenger":
                     jump investigation_choice
                 "Quit for the day":
-                    jump end_of_dayone  
-     
+                    jump end_of_dayone
+
+                "Ask About Footprint":
+                    jump ezekiel_footprints
    
     #Scene 29 - choose to investigate
 
@@ -3947,6 +3956,7 @@ label thirdmurder:
 
     #Narrator
     voice "audio/day4/scene83_N1.mp3"
+    play sound "audio/sfx/bg_chatter.mp3" volume 2.0
     "After calling everyone to the dining hall Susan starts explaining why everyone is in the room."
     
     
@@ -3959,13 +3969,14 @@ label thirdmurder:
     scene diningroom
     #Narrator
     voice "audio/day4/scene83_N1_2.mp3" 
-
+    play sound "audio/sfx/bg_chatter.mp3" volume 1.0 fadein 0.5
     "The entire dining hall became silent soon with whispers and murmurs filling the area."
     
     
     #Susan Murphy
     scene d_h_bsusan
     show susan
+    stop sound
     voice "audio/day4/scene83_N5_sm_2.mp3"
     sm "But first, McQuaid, I have a question."
     hide susan
@@ -4124,7 +4135,7 @@ label thirdmurder:
             scene d_h_bsusan
             show susan
             voice "audio/day4/scene84_N5_sm_1.mp3"
-            sm "David Dalton, of course. David Dalton, who was mysteriously absent for 20 minutes around thetime of Richard's murder."
+            sm "David Dalton, of course. David Dalton, who was mysteriously absent for 20 minutes around the time of Richard's murder."
             
             voice "audio/day4/scene84_N5_sm_2.mp3"
             sm "David Dalton, who would have been a normal sight in the kitchen for William. David Dalton, who served drinks with his left hand."
@@ -4204,7 +4215,7 @@ label thirdmurder:
             #Narrator
             scene diningroom
             voice "audio/day4/Scene84_N1_2.mp3"
-            "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
             #David Dalton
@@ -4286,7 +4297,9 @@ label thirdmurder:
             voice "audio/day4/scene86_N5_sm_1.mp3" 
             sm "Why, it’s Ezekiel Jones, of course!"
             
-
+            #Narrator
+            voice "audio/day4/Scene84_N1_1.mp3"
+            "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
             
             #David Dalton
             scene helm 
@@ -4344,6 +4357,9 @@ label thirdmurder:
             voice "audio/day4/scene87_N5_sm_1.mp3"
             sm "Why, it’s Deborah White, of course!"
             
+            #Narrator
+            voice "audio/day4/Scene84_N1_1.mp3"
+            "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
 
             
             #David Dalton
@@ -4402,7 +4418,9 @@ label thirdmurder:
             voice "audio/day4/scene88_N5_sm_1.mp3"
             sm "Why, it’s Rachel Reed, of course!"
             
-
+            #Narrator
+            voice "audio/day4/Scene84_N1_1.mp3"
+            "As Susan makes her damning accusation, the intercom, silent until now, squawks to life."
             
             #David Dalton
             scene helm 
@@ -4694,7 +4712,7 @@ label finale:
 
                     #Susan Murphy 
                     voice "audio/day4/scene94_N5_sm_4_n.mp3"
-                    sm "That makes sense. They have to be at the helm!"
+                    sm "That makes sense. Dalton has to be at the helm!"
 
                     #Scene 95 - the helm
 
@@ -4763,7 +4781,8 @@ label finale:
                     hide david
 
                     #Susan Murphy
-                    show susan at left  
+                    show susan at left
+                    stop music fadeout 1.0  
                     voice "audio/day4/scene95_N5_sm_5.mp3"
                     sm "Save it for the judge, Dalton."
                     hide susan
@@ -4804,7 +4823,7 @@ label finale:
                     scene d_h_bsusan
                     show susan
                     voice "audio/day4/scene96_N5_sm_2.mp3"
-                    sm "Hold it right there, McQuaid. I seem to remember you mentioning a deal with Dalton here. If such a deal were to exist, what would its terms be?"
+                    sm "Hold it right there, McQuaid. I seem to remember you mentioning a deal with Dalton here. What might the terms of that deal be?"
                     hide susan 
 
                     
