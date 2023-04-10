@@ -416,6 +416,12 @@ label wshoeprints:
     
     show chime_shoeprint at right
 
+    #Ezekiel Jones
+    show ezekiel at left
+    voice"audio/day1/scene19_n9_ej_3.mp3" 
+    ej "Any bright ideas about that shoe print?"
+    hide ezekiel
+
     #Susan Murphy 
     show susan at left
     voice "audio/day2/scene56_N5_sm_5.mp3"
@@ -447,7 +453,7 @@ label cloth:
     #Susan Murphy
     show susan at left
     voice "audio/day2/scene56_N5_sm_6.mp3"
-    sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes"
+    sm "Looks like a piece of a shirt. He must have put up a fight, torn his attacker’s clothes."
     
     hide susan
     hide chime_cloth

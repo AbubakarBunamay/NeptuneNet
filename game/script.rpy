@@ -3425,7 +3425,7 @@ label day3_cont:
 
                     #Ezekiel Jones
                     voice "audio/day3/scene72_N9_ej_2.mp3"
-                    ej "I can confirm that I was not the last person to see him that day. It was, in fact, I have not seen him since."
+                    ej "I can confirm that I was not the last person to see him that day. I have not seen him since."
 
                     #Susan Murphy Thoughts
                     voice "audio/day3/scene72_N3_smt.mp3"
@@ -4214,7 +4214,7 @@ label thirdmurder:
 
             #Narrator
             scene diningroom
-            voice "audio/day4/Scene84_N1_2.mp3"
+            voice "audio/day4/scene85_N1_2.mp3"
             "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
@@ -4258,7 +4258,7 @@ label thirdmurder:
 
             #Narrator
             voice "audio/day4/scene85_N1_2.mp3"
-            "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
             #David Dalton
@@ -4318,7 +4318,7 @@ label thirdmurder:
 
             #Narrator
             voice "audio/day4/scene85_N1_2.mp3"
-            "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
             #David Dalton
@@ -4379,7 +4379,7 @@ label thirdmurder:
 
             #Narrator
             voice "audio/day4/scene85_N1_2.mp3"
-            "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
             #David Dalton
@@ -4439,7 +4439,7 @@ label thirdmurder:
 
             #Narrator
             voice "audio/day4/scene85_N1_2.mp3"
-            "At Dalton's words, the assembled crowd gasps. All except for McQuaid. The man who discovered Susan's dirty little secret."
+            "At Dalton's words, the assembled crowd gasps. Except for McQuaid. The man who discovered Susan's dirty little secret."
             
             
             #David Dalton
@@ -4556,7 +4556,7 @@ label finale:
     #Susan Murphy
     scene d_h_bsusan
     show susan at left
-    play music "audio/suspensful_music.mp3" volume 0.5
+    play music "audio/suspensful_music.mp3" volume 0.5 loop
     voice "audio/day4/scene89_N5_sm_4.mp3" 
     sm "All right. Ezekiel, follow me."
     
@@ -4610,7 +4610,6 @@ label finale:
     sm "Hmm, well the only wire that is standing out to me is.."
     hide susan
     hide ezekiel
-    stop music
 
     menu defuse_bomb:
         "Choose Wisely"
